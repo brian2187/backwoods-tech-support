@@ -49,6 +49,9 @@
     .amt{font-family:Fraunces,serif;font-size:2.5rem;margin:8px 0}
     .price ul{margin:8px 0 0;padding-left:1.1rem}
     .price li{margin:4px 0}
+    .fees{margin-top:10px;border-top:1px solid rgba(244,239,228,.18)}
+    .fees div{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid rgba(244,239,228,.12);font-size:1.02rem}
+    .fees strong{font-family:Fraunces,Georgia,serif;font-size:1.35rem}
     .who{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center}
     .who img.founder{width:180px;height:180px;object-fit:cover;border-radius:18px}
     .avatars{display:flex;gap:10px;align-items:center;margin-top:12px}
@@ -103,7 +106,7 @@
 
   <div class="strip"><div class="wrap">
     <span>Handymen · Detailers · Land crews · Mobile mechanics</span>
-    <span>Setup $1,500 · $25/mo base · desk calls at cost+50% · cap $297</span>
+    <span>Setup $1,500 · $25/mo base · ~$0.27 per handled call · usage max $250</span>
     <span>You approve every commitment</span>
   </div></div>
 
@@ -151,12 +154,13 @@
       </div>
       <div class="price">
         <div class="card"><h3>Setup</h3><div class="amt">$1,500</div><p>Dedicated line, script in your voice, hours you set, calendar hookup, and a walkthrough on a calendar you control.</p></div>
-        <div class="card"><h3>Monthly</h3><div class="amt">$25<span style="font-size:1rem;opacity:.75"> base</span></div>
-          <ul>
-            <li>Dedicated line. Quiet month stays at $25.</li>
-            <li>Calls the desk actually handles: that call’s cost + 50%.</li>
-            <li>Never more than <strong>$297</strong> in a month. You pick up during hours: that is not a desk call.</li>
-          </ul>
+        <div class="card"><h3>Monthly</h3>
+          <div class="fees">
+            <div><span>Base</span><strong>$25</strong></div>
+            <div><span>Usage-based max</span><strong>$250</strong></div>
+            <div><span>Avg per handled call</span><strong>~$0.27</strong></div>
+          </div>
+          <p>Typical 3-minute booking at our cost + 50%. Quiet month is $25. Usage on desk-handled calls stops at $250. You pick up during hours: that is not a handled call.</p>
         </div>
       </div>
     </div>

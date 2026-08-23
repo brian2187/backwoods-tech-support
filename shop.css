@@ -104,6 +104,12 @@ section { padding: 72px 0; }
 .amt { font-family: Fraunces, serif; font-size: 2.5rem; margin: 8px 0; }
 .price ul { margin: 8px 0 0; padding-left: 1.1rem; }
 .price li { margin: 4px 0; }
+.fees { margin-top: 10px; border-top: 1px solid rgba(244, 239, 228, 0.18); }
+.fees div {
+  display: flex; justify-content: space-between; gap: 12px; align-items: baseline;
+  padding: 10px 0; border-bottom: 1px solid rgba(244, 239, 228, 0.12); font-size: 1.02rem;
+}
+.fees strong { font-family: Fraunces, Georgia, serif; font-size: 1.35rem; }
 .split { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 36px; align-items: start; }
 .route-row { display: grid; grid-template-columns: 140px 1fr; gap: 16px; align-items: center; margin-top: 18px; }
 .route-row .when { font-weight: 700; color: var(--pine); letter-spacing: .06em; text-transform: uppercase; font-size: .82rem; }
