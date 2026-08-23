@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /login.html
+Disallow: /shop-andy.html
+Disallow: /shop-sherman.html
+Disallow: /shop-case.html
+Disallow: /auth.js
+Disallow: /shop.js
