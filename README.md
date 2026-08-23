@@ -10,7 +10,7 @@ After-hours AI booking desk for Sagle / Sandpoint / Bonner County.
 
 Shop pages (`shop-*.html`) are unlisted previews behind a client-side login. Plaintext passwords live in `C:\Dev\Revenue-Knowledge\aibiz\SHOP-LOGINS.md` only — not in this repo.
 
-**Price:** New-customer setup sale **$150** (was $1,500). Call the setup AI; Brian reviews and calls back before anything goes live. Monthly base $25. About $0.27 per handled call. Usage-based max $250.
+**Price:** New-customer setup sale **$150** (was $1,500). Call the setup AI; Brian reviews and calls back before anything goes live. Monthly base $25. Desk talk **$0.75/min** (pay for what you use). Usage-based max $250.
 
 Prepare only until Brian authorizes outreach, Stripe, or a live number.
 
