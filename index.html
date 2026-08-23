@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Back Woods Tech Support — After-Hours Booking Desk</title>
+  <meta name="description" content="Sagle and Sandpoint after-hours booking for local service shops. A neighbor who happens to know AI. You approve every commitment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--pine:#163327;--moss:#2f6b4f;--cream:#f4efe4;--paper:#fbf7ef;--ink:#1a241d;--muted:#5c6a61;--copper:#b87333;--line:rgba(22,51,39,.14)}
+    *{box-sizing:border-box}html,body{margin:0}body{font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+    img{max-width:100%;display:block}a{color:var(--moss)}.wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
+    header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(251,247,239,.9);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--pine)}
+    .mark{width:42px;height:42px}
+    .brand strong{font-family:Fraunces,Georgia,serif;font-size:1.05rem}
+    .brand small{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+    nav a{margin-left:20px;text-decoration:none;color:var(--pine);font-weight:600;font-size:.92rem}
+    .btn{display:inline-flex;align-items:center;background:var(--pine);color:var(--cream)!important;text-decoration:none;padding:12px 18px;border-radius:999px;font-weight:700;border:0;cursor:pointer;font:inherit}
+    .btn.ghost{background:transparent;color:var(--pine)!important;border:1px solid var(--line)}
+    .hero{position:relative;min-height:88vh;color:var(--cream);display:grid;align-items:end;background:#102018 url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Lake_Pend_Oreille.jpg/1280px-Lake_Pend_Oreille.jpg") center/cover no-repeat}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,32,24,.25),rgba(10,18,14,.82))}
+    .hero-inner{position:relative;padding:0 0 72px}
+    .kicker{display:inline-flex;gap:10px;align-items:center;background:rgba(251,247,239,.12);border:1px solid rgba(251,247,239,.22);padding:6px 12px;border-radius:999px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+    .kicker img{width:22px;height:22px;border-radius:50%}
+    h1{font-family:Fraunces,Georgia,serif;font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.04;margin:16px 0;max-width:14ch}
+    .lede{max-width:42rem;font-size:1.16rem;color:rgba(244,239,228,.92)}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .hero .btn{background:var(--copper)}
+    .hero .ghost{color:var(--cream)!important;border-color:rgba(244,239,228,.35)}
+    .strip{background:var(--pine);color:var(--cream);padding:16px 0;font-size:.92rem}
+    .strip .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    section{padding:84px 0}
+    h2{font-family:Fraunces,Georgia,serif;font-size:clamp(1.8rem,3vw,2.5rem);margin:0 0 12px;color:var(--pine)}
+    .sub{color:var(--muted);max-width:42rem;font-size:1.06rem}
+    .grid{display:grid;gap:18px;margin-top:32px}
+    .g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 10px 30px rgba(22,51,39,.04)}
+    .card h3{margin:0 0 8px;color:var(--pine);font-size:1.1rem}
+    .num{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--cream);color:var(--copper);font-weight:700;margin-bottom:12px}
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+    .photo{border-radius:22px;min-height:360px;background:#222 url("https://upload.wikimedia.org/wikipedia/commons/8/8e/Schweitzer_Mountain_Sandpoint_und_Lake_Pend_Oreille.JPG") center/cover no-repeat;box-shadow:0 20px 50px rgba(22,51,39,.18)}
+    .price{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .price .card{background:var(--pine);color:var(--cream)}
+    .price h3,.price p{color:var(--cream)}
+    .amt{font-family:Fraunces,serif;font-size:2.5rem;margin:8px 0}
+    .who{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center}
+    .who img.founder{width:180px;height:180px;object-fit:cover;border-radius:18px}
+    .avatars{display:flex;gap:10px;align-items:center;margin-top:12px}
+    .avatars img{width:42px;height:42px;border-radius:50%}
+    .community{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-top:32px}
+    .community .big{min-height:340px;border-radius:22px;background:#123 url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Lake_Pend_Oreille.jpg/1280px-Lake_Pend_Oreille.jpg") center/cover no-repeat}
+    .community .stack{display:grid;gap:16px}
+    .community .stack>div{min-height:162px;border-radius:18px;background-size:cover;background-position:center}
+    form{display:grid;gap:12px;margin-top:22px}
+    input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);font:inherit}
+    footer{background:var(--pine);color:rgba(244,239,228,.8);padding:36px 0 48px;font-size:.92rem}
+    footer a{color:#d4a373}
+    @media(max-width:860px){nav a:not(.btn){display:none}.g2,.g3,.g4,.split,.price,.who,.community{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#163327" stroke="#d4c4a8" stroke-width="2"/>
+          <path d="M32 50 V18 M32 24 L22 36 M32 24 L42 36 M32 32 L18 46 M32 32 L46 46" fill="none" stroke="#c9893a" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="32" cy="18" r="2.1" fill="#d4a373"/>
+          <circle cx="22" cy="36" r="1.6" fill="#d4a373"/>
+          <circle cx="42" cy="36" r="1.6" fill="#d4a373"/>
+        </svg>
+        <div><strong>Back Woods Tech Support</strong><small>Sagle · Sandpoint · Bonner County</small></div>
+      </a>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="#offer">The desk</a>
+        <a href="#who">Who we are</a>
+        <a class="btn" href="#contact">Talk shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div class="kicker">
+        <img src="https://pbs.twimg.com/profile_images/1995336352821592064/_GRgWpUl.jpg" alt="@happiestocamper" />
+        Local shop. Serious tools. Bad cell service is not an excuse.
+      </div>
+      <h1>Your phone can keep working while you do.</h1>
+      <p class="lede">We run an after-hours booking desk for independent service businesses around Sandpoint and Sagle. A polite voice answers, qualifies the job, and drops it on a calendar you control. You still make every promise. We just stop the voicemail from eating your week.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">See it on your calendar</a>
+        <a class="btn ghost" href="#offer">What you get</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip"><div class="wrap">
+    <span>Handymen · Detailers · Land crews · Mobile mechanics</span>
+    <span>Setup $1,500 · then $297 / month</span>
+    <span>You approve every commitment</span>
+  </div></div>
+
+  <section id="offer">
+    <div class="wrap split">
+      <div>
+        <h2>The After-Hours Booking Desk</h2>
+        <p class="sub">If you miss a call because you are under a sink, on a roof, or on the far side of Bottle Bay, that job often goes to whoever answered. We are the neighbor who built a quiet AI desk so that does not happen.</p>
+        <div class="grid g2">
+          <div class="card"><h3>Answered, on-brand</h3><p>A dedicated or forwarded number. 24/7. Sounds like your shop, not a call center in another time zone.</p></div>
+          <div class="card"><h3>Qualified, not chatty</h3><p>Service needed, location, timing, urgency. Then it stops talking and writes it down.</p></div>
+          <div class="card"><h3>On your calendar</h3><p>Qualified jobs land on a calendar you own. Instant summary to you by email or text.</p></div>
+          <div class="card"><h3>A paper trail</h3><p>Call log and transcript. You can see exactly what was promised. Spoiler: not the moon.</p></div>
+        </div>
+      </div>
+      <div class="photo" role="img" aria-label="Schweitzer Mountain above Sandpoint and Lake Pend Oreille"></div>
+    </div>
+  </section>
+
+  <section id="how" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <h2>How it works when a customer actually calls</h2>
+      <p class="sub">No mystery sauce. Four steps, then you are back in charge.</p>
+      <div class="grid g4">
+        <div class="card"><div class="num">1</div><h3>They dial</h3><p>Your number forwards after hours, or they use the dedicated line. Either way, a human-sounding desk picks up.</p></div>
+        <div class="card"><div class="num">2</div><h3>Four or five questions</h3><p>What they need, where they are, when they need it, how hot it is. Same questions you would ask if you were not covered in drywall dust.</p></div>
+        <div class="card"><div class="num">3</div><h3>Calendar + ping</h3><p>If it is a real job, it becomes an event on your calendar and a short note hits your phone. If it is not, a polite close and a callback request.</p></div>
+        <div class="card"><div class="num">4</div><h3>You confirm</h3><p>Pricing, arrival windows, and anything that costs money still come from you. The desk does not freelance heroics.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <h2>What the desk will not do</h2>
+        <p class="sub">This is the part where most “AI agents” get cute. We do not.</p>
+        <ul>
+          <li>No final custom quotes</li>
+          <li>No taking payment</li>
+          <li>No contracts or surprise arrival times</li>
+          <li>No messages off-script</li>
+          <li>Cancel anytime after the first 30 days</li>
+        </ul>
+      </div>
+      <div class="price">
+        <div class="card"><h3>Setup</h3><div class="amt">$1,500</div><p>Number, script in your voice, calendar hookup, and a walkthrough on a calendar you control.</p></div>
+        <div class="card"><h3>Keep it running</h3><div class="amt">$297<span style="font-size:1rem;opacity:.75"> / mo</span></div><p>Hosting, runtime, calendar sync, logging. Pays for itself if it recovers one ordinary job.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="who" style="background:#fff;border-top:1px solid var(--line)">
+    <div class="wrap">
+      <h2>A backwoods tech shop, on purpose</h2>
+      <p class="sub">We live here. The lake, the dirt roads, the shops that still pick up if they can. The work is AI. The manners are North Idaho.</p>
+      <div class="who" style="margin-top:32px">
+        <img class="founder" id="founder" src="https://pbs.twimg.com/profile_images/1995336352821592064/_GRgWpUl.jpg" alt="Brian Moore on the Sagle place" />
+        <div>
+          <h3 style="margin:0 0 8px;color:var(--pine)">Brian Moore · Back Woods Tech Support</h3>
+          <p>I have spent a career in payments and systems that are not allowed to lose a transaction. Evenings I am on Sagle time: creek, pines, and a shop full of tools that do not care about your SaaS roadmap.</p>
+          <p>This company exists to put that mix to work for neighbors who already know their trade. We grow by making local shops harder to miss — not by shouting from a city they do not live in.</p>
+          <div class="avatars">
+            <img src="https://pbs.twimg.com/profile_images/1995336352821592064/_GRgWpUl.jpg" alt="@happiestocamper on X" />
+            <span style="color:var(--muted);font-size:.92rem">Same human as <a href="https://x.com/HappiestOCamper" target="_blank" rel="noopener">@happiestocamper</a> on X. The woods photo is the quality-control stamp.</span>
+          </div>
+        </div>
+      </div>
+      <div class="community">
+        <div class="big" role="img" aria-label="Lake Pend Oreille aerial, U.S. Army Corps of Engineers, 1993"></div>
+        <div class="stack">
+          <div style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Schweitzer_Mountain_Sandpoint_und_Lake_Pend_Oreille.JPG')"></div>
+          <div style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Lake_Pend_Oreille.jpg/1280px-Lake_Pend_Oreille.jpg')"></div>
+        </div>
+      </div>
+      <p style="color:var(--muted);font-size:.85rem;margin-top:12px">Lake and mountain plates from Wikimedia Commons (U.S. Army Corps of Engineers aerial, public domain; Schweitzer / Sandpoint photo, CC BY-SA). Founder photo from the Sagle place. X avatar from @happiestocamper.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap" style="max-width:720px">
+      <h2>Worth a 10-minute look?</h2>
+      <p class="sub">Tell us the shop name and whether evenings are the problem. We will show the flow on a calendar you control.</p>
+      <p><strong>Email:</strong> <a href="mailto:hello@backwoodstechsupport.com">hello@backwoodstechsupport.com</a></p>
+      <form action="mailto:hello@backwoodstechsupport.com" method="post" enctype="text/plain">
+        <input name="name" placeholder="Your name" required />
+        <input name="shop" placeholder="Shop name" required />
+        <input name="phone" placeholder="Best phone (optional)" />
+        <textarea name="note" rows="4" placeholder="When do you miss calls?"></textarea>
+        <button class="btn" type="submit">Send a note</button>
+      </form>
+      <p style="color:var(--muted);font-size:.9rem">Nothing is live until you say so. No outreach, no cards, no phone number without your explicit ok.</p>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap">Back Woods Tech Support · Sagle / Sandpoint / Bonner County · After-Hours Booking Desk<br>You approve every commitment. © 2026</div>
+  </footer>
+  <script>
+    fetch("brian.b64").then(r=>r.text()).then(t=>{
+      document.getElementById("founder").src="data:image/jpeg;base64,"+t.trim();
+    });
+  </script>
+</body>
+</html>
