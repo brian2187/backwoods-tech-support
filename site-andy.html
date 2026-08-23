@@ -3,85 +3,96 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Andy The Handyman — Sandpoint, ID</title>
+  <title>Andy The Handyman | Sandpoint, Idaho</title>
   <meta name="robots" content="noindex" />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="site-kit.css" rel="stylesheet" />
   <style>
-    :root{--navy:#1c2740;--gold:#c4a35a;--paper:#f7f4ee;--ink:#1a1d24}
-    *{box-sizing:border-box}html,body{margin:0}body{font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.5}
-    a{color:var(--navy)}img{max-width:100%;display:block}
-    .wrap{width:min(1080px,calc(100% - 32px));margin:0 auto}
-    header{background:var(--navy);color:#fff;padding:12px 0}
-    .nav{display:flex;justify-content:space-between;align-items:center;gap:12px}
-    .brand{font-family:Oswald,sans-serif;letter-spacing:.04em;text-decoration:none;color:#fff}
-    .brand small{display:block;font-family:"Source Sans 3",sans-serif;font-size:.7rem;letter-spacing:.12em;color:var(--gold)}
-    .call{background:var(--gold);color:var(--navy);text-decoration:none;font-weight:700;padding:10px 14px;border-radius:6px}
-    .hero{min-height:420px;background:#111 url("assets/shops/andy/hero.webp") center/cover;color:#fff;display:grid;align-items:end}
-    .hero .wrap{padding:48px 0;background:linear-gradient(transparent,rgba(28,39,64,.88))}
-    h1,h2,h3{font-family:Oswald,sans-serif;margin:0 0 8px}
-    h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.05}
-    .tag{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;font-weight:700}
-    section{padding:56px 0}
-    .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .card{background:#fff;border:1px solid rgba(28,39,64,.1);padding:18px;border-radius:10px}
-    .about{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center}
-    .about img{width:200px;height:240px;object-fit:cover;border-radius:10px}
-    blockquote{margin:0;font-size:1.05rem}
-    .who{color:#666;font-size:.9rem;margin-top:8px}
-    .work img{height:160px;width:100%;object-fit:cover;border-radius:8px}
-    footer{background:var(--navy);color:#cfd5e0;padding:28px 0;font-size:.9rem}
-    footer a{color:var(--gold)}
-    @media(max-width:800px){.g3,.g4,.about{grid-template-columns:1fr}.about img{width:100%;height:220px}}
+    :root{--bs-primary:#1c2740;--gold:#c4a35a}
+    .topbar,.navbar,.cta-band,footer.site-foot{background:#1c2740;color:#fff}
+    .btn-gold{background:var(--gold);color:#1c2740;font-weight:700}
+    .btn-gold:hover{background:#d4b56e;color:#1c2740}
+    .portrait{object-position:70% 12%}
   </style>
 </head>
 <body>
-  <header><div class="wrap nav">
-    <a class="brand" href="#">ANDY THE HANDYMAN<small>VETERAN OWNED · SANDPOINT · EST. 2021</small></a>
-    <a class="call" href="tel:2089203269">Call 208-920-3269</a>
-  </div></header>
-  <section class="hero"><div class="wrap">
-    <div class="tag">Fix this, build that</div>
-    <h1>Handyman work done right the first time.</h1>
-    <p>Navy veteran. Engineering background. Serving Sandpoint, Bonner &amp; Boundary County. Mon–Fri 7am–4pm, all else by appointment.</p>
-  </div></section>
-  <section><div class="wrap">
-    <h2>What we do</h2>
-    <div class="g3" style="margin-top:18px">
-      <div class="card"><h3>Repair &amp; maintenance</h3><p>Reliable upkeep — leaky pipes to Starlink mounts.</p></div>
-      <div class="card"><h3>Decks, remodels, builds</h3><p>Custom decks, outbuildings, small-scale construction.</p></div>
-      <div class="card"><h3>Concrete, roofing, siding</h3><p>Flatwork, roofing, flooring, windows, insulation, finish carpentry.</p></div>
+  <div class="topbar"><div class="container d-flex justify-content-between flex-wrap gap-2">
+    <span>Veteran-owned · Sandpoint · Est. 2021</span>
+    <a class="link-light" href="tel:2089203269">208-920-3269</a>
+  </div></div>
+  <nav class="navbar navbar-dark navbar-expand-md sticky-top"><div class="container">
+    <a class="navbar-brand" href="#">Andy The Handyman</a>
+    <a class="btn btn-gold btn-sm" href="tel:2089203269">Call now</a>
+  </div></nav>
+  <header class="masthead" style="background-image:url('assets/shops/andy/hero.webp')">
+    <div class="container">
+      <p class="text-uppercase small mb-2" style="letter-spacing:.16em;color:var(--gold)">Fix this, build that</p>
+      <h1 class="display-4">Handyman work done right<br>the first time.</h1>
+      <p class="lead col-lg-7">Navy veteran. Engineering background. Serving Sandpoint, Bonner &amp; Boundary County.</p>
+      <a class="btn btn-gold btn-lg mt-2" href="tel:2089203269">Call 208-920-3269</a>
     </div>
-  </div></section>
-  <section style="background:#fff"><div class="wrap about">
-    <img src="assets/shops/andy/owner.webp" alt="Andy Barnes" />
-    <div>
-      <div class="tag">Owner</div>
-      <h2>Andy Barnes</h2>
-      <p>Navy veteran from Kalamazoo. Moved to North Idaho with his wife and five kids — building a home in Samuels. Associate’s in automotive tech, bachelor’s in math and engineering. He’d rather take the time to do it right than rush and cut corners.</p>
+  </header>
+  <div class="trust py-3"><div class="container d-flex flex-wrap justify-content-between gap-3">
+    <span>Mon–Fri 7am–4pm · else by appointment</span>
+    <span>Decks · remodels · concrete · roofing · plumbing</span>
+    <span>Samuels / Sandpoint / Bonners Ferry</span>
+  </div></div>
+
+  <section class="section bg-white">
+    <div class="container">
+      <h2 class="mb-4">Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="p-4 h-100 bg-light rounded-3"><h3 class="h5">Repair &amp; maintenance</h3><p class="mb-0">Pipes, cabinets, Starlink, the jobs that keep a North Idaho house running.</p></div></div>
+        <div class="col-md-4"><div class="p-4 h-100 bg-light rounded-3"><h3 class="h5">Decks &amp; builds</h3><p class="mb-0">Custom decks, outbuildings, small-scale construction, finish carpentry.</p></div></div>
+        <div class="col-md-4"><div class="p-4 h-100 bg-light rounded-3"><h3 class="h5">Concrete, roof, siding</h3><p class="mb-0">Flatwork, roofing, flooring, windows, insulation. Think it through, then build it.</p></div></div>
+      </div>
     </div>
-  </div></section>
-  <section><div class="wrap">
-    <h2>What customers say</h2>
-    <div class="g3" style="margin-top:18px">
-      <div class="card"><blockquote>“Very professional, quick service and quality workmanship… Andy is who you’re looking for.”</blockquote><div class="who">Sean A. · Feb 2026</div></div>
-      <div class="card"><blockquote>“Andy has been our go-to handyman for years… leaking pipes to cabinets to Starlink.”</blockquote><div class="who">Dan K. · Jan 2026</div></div>
-      <div class="card"><blockquote>“Andy built us a great outhouse and insulated my off-grid cabin. Solid dude all around.”</blockquote><div class="who">Owen S. · Oct 2025</div></div>
+  </section>
+
+  <section class="section" style="background:#f4f1ea">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-4 text-center"><img class="portrait" src="assets/shops/andy/owner.webp" alt="Andy Barnes" /></div>
+        <div class="col-md-8">
+          <p class="text-uppercase small mb-1" style="letter-spacing:.12em;color:#888">Owner</p>
+          <h2>Andy Barnes</h2>
+          <p>Navy veteran from Kalamazoo. Moved to North Idaho with his wife and five kids — building a home in Samuels. Associate’s in automotive technology, bachelor’s in math and engineering. He’d rather take the time to do it right than rush and cut corners.</p>
+        </div>
+      </div>
     </div>
-  </div></section>
-  <section class="work" style="background:#fff"><div class="wrap">
-    <h2>Recent work</h2>
-    <p>Projects around Sandpoint and Bonners Ferry — from Andy’s public portfolio.</p>
-    <div class="g4" style="margin-top:16px">
-      <img src="assets/shops/andy/work-01.webp" alt="Project 1" />
-      <img src="assets/shops/andy/work-02.webp" alt="Project 2" />
-      <img src="assets/shops/andy/work-03.webp" alt="Project 3" />
-      <img src="assets/shops/andy/work-04.webp" alt="Project 4" />
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <h2 class="mb-4">What customers say</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><figure class="h-100 p-4 bg-light rounded-3"><blockquote class="quote mb-2">“Very professional, quick service and quality workmanship. If you’re looking for someone to get the job done right at a fair price and in a hurry, Andy is who you’re looking for.”</blockquote><figcaption class="text-muted">Sean A. · Feb 2026</figcaption></figure></div>
+        <div class="col-md-4"><figure class="h-100 p-4 bg-light rounded-3"><blockquote class="quote mb-2">“Andy has been our go-to handyman for years… leaking pipes to modifying cabinets to installing our Starlink.”</blockquote><figcaption class="text-muted">Dan K. · Jan 2026</figcaption></figure></div>
+        <div class="col-md-4"><figure class="h-100 p-4 bg-light rounded-3"><blockquote class="quote mb-2">“Andy built us a great outhouse and insulated my off-grid cabin. Quality work on both projects.”</blockquote><figcaption class="text-muted">Owen S. · Oct 2025</figcaption></figure></div>
+      </div>
     </div>
+  </section>
+
+  <section class="section" style="background:#f4f1ea">
+    <div class="container">
+      <h2 class="mb-2">Selected work</h2>
+      <p class="text-muted mb-4">Finished projects from the public portfolio. Job-site clutter left off this page.</p>
+      <div class="row g-3 gallery">
+        <div class="col-md-6 col-lg-3"><img src="assets/shops/andy/work-03.webp" alt="Completed deck with cable rail" /></div>
+        <div class="col-md-6 col-lg-3"><img src="assets/shops/andy/work-04.webp" alt="New concrete slab" /></div>
+        <div class="col-md-6 col-lg-3"><img src="assets/shops/andy/work-05.webp" alt="Cabin entry in winter" /></div>
+        <div class="col-md-6 col-lg-3"><img src="assets/shops/andy/work-06.webp" alt="Finished addition" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band"><div class="container d-md-flex justify-content-between align-items-center gap-3">
+    <div><h2 class="h3 mb-1">Need it done right?</h2><p class="mb-0">Hours Mon–Fri 7am–4pm. All else by appointment.</p></div>
+    <a class="btn btn-gold btn-lg" href="tel:2089203269">208-920-3269</a>
   </div></section>
-  <footer><div class="wrap">
-    Andy The Handyman LLC · Sandpoint, ID · <a href="tel:2089203269">208-920-3269</a> · <a href="mailto:andythehandyman@protonmail.com">andythehandyman@protonmail.com</a><br>
-    Hours: Mon–Fri 7am–4pm, all else by appointment. Preview built from public site content.
+  <footer class="site-foot"><div class="container">
+    Andy The Handyman LLC · Sandpoint, ID · <a class="link-light" href="mailto:andythehandyman@protonmail.com">andythehandyman@protonmail.com</a><br>
+    Photos from the public shop site. Preview for the shop owner.
   </div></footer>
 </body>
 </html>

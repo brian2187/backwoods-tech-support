@@ -1,0 +1,15 @@
+/* Shared contractor template (Bootstrap 5 + brand overlay). */
+.topbar{font-size:.9rem;padding:.45rem 0}
+.navbar-brand{font-weight:700;letter-spacing:.02em}
+.masthead{min-height:72vh;display:flex;align-items:flex-end;background-size:cover;background-position:center;color:#fff;position:relative}
+.masthead:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,14,18,.15),rgba(10,14,18,.78))}
+.masthead .container{position:relative;padding-bottom:4.5rem;padding-top:6rem}
+.masthead h1{font-weight:700;letter-spacing:-.02em}
+.trust{background:#111;color:#ddd;font-size:.92rem}
+.section{padding:4.5rem 0}
+.quote{font-size:1.08rem}
+.gallery img{width:100%;height:220px;object-fit:cover}
+.portrait{width:210px;height:210px;object-fit:cover;border-radius:50%;border:4px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.cta-band{padding:3.5rem 0}
+footer.site-foot{font-size:.9rem;padding:2rem 0}
+.logo-nav{height:52px;width:auto}
