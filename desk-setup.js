@@ -107,6 +107,23 @@
     return h * 60 + m;
   }
 
+  function minToHHMM(m) {
+    m = Math.max(START_MIN, Math.min(END_MIN, Math.round(m / 30) * 30));
+    return String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0");
+  }
+
+  function yToHHMM(track, clientY) {
+    const r = track.getBoundingClientRect();
+    const t = r.height ? Math.min(1, Math.max(0, (clientY - r.top) / r.height)) : 0;
+    return minToHHMM(START_MIN + t * SPAN);
+  }
+
+  function blockStyle(h) {
+    const top = ((Math.max(toMin(h.start), START_MIN) - START_MIN) / SPAN) * 100;
+    const bot = ((Math.min(toMin(h.end), END_MIN) - START_MIN) / SPAN) * 100;
+    return "top:" + top + "%;height:" + Math.max(bot - top, 3) + "%";
+  }
+
   function ymd(d) {
     return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
   }
@@ -130,7 +147,15 @@
     state = null;
   }
   if (!state) state = JSON.parse(JSON.stringify(PRESETS[shop]));
+  if (!state.hours) state.hours = JSON.parse(JSON.stringify(PRESETS[shop].hours));
+  DAYS.forEach(function (d) {
+    if (!state.hours[d]) state.hours[d] = closed();
+    if (typeof state.hours[d].on !== "boolean") state.hours[d].on = false;
+    if (!state.hours[d].start) state.hours[d].start = "07:00";
+    if (!state.hours[d].end) state.hours[d].end = "16:00";
+  });
   if (!Array.isArray(state.vacation)) state.vacation = [];
+  if (!Array.isArray(state.services)) state.services = PRESETS[shop].services.slice();
 
   function save() {
     localStorage.setItem(key, JSON.stringify(state));
@@ -157,42 +182,53 @@
   function renderHours() {
     return DAYS.map(function (d) {
       const h = state.hours[d];
-      const on = h.on;
-      const top = ((Math.max(toMin(h.start), START_MIN) - START_MIN) / SPAN) * 100;
-      const bot = ((Math.min(toMin(h.end), END_MIN) - START_MIN) / SPAN) * 100;
-      const opts = function (sel) {
-        return TIMES.map(function (t) {
-          return "<option" + (t === sel ? " selected" : "") + ">" + t + "</option>";
-        }).join("");
-      };
+      const on = !!h.on;
       return (
         '<div class="day-col' +
         (on ? "" : " closed") +
         '" data-day="' +
         d +
-        '"><h4>' +
-        DAY_LABEL[d] +
-        '<button type="button" data-toggle="' +
-        d +
         '">' +
-        (on ? "Open" : "Desk") +
-        "</button></h4><div class=\"track\" title=\"6am–8pm\">" +
-        (on ? '<div class="block" style="top:' + top + "%;height:" + Math.max(bot - top, 4) + '%"></div>' : "") +
-        '</div><div class="times"><select data-start="' +
+        "<h4>" +
+        DAY_LABEL[d] +
+        "</h4>" +
+        '<label class="tog"><input type="checkbox" data-toggle="' +
         d +
-        '" ' +
-        (on ? "" : "disabled") +
-        ">" +
-        opts(h.start) +
-        '</select><select data-end="' +
+        '"' +
+        (on ? " checked" : "") +
+        "> You first</label>" +
+        '<div class="times"><input type="time" step="1800" data-start="' +
         d +
-        '" ' +
-        (on ? "" : "disabled") +
-        ">" +
-        opts(h.end) +
-        "</select></div></div>"
+        '" value="' +
+        h.start +
+        '"> <input type="time" step="1800" data-end="' +
+        d +
+        '" value="' +
+        h.end +
+        '"></div>' +
+        '<div class="track" data-track="' +
+        d +
+        '" title="Drag to set hours (6am–8pm)">' +
+        '<div class="block" style="' +
+        blockStyle(h) +
+        '"></div></div></div>'
       );
     }).join("");
+  }
+
+  function syncDay(d) {
+    const col = root.querySelector('.day-col[data-day="' + d + '"]');
+    if (!col) return;
+    const h = state.hours[d];
+    col.classList.toggle("closed", !h.on);
+    const box = col.querySelector("[data-toggle]");
+    if (box) box.checked = !!h.on;
+    const s = col.querySelector("[data-start]");
+    const e = col.querySelector("[data-end]");
+    if (s && s !== document.activeElement) s.value = h.start;
+    if (e && e !== document.activeElement) e.value = h.end;
+    const b = col.querySelector(".block");
+    if (b) b.setAttribute("style", blockStyle(h));
   }
 
   function renderMonths() {
@@ -318,18 +354,25 @@
         state[id] = el.value;
       });
     });
+
+    let drag = null;
+
     root.addEventListener("click", function (e) {
-      const t = e.target;
-      if (t.dataset.toggle) {
-        state.hours[t.dataset.toggle].on = !state.hours[t.dataset.toggle].on;
-        refreshCals();
+      const t = e.target.closest("[data-date],[data-week],#desk-save");
+      if (!t) return;
+      if (t.id === "desk-save") {
+        e.preventDefault();
+        save();
+        return;
       }
       if (t.dataset.date) {
         const id = t.dataset.date;
         const i = state.vacation.indexOf(id);
         if (i >= 0) state.vacation.splice(i, 1);
         else state.vacation.push(id);
-        t.classList.toggle("vac");
+        const months = root.querySelector("#months");
+        if (months) months.innerHTML = renderMonths();
+        return;
       }
       if (t.dataset.week) {
         const start = new Date(t.dataset.week + "T12:00:00");
@@ -348,20 +391,67 @@
           if (allOn && i >= 0) state.vacation.splice(i, 1);
           if (!allOn && i < 0) state.vacation.push(d);
         });
-        refreshCals();
+        const months = root.querySelector("#months");
+        if (months) months.innerHTML = renderMonths();
       }
-      if (t.id === "desk-save") save();
     });
+
     root.addEventListener("change", function (e) {
       const t = e.target;
+      if (t.dataset.toggle) {
+        state.hours[t.dataset.toggle].on = t.checked;
+        syncDay(t.dataset.toggle);
+        return;
+      }
       if (t.dataset.start) {
-        state.hours[t.dataset.start].start = t.value;
-        refreshCals();
+        const d = t.dataset.start;
+        state.hours[d].start = t.value || state.hours[d].start;
+        if (toMin(state.hours[d].end) <= toMin(state.hours[d].start)) {
+          state.hours[d].end = minToHHMM(toMin(state.hours[d].start) + 30);
+        }
+        state.hours[d].on = true;
+        syncDay(d);
+        return;
       }
       if (t.dataset.end) {
-        state.hours[t.dataset.end].end = t.value;
-        refreshCals();
+        const d = t.dataset.end;
+        state.hours[d].end = t.value || state.hours[d].end;
+        if (toMin(state.hours[d].end) <= toMin(state.hours[d].start)) {
+          state.hours[d].start = minToHHMM(toMin(state.hours[d].end) - 30);
+        }
+        state.hours[d].on = true;
+        syncDay(d);
       }
+    });
+
+    root.addEventListener("pointerdown", function (e) {
+      const track = e.target.closest("[data-track]");
+      if (!track) return;
+      e.preventDefault();
+      const d = track.getAttribute("data-track");
+      const t = yToHHMM(track, e.clientY);
+      state.hours[d].on = true;
+      state.hours[d].start = t;
+      state.hours[d].end = minToHHMM(toMin(t) + 30);
+      drag = { day: d, track: track, origin: t };
+      try {
+        track.setPointerCapture(e.pointerId);
+      } catch (err) {}
+      syncDay(d);
+    });
+    root.addEventListener("pointermove", function (e) {
+      if (!drag) return;
+      const a = toMin(drag.origin);
+      const b = toMin(yToHHMM(drag.track, e.clientY));
+      state.hours[drag.day].start = minToHHMM(Math.min(a, b));
+      state.hours[drag.day].end = minToHHMM(Math.max(a, b) === Math.min(a, b) ? Math.min(a, b) + 30 : Math.max(a, b));
+      syncDay(drag.day);
+    });
+    root.addEventListener("pointerup", function () {
+      drag = null;
+    });
+    root.addEventListener("pointercancel", function () {
+      drag = null;
     });
   }
 
