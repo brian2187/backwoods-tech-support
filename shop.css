@@ -110,6 +110,18 @@ section { padding: 72px 0; }
   padding: 10px 0; border-bottom: 1px solid rgba(244, 239, 228, 0.12); font-size: 1.02rem;
 }
 .fees strong { font-family: Fraunces, Georgia, serif; font-size: 1.35rem; }
+.sale {
+  display: inline-block; background: var(--copper); color: var(--cream) !important;
+  font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 5px 10px; border-radius: 999px; font-weight: 700; margin-bottom: 8px;
+}
+.was {
+  text-decoration: line-through; opacity: 0.5; font-size: 1.35rem;
+  margin-right: 10px; font-family: Fraunces, Georgia, serif;
+}
+.phone-xl { font-family: Fraunces, Georgia, serif; font-size: 1.45rem; margin: 10px 0 6px; }
+.phone-xl a { color: var(--cream) !important; text-decoration: none; border-bottom: 1px solid rgba(244, 239, 228, 0.35); }
+.price .btn { background: var(--copper); margin-top: 12px; }
 .split { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 36px; align-items: start; }
 .route-row { display: grid; grid-template-columns: 140px 1fr; gap: 16px; align-items: center; margin-top: 18px; }
 .route-row .when { font-weight: 700; color: var(--pine); letter-spacing: .06em; text-transform: uppercase; font-size: .82rem; }

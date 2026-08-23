@@ -49,6 +49,11 @@
     .amt{font-family:Fraunces,serif;font-size:2.5rem;margin:8px 0}
     .price ul{margin:8px 0 0;padding-left:1.1rem}
     .price li{margin:4px 0}
+    .sale{display:inline-block;background:var(--copper);color:var(--cream)!important;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px;font-weight:700;margin-bottom:8px}
+    .was{text-decoration:line-through;opacity:.5;font-size:1.35rem;margin-right:10px;font-family:Fraunces,Georgia,serif}
+    .phone-xl{font-family:Fraunces,Georgia,serif;font-size:1.45rem;margin:10px 0 6px}
+    .phone-xl a{color:var(--cream)!important;text-decoration:none;border-bottom:1px solid rgba(244,239,228,.35)}
+    .price .btn{background:var(--copper);margin-top:12px}
     .fees{margin-top:10px;border-top:1px solid rgba(244,239,228,.18)}
     .fees div{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid rgba(244,239,228,.12);font-size:1.02rem}
     .fees strong{font-family:Fraunces,Georgia,serif;font-size:1.35rem}
@@ -98,7 +103,7 @@
       <h1>Your phone can keep working while you do.</h1>
       <p class="lede">AIBizSupport is the after-hours booking service from Mountain Top Tech, the tech arm of Something Ain't Right Farms. A polite voice answers, qualifies the job, and drops it on a calendar you control. You still make every promise. We just stop the voicemail from eating your week.</p>
       <div class="hero-actions">
-        <a class="btn" href="#contact">See it on your calendar</a>
+        <a class="btn" href="#setup">New-customer setup $150</a>
         <a class="btn ghost" href="#offer">What you get</a>
       </div>
     </div>
@@ -106,7 +111,7 @@
 
   <div class="strip"><div class="wrap">
     <span>Handymen · Detailers · Land crews · Mobile mechanics</span>
-    <span>Setup $1,500 · $25/mo base · ~$0.27 per handled call · usage max $250</span>
+    <span>New-customer setup sale: $1,500 → $150</span>
     <span>You approve every commitment</span>
   </div></div>
 
@@ -152,8 +157,15 @@
           <li>Cancel anytime after the first 30 days</li>
         </ul>
       </div>
-      <div class="price">
-        <div class="card"><h3>Setup</h3><div class="amt">$1,500</div><p>Dedicated line, script in your voice, hours you set, calendar hookup, and a walkthrough on a calendar you control.</p></div>
+      <div class="price" id="setup">
+        <div class="card">
+          <div class="sale">New customer setup sale</div>
+          <h3>Setup</h3>
+          <div class="amt"><span class="was">$1,500</span>$150</div>
+          <p>Call the setup AI. It takes your shop name, hours, and a callback number. Brian Moore reviews that call, phones you back, and confirms hours, script, and calendar <strong>before</strong> the desk is used. Nothing starts until he says so.</p>
+          <p class="phone-xl"><a class="setup-line" href="mailto:MTTech_SARFarm@outlook.com?subject=New%20customer%20setup%20sale">Call the setup AI</a></p>
+          <a class="btn setup-line" href="mailto:MTTech_SARFarm@outlook.com?subject=New%20customer%20setup%20sale">Start the $150 setup</a>
+        </div>
         <div class="card"><h3>Monthly</h3>
           <div class="fees">
             <div><span>Base</span><strong>$25</strong></div>
@@ -196,7 +208,7 @@
   <section id="contact">
     <div class="wrap" style="max-width:720px">
       <h2>Worth a 10-minute look?</h2>
-      <p class="sub">Tell us the shop name and whether evenings are the problem. We will show the flow on a calendar you control.</p>
+      <p class="sub">New-customer setup is $150 (was $1,500). Call the setup AI. Brian reviews every intake, calls you back, and confirms everything before the service is used.</p>
       <p><strong>AIBizSupport email:</strong> <a href="mailto:MTTech_SARFarm@outlook.com">MTTech_SARFarm@outlook.com</a></p>
       <form action="mailto:MTTech_SARFarm@outlook.com" method="post" enctype="text/plain">
         <input name="name" placeholder="Your name" required />
@@ -205,12 +217,13 @@
         <textarea name="note" rows="4" placeholder="When do you miss calls?"></textarea>
         <button class="btn" type="submit">Send a note</button>
       </form>
-      <p style="color:var(--muted);font-size:.9rem">Nothing is live until you say so. No outreach, no cards, no phone number without your explicit ok.</p>
+      <p style="color:var(--muted);font-size:.9rem">Brian reviews and calls you back. The desk does not run until he confirms with you.</p>
     </div>
   </section>
   <footer>
     <div class="wrap">AIBizSupport · Mountain Top Tech · a subdivision of Something Ain't Right Farms<br>Sagle / Sandpoint / Bonner County · You approve every commitment. © 2026</div>
   </footer>
+  <script src="setup-line.js"></script>
   <script>
     fetch("brian.b64").then(r=>r.text()).then(t=>{
       document.getElementById("founder").src="data:image/jpeg;base64,"+t.trim();
