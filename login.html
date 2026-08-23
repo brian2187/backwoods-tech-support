@@ -34,16 +34,12 @@
     <div class="card login-card">
       <p class="kicker" style="color:var(--pine);background:var(--cream);border-color:var(--line)">Test group · shop login</p>
       <h1 style="font-size:2.1rem;color:var(--pine);max-width:none">Your shop page is not on the public site.</h1>
-      <p class="sub">Use the username and password from the note we sent. This is a private preview of how AIBizSupport would work for your shop — not a live booking desk yet.</p>
+      <p class="sub">Use the logon from the note we sent. This is a private preview of how AIBizSupport would work for your shop — not a live booking desk yet.</p>
       <p id="resume" class="ok" hidden></p>
       <form id="login" autocomplete="on">
         <div>
-          <label for="user">Username</label>
+          <label for="user">Logon</label>
           <input id="user" name="username" autocomplete="username" required />
-        </div>
-        <div>
-          <label for="pass">Password</label>
-          <input id="pass" name="password" type="password" autocomplete="current-password" required />
         </div>
         <p id="err" class="err" role="alert"></p>
         <button class="btn" type="submit">Open my shop page</button>
@@ -68,15 +64,12 @@
         location.reload();
       });
     }
-    document.getElementById("login").addEventListener("submit", async function (e) {
+    document.getElementById("login").addEventListener("submit", function (e) {
       e.preventDefault();
       const err = document.getElementById("err");
       err.textContent = "";
       try {
-        const result = await attemptLogin(
-          document.getElementById("user").value,
-          document.getElementById("pass").value
-        );
+        const result = attemptLogin(document.getElementById("user").value);
         if (!result.ok) err.textContent = result.reason;
       } catch (ex) {
         err.textContent = ex.message || "Login failed.";

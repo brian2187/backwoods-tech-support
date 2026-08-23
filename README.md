@@ -8,7 +8,7 @@ After-hours AI booking desk for Sagle / Sandpoint / Bonner County.
 
 **AIBizSupport email:** `MTTech_SARFarm@outlook.com`
 
-Shop pages (`shop-*.html`) are unlisted previews behind a client-side login. Plaintext passwords live in `C:\Dev\Revenue-Knowledge\aibiz\SHOP-LOGINS.md` only — not in this repo.
+Shop pages (`shop-*.html`) are unlisted previews behind a logon name only (`andy`, `sherman`, `case`).
 
 **Price:** New-customer setup sale **$150** (was $1,500). Call the setup AI; Brian reviews and calls back before anything goes live. Monthly base $25. Desk talk **$0.75/min** (pay for what you use). Usage-based max $250.
 
