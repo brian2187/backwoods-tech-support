@@ -3,7 +3,7 @@
 Repo: `brian2187/backwoods-tech-support` (public). Site review:
 https://raw.githack.com/brian2187/backwoods-tech-support/main/index.html
 
-**Open this file first on the Alien.** Then clone is already done if you are reading it from the repo.
+**Open this file first on the Alien.** Paste [PROMPT.md](PROMPT.md) into a new Grok / TUI session to pick up here.
 
 **Do not** turn GitHub Pages Actions back on — it failed every push and mailed Hotmail. Workflow file was deleted (`53dd81d`). Use raw.githack until Pages is enabled **by hand** in Settings → Pages.
 
@@ -114,6 +114,7 @@ Not required for first sale: custom domain, github.io, mail scheduler, a 208 per
 | File | What |
 |------|------|
 | [TRAVEL.md](TRAVEL.md) | This pickup brief. |
+| [PROMPT.md](PROMPT.md) | Paste into a new Grok session to continue. |
 | [PRICING.md](PRICING.md) | Locked $150 / $25 / $0.75 / $250. |
 | [SHOP-LOGINS.md](SHOP-LOGINS.md) | `andy` / `sherman` / `case` (already on login.html). |
 | [first-3-prepare.md](first-3-prepare.md) | Targets + gated email/SMS drafts (Less Traveled first line). |

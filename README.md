@@ -3,7 +3,7 @@
 Service of **Mountain Top Tech**, a subdivision of **Something Ain't Right Farms** (SAR Farms).
 After-hours AI booking desk for Sagle / Sandpoint / Bonner County.
 
-**Travel pickup (Alien):** start at **[docs/TRAVEL.md](docs/TRAVEL.md)**.
+**Travel pickup (Alien):** start at **[docs/TRAVEL.md](docs/TRAVEL.md)**. Paste **[docs/PROMPT.md](docs/PROMPT.md)** into a new Grok / TUI session to continue.
 
 **Review URL:** https://raw.githack.com/brian2187/backwoods-tech-support/main/index.html
 **Shop login:** https://raw.githack.com/brian2187/backwoods-tech-support/main/login.html
