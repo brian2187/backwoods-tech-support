@@ -1,9 +1,11 @@
-# Back Woods Tech Support
+# Mountain Top Tech
 
-Public site for the After-Hours Booking Desk (Sagle / Sandpoint / Bonner County).
+A subdivision of **Something Ain't Right Farms** (SAR Farms).
+After-Hours Booking Desk for Sagle / Sandpoint / Bonner County.
 
-**Review URL (GitHub Pages, after first Actions run):** https://brian2187.github.io/backwoods-tech-support/
+**Review URL:** https://raw.githack.com/brian2187/backwoods-tech-support/main/index.html
 
-Brand email (create this inbox, then the mailto on the site works): `hello@backwoodstechsupport.com`
+**Inbound email (no new account):** `moorebmoore+mtt@hotmail.com`
+Plus-tag on the existing Hotmail. Mail lands in the same Outlook mailbox, folder **Mountain Top Tech**.
 
 Prepare only until Brian authorizes outreach, Stripe, or a live number.
