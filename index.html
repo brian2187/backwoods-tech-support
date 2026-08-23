@@ -43,10 +43,12 @@
     .num{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--cream);color:var(--copper);font-weight:700;margin-bottom:12px}
     .split{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
     .photo{border-radius:22px;min-height:360px;background:#222 url("https://upload.wikimedia.org/wikipedia/commons/8/8e/Schweitzer_Mountain_Sandpoint_und_Lake_Pend_Oreille.JPG") center/cover no-repeat;box-shadow:0 20px 50px rgba(22,51,39,.18)}
-    .price{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .price{display:grid;grid-template-columns:1fr 1.35fr;gap:18px}
     .price .card{background:var(--pine);color:var(--cream)}
     .price h3,.price p{color:var(--cream)}
     .amt{font-family:Fraunces,serif;font-size:2.5rem;margin:8px 0}
+    .price ul{margin:8px 0 0;padding-left:1.1rem}
+    .price li{margin:4px 0}
     .who{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center}
     .who img.founder{width:180px;height:180px;object-fit:cover;border-radius:18px}
     .avatars{display:flex;gap:10px;align-items:center;margin-top:12px}
@@ -101,7 +103,7 @@
 
   <div class="strip"><div class="wrap">
     <span>Handymen · Detailers · Land crews · Mobile mechanics</span>
-    <span>Setup $1,500 · then $297 / month</span>
+    <span>Setup $1,500 · $10/mo base · desk calls at cost+50% · cap $297</span>
     <span>You approve every commitment</span>
   </div></div>
 
@@ -148,8 +150,14 @@
         </ul>
       </div>
       <div class="price">
-        <div class="card"><h3>Setup</h3><div class="amt">$1,500</div><p>Number, script in your voice, calendar hookup, and a walkthrough on a calendar you control.</p></div>
-        <div class="card"><h3>Keep it running</h3><div class="amt">$297<span style="font-size:1rem;opacity:.75"> / mo</span></div><p>Hosting, runtime, calendar sync, logging. Pays for itself if it recovers one ordinary job.</p></div>
+        <div class="card"><h3>Setup</h3><div class="amt">$1,500</div><p>Dedicated line, script in your voice, hours you set, calendar hookup, and a walkthrough on a calendar you control.</p></div>
+        <div class="card"><h3>Monthly</h3><div class="amt">$10<span style="font-size:1rem;opacity:.75"> base</span></div>
+          <ul>
+            <li>Line at our cost + 10%, rounded to the nearest $10. Quiet month stays here.</li>
+            <li>Calls the desk actually handles: that call’s cost + 50%.</li>
+            <li>Never more than <strong>$297</strong> in a month. You pick up during hours: that is not a desk call.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
