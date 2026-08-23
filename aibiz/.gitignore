@@ -1,0 +1,4 @@
+data/
+preview-profiles/
+__pycache__/
+*.pyc

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Virtual Assistant — mail desk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --bg:#0f1411; --card:#171e1a; --ink:#e8efe8; --mut:#8b9a8f; --ok:#3dcc8a; --bad:#e85d5d; --line:#2a3530; --acc:#c9893a; --warn:#e6b450; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 15px/1.45 "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+    header { padding: 16px 20px; border-bottom: 1px solid var(--line); display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    h1 { font-size: 18px; margin: 0; }
+    h2 { font-size: 15px; margin: 0 0 8px; }
+    .mut { color: var(--mut); }
+    .ok { color: var(--ok); }
+    .warn { color: var(--warn); }
+    .bad { color: var(--bad); }
+    button { background: #24332a; color: var(--ink); border: 1px solid #3a4f42; border-radius: 6px; padding: 8px 14px; cursor: pointer; }
+    button:hover { border-color: var(--acc); }
+    main { padding: 16px 20px 48px; display: grid; gap: 16px; }
+    section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { text-align: left; padding: 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--mut); }
+    .pill { font-size: 11px; letter-spacing: .06em; border: 1px solid var(--line); padding: 1px 7px; border-radius: 999px; color: var(--mut); }
+    .pill.on { color: var(--ok); border-color: var(--ok); }
+    .pill.off { color: var(--warn); border-color: var(--warn); }
+    input, textarea { width: 100%; background: #101610; color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 8px; font: inherit; margin: 0 0 8px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: 1.2fr .8fr; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    .pre { white-space: pre-wrap; font-size: 13px; color: var(--mut); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Virtual Assistant</h1>
+    <span class="mut">Mountain Top Tech · SAR Farms</span>
+    <span id="acct" class="mut"></span>
+    <span id="send" class="pill off">send locked</span>
+    <span id="when" class="mut"></span>
+    <button id="refresh" type="button">Refresh</button>
+    <span id="status" class="mut"></span>
+  </header>
+  <main>
+    <p class="mut" style="margin:0">
+      Dedicated desk for <strong>MTTech_SARFarm@outlook.com</strong>.
+      Inbound is logged here. Outbound is queued. Nothing leaves until send is unlocked <em>and</em> a queued item is fired.
+      This is not the trading desk (8767–8770).
+    </p>
+    <div class="grid">
+      <section>
+        <h2>Inbox</h2>
+        <div id="inbox" class="mut">—</div>
+      </section>
+      <section>
+        <h2>Compose (queues, does not send)</h2>
+        <form id="compose">
+          <input name="to" placeholder="To" required />
+          <input name="subject" placeholder="Subject" required />
+          <textarea name="body" rows="6" placeholder="Body"></textarea>
+          <button type="submit">Queue</button>
+        </form>
+        <p id="cerr" class="bad"></p>
+      </section>
+    </div>
+    <section>
+      <h2>Queued outbound</h2>
+      <div id="queued" class="mut">—</div>
+    </section>
+    <section>
+      <h2>Sent / logged outbound</h2>
+      <div id="sent" class="mut">—</div>
+    </section>
+    <section>
+      <h2>Action log</h2>
+      <div id="actions" class="mut">—</div>
+    </section>
+  </main>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    function rows(list, cols) {
+      if (!list || !list.length) return "<p class='mut'>empty</p>";
+      const head = cols.map(c => "<th>" + c[0] + "</th>").join("");
+      const body = list.map(r => "<tr>" + cols.map(c => {
+        const v = r[c[1]];
+        const t = (v == null ? "" : String(v)).slice(0, 220);
+        return "<td>" + t.replace(/[<>&]/g, s => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[s])) + "</td>";
+      }).join("") + "</tr>").join("");
+      return "<table><thead><tr>" + head + "</tr></thead><tbody>" + body + "</tbody></table>";
+    }
+    async function load() {
+      $("status").textContent = "loading";
+      const r = await fetch("/api/state", { cache: "no-store" });
+      const s = await r.json();
+      const c = s.control || {};
+      $("acct").textContent = c.account || "";
+      const lock = $("send");
+      if (c.may_send) { lock.textContent = "send unlocked"; lock.className = "pill on"; }
+      else { lock.textContent = "send locked"; lock.className = "pill off"; }
+      $("when").textContent = (s.heartbeat && s.heartbeat.ts) || "";
+      $("inbox").innerHTML = rows(s.inbox, [["When","ts"],["From","from"],["Subject","subject"],["Status","status"]]);
+      $("queued").innerHTML = rows(s.queued, [["When","ts"],["To","to"],["Subject","subject"],["Id","id"]]);
+      $("sent").innerHTML = rows(s.sent, [["When","ts"],["To","to"],["Subject","subject"],["Status","status"]]);
+      $("actions").innerHTML = rows(s.actions, [["When","ts"],["Kind","kind"],["Subject","subject"],["Id","mail_id"]]);
+      $("status").textContent = "in " + s.counts.in + " · queued " + s.counts.queued + " · out " + s.counts.out;
+    }
+    $("refresh").onclick = () => load().catch(e => $("status").textContent = e.message);
+    $("compose").onsubmit = async (ev) => {
+      ev.preventDefault();
+      $("cerr").textContent = "";
+      const fd = new FormData(ev.target);
+      const body = { to: fd.get("to"), subject: fd.get("subject"), body: fd.get("body") };
+      const r = await fetch("/api/compose", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+      const j = await r.json();
+      if (!j.ok) { $("cerr").textContent = j.error || "queue failed"; return; }
+      ev.target.reset();
+      load();
+    };
+    load();
+    setInterval(() => load().catch(() => {}), 15000);
+  </script>
+</body>
+</html>

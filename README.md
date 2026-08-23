@@ -3,7 +3,9 @@
 Service of **Mountain Top Tech**, a subdivision of **Something Ain't Right Farms** (SAR Farms).
 After-hours AI booking desk for Sagle / Sandpoint / Bonner County.
 
-**Review URL:** https://raw.githack.com/brian2187/backwoods-tech-support/main/index.html  
+**Travel pickup (Alien):** start at **[docs/TRAVEL.md](docs/TRAVEL.md)**.
+
+**Review URL:** https://raw.githack.com/brian2187/backwoods-tech-support/main/index.html
 **Shop login:** https://raw.githack.com/brian2187/backwoods-tech-support/main/login.html
 
 **Virtual Assistant email:** `MTTech_SARFarm@outlook.com`
@@ -14,3 +16,4 @@ Shop pages (`shop-*.html`) are unlisted previews behind a logon name only (`andy
 
 Prepare only until Brian authorizes outreach, Stripe, or a live number.
 
+Do **not** add a GitHub Pages Actions workflow. Enable Pages by hand in Settings if you want github.io. Until then, use raw.githack.

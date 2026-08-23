@@ -1,0 +1,15 @@
+# Local review hacks (Dell only)
+_preview*
+_view*
+_all3.html
+
+# Mail desk runtime
+aibiz/data/
+aibiz/preview-profiles/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
