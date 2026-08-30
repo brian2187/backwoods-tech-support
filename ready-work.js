@@ -3,7 +3,35 @@
   const names = {
     andy: "Andy The Handyman",
     sherman: "Professional Handyman Sandpoint",
-    case: "Case Handyman & Property Maintenance"
+    case: "Case Handyman & Property Maintenance",
+    clawson: "Clawson Electric",
+    nce: "North County Electric",
+    panhandle: "Panhandle Electric LLC",
+    sageland: "Sageland Electric",
+    heritage: "Heritage North Electric",
+    "7b": "7B Handyman",
+    garage: "Sandpoint Garage Doors",
+    nutech: "Nu-Tech Heating and Cooling",
+    believe: "Believe Plumbing",
+    rons: "Ron's Electric",
+    mobileone: "Mobile One Roadside",
+    aqua: "Aqua Plumbing",
+    age: "Age Heating & Cooling",
+    highmark: "High Mark Heating & Cooling",
+    "premier-pond": "Premier Tire Ponderay",
+    "premier-pr": "Premier Tire Priest River",
+    selkirk: "Selkirk Offroad",
+    gription: "Gription Tire Pros",
+    bitterroot: "Bitterroot Plumbing",
+    nidplumb: "North Idaho Plumbing",
+    smb: "SMB Electric",
+    emmert: "Emmert Electric",
+    stove: "Sagle Stove Shop",
+    sunrize: "SunRize Mechanical",
+    pumpline: "Pumpline",
+    stinker: "Little Stinker Septic",
+    paint: "Satisfaction Painting",
+    als: "Al's Towing"
   };
   const name = names[shop] || "your shop";
   const mail =
