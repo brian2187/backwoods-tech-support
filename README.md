@@ -1,11 +1,12 @@
-# AIBizSupport
+# Virtual Assistant
 
 Service of **Mountain Top Tech**, a subdivision of **Something Ain't Right Farms** (SAR Farms).
 After-hours AI booking desk for Sagle / Sandpoint / Bonner County.
 
-**Review URL:** https://raw.githack.com/brian2187/backwoods-tech-support/main/index.html
+**Public site:** https://brian2187.github.io/backwoods-tech-support/
+**Less Traveled:** https://brian2187.github.io/backwoods-tech-support/less-traveled/
 
-**AIBizSupport email:** `MTTech_SARFarm@outlook.com`
+**Virtual Assistant email:** `MTTech_SARFarm@outlook.com`
 
-Prepare only until Brian authorizes outreach, Stripe, or a live number.
+Enroll on the homepage. An enrollment mail is the signup. We issue a dedicated number and tell Brian.
 

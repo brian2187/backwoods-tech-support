@@ -1633,3 +1633,58 @@ body.sit .map-pop a { color: var(--pine); }
   outline-offset: 1px;
   border-color: var(--pine);
 }
+
+.journal-feed {
+  display: grid;
+  gap: .9rem;
+  margin: .4rem 0 1.6rem;
+}
+.journal-item {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: .9rem 1.05rem 1rem;
+}
+.journal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem .55rem;
+  align-items: center;
+  margin: 0 0 .35rem;
+  font-size: .8rem;
+  color: var(--mute);
+}
+.journal-item h2 {
+  font-family: var(--serif);
+  font-size: 1.22rem;
+  font-weight: 650;
+  margin: 0 0 .35rem;
+  line-height: 1.25;
+}
+.journal-item h2 a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.journal-item .sum {
+  margin: 0 0 .55rem;
+  color: var(--ink);
+}
+.journal-item .orig {
+  margin: 0;
+  font-size: .88rem;
+}
+.journal-item .orig a { color: var(--pine); }
+.kind-tag {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  padding: .08rem .4rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+}
+.kind-news { color: var(--pine); border-color: var(--pine); }
+.kind-x, .kind-facebook, .kind-reddit { color: var(--ink); }
+.kind-journal { color: var(--gold); border-color: var(--gold); }
