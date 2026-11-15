@@ -1598,3 +1598,38 @@ body.sit .map-pop a { color: var(--pine); }
 .helper-list li:last-child { border-bottom: 0; }
 .helper-list span { display: block; color: var(--mute); font-size: .8rem; }
 .step-adj { display: flex; justify-content: space-between; gap: .6rem; margin-top: .8rem; font-size: .9rem; }
+
+.feedback-form {
+  max-width: 36rem;
+  margin: 1.2rem 0 2rem;
+  display: grid;
+  gap: .85rem;
+}
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  font-size: .88rem;
+  color: var(--mute);
+  font-weight: 600;
+}
+.feedback-form label > span { white-space: nowrap; }
+.feedback-form .opt { font-weight: 400; }
+.feedback-form input,
+.feedback-form textarea {
+  font: inherit;
+  font-weight: 400;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: .55rem .7rem;
+  background: var(--paper);
+  width: 100%;
+}
+.feedback-form textarea { resize: vertical; min-height: 8rem; }
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: 2px solid rgba(28, 92, 74, .35);
+  outline-offset: 1px;
+  border-color: var(--pine);
+}
