@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regional Info — Sagle · Sandpoint · Bonner County</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="static/theme.css?v=28">
+  
+<link rel="stylesheet" href="static/vendor/maplibre-gl.css">
+
+</head>
+<body class="sit">
+
+  
+  <header class="bar">
+    <nav class="bar-nav" aria-label="Primary">
+  
+  <a class="brand" href="index.html">Less Traveled</a>
+  
+  <div class="bar-links">
+    <a href="land.html">Homestead</a>
+    <a href="situation.html">Regional</a>
+    <a href="living.html">Living</a>
+    <a href="entertainment.html">Calendar</a>
+    <a href="journal.html">Journal</a>
+    <a href="showup.html">Directory</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+  </header>
+  
+  <main class="wrap wrap-sit">
+    
+    <div class="pagehead">
+      <p class="kicker">Bonner / Boundary / Kootenai</p>
+      <h1>Regional Info</h1>
+      <p class="lede">Fires, air quality, lakes, and incidents. Shows and concerts live on Calendar.</p>
+    </div>
+    
+    
+
+<p class="meta">Updated 2026-11-15T13:30:03Z · NIFC, USGS, NWS, AirNow, Nixle, SNOTEL, Idaho 511, WSDOT, OpenSky</p>
+
+<div class="sit-grid">
+  <section class="sit-map-col">
+    <div class="sit-frame">
+      <div id="board-map"></div>
+      <form class="sit-layers" id="sit-layers">
+        <p>Layers</p>
+        <div class="sit-base">
+          <button type="button" data-base="streets">Streets</button>
+          <button type="button" data-base="sat">Satellite</button>
+          <button type="button" data-base="topo" class="on">Topo</button>
+        </div>
+        <p class="sit-layer-h">Local detail</p>
+        <label><input type="checkbox" data-layer="region" checked> Region box</label>
+        <label><input type="checkbox" data-layer="fires" checked> Fires</label>
+        <label><input type="checkbox" data-layer="perimeters" checked> Perimeters</label>
+        <label><input type="checkbox" data-layer="lakes" checked> Lakes</label>
+        <label><input type="checkbox" data-layer="snowpack" checked> Snowpack</label>
+        <label><input type="checkbox" data-layer="roads" checked> Road work</label>
+        <label><input type="checkbox" data-layer="nixle" checked> Nixle active</label>
+        <label><input type="checkbox" data-layer="nixle-closed"> Nixle closed</label>
+        <p class="sit-layer-h">Follows the view</p>
+        <label><input type="checkbox" data-layer="radar" checked> Rain / snow</label>
+        <label><input type="checkbox" data-layer="aqi"> Air quality</label>
+        <label><input type="checkbox" data-layer="planes" checked> Planes</label>
+        <label><input type="checkbox" data-layer="quakes" checked> Earthquakes</label>
+        <p class="sit-layer-h">Land &amp; use</p>
+        <label><input type="checkbox" data-layer="publicland"> Public land</label>
+        <label><input type="checkbox" data-layer="flood"> Flood hazard</label>
+        <label><input type="checkbox" data-layer="wetlands"> Wetlands</label>
+        <label><input type="checkbox" data-layer="hunt"> Hunt units</label>
+        <p class="sit-layer-h">Travel &amp; radio</p>
+        <label><input type="checkbox" data-layer="airports" checked> Airports / strips</label>
+        <label><input type="checkbox" data-layer="towers"> Radio / lookouts</label>
+      </form>
+      <div class="sit-legends" id="sit-legends">
+        <div class="sit-leg" data-leg="aqi" hidden>
+          <p>Air quality — EPA AQI</p>
+          <ul>
+            <li><i class="aqi-g"></i> 0–50 Good</li>
+            <li><i class="aqi-m"></i> 51–100 Moderate</li>
+            <li><i class="aqi-s"></i> 101–150 Sensitive groups</li>
+            <li><i class="aqi-u"></i> 151–200 Unhealthy</li>
+            <li><i class="aqi-v"></i> 201–300 Very unhealthy</li>
+            <li><i class="aqi-h"></i> 301+ Hazardous</li>
+          </ul>
+        </div>
+        <div class="sit-leg" data-leg="publicland" hidden>
+          <p>Public land — who manages the ground</p>
+          <ul>
+            <li><i class="sma-usfs"></i> Forest Service</li>
+            <li><i class="sma-blm"></i> BLM</li>
+            <li><i class="sma-state"></i> State</li>
+            <li><i class="sma-nps"></i> National Park Service</li>
+            <li><i class="sma-fws"></i> Fish &amp; Wildlife</li>
+            <li><i class="sma-bia"></i> Tribal / BIA</li>
+            <li><i class="sma-dod"></i> Defense</li>
+            <li><i class="sma-priv"></i> Private / unknown</li>
+          </ul>
+        </div>
+        <div class="sit-leg" data-leg="hunt" hidden>
+          <p>Hunt units — Game Management Units (GMU)</p>
+          <p class="sit-leg-note">A GMU is Idaho Fish &amp; Game’s hunting district. Seasons, weapon type, tags, and bag limits are set by unit, not by county.</p>
+          <ul>
+            <li><i class="gmu-1"></i> GMU 1 · stripes</li>
+            <li><i class="gmu-2"></i> GMU 2 · dots</li>
+            <li><i class="gmu-3"></i> GMU 3 · stripes</li>
+            <li><i class="gmu-4"></i> GMU 4 · dots</li>
+            <li><i class="gmu-4a"></i> GMU 4A · stripes</li>
+          </ul>
+          <p class="sit-leg-note">Greens plus stripe or dot so neighbors don’t blend. This box is the Panhandle elk zone. Click a unit for details.</p>
+        </div>
+        <div class="sit-leg" data-leg="quakes" hidden>
+          <p>Earthquakes — felt reports (USGS)</p>
+          <ul>
+            <li><i class="mmi-2"></i> Weak</li>
+            <li><i class="mmi-4"></i> Light</li>
+            <li><i class="mmi-5"></i> Moderate</li>
+            <li><i class="mmi-6"></i> Strong</li>
+            <li><i class="eq-epi"></i> Epicenter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="sit-rail sit-news">
+    <div class="sit-nixle">
+      <h2>Nixle — active</h2>
+      <p class="hint">Open sheriff advisories. Text your ZIP to 888777.</p>
+      <ul>
+        
+        <li>
+          <span class="src">Nixle · BCSO · Advisory · Nov 15</span>
+          <a href="https://nixle.us/HTJN5" rel="noopener" target="_blank">Missing Juvenile Jill Gooding Located</a>
+        </li>
+        
+        <li>
+          <span class="src">Nixle · BCSO · Advisory · Nov 12</span>
+          <a href="https://nixle.us/HTCQ9" rel="noopener" target="_blank">Runaway Jill Gooding</a>
+        </li>
+        
+        <li>
+          <span class="src">Nixle · Boundary SO · Community · Nov 12</span>
+          <a href="https://nixle.us/HTBYH" rel="noopener" target="_blank">Dense Fog Advisory until 07:00AM Thursday</a>
+        </li>
+        
+        <li>
+          <span class="src">Nixle · BCSO · Advisory · Nov 10</span>
+          <a href="https://nixle.us/HT8W9" rel="noopener" target="_blank">Clark Fork residents included in the Wednesday shutoff, Boil Water after your service is back on until notified</a>
+        </li>
+        
+        <li>
+          <span class="src">Nixle · BCSO · Advisory · Nov 10</span>
+          <a href="https://nixle.us/HT8KP" rel="noopener" target="_blank">Clark Fork West of Main and North of 5th water shutoff Wednesday Nov 11th</a>
+        </li>
+        
+        <li>
+          <span class="src">Nixle · BCSO · Advisory · Nov 8</span>
+          <a href="https://nixle.us/HT4JR" rel="noopener" target="_blank">6900 Spirit Lake Cutoff</a>
+        </li>
+        
+      </ul>
+      <h2>Nixle — closed</h2>
+      <p class="hint">Resolved or older notices, newest first.</p>
+      <ul>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 31</span>
+          <a href="https://nixle.us/HSAKR" rel="noopener" target="_blank">Hwy 41 at mile 23.7 near Chocktaw Ln in Blanchard is back open. Please drive safely.</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 30</span>
+          <a href="https://nixle.us/HS86R" rel="noopener" target="_blank">Accident has been cleared in the area of the 4000 block of Rapid Lightning Road, Sandpoint</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 24</span>
+          <a href="https://nixle.us/HRH5B" rel="noopener" target="_blank">The 1900 Block of Sagle Rd is back open</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 22</span>
+          <a href="https://nixle.us/HR9KX" rel="noopener" target="_blank">The area of Hwy 95 at Brisboys Rd in Sagle is now open.</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 16</span>
+          <a href="https://nixle.us/HQDT7" rel="noopener" target="_blank">The area of Hwy 95 at Dufort Rd in Sagle is now clear. Please drive safely.</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 9</span>
+          <a href="https://nixle.us/HNZZ5" rel="noopener" target="_blank">Highway 95 at Blacktail Rd in Cocolalla is back open</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 9</span>
+          <a href="https://nixle.us/HNYWM" rel="noopener" target="_blank">Clark Fork Water Info:</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 2</span>
+          <a href="https://nixle.us/HNLRH" rel="noopener" target="_blank">Runaway out of Priest Lake Located</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 2</span>
+          <a href="https://nixle.us/HNL63" rel="noopener" target="_blank">Clark Fork Boil Water Notice</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Oct 2</span>
+          <a href="https://nixle.us/HNGG5" rel="noopener" target="_blank">The 800 Block of N Kootenai Rd Back Open</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Sep 25</span>
+          <a href="https://nixle.us/HMQQ9" rel="noopener" target="_blank">Dover City Street Closure</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Sep 25</span>
+          <a href="https://nixle.us/HMFWR" rel="noopener" target="_blank">Clark Fork Water Shutoff Monday 8-5</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Sep 18</span>
+          <a href="https://nixle.us/HMGXH" rel="noopener" target="_blank">Highway 200 near Eagen Mountain Dr</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Sep 16</span>
+          <a href="https://nixle.us/HLZ5M" rel="noopener" target="_blank">Peak sand and gravel in Dover will be blasting between 1pm - 2pm</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · BCSO · Advisory · Sep 16</span>
+          <a href="https://nixle.us/HLT3D" rel="noopener" target="_blank">Highway 95 just south of W Elmira Rd, is back open, please use caution in the area for responders on scene.</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · Boundary SO · Community · Aug 26</span>
+          <a href="https://nixle.us/HK7HX" rel="noopener" target="_blank">Heat Advisory until 10:00PM Friday</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · Boundary SO · Community · Aug 26</span>
+          <a href="https://nixle.us/HK7EK" rel="noopener" target="_blank">Fire Weather Watch until 11:00AM Sunday</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · Boundary SO · Community · Aug 26</span>
+          <a href="https://nixle.us/HKBNZ" rel="noopener" target="_blank">Heat Advisory until 07:00PM Saturday</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · Boundary SO · Community · Aug 3</span>
+          <a href="https://nixle.us/HH9X9" rel="noopener" target="_blank">Fire Weather Watch until 11:00PM Saturday</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · Boundary SO · Community · Jul 27</span>
+          <a href="https://nixle.us/HGNGP" rel="noopener" target="_blank">Fire Weather Watch until 09:00PM Saturday</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · Boundary SO · Community · Jul 27</span>
+          <a href="https://nixle.us/HGGTK" rel="noopener" target="_blank">Heat Advisory until 09:00PM Thursday</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · Boundary SO · Community · Jul 27</span>
+          <a href="https://nixle.us/HGFX3" rel="noopener" target="_blank">Heat Advisory until 09:00PM Wednesday</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · Boundary SO · Community · Jun 11</span>
+          <a href="https://nixle.us/HCXZ9" rel="noopener" target="_blank">Frost Advisory until 08:00AM Monday</a>
+        </li>
+        
+        <li class="is-closed">
+          <span class="src">Nixle · Boundary SO · Community · Jun 11</span>
+          <a href="https://nixle.us/HCTBK" rel="noopener" target="_blank">Frost Advisory until 11:00AM Sunday</a>
+        </li>
+        
+      </ul>
+    </div>
+    <h2>Regional issues</h2>
+    <p class="hint">Newest first. Fires, law enforcement, weather, wildlife. Shows belong on Calendar.</p>
+    <ul>
+      
+      <li>
+        <span class="src">News · Reader · Nov 12, 2026</span>
+        <a href="https://sandpointreader.com/idaho-democrats-gain-ground-in-big-election-flips/" rel="noopener" target="_blank">Idaho Democrats gain ground in big election flips</a>
+      </li>
+      
+    </ul>
+  </aside>
+</div>
+
+<div class="sit-strip sit-lakes">
+  
+  <div class="sit-cell lake-card">
+    <h3>Pend Oreille</h3>
+    
+    <p class="big">2057.95 ft</p>
+    <p>pool · gage 57.95</p>
+    
+  </div>
+  
+  <div class="sit-cell lake-card">
+    <h3>Priest</h3>
+    
+    <p class="big">2435.31 ft</p>
+    <p>pool · gage 0.67</p>
+    
+  </div>
+  
+  <div class="sit-cell lake-card">
+    <h3>CDA</h3>
+    
+    <p class="big">2124.68 ft</p>
+    <p>pool · gage 24.68</p>
+    
+  </div>
+  
+  <div class="sit-cell wx-card">
+    <h3>Weather</h3>
+    
+    <div class="wx-alert is-clear">No active NWS weather alerts for Bonner / Boundary.</div>
+    
+    
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <div class="wx-panes">
+      <div class="wx-pane">
+        <span class="wx-ico" aria-hidden="true"><svg viewBox="0 0 48 48"><path fill="currentColor" opacity=".45" d="M12 22a8 8 0 0 1 14.5-4A7 7 0 1 1 28 32H14a7 7 0 0 1-2-10z"/><path fill="currentColor" d="M18 20a10 10 0 0 1 18-2.8A8 8 0 1 1 37.5 34H20a8 8 0 0 1-2-14z"/></svg></span>
+        <div>
+          <p class="wx-when">Now</p>
+          <p class="big">39°F</p>
+          <p>Cloudy · 12 mph</p>
+          <p class="wx-src">NWS · KSZT</p>
+        </div>
+      </div>
+      <div class="wx-pane">
+        <span class="wx-ico" aria-hidden="true"><svg viewBox="0 0 48 48"><path fill="currentColor" d="M16 16a10 10 0 0 1 18-2.8A8 8 0 1 1 35.5 28H18a8 8 0 0 1-2-12z"/><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M12 34h24M10 39h20M16 44h18"/></svg></span>
+        <div>
+          <p class="wx-when">Overnight</p>
+          <p class="big">36°F</p>
+          <p>Patchy Fog · 1 mph NE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="sit-strip sit-lakes">
+  
+  <div class="sit-cell">
+    <h3>Schweitzer</h3>
+    <p class="big">2 in</p>
+    <p>SNOTEL · snow · SWE 0.8 in · 6090 ft</p>
+  </div>
+  
+  <div class="sit-cell">
+    <h3>Bear Mtn</h3>
+    <p class="big">3 in</p>
+    <p>SNOTEL · snow · SWE 1.6 in · 5460 ft</p>
+  </div>
+  
+  <div class="sit-cell">
+    <h3>Hidden Lk</h3>
+    <p class="big">2 in</p>
+    <p>SNOTEL · snow · SWE 0.6 in · 5000 ft</p>
+  </div>
+  
+  <div class="sit-cell">
+    <h3>Myrtle Cr</h3>
+    <p class="big">0 in</p>
+    <p>SNOTEL · snow · SWE 0.1 in · 3540 ft</p>
+  </div>
+  
+  <div class="sit-cell">
+    <h3>Hawkins</h3>
+    <p class="big">—</p>
+    <p>SNOTEL · snow</p>
+  </div>
+  
+  <div class="sit-cell">
+    <h3>Garver</h3>
+    <p class="big">—</p>
+    <p>SNOTEL · snow</p>
+  </div>
+  
+  <div class="sit-cell">
+    <h3>Bunchgrass</h3>
+    <p class="big">—</p>
+    <p>SNOTEL · snow</p>
+  </div>
+  
+</div>
+
+
+<div class="sit-panel sit-fires">
+  <h2>Road work</h2>
+  
+  <ul class="sit-news">
+    
+    <li>
+      <span class="src">Idaho 511 · Colburn Culver Rd · closed · Nov 10, 2026</span>
+      <a href="https://511.idaho.gov/" rel="noopener" target="_blank">Major Night Time Bridge Repair on Colburn Culver Rd Both Directions from N Center Valley Rd to Evergreen Rd. All lanes closed. 3/30/2026 5:00 AM PT to 11/30/2026 3:00 PM PT Activities: Consider Alternative Route, Use Cau</a>
+    </li>
+    
+    <li>
+      <span class="src">Idaho 511 · SH-54 · Oct 29, 2026</span>
+      <a href="https://511.idaho.gov/" rel="noopener" target="_blank">Road construction on SH-54 Both Directions from SH-41 to N Greystone Rd. 10/29/2026 6:59 AM PT to 11/21/2026 6:59 AM PT Mon, Tue, Wed, Thu, Fri, Sat, Sun: Active all day</a>
+    </li>
+    
+    <li>
+      <span class="src">Nixle · BCSO · reopened · Oct 31</span>
+      <a href="https://nixle.us/HSAKR" rel="noopener" target="_blank">Hwy 41 at mile 23.7 near Chocktaw Ln in Blanchard is back open. Please drive safely.</a>
+    </li>
+    
+    <li>
+      <span class="src">Nixle · BCSO · reopened · Oct 30</span>
+      <a href="https://nixle.us/HS86R" rel="noopener" target="_blank">Accident has been cleared in the area of the 4000 block of Rapid Lightning Road, Sandpoint</a>
+    </li>
+    
+    <li>
+      <span class="src">Nixle · BCSO · reopened · Oct 22</span>
+      <a href="https://nixle.us/HR9KX" rel="noopener" target="_blank">The area of Hwy 95 at Brisboys Rd in Sagle is now open.</a>
+    </li>
+    
+    <li>
+      <span class="src">Nixle · BCSO · reopened · Oct 16</span>
+      <a href="https://nixle.us/HQDT7" rel="noopener" target="_blank">The area of Hwy 95 at Dufort Rd in Sagle is now clear. Please drive safely.</a>
+    </li>
+    
+    <li>
+      <span class="src">Nixle · BCSO · reopened · Oct 9</span>
+      <a href="https://nixle.us/HNZZ5" rel="noopener" target="_blank">Highway 95 at Blacktail Rd in Cocolalla is back open</a>
+    </li>
+    
+    <li>
+      <span class="src">Nixle · BCSO · reopened · Sep 25</span>
+      <a href="https://nixle.us/HMQQ9" rel="noopener" target="_blank">Dover City Street Closure</a>
+    </li>
+    
+    <li>
+      <span class="src">Nixle · BCSO · reopened · Sep 18</span>
+      <a href="https://nixle.us/HMGXH" rel="noopener" target="_blank">Highway 200 near Eagen Mountain Dr</a>
+    </li>
+    
+    <li>
+      <span class="src">Nixle · BCSO · reopened · Sep 16</span>
+      <a href="https://nixle.us/HLT3D" rel="noopener" target="_blank">Highway 95 just south of W Elmira Rd, is back open, please use caution in the area for responders on scene.</a>
+    </li>
+    
+  </ul>
+  
+</div>
+
+<div class="sit-panel sit-fires">
+  <h2>Fire watch</h2>
+  <div class="fire-row">
+    
+    
+    <article class="fire-card">
+      <div class="ico-fire is-contained"><span class="ico-fire-inner"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 2c2 5 3 8 3 11 2-3 6-1 6 5a9 9 0 1 1-18 0c0-4 3-8 6-11-1 5 3 6 3-5z"/></svg></span></div>
+      <div>
+        <h3>Silver</h3>
+        <p>NIFC · Boundary · 2,593 ac · 100%</p>
+        <p class="links">
+          <a href="https://bonnercountydailybee.com/news/2026/aug/30/regions-wildfires-remain-active-keep-crews-busy/" rel="noopener" target="_blank">Bee: Silver Fire in the Pack River country</a><a href="https://inciweb.wildfire.gov/" rel="noopener" target="_blank">Silver on InciWeb (search)</a>
+        </p>
+      </div>
+    </article>
+    
+    
+  </div>
+</div>
+
+<script type="application/json" id="fires-data">[{"name": "Silver", "county": "Boundary", "state": "US-ID", "acres": 2593, "contained": 100, "cause": "Natural", "id": "2026-IDIPF-000697", "note": "25 Miles NW from SANDPOINT, ID", "lat": 48.6288732966762, "lon": -116.660297139694, "origin": "NIFC", "source": "NIFC", "active": false, "inciweb": "https://inciweb.wildfire.gov/", "search": "https://www.google.com/search?q=Silver+fire+Idaho+InciWeb", "stories": [{"title": "Bee: Silver Fire in the Pack River country", "url": "https://bonnercountydailybee.com/news/2026/aug/30/regions-wildfires-remain-active-keep-crews-busy/"}, {"title": "Silver on InciWeb (search)", "url": "https://inciweb.wildfire.gov/"}]}]</script>
+<script type="application/json" id="news-data">[{"title": "Idaho Democrats gain ground in big election flips", "link": "https://sandpointreader.com/idaho-democrats-gain-ground-in-big-election-flips/", "origin": "News", "source": "Reader", "when": "Thu, 12 Nov 2026 00:55:11 +0000", "when_short": "Nov 12, 2026", "when_ts": 1794444911.0, "lat": 48.2766, "lon": -116.5535}]</script>
+<script type="application/json" id="alerts-data">[]</script>
+<script type="application/json" id="lakes-data">[{"name": "Lake Pend Oreille", "short": "Pend Oreille", "site": "12392500", "lat": 48.14, "lon": -116.37, "gage_ft": 57.95, "pool_ft": 2057.95, "unit": "pool", "when": "2026-10-14T15:15:00.000-07:00", "link": "https://waterdata.usgs.gov/monitoring-location/USGS-12392500/", "note": "Hope gage + 2000 ft NGVD. Full pool ~2062.5."}, {"name": "Priest Lake", "short": "Priest", "site": "12393000", "lat": 48.574, "lon": -116.898, "gage_ft": 0.67, "pool_ft": 2435.31, "unit": "pool", "when": "2026-11-14T01:30:00.000-08:00", "link": "https://waterdata.usgs.gov/monitoring-location/USGS-12393000/", "note": "Outlet gage + 2434.64 ft NGVD. Summer target 3.0\u20133.5 ft gage (~2438 pool)."}, {"name": "Coeur d'Alene Lake", "short": "CDA", "site": "12415500", "lat": 47.52, "lon": -116.83, "gage_ft": 24.68, "pool_ft": 2124.68, "unit": "pool", "when": "2026-11-15T04:45:00.000-08:00", "link": "https://waterdata.usgs.gov/monitoring-location/USGS-12415500/", "note": "CDA gage + 2100 ft NGVD. Summer pool ~2128."}]</script>
+<script type="application/json" id="nixle-data">[{"title": "Missing Juvenile Jill Gooding Located", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "10 hours, 6 minutes ago", "when_short": "Nov 15", "when_ts": 1794713407.828364, "active": true, "link": "https://nixle.us/HTJN5", "lat": null, "lon": null}, {"title": "Runaway Jill Gooding", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "2 days, 22 hours ago", "when_short": "Nov 12", "when_ts": 1794497407.828364, "active": true, "link": "https://nixle.us/HTCQ9", "lat": null, "lon": null}, {"title": "Dense Fog Advisory until 07:00AM Thursday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "3 days, 7 hours ago", "when_short": "Nov 12", "when_ts": 1794465008.081642, "active": true, "link": "https://nixle.us/HTBYH", "lat": null, "lon": null}, {"title": "Clark Fork residents included in the Wednesday shutoff, Boil Water after your service is back on until notified", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "4 days, 18 hours ago", "when_short": "Nov 10", "when_ts": 1794339007.828364, "active": true, "link": "https://nixle.us/HT8W9", "lat": 48.1471, "lon": -116.178}, {"title": "Clark Fork West of Main and North of 5th water shutoff Wednesday Nov 11th", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "4 days, 21 hours ago", "when_short": "Nov 10", "when_ts": 1794328207.828364, "active": true, "link": "https://nixle.us/HT8KP", "lat": 48.1471, "lon": -116.178}, {"title": "6900 Spirit Lake Cutoff", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "6 days, 18 hours ago", "when_short": "Nov 8", "when_ts": 1794166207.828364, "active": true, "link": "https://nixle.us/HT4JR", "lat": null, "lon": null}, {"title": "Hwy 41 at mile 23.7 near Chocktaw Ln in Blanchard is back open. Please drive safely.", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "2 weeks, 1 day ago", "when_short": "Oct 31", "when_ts": 1793453407.828364, "active": false, "link": "https://nixle.us/HSAKR", "lat": null, "lon": null}, {"title": "Accident has been cleared in the area of the 4000 block of Rapid Lightning Road, Sandpoint", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "2 weeks, 2 days ago", "when_short": "Oct 30", "when_ts": 1793367007.828364, "active": false, "link": "https://nixle.us/HS86R", "lat": 48.352, "lon": -116.398}, {"title": "The 1900 Block of Sagle Rd is back open", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "3 weeks, 1 day ago", "when_short": "Oct 24", "when_ts": 1792848607.828364, "active": false, "link": "https://nixle.us/HRH5B", "lat": 48.1729, "lon": -116.5521}, {"title": "The area of Hwy 95 at Brisboys Rd in Sagle is now open.", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "3 weeks, 3 days ago", "when_short": "Oct 22", "when_ts": 1792675807.828364, "active": false, "link": "https://nixle.us/HR9KX", "lat": 48.1729, "lon": -116.5521}, {"title": "The area of Hwy 95 at Dufort Rd in Sagle is now clear. Please drive safely.", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "1 month ago", "when_short": "Oct 16", "when_ts": 1792157407.828364, "active": false, "link": "https://nixle.us/HQDT7", "lat": 48.148, "lon": -116.585}, {"title": "Highway 95 at Blacktail Rd in Cocolalla is back open", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "1 month, 1 week ago", "when_short": "Oct 9", "when_ts": 1791552607.828364, "active": false, "link": "https://nixle.us/HNZZ5", "lat": 48.108, "lon": -116.593}, {"title": "Clark Fork Water Info:", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "1 month, 1 week ago", "when_short": "Oct 9", "when_ts": 1791552607.828364, "active": false, "link": "https://nixle.us/HNYWM", "lat": 48.1471, "lon": -116.178}, {"title": "Runaway out of Priest Lake Located", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "1 month, 2 weeks ago", "when_short": "Oct 2", "when_ts": 1790947807.828364, "active": false, "link": "https://nixle.us/HNLRH", "lat": 48.574, "lon": -116.898}, {"title": "Clark Fork Boil Water Notice", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "1 month, 2 weeks ago", "when_short": "Oct 2", "when_ts": 1790947807.828364, "active": false, "link": "https://nixle.us/HNL63", "lat": 48.1471, "lon": -116.178}, {"title": "The 800 Block of N Kootenai Rd Back Open", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "1 month, 2 weeks ago", "when_short": "Oct 2", "when_ts": 1790947807.828364, "active": false, "link": "https://nixle.us/HNGG5", "lat": 48.31, "lon": -116.513}, {"title": "Dover City Street Closure", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "1 month, 3 weeks ago", "when_short": "Sep 25", "when_ts": 1790343007.828364, "active": false, "link": "https://nixle.us/HMQQ9", "lat": 48.253, "lon": -116.6016}, {"title": "Clark Fork Water Shutoff Monday 8-5", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "1 month, 3 weeks ago", "when_short": "Sep 25", "when_ts": 1790343007.828364, "active": false, "link": "https://nixle.us/HMFWR", "lat": 48.1471, "lon": -116.178}, {"title": "Highway 200 near Eagen Mountain Dr", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "1 month, 4 weeks ago", "when_short": "Sep 18", "when_ts": 1789738207.828364, "active": false, "link": "https://nixle.us/HMGXH", "lat": null, "lon": null}, {"title": "Peak sand and gravel in Dover will be blasting between 1pm - 2pm", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "2 months ago", "when_short": "Sep 16", "when_ts": 1789565407.828364, "active": false, "link": "https://nixle.us/HLZ5M", "lat": 48.253, "lon": -116.6016}, {"title": "Highway 95 just south of W Elmira Rd, is back open, please use caution in the area for responders on scene.", "kind": "Advisory", "origin": "Nixle", "source": "BCSO", "when": "2 months ago", "when_short": "Sep 16", "when_ts": 1789565407.828364, "active": false, "link": "https://nixle.us/HLT3D", "lat": 48.497, "lon": -116.521}, {"title": "Heat Advisory until 10:00PM Friday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "2 months, 3 weeks ago", "when_short": "Aug 26", "when_ts": 1787751008.092763, "active": false, "link": "https://nixle.us/HK7HX", "lat": null, "lon": null}, {"title": "Fire Weather Watch until 11:00AM Sunday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "2 months, 3 weeks ago", "when_short": "Aug 26", "when_ts": 1787751008.092763, "active": false, "link": "https://nixle.us/HK7EK", "lat": null, "lon": null}, {"title": "Heat Advisory until 07:00PM Saturday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "2 months, 3 weeks ago", "when_short": "Aug 26", "when_ts": 1787751008.081642, "active": false, "link": "https://nixle.us/HKBNZ", "lat": null, "lon": null}, {"title": "Fire Weather Watch until 11:00PM Saturday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "3 months, 2 weeks ago", "when_short": "Aug 3", "when_ts": 1785763808.092763, "active": false, "link": "https://nixle.us/HH9X9", "lat": null, "lon": null}, {"title": "Fire Weather Watch until 09:00PM Saturday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "3 months, 3 weeks ago", "when_short": "Jul 27", "when_ts": 1785159008.092763, "active": false, "link": "https://nixle.us/HGNGP", "lat": null, "lon": null}, {"title": "Heat Advisory until 09:00PM Thursday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "3 months, 3 weeks ago", "when_short": "Jul 27", "when_ts": 1785159008.092763, "active": false, "link": "https://nixle.us/HGGTK", "lat": null, "lon": null}, {"title": "Heat Advisory until 09:00PM Wednesday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "3 months, 3 weeks ago", "when_short": "Jul 27", "when_ts": 1785159008.092763, "active": false, "link": "https://nixle.us/HGFX3", "lat": null, "lon": null}, {"title": "Frost Advisory until 08:00AM Monday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "5 months, 1 week ago", "when_short": "Jun 11", "when_ts": 1781184608.092763, "active": false, "link": "https://nixle.us/HCXZ9", "lat": null, "lon": null}, {"title": "Frost Advisory until 11:00AM Sunday", "kind": "Community", "origin": "Nixle", "source": "Boundary SO", "when": "5 months, 1 week ago", "when_short": "Jun 11", "when_ts": 1781184608.092763, "active": false, "link": "https://nixle.us/HCTBK", "lat": null, "lon": null}]</script>
+<script type="application/json" id="snowpack-data">[{"triplet": "738:ID:SNTL", "name": "Schweitzer Basin", "short": "Schweitzer", "lat": 48.37428, "lon": -116.63917, "elev_ft": 6090.0, "county": "Bonner", "origin": "SNOTEL", "source": "NRCS", "depth_in": 2, "swe_in": 0.8, "when": "2026-11-14", "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=738"}, {"triplet": "323:ID:SNTL", "name": "Bear Mountain", "short": "Bear Mtn", "lat": 48.30583, "lon": -116.07444, "elev_ft": 5460.0, "county": "Bonner", "origin": "SNOTEL", "source": "NRCS", "depth_in": 3, "swe_in": 1.6, "when": "2026-11-14", "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=323"}, {"triplet": "988:ID:SNTL", "name": "Hidden Lake", "short": "Hidden Lk", "lat": 48.89368, "lon": -116.75743, "elev_ft": 5000.0, "county": "Boundary", "origin": "SNOTEL", "source": "NRCS", "depth_in": 2, "swe_in": 0.6, "when": "2026-11-14", "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=988"}, {"triplet": "1053:ID:SNTL", "name": "Myrtle Creek", "short": "Myrtle Cr", "lat": 48.72263, "lon": -116.46312, "elev_ft": 3540.0, "county": "Boundary", "origin": "SNOTEL", "source": "NRCS", "depth_in": 0, "swe_in": 0.1, "when": "2026-11-14", "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=1053"}, {"triplet": "516:ID:SNTL", "name": "Hawkins Lake", "short": "Hawkins", "origin": "SNOTEL", "source": "NRCS", "depth_in": null, "swe_in": null, "when": null, "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=516"}, {"triplet": "918:ID:SNTL", "name": "Garver Creek", "short": "Garver", "origin": "SNOTEL", "source": "NRCS", "depth_in": null, "swe_in": null, "when": null, "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=918"}, {"triplet": "376:ID:SNTL", "name": "Bunchgrass Mdw", "short": "Bunchgrass", "origin": "SNOTEL", "source": "NRCS", "depth_in": null, "swe_in": null, "when": null, "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=376"}]</script>
+<script type="application/json" id="roads-data">[{"title": "Major Night Time Bridge Repair on Colburn Culver Rd Both Directions from N Center Valley Rd to Evergreen Rd. All lanes closed. 3/30/2026 5:00 AM PT to 11/30/2026 3:00 PM PT Activities: Consider Alternative Route, Use Cau", "road": "Colburn Culver Rd", "kind": "all-lanes-closed", "origin": "Idaho 511", "source": "Idaho 511", "when": "2026-11-10T15:58:00Z", "when_short": "Nov 10, 2026", "lat": 48.40388, "lon": -116.48884, "line": [[-116.49431, 48.40036], [-116.49429, 48.40036], [-116.49389, 48.40035], [-116.49337, 48.40034], [-116.49235, 48.40033], [-116.4912, 48.40033], [-116.49069, 48.40035], [-116.49035, 48.4004], [-116.49006, 48.40047], [-116.4898, 48.40057], [-116.48958, 48.40069], [-116.48932, 48.40088], [-116.48914, 48.40105], [-116.48896, 48.4013], [-116.48887, 48.40152], [-116.48883, 48.40179], [-116.48885, 48.40208], [-116.48889, 48.40235], [-116.48892, 48.40259], [-116.48894, 48.40283], [-116.48895, 48.40308], [-116.48894, 48.40331], [-116.48891, 48.40355], [-116.48884, 48.40388], [-116.48874, 48.40425], [-116.48862, 48.40461], [-116.48826, 48.40567], [-116.48802, 48.40636], [-116.48795, 48.40653], [-116.48791, 48.40664], [-116.4878, 48.40684], [-116.48769, 48.40698], [-116.48758, 48.40709], [-116.48742, 48.40721], [-116.48724, 48.40731], [-116.48706, 48.40739], [-116.48687, 48.40746], [-116.48664, 48.40752], [-116.48638, 48.40756], [-116.48598, 48.40757], [-116.48335, 48.40757], [-116.48059, 48.40758], [-116.47978, 48.40758], [-116.47822, 48.40759], [-116.47639, 48.40759], [-116.4734, 48.4076]], "link": "https://511.idaho.gov/", "active": true}, {"title": "Road construction on SH-54 Both Directions from SH-41 to N Greystone Rd. 10/29/2026 6:59 AM PT to 11/21/2026 6:59 AM PT Mon, Tue, Wed, Thu, Fri, Sat, Sun: Active all day", "road": "SH-54", "kind": "all-lanes-open", "origin": "Idaho 511", "source": "Idaho 511", "when": "2026-10-29T14:15:42Z", "when_short": "Oct 29, 2026", "lat": 47.94801, "lon": -116.80336, "line": [[-116.86618, 47.95284], [-116.86344, 47.95249], [-116.86262, 47.95239], [-116.86072, 47.95215], [-116.85934, 47.95197], [-116.85856, 47.95187], [-116.85636, 47.95158], [-116.8536, 47.95122], [-116.85156, 47.95096], [-116.84841, 47.95056], [-116.84704, 47.95038], [-116.84388, 47.94997], [-116.84023, 47.94951], [-116.83547, 47.94889], [-116.83441, 47.94876], [-116.83113, 47.94833], [-116.82929, 47.94816], [-116.82495, 47.94814], [-116.80705, 47.94807], [-116.80624, 47.94805], [-116.80396, 47.94802], [-116.80158, 47.94798], [-116.79832, 47.94792], [-116.79522, 47.94786], [-116.79177, 47.94787], [-116.78946, 47.94789], [-116.77992, 47.94788], [-116.77377, 47.94783], [-116.76662, 47.94779], [-116.76383, 47.94777], [-116.76235, 47.94779], [-116.7601, 47.9478], [-116.7577, 47.94782], [-116.75508, 47.94784], [-116.75112, 47.94784], [-116.74505, 47.94782], [-116.74184, 47.94779], [-116.73861, 47.9478], [-116.73361, 47.94783], [-116.72971, 47.94775], [-116.72741, 47.94768]], "link": "https://511.idaho.gov/", "active": true}, {"title": "Hwy 41 at mile 23.7 near Chocktaw Ln in Blanchard is back open. Please drive safely.", "road": "BCSO", "kind": "cleared", "origin": "Nixle", "source": "BCSO", "when": "2 weeks, 1 day ago", "when_short": "Oct 31", "lat": null, "lon": null, "link": "https://nixle.us/HSAKR", "active": false}, {"title": "Accident has been cleared in the area of the 4000 block of Rapid Lightning Road, Sandpoint", "road": "BCSO", "kind": "cleared", "origin": "Nixle", "source": "BCSO", "when": "2 weeks, 2 days ago", "when_short": "Oct 30", "lat": 48.352, "lon": -116.398, "link": "https://nixle.us/HS86R", "active": false}, {"title": "The area of Hwy 95 at Brisboys Rd in Sagle is now open.", "road": "BCSO", "kind": "cleared", "origin": "Nixle", "source": "BCSO", "when": "3 weeks, 3 days ago", "when_short": "Oct 22", "lat": 48.1729, "lon": -116.5521, "link": "https://nixle.us/HR9KX", "active": false}, {"title": "The area of Hwy 95 at Dufort Rd in Sagle is now clear. Please drive safely.", "road": "BCSO", "kind": "cleared", "origin": "Nixle", "source": "BCSO", "when": "1 month ago", "when_short": "Oct 16", "lat": 48.148, "lon": -116.585, "link": "https://nixle.us/HQDT7", "active": false}, {"title": "Highway 95 at Blacktail Rd in Cocolalla is back open", "road": "BCSO", "kind": "cleared", "origin": "Nixle", "source": "BCSO", "when": "1 month, 1 week ago", "when_short": "Oct 9", "lat": 48.108, "lon": -116.593, "link": "https://nixle.us/HNZZ5", "active": false}, {"title": "Dover City Street Closure", "road": "BCSO", "kind": "cleared", "origin": "Nixle", "source": "BCSO", "when": "1 month, 3 weeks ago", "when_short": "Sep 25", "lat": 48.253, "lon": -116.6016, "link": "https://nixle.us/HMQQ9", "active": false}, {"title": "Highway 200 near Eagen Mountain Dr", "road": "BCSO", "kind": "cleared", "origin": "Nixle", "source": "BCSO", "when": "1 month, 4 weeks ago", "when_short": "Sep 18", "lat": null, "lon": null, "link": "https://nixle.us/HMGXH", "active": false}, {"title": "Highway 95 just south of W Elmira Rd, is back open, please use caution in the area for responders on scene.", "road": "BCSO", "kind": "cleared", "origin": "Nixle", "source": "BCSO", "when": "2 months ago", "when_short": "Sep 16", "lat": 48.497, "lon": -116.521, "link": "https://nixle.us/HLT3D", "active": false}]</script>
+<script type="application/json" id="flights-data">{"time": 1794773880, "states": [{"icao": "a7e906", "call": "DAL734", "lon": -117.6306, "lat": 47.6495, "alt_m": 9144, "onground": false, "spd": 216.02, "hdg": 275.47, "vrate": -0.65, "airline": "Delta Air Lines", "flight": "Delta 734", "origin": "SFO", "dest": "ATL", "route": "SFO to ATL", "summary": "Delta 734 SFO to ATL"}, {"icao": "ab41b1", "call": "N824WF", "lon": -117.3923, "lat": 47.5961, "alt_m": 1783.08, "onground": false, "spd": 54.99, "hdg": 199.11, "vrate": 5.2}, {"icao": "add2ad", "call": "ASA378", "lon": -115.897, "lat": 47.5443, "alt_m": 10058.4, "onground": false, "spd": 260.83, "hdg": 90.23, "vrate": 0, "airline": "Alaska Airlines", "flight": "Alaska 378", "origin": "SEA", "dest": "BWI", "route": "SEA to BWI", "summary": "Alaska 378 SEA to BWI"}, {"icao": "ac1e2d", "call": "DAL1931", "lon": -117.5418, "lat": 47.6183, "alt_m": null, "onground": true, "spd": 8.23, "hdg": 45, "vrate": null, "airline": "Delta Air Lines", "flight": "Delta 1931", "origin": "ATL", "dest": "SJO", "route": "ATL to SJO", "summary": "Delta 1931 ATL to SJO"}, {"icao": "aba432", "call": "N8494F", "lon": -117.4312, "lat": 47.9425, "alt_m": 792.48, "onground": false, "spd": 56.74, "hdg": 4.16, "vrate": -3.58}, {"icao": "a3dffe", "call": "DAL2437", "lon": -117.5365, "lat": 47.6245, "alt_m": null, "onground": true, "spd": 0.64, "hdg": 84.38, "vrate": null, "airline": "Delta Air Lines", "flight": "Delta 2437", "origin": "PDX", "dest": "SLC", "route": "PDX to SLC", "summary": "Delta 2437 PDX to SLC"}, {"icao": "a9e8ed", "call": "N738BS", "lon": -117.2979, "lat": 47.696, "alt_m": 716.28, "onground": false, "spd": 35.04, "hdg": 229.76, "vrate": -1.63}], "origin": "OpenSky"}</script>
+<script src="static/vendor/maplibre-gl.js"></script>
+<script src="static/board-map.js?v=19"></script>
+
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <span>Less Traveled · Sagle</span>
+      <a href="disclosure.html">Disclosure</a>
+      <a href="situation.html">Regional Info</a>
+    </div>
+  </footer>
+
+</body>
+</html>

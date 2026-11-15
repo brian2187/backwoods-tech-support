@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your plan — Sagle · Sandpoint · Bonner County</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="static/theme.css?v=28">
+  
+<script src="static/path.js?v=3" defer></script>
+
+</head>
+<body class="path">
+
+  
+  <header class="bar">
+    <nav class="bar-nav" aria-label="Primary">
+  
+  <a class="brand" href="index.html">Less Traveled</a>
+  
+  <div class="bar-links">
+    <a href="land.html">Homestead</a>
+    <a href="situation.html">Regional</a>
+    <a href="living.html">Living</a>
+    <a href="entertainment.html">Calendar</a>
+    <a href="journal.html">Journal</a>
+    <a href="showup.html">Directory</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+  </header>
+  
+  <main class="wrap">
+    
+    <div class="pagehead">
+      <p class="kicker">Step 1</p>
+      <h1>What is this place for?</h1>
+      <p class="lede">Check what you mean to do. You can change this later from any step. Property matching comes near the end.</p>
+    </div>
+    
+    
+<nav class="path-nav" aria-label="Homestead path">
+  <a href="land.html">Path</a>
+  <a href="land-needs.html">Your plan</a>
+  <a href="land-match.html">Property match</a>
+  <a href="land.html#notes">Field notes</a>
+</nav>
+<div class="path-flow">
+  <p class="path-flow-label">Your path · click any step to jump and rebuild from there</p>
+  <div class="path-track" id="quest-path">
+    
+    <a class="path-stop is-current"
+       href="land-step-intent.html"
+       data-step="intent">
+      <span class="path-dot">1</span>
+      <span class="path-stop-title">Name the operation</span>
+      <span class="path-stop-kicker">Plan</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-water.html"
+       data-step="water">
+      <span class="path-dot">2</span>
+      <span class="path-stop-title">Water first</span>
+      <span class="path-stop-kicker">Well &amp; rights</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-septic.html"
+       data-step="septic">
+      <span class="path-dot">3</span>
+      <span class="path-stop-title">What the ground will take</span>
+      <span class="path-stop-kicker">Septic</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-access.html"
+       data-step="access">
+      <span class="path-dot">4</span>
+      <span class="path-stop-title">A road you can prove</span>
+      <span class="path-stop-kicker">Access</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-zoning.html"
+       data-step="zoning">
+      <span class="path-dot">5</span>
+      <span class="path-stop-title">What you may build</span>
+      <span class="path-stop-kicker">Zoning</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-power.html"
+       data-step="power">
+      <span class="path-dot">6</span>
+      <span class="path-stop-title">Power and heat</span>
+      <span class="path-stop-kicker">Utilities</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-soil.html"
+       data-step="soil">
+      <span class="path-dot">7</span>
+      <span class="path-stop-title">Growing season</span>
+      <span class="path-stop-kicker">Garden &amp; hay</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-livestock.html"
+       data-step="livestock">
+      <span class="path-dot">8</span>
+      <span class="path-stop-title">Stock and fence</span>
+      <span class="path-stop-kicker">Ranch</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-fire.html"
+       data-step="fire">
+      <span class="path-dot">9</span>
+      <span class="path-stop-title">Fire and timber</span>
+      <span class="path-stop-kicker">Wildfire</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-winter.html"
+       data-step="winter">
+      <span class="path-dot">10</span>
+      <span class="path-stop-title">First winter</span>
+      <span class="path-stop-kicker">Survive</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-country.html"
+       data-step="country">
+      <span class="path-dot">11</span>
+      <span class="path-stop-title">Pick the country</span>
+      <span class="path-stop-kicker">Map</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-permits.html"
+       data-step="permits">
+      <span class="path-dot">12</span>
+      <span class="path-stop-title">Who can help</span>
+      <span class="path-stop-kicker">Trades</span>
+    </a>
+    
+  </div>
+  <p class="path-plan-chip" id="plan-chip" hidden></p>
+</div>
+
+<form class="loadout-form" id="loadout-form" action="land-step-water.html" method="get">
+  <fieldset>
+    <legend>Uses</legend>
+    <p class="hint">Cattle on ten timber acres will fail. Check what you actually mean to run.</p>
+    <div class="loadout-grid">
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="house">
+        <span>
+          <strong>A house already on it</strong>
+          <em>You are buying a home plus acres, not starting from dirt.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="garden">
+        <span>
+          <strong>Kitchen garden</strong>
+          <em>Beds, berries, a few fruit trees. Short season.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="orchard">
+        <span>
+          <strong>Orchard</strong>
+          <em>Apples, cherries, cold-hardy stock. Frost pockets matter.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="greenhouse">
+        <span>
+          <strong>Greenhouse or high tunnel</strong>
+          <em>Extends the season. Snow load is real.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="chickens">
+        <span>
+          <strong>Chickens and small stock</strong>
+          <em>Coop, predators, well setbacks from the run.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="cattle">
+        <span>
+          <strong>Cattle or ranching</strong>
+          <em>Hay ground, water, fence. Not a timber lot with a dream.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="horses">
+        <span>
+          <strong>Horses</strong>
+          <em>Dry turnout, arena or round pen, winter hay.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="hay">
+        <span>
+          <strong>Hay ground</strong>
+          <em>Open, not timber. Irrigation or decent rain-fed meadow.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="timber">
+        <span>
+          <strong>Timber</strong>
+          <em>Manage, heat, or a selective cut. Fire and access.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="shop">
+        <span>
+          <strong>Shop, barn, or equipment</strong>
+          <em>Power, approach, snow, and a building permit.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="lake">
+        <span>
+          <strong>Lake or river</strong>
+          <em>IDL shoreline rules. Flood and setbacks.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="hunt">
+        <span>
+          <strong>Hunt and timber recreation</strong>
+          <em>Privacy, game, often steep and snowy.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="offgrid">
+        <span>
+          <strong>Off-grid or thin power</strong>
+          <em>Legal here with the right system. Not cheaper up front.</em>
+        </span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="use" value="cabin">
+        <span>
+          <strong>Guest cabin or second dwelling</strong>
+          <em>Zoning and extra septic. AF and R lots differ.</em>
+        </span>
+      </label>
+      
+    </div>
+  </fieldset>
+
+  <div class="loadout-row">
+    <label>
+      Budget for the land
+      <select name="budget">
+        <option value="">Any</option>
+        
+        <option value="u250">Under $250k</option>
+        
+        <option value="250-400">$250–400k</option>
+        
+        <option value="400-650">$400–650k</option>
+        
+        <option value="650-900">$650–900k</option>
+        
+        <option value="900p">$900k and up</option>
+        
+      </select>
+    </label>
+    <label>
+      Acres
+      <select name="acres">
+        <option value="">Any</option>
+        
+        <option value="u5">Under 5 acres</option>
+        
+        <option value="5-10">5–10 acres</option>
+        
+        <option value="10-20">10–20 acres</option>
+        
+        <option value="20-40">20–40 acres</option>
+        
+        <option value="40p">40 acres and up</option>
+        
+      </select>
+    </label>
+  </div>
+
+  <fieldset>
+    <legend>Must already be there</legend>
+    <div class="loadout-grid musts">
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="must" value="house">
+        <span><strong>Existing house</strong></span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="must" value="well">
+        <span><strong>Existing well</strong></span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="must" value="septic">
+        <span><strong>Existing septic</strong></span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="must" value="power">
+        <span><strong>Power at the road or house</strong></span>
+      </label>
+      
+      <label class="loadout-opt">
+        <input type="checkbox" name="must" value="county_road">
+        <span><strong>County-maintained winter road</strong></span>
+      </label>
+      
+    </div>
+  </fieldset>
+
+  <p class="path-cta">
+    <button class="path-btn" type="submit" id="save-plan" data-next="land-step-water.html">Save and continue to water</button>
+    <a class="path-btn ghost" href="land-match.html">Skip ahead to property match</a>
+  </p>
+  <p class="meta">July 2026 Bonner median sale was about $650k. Leave money for well, septic, and the first winter. A property type is optional until step 11.</p>
+</form>
+
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <span>Less Traveled · Sagle</span>
+      <a href="disclosure.html">Disclosure</a>
+      <a href="situation.html">Regional Info</a>
+    </div>
+  </footer>
+
+</body>
+</html>
