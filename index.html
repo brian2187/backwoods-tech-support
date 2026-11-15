@@ -74,6 +74,12 @@
     .community .stack>div{min-height:162px;border-radius:18px;background-size:cover;background-position:center}
     form{display:grid;gap:12px;margin-top:22px}
     input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);font:inherit}
+    .enroll-steps{margin:22px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+    .enroll-steps li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start}
+    .enroll-steps .num{margin:0}
+    label.field{display:grid;gap:6px;font-size:.88rem;font-weight:600;color:var(--muted)}
+    label.field input,label.field textarea{font-weight:400;color:var(--ink)}
+    .opt{font-weight:400}
     footer{background:var(--pine);color:rgba(244,239,228,.8);padding:36px 0 48px;font-size:.92rem}
     footer a{color:#d4a373}
     @media(max-width:860px){nav a:not(.btn){display:none}.nav .btn{padding:10px 14px;font-size:.85rem}.g2,.g3,.g4,.split,.price,.who,.community{grid-template-columns:1fr}}
@@ -97,7 +103,7 @@
         <a href="#who">Who we are</a>
         <a href="less-traveled/">Less Traveled</a>
         <a class="btn ghost" href="login.html">Shop login</a>
-        <a class="btn" href="#contact">Talk shop</a>
+        <a class="btn" href="#enroll">Enroll</a>
       </nav>
     </div>
   </header>
@@ -111,8 +117,8 @@
       <h1>Your phone can keep working while you do.</h1>
       <p class="lede">Virtual Assistant is the after-hours booking service from Mountain Top Tech, the tech arm of Something Ain't Right Farms. A polite voice answers, qualifies the job, and drops it on a calendar you control. You still make every promise. We just stop the voicemail from eating your week.</p>
       <div class="hero-actions">
-        <a class="btn" href="#setup">New-customer setup $150</a>
-        <a class="btn ghost" href="#offer">What you get</a>
+        <a class="btn" href="#enroll">Enroll — get a dedicated line</a>
+        <a class="btn ghost" href="#offer">What the service is</a>
       </div>
     </div>
   </section>
@@ -225,25 +231,49 @@
     </div>
   </section>
 
+  <section id="enroll">
+    <div class="wrap" style="max-width:760px">
+      <h2>What this is, and how to enroll</h2>
+      <p class="sub">Virtual Assistant is a dedicated phone line for your shop. During your hours it rings you first. If you miss it — or it is after hours — a polite desk answers in your name, asks what the job is, and puts a qualified booking on a calendar you control. You still price, promise, and show up. Setup is $150. Then $25 a month for the line, $0.75 a minute the desk talks, never more than $250 of talk in a month.</p>
+      <ol class="enroll-steps">
+        <li><div class="num">1</div><div><strong>Fill the form.</strong> Shop name and your name are enough. Email is how we send you the new number. Your current phone is optional — we issue a dedicated line either way.</div></li>
+        <li><div class="num">2</div><div><strong>Hit Enroll.</strong> It opens your mail app to <a href="mailto:MTTech_SARFarm@outlook.com">MTTech_SARFarm@outlook.com</a>. Send that message. That is the enrollment. There is no other signup page.</div></li>
+        <li><div class="num">3</div><div><strong>We set up the number.</strong> You get a dedicated Virtual Assistant line. We email that number to you and tell Brian the same day.</div></li>
+        <li><div class="num">4</div><div><strong>Brian calls you.</strong> Hours, script, and calendar get confirmed before the desk answers live. Nothing runs until he says so. Setup is $150.</div></li>
+      </ol>
+      <form id="enroll-form" class="feedback-form" data-to="MTTech_SARFarm@outlook.com" style="margin-top:28px">
+        <label class="field">Your name
+          <input type="text" name="name" required maxlength="80" autocomplete="name" />
+        </label>
+        <label class="field">Shop name
+          <input type="text" name="shop" required maxlength="120" placeholder="The name callers should hear" />
+        </label>
+        <label class="field"><span>Email <span class="opt">(so we can send the new number)</span></span>
+          <input type="email" name="email" required maxlength="120" autocomplete="email" placeholder="you@shop.com" />
+        </label>
+        <label class="field"><span>Your phone <span class="opt">(optional — we still issue a dedicated line)</span></span>
+          <input type="tel" name="phone" maxlength="40" autocomplete="tel" placeholder="Best number for Brian to call you back" />
+        </label>
+        <label class="field"><span>When do you miss calls? <span class="opt">(optional)</span></span>
+          <textarea name="note" rows="4" maxlength="2000" placeholder="Evenings, weekends, on the roof…"></textarea>
+        </label>
+        <button class="btn" type="submit">Enroll — start my line</button>
+      </form>
+      <p id="enroll-status" style="color:var(--muted);font-size:.9rem">Enroll sends to Mountain Top Tech. We set up the dedicated number and Brian gets a copy.</p>
+    </div>
+  </section>
   <section id="contact">
     <div class="wrap" style="max-width:720px">
-      <h2>Worth a 10-minute look?</h2>
-      <p class="sub">New-customer setup is $150 (was $1,500). Call the setup AI. Brian reviews every intake, calls you back, and confirms everything before the service is used.</p>
+      <h2>Already a shop, or just have a question?</h2>
+      <p class="sub">Same mailbox. Use <a href="#enroll">Enroll</a> if you want the line. Email is fine for everything else.</p>
       <p><strong>Virtual Assistant email:</strong> <a href="mailto:MTTech_SARFarm@outlook.com">MTTech_SARFarm@outlook.com</a></p>
-      <form action="mailto:MTTech_SARFarm@outlook.com" method="post" enctype="text/plain">
-        <input name="name" placeholder="Your name" required />
-        <input name="shop" placeholder="Shop name" required />
-        <input name="phone" placeholder="Best phone (optional)" />
-        <textarea name="note" rows="4" placeholder="When do you miss calls?"></textarea>
-        <button class="btn" type="submit">Send a note</button>
-      </form>
-      <p style="color:var(--muted);font-size:.9rem">Brian reviews and calls you back. The desk does not run until he confirms with you.</p>
     </div>
   </section>
   <footer>
     <div class="wrap">Virtual Assistant · Mountain Top Tech · a subdivision of Something Ain't Right Farms<br>Sagle / Sandpoint / Bonner County · You approve every commitment. © 2026</div>
   </footer>
   <script src="setup-line.js"></script>
+  <script src="enroll.js"></script>
   <script>
     fetch("brian.b64").then(r=>r.text()).then(t=>{
       document.getElementById("founder").src="data:image/jpeg;base64,"+t.trim();
