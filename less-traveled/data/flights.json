@@ -1,39 +1,38 @@
 {
-  "time": 1794775653,
+  "time": 1794776235,
   "states": [
     {
+      "icao": "a2e806",
+      "call": "ASA602",
+      "lon": -117.6844,
+      "lat": 47.5637,
+      "alt_m": 2019.3,
+      "onground": false,
+      "spd": 136.21,
+      "hdg": 280.89,
+      "vrate": 14.31
+    },
+    {
+      "icao": "a8dcb8",
+      "call": "N670LF",
+      "lon": -117.0949,
+      "lat": 47.782,
+      "alt_m": 1676.4,
+      "onground": false,
+      "spd": 72.92,
+      "hdg": 249.78,
+      "vrate": -0.33
+    },
+    {
       "icao": "a9618a",
-      "call": "AAL2871",
+      "call": "a9618a",
       "lon": -117.5416,
       "lat": 47.6234,
       "alt_m": null,
       "onground": true,
       "spd": 0,
       "hdg": 0,
-      "vrate": null,
-      "airline": "American Airlines",
-      "flight": "American 2871",
-      "origin": "SNA",
-      "dest": "DFW",
-      "route": "SNA to DFW",
-      "summary": "American 2871 SNA to DFW"
-    },
-    {
-      "icao": "a8a0c1",
-      "call": "QXE2086",
-      "lon": -117.5378,
-      "lat": 47.62,
-      "alt_m": 723.9,
-      "onground": true,
-      "spd": 10.29,
-      "hdg": 255.94,
-      "vrate": null,
-      "airline": "Horizon Air",
-      "flight": "Horizon Air 2086",
-      "origin": "SEA",
-      "dest": "SBP",
-      "route": "SEA to SBP",
-      "summary": "Horizon Air 2086 SEA to SBP"
+      "vrate": null
     }
   ],
   "origin": "OpenSky"
