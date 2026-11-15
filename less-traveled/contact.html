@@ -6,7 +6,7 @@
   <title>Contact — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=34">
+  <link rel="stylesheet" href="static/theme.css?v=35">
   
 </head>
 <body class="">
@@ -32,43 +32,111 @@
 </nav>
   </header>
   
-  <main class="wrap">
+  <main class="wrap wrap-contact">
     
     <div class="pagehead">
       <p class="kicker">Backwoods Tech Support</p>
       <h1>Contact</h1>
-      <p class="lede">Send a note about the site, a listing, a camera, or something we got wrong. It opens your mail app to the Backwoods Tech Support inbox.</p>
+      <p class="lede">Send a note about the site, a listing, a camera, or something we got wrong. Donate on the right if the board is useful.</p>
     </div>
     
     
-<article class="prose">
-  <p>Mail goes to <a href="mailto:MTTech_SARFarm@outlook.com">MTTech_SARFarm@outlook.com</a> — the same Mountain Top Tech mailbox as <a href="https://brian2187.github.io/backwoods-tech-support/">Virtual Assistant</a>.</p>
-  <p>Virtual Assistant is the after-hours booking desk: a dedicated line that answers in a shop’s name, qualifies the job, and drops it on their calendar. To enroll, use the form on that page. We set up the phone number and tell Brian.</p>
-</article>
+<div class="contact-split">
+  <section class="contact-main">
+    <article class="prose">
+      <p>Mail goes to <a href="mailto:MTTech_SARFarm@outlook.com">MTTech_SARFarm@outlook.com</a> — the same Mountain Top Tech mailbox as <a href="https://brian2187.github.io/backwoods-tech-support/">Virtual Assistant</a>.</p>
+      <p>Virtual Assistant is the after-hours booking desk: a dedicated line that answers in a shop’s name, qualifies the job, and drops it on their calendar. To enroll, use the form on that page. We set up the phone number and tell Brian.</p>
+    </article>
 
-<form class="feedback-form" id="feedback-form" data-to="MTTech_SARFarm@outlook.com">
-  <label>
-    Name
-    <input type="text" name="name" required maxlength="80" autocomplete="name">
-  </label>
-  <label>
-    Title
-    <input type="text" name="title" required maxlength="120" placeholder="What's this about?">
-  </label>
-  <label>
-    Comments
-    <textarea name="comments" required rows="7" maxlength="4000" placeholder="What should we know?"></textarea>
-  </label>
-  <label>
-    <span>Email <span class="opt">(optional)</span></span>
-    <input type="email" name="email" maxlength="120" autocomplete="email" placeholder="If you want a reply">
-  </label>
+    <form class="feedback-form" id="feedback-form" data-to="MTTech_SARFarm@outlook.com">
+      <label>
+        Name
+        <input type="text" name="name" required maxlength="80" autocomplete="name">
+      </label>
+      <label>
+        Title
+        <input type="text" name="title" required maxlength="120" placeholder="What's this about?">
+      </label>
+      <label>
+        Comments
+        <textarea name="comments" required rows="7" maxlength="4000" placeholder="What should we know?"></textarea>
+      </label>
+      <label>
+        <span>Email <span class="opt">(optional)</span></span>
+        <input type="email" name="email" maxlength="120" autocomplete="email" placeholder="If you want a reply">
+      </label>
+      <p class="path-cta">
+        <button class="path-btn" type="submit">Send feedback</button>
+      </p>
+      <p class="meta" id="feedback-status">Name, title, and comments are required. Email is only if you want an answer.</p>
+    </form>
+    <script src="static/contact.js?v=1"></script>
+  </section>
+
+  <aside class="donate-panel" id="donate" data-paypal="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=MTTech_SARFarm%40outlook.com&amp;currency_code=USD&amp;item_name=Less%20Traveled%20donation" data-email="MTTech_SARFarm@outlook.com">
+  <p class="kicker">Keep the lights on</p>
+  <h2>Donate</h2>
+  <p class="sum">Gifts keep Less Traveled and the Virtual Assistant desk on the air. Not a charity. No tax receipt.</p>
+
+  <p class="donate-label">Amount</p>
+  <div class="donate-amts" id="donate-amts">
+    
+    <button type="button" class="dir-chip" data-amt="10">$10</button>
+    
+    <button type="button" class="dir-chip on" data-amt="25">$25</button>
+    
+    <button type="button" class="dir-chip" data-amt="50">$50</button>
+    
+    <button type="button" class="dir-chip" data-amt="100">$100</button>
+    
+    <label class="donate-custom">$
+      <input type="number" id="donate-custom" min="1" step="1" inputmode="numeric" placeholder="Other">
+    </label>
+  </div>
+
+  <p class="donate-label">Card, PayPal, Apple Pay, Google Pay</p>
+  <p class="meta">Opens PayPal. You can pay with a card without a PayPal account. Money goes to MTTech_SARFarm@outlook.com.</p>
   <p class="path-cta">
-    <button class="path-btn" type="submit">Send feedback</button>
+    <a class="path-btn" id="donate-paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=MTTech_SARFarm%40outlook.com&amp;currency_code=USD&amp;item_name=Less%20Traveled%20donation" rel="noopener" target="_blank">Donate by card</a>
+    
   </p>
-  <p class="meta" id="feedback-status">Name, title, and comments are required. Email is only if you want an answer.</p>
-</form>
-<script src="static/contact.js?v=1"></script>
+
+  <p class="donate-label">Zelle / bank</p>
+  <p class="meta">Send Zelle to <a href="mailto:MTTech_SARFarm@outlook.com">MTTech_SARFarm@outlook.com</a>. Same Mountain Top Tech inbox.</p>
+  
+
+  
+  <p class="donate-label">Bitcoin</p>
+  <div class="donate-coin">
+    <img src="static/img/donate-btc.png" alt="Bitcoin QR code" width="120" height="120">
+    <div>
+      <code class="donate-addr" id="btc-addr">1FoKrp9PcdH2BHbLUqPfxeCDAUnDRt2tzM</code>
+      <p class="path-cta">
+        <button type="button" class="path-btn ghost" data-copy="btc-addr">Copy address</button>
+        <a class="path-btn ghost" id="donate-btc" href="bitcoin:1FoKrp9PcdH2BHbLUqPfxeCDAUnDRt2tzM" rel="noopener">Open wallet</a>
+      </p>
+    </div>
+  </div>
+  
+
+  
+  <p class="donate-label">Dogecoin</p>
+  <div class="donate-coin">
+    <img src="static/img/donate-doge.png" alt="Dogecoin QR code" width="120" height="120">
+    <div>
+      <code class="donate-addr" id="doge-addr">DABQetTmu6Re4NU7Nm2ifuS7wF2oHLF5Lc</code>
+      <p class="path-cta">
+        <button type="button" class="path-btn ghost" data-copy="doge-addr">Copy address</button>
+        <a class="path-btn ghost" id="donate-doge" href="dogecoin:DABQetTmu6Re4NU7Nm2ifuS7wF2oHLF5Lc" rel="noopener">Open wallet</a>
+      </p>
+    </div>
+  </div>
+  
+
+  <p class="meta" id="donate-status">Pick an amount, then card or a coin. Copy the address if your wallet does not open.</p>
+</aside>
+<script src="static/donate.js?v=1"></script>
+</div>
 
   </main>
   <footer class="site">
@@ -76,6 +144,7 @@
       <span>Less Traveled · Sagle</span>
       <a href="https://brian2187.github.io/backwoods-tech-support/">Virtual Assistant</a>
       <a href="contact.html">Contact</a>
+      <a href="donate.html">Donate</a>
       <a href="disclosure.html">Disclosure</a>
       <a href="situation.html">Regional Info</a>
       <a href="feeds.html">Live cameras</a>

@@ -1,0 +1,17 @@
+{
+  "email": "MTTech_SARFarm@outlook.com",
+  "paypal_email": "MTTech_SARFarm@outlook.com",
+  "zelle": "MTTech_SARFarm@outlook.com",
+  "stripe_url": "",
+  "venmo": "",
+  "cashapp": "",
+  "btc": "1FoKrp9PcdH2BHbLUqPfxeCDAUnDRt2tzM",
+  "doge": "DABQetTmu6Re4NU7Nm2ifuS7wF2oHLF5Lc",
+  "amounts": [
+    10,
+    25,
+    50,
+    100
+  ],
+  "note": "Gifts keep Less Traveled and the Virtual Assistant desk on the air. Not a charity. No tax receipt."
+}
