@@ -542,8 +542,8 @@
     {
       "id": "intent",
       "n": 1,
-      "title": "Name the operation",
-      "kicker": "Plan",
+      "title": "Your plan",
+      "kicker": "Uses & budget",
       "objective": "Say what this place has to do: garden, stock, timber, shop, or a house you can winter.",
       "why": "Bonner lots that look the same in photos fail different dreams. Cattle want meadow. A high tunnel wants sun. A shop wants power and a legal approach.",
       "tasks": [
@@ -574,7 +574,7 @@
       "id": "water",
       "n": 2,
       "title": "Water first",
-      "kicker": "Well & rights",
+      "kicker": "Wells & rights",
       "objective": "Know how this parcel drinks: well log, GPM, storage, and whether irrigation is a right.",
       "why": "Rural Bonner is wells. Listings say the area is good. Logs and a pump test say whether your house and stock survive August.",
       "tasks": [
@@ -620,7 +620,7 @@
       "id": "septic",
       "n": 3,
       "title": "What the ground will take",
-      "kicker": "Septic",
+      "kicker": "Perc & records",
       "objective": "Find the PHD record, or pay for a site eval before you waive inspection.",
       "why": "If you are off city sewer you are buying a septic system. Creek lots and high water tables turn a $12k gravity field into a $30k mound.",
       "tasks": [
@@ -670,7 +670,7 @@
       "id": "access",
       "n": 4,
       "title": "A road you can prove",
-      "kicker": "Access",
+      "kicker": "Road on paper",
       "objective": "Recorded legal access and a winter plow story. A two-track in the listing photos is not enough.",
       "why": "The Spokesman has already written the Bonner version of this failure: disputed access, wetlands, and a development that did not work. You want an easement on paper.",
       "tasks": [
@@ -842,7 +842,7 @@
       "id": "livestock",
       "n": 8,
       "title": "Stock and fence",
-      "kicker": "Ranch",
+      "kicker": "Animals",
       "objective": "Fence, hay, predators, and brands — before the trailer shows up.",
       "why": "Idaho is a fence-out state. Wolves and cougars work this country. Cute stock on ten timber acres is how you fund a hay dealer.",
       "tasks": [
@@ -927,7 +927,7 @@
       "id": "winter",
       "n": 10,
       "title": "First winter",
-      "kicker": "Survive",
+      "kicker": "Survive here",
       "objective": "Tires, wood, water, and a plan for the week the power dies.",
       "why": "Town is 60–70 inches some years. The mountain is another climate. Relocators fail in January, not on the showing.",
       "tasks": [
@@ -970,9 +970,9 @@
     {
       "id": "country",
       "n": 11,
-      "title": "Pick the country",
-      "kicker": "Map",
-      "objective": "Match your plan to a Bonner/Boundary property type. Optional until now — skip if you are still learning the country.",
+      "title": "Listings & types",
+      "kicker": "For sale now",
+      "objective": "See live listings, then match your plan to a Bonner/Boundary property type. Skip the type if you are still learning the country.",
       "why": "Sagle timber, Selle hay, Priest River bottoms, Clark Fork benches, and Boundary farms are different purchases. We match types. A local agent searches the live market.",
       "tasks": [
         {
@@ -1009,7 +1009,7 @@
       "id": "permits",
       "n": 12,
       "title": "Who can help",
-      "kicker": "Trades",
+      "kicker": "Local trades",
       "objective": "Match licensed local outfits to the work this place needs.",
       "why": "Property type first, then the directory. Septic, well, excavator, electrician — pointed at the country you picked, or the whole region if you skipped a type.",
       "tasks": [

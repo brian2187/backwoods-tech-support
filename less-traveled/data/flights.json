@@ -1,22 +1,22 @@
 {
-  "time": 1794779431,
+  "time": 1794779885,
   "states": [
     {
-      "icao": "a4dd35",
-      "call": "SKW3332",
-      "lon": -117.5386,
-      "lat": 47.6204,
+      "icao": "acb4c1",
+      "call": "DAL1452",
+      "lon": -117.5281,
+      "lat": 47.6274,
       "alt_m": null,
       "onground": true,
-      "spd": 4.12,
-      "hdg": 22.5,
+      "spd": 8.75,
+      "hdg": 45,
       "vrate": null,
-      "airline": "SkyWest Airlines",
-      "flight": "SkyWest 3332",
-      "origin": "PSP",
-      "dest": "SFO",
-      "route": "PSP to SFO",
-      "summary": "SkyWest 3332 PSP to SFO"
+      "airline": "Delta Air Lines",
+      "flight": "Delta 1452",
+      "origin": "ATL",
+      "dest": "BOS",
+      "route": "ATL to BOS",
+      "summary": "Delta 1452 ATL to BOS"
     },
     {
       "icao": "a9618a",
@@ -36,21 +36,32 @@
       "summary": "American 2871 SNA to DFW"
     },
     {
-      "icao": "a8a0c1",
-      "call": "QXE2087",
-      "lon": -117.5202,
-      "lat": 47.63,
-      "alt_m": null,
-      "onground": true,
-      "spd": 25.21,
-      "hdg": 225,
-      "vrate": null,
-      "airline": "Horizon Air",
-      "flight": "Horizon Air 2087",
-      "origin": "PDX",
-      "dest": "OAK",
-      "route": "PDX to OAK",
-      "summary": "Horizon Air 2087 PDX to OAK"
+      "icao": "a7f736",
+      "call": "N612LR",
+      "lon": -116.6993,
+      "lat": 47.9729,
+      "alt_m": 1043.94,
+      "onground": false,
+      "spd": 42.85,
+      "hdg": 184.82,
+      "vrate": 0.65
+    },
+    {
+      "icao": "a4cc00",
+      "call": "SKW3229",
+      "lon": -115.8194,
+      "lat": 47.4678,
+      "alt_m": 8290.56,
+      "onground": false,
+      "spd": 191.61,
+      "hdg": 275.08,
+      "vrate": 6.5,
+      "airline": "SkyWest Airlines",
+      "flight": "SkyWest 3229",
+      "origin": "SMF",
+      "dest": "SAN",
+      "route": "SMF to SAN",
+      "summary": "SkyWest 3229 SMF to SAN"
     }
   ],
   "origin": "OpenSky"
