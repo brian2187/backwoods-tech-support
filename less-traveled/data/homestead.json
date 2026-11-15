@@ -580,19 +580,19 @@
       "tasks": [
         {
           "id": "log",
-          "text": "Pull the IDWR well log by tag or township/range/section."
+          "text": "Have you pulled an IDWR well log for this parcel?"
         },
         {
           "id": "gpm",
-          "text": "Read GPM with storage in mind. 4 GPM can work; 15 is comfort."
+          "text": "Do you know the GPM and storage? Four gallons a minute can work; fifteen is comfort."
         },
         {
           "id": "test",
-          "text": "Budget a water test and pump test during inspection."
+          "text": "Will you budget a water test and a pump test during inspection?"
         },
         {
           "id": "right",
-          "text": "If you need to irrigate hay or an orchard, ask IDWR about a water right. A hose is not a right."
+          "text": "If you want to irrigate hay or an orchard, do you have a water right — not a garden hose?"
         }
       ],
       "records": [
@@ -626,19 +626,19 @@
       "tasks": [
         {
           "id": "parcel",
-          "text": "Get parcel number and township/range/section from the assessor."
+          "text": "Do you have the parcel number from the assessor?"
         },
         {
           "id": "phd",
-          "text": "Search Panhandle Health septic records for the section, not just the lot."
+          "text": "Have you searched Panhandle Health septic records for that section?"
         },
         {
           "id": "final",
-          "text": "Want a finaled permit and room for a replacement field."
+          "text": "Is there a finaled septic permit, and room for a replacement field?"
         },
         {
           "id": "setback",
-          "text": "Check 100 ft from wells and 100–300 ft from surface water."
+          "text": "Can the drainfield sit 100 feet from wells and back from the creek or lake?"
         }
       ],
       "records": [
@@ -676,19 +676,19 @@
       "tasks": [
         {
           "id": "deed",
-          "text": "Read the deed and recorded easements. Title commitment, not a Facebook comment."
+          "text": "Is legal access recorded on the deed or title — not just a two-track in the listing photos?"
         },
         {
           "id": "plow",
-          "text": "Who plows, with what, under what agreement."
+          "text": "Do you know who plows, with what, in writing?"
         },
         {
           "id": "approach",
-          "text": "Highway district or ITD approach permit if you build a new driveway."
+          "text": "If you need a new driveway, have you asked the highway district or ITD about an approach permit?"
         },
         {
           "id": "school",
-          "text": "If you have kids, ask where the bus actually turns around."
+          "text": "If you have kids: do you know where the school bus actually turns around?"
         }
       ],
       "records": [
@@ -720,19 +720,19 @@
       "tasks": [
         {
           "id": "zone",
-          "text": "Look up the zoning on the county map for the parcel, not the listing adjective."
+          "text": "Have you looked up zoning on the county map, not the listing adjective?"
         },
         {
           "id": "dwelling",
-          "text": "If you want a second dwelling, read that section before you close."
+          "text": "If you want a guest cabin or second dwelling, does this zone allow it?"
         },
         {
           "id": "shop",
-          "text": "Shop size, height, and home-occupation rules."
+          "text": "Will a shop of the size you want fit height and home-occupation rules?"
         },
         {
           "id": "ag",
-          "text": "Ag exemption is the assessor. It follows use, not a barn photo."
+          "text": "Are you counting on an ag exemption? That follows use at the assessor, not a barn photo."
         }
       ],
       "records": [
@@ -763,19 +763,19 @@
       "tasks": [
         {
           "id": "co-op",
-          "text": "Which utility: Avista, Northern Lights, Inland Power."
+          "text": "Do you know which utility serves the place — Avista, Northern Lights, Inland, or none?"
         },
         {
           "id": "extend",
-          "text": "If there is no line, get a line-extension estimate in writing."
+          "text": "If there is no line, do you have a line-extension estimate in writing?"
         },
         {
           "id": "backup",
-          "text": "Generator or battery plan for the well and a freezer."
+          "text": "Do you have a generator or battery plan for the well pump and a freezer?"
         },
         {
           "id": "heat",
-          "text": "Wood, propane, or both. A stove is not a plan without a dry wood source."
+          "text": "Heat: wood, propane, or both — with dry wood or a delivery account?"
         }
       ],
       "records": [
@@ -808,19 +808,19 @@
       "tasks": [
         {
           "id": "sun",
-          "text": "Walk the garden site at solstice-mindset: south opening, not a north timber wall."
+          "text": "Does the garden or hay site get winter sun, or is it a north timber wall?"
         },
         {
           "id": "frost",
-          "text": "Assume late spring and early fall frost. High tunnel if you care."
+          "text": "Are you planning for late spring and early fall frost?"
         },
         {
           "id": "hay",
-          "text": "If you checked hay or cattle, ask what actually came off the field."
+          "text": "If you want hay or cattle, do you know what actually came off the field?"
         },
         {
           "id": "water-grow",
-          "text": "Garden water from the well needs GPM and a frost-free hydrant plan."
+          "text": "Garden water: does the well have the gallons, and a frost-free hydrant plan?"
         }
       ],
       "records": [
@@ -836,7 +836,14 @@
         "irrigation"
       ],
       "guides": [],
-      "legal": "Selling produce has cottage-food and scale rules. A kitchen garden for the house does not. Irrigation water is still IDWR."
+      "legal": "Selling produce has cottage-food and scale rules. A kitchen garden for the house does not. Irrigation water is still IDWR.",
+      "when_uses": [
+        "garden",
+        "orchard",
+        "greenhouse",
+        "hay",
+        "cattle"
+      ]
     },
     {
       "id": "livestock",
@@ -848,19 +855,19 @@
       "tasks": [
         {
           "id": "hay",
-          "text": "Winter hay math before you buy animals."
+          "text": "Have you done winter hay math before buying animals?"
         },
         {
           "id": "fence",
-          "text": "Perimeter that holds your stock and respects the neighbor."
+          "text": "Is there fence that holds your stock and respects the neighbor?"
         },
         {
           "id": "brand",
-          "text": "Idaho brand if you run cattle. ISDA, not a Facebook group."
+          "text": "Cattle: Idaho brand through ISDA, not a Facebook group?"
         },
         {
           "id": "setback",
-          "text": "Manure and runs away from the well and drainfield."
+          "text": "Are manure and runs away from the well and the drainfield?"
         }
       ],
       "records": [
@@ -877,7 +884,12 @@
         "hay"
       ],
       "guides": [],
-      "legal": "Brands, health papers on interstate stock, and CAFO rules if you get big. We are not your vet or the brand inspector."
+      "legal": "Brands, health papers on interstate stock, and CAFO rules if you get big. We are not your vet or the brand inspector.",
+      "when_uses": [
+        "chickens",
+        "cattle",
+        "horses"
+      ]
     },
     {
       "id": "fire",
@@ -889,19 +901,19 @@
       "tasks": [
         {
           "id": "space",
-          "text": "Clear a defensible space you can keep, not a one-time photo."
+          "text": "Can you keep a defensible space — not a one-time photo?"
         },
         {
           "id": "insure",
-          "text": "Ask a local agent if this address is writable before you close."
+          "text": "Have you asked a local agent if this address is even insurable?"
         },
         {
           "id": "burn",
-          "text": "Know Stage 1/2 restrictions and who issues a burn permit."
+          "text": "Do you know burn restrictions and who issues a burn permit?"
         },
         {
           "id": "cut",
-          "text": "If you plan a timber cut, access and a responsible logger."
+          "text": "If you plan a timber cut: access and a responsible logger?"
         }
       ],
       "records": [
@@ -933,25 +945,25 @@
       "tasks": [
         {
           "id": "tires",
-          "text": "Real winter tires. Not hope."
+          "text": "Real winter tires — not hope?"
         },
         {
           "id": "wood",
-          "text": "Dry wood or a propane account that will deliver."
+          "text": "Dry wood, or a propane account that will actually deliver?"
         },
         {
           "id": "water",
-          "text": "Heat on the pump, or a way to keep water when the line is down."
+          "text": "Heat on the well pump, or a way to keep water when the line is down?"
         },
         {
           "id": "food",
-          "text": "A week of food and a way to cook it."
+          "text": "A week of food and a way to cook it if the power dies?"
         }
       ],
       "records": [
         {
-          "name": "Living here",
-          "url": "/living"
+          "name": "Living here (start of this path)",
+          "url": "/land#living"
         },
         {
           "name": "Regional info (outages, lake, fire)",
@@ -1015,15 +1027,11 @@
       "tasks": [
         {
           "id": "permit",
-          "text": "Ask Planning what this project needs before you pour a slab."
-        },
-        {
-          "id": "snow",
-          "text": "Snow load and frost depth are in the code here. Out-of-state plans fail."
+          "text": "Have you asked Planning what this project needs before you pour a slab?"
         },
         {
           "id": "crew",
-          "text": "Pick licensed local outfits from the list on this step. Call them yourself."
+          "text": "Have you called a licensed local outfit yourself?"
         }
       ],
       "records": [
@@ -1048,6 +1056,37 @@
       ],
       "guides": [],
       "legal": "Licensed trades for electrical, plumbing, septic, well. Owner-builder has limits. We intro you to names; we do not take a cut of the job."
+    },
+    {
+      "id": "summary",
+      "n": 13,
+      "title": "Your worksheet",
+      "kicker": "What you know",
+      "objective": "See the plan you saved, the questions you answered, and what is still open.",
+      "why": "The path is a worksheet, not a quiz. This page is the recap. We do not get a copy — it stays on this computer.",
+      "tasks": [],
+      "records": [
+        {
+          "name": "Live listings for your plan",
+          "url": "/land/match"
+        },
+        {
+          "name": "Write us",
+          "url": "/contact#write"
+        }
+      ],
+      "helper_tags": [
+        "construction",
+        "builder",
+        "electric",
+        "plumb",
+        "excav",
+        "septic",
+        "well",
+        "survey"
+      ],
+      "guides": [],
+      "legal": "Not legal advice, not a perc test, not a listing service. Confirm with PHD, IDWR, the county, and a licensed outfit before you write a check."
     }
   ]
 }
