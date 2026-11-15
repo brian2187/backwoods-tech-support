@@ -2,9 +2,17 @@
   const chips = document.getElementById("area-chips");
   const feed = document.getElementById("journal-feed");
   const status = document.getElementById("journal-status");
+  const qEl = document.getElementById("journal-q");
   if (!chips || !feed) return;
 
-  function apply(area) {
+  let area = "";
+
+  function query() {
+    return qEl && qEl.value ? String(qEl.value).trim().toLowerCase() : "";
+  }
+
+  function apply() {
+    const q = query();
     chips.querySelectorAll(".dir-chip").forEach((b) => {
       b.classList.toggle("on", (b.getAttribute("data-area") || "") === area);
     });
@@ -14,15 +22,21 @@
         .split(",")
         .map((s) => s.trim())
         .filter(Boolean);
-      const hide = !!(area && mine.length && mine.indexOf(area) < 0);
+      const hideArea = !!(area && mine.length && mine.indexOf(area) < 0);
+      const hideQ = !!(q && (el.textContent || "").toLowerCase().indexOf(q) < 0);
+      const hide = hideArea || hideQ;
       el.hidden = hide;
       if (!hide) shown += 1;
     });
     if (status) {
-      if (area) {
+      const bits = [];
+      if (shown === 1) bits.push("1 item");
+      else bits.push(shown + " items");
+      if (area) bits.push("in " + area);
+      if (q) bits.push('matching “' + q + "”");
+      if (area || q) {
         status.hidden = false;
-        status.textContent =
-          shown === 1 ? "1 item in " + area + "." : shown + " items in " + area + ".";
+        status.textContent = bits.join(" ") + ".";
       } else {
         status.hidden = true;
         status.textContent = "";
@@ -33,6 +47,11 @@
   chips.addEventListener("click", (e) => {
     const btn = e.target.closest("[data-area]");
     if (!btn) return;
-    apply(btn.getAttribute("data-area") || "");
+    area = btn.getAttribute("data-area") || "";
+    apply();
   });
+  if (qEl) {
+    qEl.addEventListener("input", apply);
+    qEl.addEventListener("search", apply);
+  }
 })();
