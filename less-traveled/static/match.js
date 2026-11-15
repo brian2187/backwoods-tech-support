@@ -2,7 +2,9 @@
   const raw = document.getElementById("homestead-data");
   const listRaw = document.getElementById("listings-data");
   const listGrid = document.getElementById("listings-grid");
-  const typeGrid = document.getElementById("types-grid") || document.querySelector(".match-grid");
+  const typeGrid = document.getElementById("types-grid");
+  const form = document.getElementById("criteria-form");
+  const mapEl = document.getElementById("listing-map");
   if (!raw) return;
   let hs;
   try {
@@ -41,6 +43,18 @@
     hunt: ["hunt", "hunting", "elk", "deer", "wildlife"],
     lake: ["lake", "waterfront", "pend oreille", "shore", "beach"],
     offgrid: ["off-grid", "off grid", "solar", "generator", "spring"],
+  };
+  const MUST_TOKENS = {
+    well: ["well"],
+    septic: ["septic"],
+    power: ["power", "electric", "grid"],
+    county_road: ["county road", "paved", "maintained"],
+  };
+  const MUST_NEG = {
+    well: ["no well", "needs well", "without a well", "well needed"],
+    septic: ["no septic", "needs septic", "perc needed", "without septic"],
+    power: ["no power", "off-grid", "off grid", "without power"],
+    county_road: ["unmaintained", "seasonal road", "snowmobile access"],
   };
 
   function scorePlaces(uses, budgetId, acresId, musts) {
@@ -102,69 +116,66 @@
       .sort((a, b) => b.score - a.score);
   }
 
-  function scoreListings(uses, budgetId, acresId, musts) {
+  function blobOf(p) {
+    let blob = ((p.kind || "") + " " + (p.blurb || "") + " " + (p.address || "") + " " + (p.source_url || "")).toLowerCase();
+    if (p.beds) blob += " house home bedroom";
+    return blob;
+  }
+
+  function isHouse(p) {
+    return p.kind === "house" || !!p.beds;
+  }
+
+  function qualifyListings(kind, uses, budgetId, acresId, musts) {
     const budget = budgetId ? band(hs.budgets, budgetId) : null;
     const acresB = acresId ? band(hs.acres, acresId) : null;
     return listings
       .map((rawL) => {
         const p = Object.assign({}, rawL);
-        let score = 0;
         const why = [];
         const miss = [];
+        const blob = blobOf(p);
+        if (kind === "house" && !isHouse(p)) return null;
+        if (kind === "land" && isHouse(p)) return null;
         const priceK = (p.price || 0) / 1000;
-        if (budget && p.price) {
-          if (priceK >= budget.lo && priceK <= budget.hi) {
-            score += 3;
-            why.push("budget");
-          } else {
-            score -= 3;
-            miss.push("budget");
-          }
+        if (budget) {
+          if (!p.price || priceK < budget.lo || priceK > budget.hi) return null;
+          why.push("budget");
         }
-        if (acresB && p.acres != null) {
-          if (p.acres >= acresB.lo && p.acres <= acresB.hi) {
-            score += 2;
-            why.push("acres");
-          } else {
-            score -= 2;
-            miss.push("acres");
-          }
+        if (acresB) {
+          if (p.acres == null || p.acres < acresB.lo || p.acres > acresB.hi) return null;
+          why.push("acres");
         }
-        let blob = ((p.kind || "") + " " + (p.blurb || "") + " " + (p.address || "") + " " + (p.source_url || "")).toLowerCase();
-        if (p.beds) blob += " house home bedroom";
-        uses.forEach((u) => {
-          const terms = USE_TERMS[u] || [u];
-          if (terms.some((t) => blob.indexOf(t) >= 0)) {
-            score += 3;
-            why.push(u);
-          } else score -= 1;
-        });
-        if (musts.indexOf("house") >= 0) {
-          if (p.kind === "house" || p.beds) score += 2;
-          else {
-            score -= 5;
-            miss.push("house");
-          }
-        }
+        if (kind !== "land" && musts.indexOf("house") >= 0 && !isHouse(p)) return null;
+        if (isHouse(p) && (kind === "house" || musts.indexOf("house") >= 0)) why.push("house");
+        let drop = false;
         ["well", "septic", "power", "county_road"].forEach((m) => {
           if (musts.indexOf(m) < 0) return;
-          const tokens = {
-            well: ["well"],
-            septic: ["septic"],
-            power: ["power", "electric", "grid"],
-            county_road: ["county road", "paved", "maintained"],
-          }[m];
-          if (tokens.some((t) => blob.indexOf(t) >= 0)) {
-            score += 2;
-            why.push(m);
+          const neg = MUST_NEG[m] || [];
+          const pos = MUST_TOKENS[m] || [m];
+          if (neg.some((t) => blob.indexOf(t) >= 0)) {
+            drop = true;
+            return;
           }
+          if (pos.some((t) => blob.indexOf(t) >= 0)) why.push(m);
+          else miss.push("confirm " + m.replace("_", " "));
         });
-        p.score = score;
+        if (drop) return null;
+        if (uses.length) {
+          const hit = uses.filter((u) => {
+            const terms = USE_TERMS[u] || [u];
+            return terms.some((t) => blob.indexOf(t) >= 0);
+          });
+          if (!hit.length) return null;
+          hit.forEach((u) => why.push(u));
+        }
         p.why = why;
         p.miss = miss;
+        p.score = why.length * 2 - miss.length;
         return p;
       })
-      .sort((a, b) => b.score - a.score || (b.price || 0) - (a.price || 0));
+      .filter(Boolean)
+      .sort((a, b) => (b.score || 0) - (a.score || 0) || (a.price || 0) - (b.price || 0));
   }
 
   function esc(s) {
@@ -178,8 +189,14 @@
     if (n == null) return "";
     return "$" + Number(n).toLocaleString("en-US", { maximumFractionDigits: 0 });
   }
+  function validLL(lat, lon) {
+    return typeof lat === "number" && typeof lon === "number" && isFinite(lat) && isFinite(lon);
+  }
+  function placeHref(slug) {
+    const staticPage = /\.html$/i.test((location.pathname.split("/").pop() || ""));
+    return staticPage ? "land-place-" + slug + ".html" : "/land/place/" + slug;
+  }
 
-  const params = new URLSearchParams(location.search);
   function readLS(k, fallback) {
     try {
       const v = localStorage.getItem(k);
@@ -188,104 +205,380 @@
       return fallback;
     }
   }
-  const uses = params.getAll("use").filter(Boolean);
-  const musts = params.getAll("must").filter(Boolean);
-  const budget = params.get("budget") || "";
-  const acres = params.get("acres") || "";
-  const useIds = uses.length ? uses : readLS("lt-uses", []);
-  const mustIds = musts.length ? musts : readLS("lt-musts", []);
-  const budgetId = budget || readLS("lt-budget", "") || "";
-  const acresId = acres || readLS("lt-acres", "") || "";
-  const hasPlan = useIds.length || budgetId || acresId || mustIds.length;
-
-  const meta = document.getElementById("match-meta") || document.querySelector("main p.meta");
-  if (meta && hasPlan) {
-    const bits = [];
-    bits.push("Pulled live listings.");
-    if (useIds.length) bits.push("Uses: " + useIds.map((u) => labelOf(hs.uses, u)).join(", ") + ".");
-    if (budgetId) bits.push("Budget " + labelOf(hs.budgets, budgetId) + ".");
-    if (acresId) bits.push("Acres " + labelOf(hs.acres, acresId) + ".");
-    meta.innerHTML =
-      bits.join(" ") +
-      ' <a href="land-needs.html">Change plan</a> · <a href="land-step-permits.html">Continue without a type</a>';
+  function writeLS(k, v) {
+    try {
+      localStorage.setItem(k, JSON.stringify(v));
+    } catch (e) {}
   }
 
-  if (listGrid && listings.length) {
-    const scoredL = hasPlan ? scoreListings(useIds, budgetId, acresId, mustIds) : listings;
-    listGrid.innerHTML = scoredL
-      .slice(0, 60)
-      .map((p, i) => {
-        const addr = esc(p.address || "") + (p.city ? ", " + esc(p.city) : "") + (p.state ? " " + esc(p.state) : "");
-        const href = p.source_url
-          ? '<a class="listing-addr" href="' + esc(p.source_url) + '" rel="noopener" target="_blank">' + addr + "</a>"
-          : addr;
-        const metaBits = [];
-        if (p.acres != null) metaBits.push("<span>" + esc(p.acres) + " ac</span>");
-        if (p.price) metaBits.push("<span>" + money(p.price) + "</span>");
-        if (p.beds) metaBits.push("<span>" + esc(p.beds) + " bd" + (p.baths ? " / " + esc(p.baths) + " ba" : "") + "</span>");
-        const why = p.why && p.why.length ? '<p class="match-fit">Fits: ' + esc(p.why.join(", ")) + "</p>" : "";
-        const miss = p.miss && p.miss.length ? '<p class="match-miss">Watch: ' + esc(p.miss.join(", ")) + "</p>" : "";
+  const params = new URLSearchParams(location.search);
+  const urlUses = params.getAll("use").filter(Boolean);
+  const urlMusts = params.getAll("must").filter(Boolean);
+  const urlBudget = params.get("budget") || "";
+  const urlAcres = params.get("acres") || "";
+  const urlKind = params.get("kind") || "";
+
+  const CENTER = [-116.55, 48.27];
+  const STYLE_STREETS = "https://tiles.openfreemap.org/styles/liberty";
+  const STYLE_SAT = {
+    version: 8,
+    glyphs: "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+    sources: {
+      esri: {
+        type: "raster",
+        tiles: ["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"],
+        tileSize: 256,
+        maxzoom: 19,
+        attribution: "Tiles © Esri",
+      },
+      labels: {
+        type: "raster",
+        tiles: ["https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}"],
+        tileSize: 256,
+        maxzoom: 19,
+      },
+    },
+    layers: [
+      { id: "esri", type: "raster", source: "esri" },
+      { id: "labels", type: "raster", source: "labels" },
+    ],
+  };
+  const STYLE_TOPO = {
+    version: 8,
+    glyphs: "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+    sources: {
+      topo: {
+        type: "raster",
+        tiles: ["https://a.tile.opentopomap.org/{z}/{x}/{y}.png"],
+        tileSize: 256,
+        maxzoom: 17,
+        attribution: "OpenTopoMap · OSM",
+      },
+    },
+    layers: [{ id: "topo", type: "raster", source: "topo" }],
+  };
+  const PIN_SVG =
+    '<svg viewBox="0 0 24 32" aria-hidden="true"><path fill="currentColor" d="M12 1.5c-5 0-9 4-9 9.1 0 7 9 19.4 9 19.4s9-12.4 9-19.4C21 5.5 17 1.5 12 1.5z"/><path fill="#fffcf7" d="M8.2 12.2l2.4 2.3 5.2-5.4 1.3 1.3-6.5 6.7-3.7-3.6z"/></svg>';
+  const LAND_SVG =
+    '<svg viewBox="0 0 24 32" aria-hidden="true"><path fill="currentColor" d="M12 1.5c-5 0-9 4-9 9.1 0 7 9 19.4 9 19.4s9-12.4 9-19.4C21 5.5 17 1.5 12 1.5z"/><path fill="#fffcf7" d="M6.8 16.2l5.2-7.2 5.2 7.2H6.8z"/></svg>';
+
+  let map = null;
+  const markers = {};
+  let selected = null;
+  let lastQualify = [];
+
+  function currentCriteria() {
+    if (!form) {
+      return {
+        kind: urlKind || readLS("lt-kind", "house") || "house",
+        uses: urlUses.length ? urlUses : readLS("lt-uses", []),
+        musts: urlMusts.length ? urlMusts : readLS("lt-musts", ["house"]),
+        budget: urlBudget || readLS("lt-budget", "") || "",
+        acres: urlAcres || readLS("lt-acres", "") || "",
+      };
+    }
+    const uses = [];
+    const musts = [];
+    form.querySelectorAll('input[name="use"]:checked').forEach((el) => uses.push(el.value));
+    form.querySelectorAll('input[name="must"]:checked').forEach((el) => musts.push(el.value));
+    return {
+      kind: (form.querySelector('[name="kind"]') || {}).value || "house",
+      uses: uses,
+      musts: musts,
+      budget: (form.querySelector('[name="budget"]') || {}).value || "",
+      acres: (form.querySelector('[name="acres"]') || {}).value || "",
+    };
+  }
+
+  function persist(c) {
+    writeLS("lt-kind", c.kind);
+    writeLS("lt-uses", c.uses);
+    writeLS("lt-musts", c.musts);
+    writeLS("lt-budget", c.budget);
+    writeLS("lt-acres", c.acres);
+  }
+
+  function fillForm() {
+    if (!form) return;
+    const kind = urlKind || readLS("lt-kind", "house") || "house";
+    const uses = urlUses.length ? urlUses : readLS("lt-uses", []);
+    const savedMusts = readLS("lt-musts", null);
+    const musts = urlMusts.length ? urlMusts : savedMusts && savedMusts.length ? savedMusts : ["house"];
+    const budget = urlBudget || readLS("lt-budget", "") || "";
+    const acres = urlAcres || readLS("lt-acres", "") || "";
+    const kindEl = form.querySelector('[name="kind"]');
+    const budEl = form.querySelector('[name="budget"]');
+    const acEl = form.querySelector('[name="acres"]');
+    if (kindEl) kindEl.value = kind;
+    if (budEl) budEl.value = budget;
+    if (acEl) acEl.value = acres;
+    form.querySelectorAll('input[name="use"]').forEach((el) => {
+      el.checked = uses.indexOf(el.value) >= 0;
+    });
+    form.querySelectorAll('input[name="must"]').forEach((el) => {
+      el.checked = musts.indexOf(el.value) >= 0;
+    });
+    if (uses.length) {
+      const details = form.querySelector(".criteria-uses");
+      if (details) details.open = true;
+    }
+  }
+
+  function metaLine(c, n) {
+    const bits = [];
+    bits.push(n + " listing" + (n === 1 ? "" : "s") + " match.");
+    if (c.kind === "house") bits.push("Houses.");
+    else if (c.kind === "land") bits.push("Land.");
+    if (c.budget) bits.push(labelOf(hs.budgets, c.budget) + ".");
+    if (c.acres) bits.push(labelOf(hs.acres, c.acres) + ".");
+    if (c.musts.length) bits.push("Must: " + c.musts.map((m) => labelOf(hs.musts, m)).join(", ") + ".");
+    if (c.uses.length) bits.push("Uses: " + c.uses.map((u) => labelOf(hs.uses, u)).join(", ") + ".");
+    return bits.join(" ");
+  }
+
+  function popupHtml(p) {
+    const addr = esc(p.address || "") + (p.city ? ", " + esc(p.city) : "");
+    const bits = [];
+    if (p.price) bits.push(money(p.price));
+    if (p.acres != null) bits.push(esc(p.acres) + " ac");
+    if (p.beds) bits.push(esc(p.beds) + " bd" + (p.baths ? " / " + esc(p.baths) + " ba" : ""));
+    const approx = p.geo === "city" || p.geo === "region" ? "<p class=\"approx\">Town location — confirm the pin on the listing.</p>" : "";
+    const href = p.source_url
+      ? '<p><a href="' + esc(p.source_url) + '" rel="noopener" target="_blank">Open on ' + esc(p.source || "listing") + "</a></p>"
+      : "";
+    return (
+      '<div class="listing-pop"><h3>' +
+      addr +
+      "</h3><p>" +
+      bits.join(" · ") +
+      "</p>" +
+      approx +
+      href +
+      "</div>"
+    );
+  }
+
+  function pinNode(p) {
+    const n = document.createElement("button");
+    n.type = "button";
+    n.className = "ico-listing" + (isHouse(p) ? " is-house" : " is-land") + (p.geo === "city" || p.geo === "region" ? " is-approx" : "");
+    n.setAttribute("aria-label", (p.address || "Listing") + (p.city ? ", " + p.city : ""));
+    n.innerHTML = isHouse(p) ? PIN_SVG : LAND_SVG;
+    n.addEventListener("mousedown", function (ev) {
+      ev.preventDefault();
+    });
+    n.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      ev.stopPropagation();
+      selectListing(p.id, true);
+    });
+    return n;
+  }
+
+  function clearMarkers() {
+    Object.keys(markers).forEach((id) => {
+      markers[id].remove();
+      delete markers[id];
+    });
+  }
+
+  function drawMarkers(rows) {
+    if (!map) return;
+    clearMarkers();
+    const used = {};
+    const bounds = typeof maplibregl !== "undefined" ? new maplibregl.LngLatBounds() : null;
+    let n = 0;
+    rows.forEach((p) => {
+      if (!validLL(p.lat, p.lon)) return;
+      const key = p.lat.toFixed(4) + "," + p.lon.toFixed(4);
+      used[key] = (used[key] || 0) + 1;
+      const i = used[key] - 1;
+      const lon = p.lon + (i ? Math.cos(i * 1.15) * 0.004 : 0);
+      const lat = p.lat + (i ? Math.sin(i * 1.15) * 0.003 : 0);
+      const m = new maplibregl.Marker({ element: pinNode(p), anchor: "bottom" })
+        .setLngLat([lon, lat])
+        .setPopup(new maplibregl.Popup({ offset: 18, maxWidth: "280px" }).setHTML(popupHtml(p)))
+        .addTo(map);
+      markers[p.id] = m;
+      if (bounds) bounds.extend([lon, lat]);
+      n += 1;
+    });
+    if (n === 1) {
+      const only = rows.find((p) => markers[p.id]);
+      if (only) map.easeTo({ center: [only.lon, only.lat], zoom: Math.max(map.getZoom(), 11), duration: 450 });
+    } else if (n > 1 && bounds && !bounds.isEmpty()) {
+      map.fitBounds(bounds, { padding: 48, maxZoom: 12, duration: 450 });
+    }
+  }
+
+  function renderList(rows) {
+    if (!listGrid) return;
+    if (!rows.length) {
+      listGrid.innerHTML = '<p class="meta">Nothing in this pull matches. Loosen price, acres, or must-haves.</p>';
+      return;
+    }
+    listGrid.innerHTML = rows
+      .slice(0, 80)
+      .map((p) => {
+        const addr = esc(p.address || "") + (p.city ? ", " + esc(p.city) : "");
+        const bits = [];
+        if (p.price) bits.push(money(p.price));
+        if (p.acres != null) bits.push(esc(p.acres) + " ac");
+        if (p.beds) bits.push(esc(p.beds) + " bd");
+        const approx = p.geo === "city" || p.geo === "region" ? '<span class="approx">Town pin</span>' : "";
         return (
-          '<article class="match-card listing-card' +
-          (i < 3 ? " is-top" : "") +
-          '"><p class="kicker">' +
-          esc(p.city || "Bonner County") +
+          '<button type="button" class="listing-mini" data-id="' +
+          esc(p.id) +
+          '"><span class="src">' +
+          esc(p.city || "North Idaho") +
           " · " +
           esc(p.source || "") +
           (p.kind ? " · " + esc(p.kind) : "") +
-          "</p><h3>" +
-          href +
-          "</h3>" +
-          (p.blurb ? "<p>" + esc(p.blurb) + "</p>" : "") +
-          '<p class="dir-meta">' +
-          metaBits.join("") +
-          "</p>" +
-          (p.broker ? '<p class="listing-broker">' + esc(p.broker) + "</p>" : "") +
-          why +
-          miss +
-          (p.source_url
-            ? '<p class="quest-go"><a href="' + esc(p.source_url) + '" rel="noopener" target="_blank">Open listing on ' + esc(p.source) + "</a></p>"
-            : "") +
-          "</article>"
+          "</span><strong>" +
+          addr +
+          "</strong><span class=\"bits\">" +
+          bits.join(" · ") +
+          "</span>" +
+          approx +
+          "</button>"
         );
       })
       .join("");
+    listGrid.querySelectorAll(".listing-mini").forEach((btn) => {
+      btn.addEventListener("click", function () {
+        selectListing(btn.getAttribute("data-id"), true);
+      });
+    });
   }
 
-  if (!hasPlan || !typeGrid) return;
-  const scored = scorePlaces(useIds, budgetId, acresId, mustIds);
-  typeGrid.innerHTML = scored
-    .map((p, i) => {
-      const why = p.why && p.why.length ? '<p class="match-fit">Fits: ' + p.why.join(", ") + "</p>" : "";
-      const miss = p.miss && p.miss.length ? '<p class="match-miss">Watch: ' + p.miss.join(", ") + "</p>" : "";
-      return (
-        '<article class="match-card' +
-        (i < 3 ? " is-top" : "") +
-        '"><p class="kicker">' +
-        (p.area || "") +
-        " · score " +
-        p.score +
-        "</p><h3><a href=\"land-place-" +
-        p.slug +
-        '.html">' +
-        p.name +
-        "</a></h3><p>" +
-        (p.blurb || "") +
-        '</p><p class="dir-meta"><span>' +
-        p.acres_lo +
-        "–" +
-        p.acres_hi +
-        " ac</span><span>$" +
-        p.budget_lo +
-        "–" +
-        p.budget_hi +
-        "k</span></p>" +
-        why +
-        miss +
-        '<p class="quest-go"><a href="land-place-' +
-        p.slug +
-        '.html">Use this type</a></p></article>'
-      );
-    })
-    .join("");
+  function selectListing(id, fly) {
+    const p = lastQualify.find((row) => row.id === id);
+    selected = id;
+    Object.keys(markers).forEach((k) => {
+      markers[k].getElement().classList.toggle("is-on", k === id);
+    });
+    listGrid &&
+      listGrid.querySelectorAll(".listing-mini").forEach((n) => {
+        n.classList.toggle("is-on", n.getAttribute("data-id") === id);
+      });
+    const m = markers[id];
+    if (m) {
+      const pop = m.getPopup();
+      if (pop && !pop.isOpen()) m.togglePopup();
+      if (fly && map && validLL(p && p.lat, p && p.lon)) {
+        map.easeTo({ center: [p.lon, p.lat], zoom: Math.min(Math.max(map.getZoom(), 11), 13), duration: 400 });
+      }
+    }
+    if (listGrid) {
+      const item = listGrid.querySelector('.listing-mini[data-id="' + id + '"]');
+      if (item) item.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+  }
+
+  function apply() {
+    const c = currentCriteria();
+    persist(c);
+    lastQualify = qualifyListings(c.kind, c.uses, c.budget, c.acres, c.musts);
+    const countEl = document.getElementById("qualify-count");
+    const heading = document.getElementById("qualify-heading");
+    const line = metaLine(c, lastQualify.length);
+    if (countEl) countEl.textContent = line;
+    if (heading) heading.textContent = "Qualifying listings";
+    const meta = document.getElementById("match-meta");
+    if (meta) {
+      meta.textContent =
+        "Pulled live listings. " + line + (c.geoNote ? "" : "") + " Confirm well, septic, and access with the listing.";
+    }
+    renderList(lastQualify);
+    drawMarkers(lastQualify);
+    if (typeGrid && (c.uses.length || c.budget || c.acres || c.musts.length)) {
+      const scored = scorePlaces(c.uses, c.budget, c.acres, c.musts);
+      typeGrid.innerHTML = scored
+        .map((p, i) => {
+          const why = p.why && p.why.length ? '<p class="match-fit">Fits: ' + esc(p.why.join(", ")) + "</p>" : "";
+          const miss = p.miss && p.miss.length ? '<p class="match-miss">Watch: ' + esc(p.miss.join(", ")) + "</p>" : "";
+          return (
+            '<article class="match-card' +
+            (i < 3 ? " is-top" : "") +
+            '"><p class="kicker">' +
+            esc(p.area || "") +
+            " · score " +
+            p.score +
+            '</p><h3><a href="' +
+            esc(placeHref(p.slug)) +
+            '">' +
+            esc(p.name) +
+            "</a></h3><p>" +
+            esc(p.blurb || "") +
+            '</p><p class="dir-meta"><span>' +
+            p.acres_lo +
+            "–" +
+            p.acres_hi +
+            " ac</span><span>$" +
+            p.budget_lo +
+            "–" +
+            p.budget_hi +
+            "k</span></p>" +
+            why +
+            miss +
+            '<p class="quest-go"><a href="' +
+            esc(placeHref(p.slug)) +
+            '">Use this type</a></p></article>'
+          );
+        })
+        .join("");
+    }
+  }
+
+  function initMap() {
+    if (!mapEl || typeof maplibregl === "undefined") {
+      if (mapEl) mapEl.innerHTML = '<p class="map-fallback">Map library did not load. The list on the right still filters.</p>';
+      apply();
+      return;
+    }
+    map = new maplibregl.Map({
+      container: mapEl,
+      style: STYLE_TOPO,
+      center: CENTER,
+      zoom: 8.4,
+      minZoom: 2,
+      maxZoom: 18,
+      attributionControl: false,
+    });
+    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+    map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
+    map.on("load", function () {
+      apply();
+    });
+    document.querySelectorAll("#listing-layers [data-base]").forEach((btn) => {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll("#listing-layers [data-base]").forEach((b) => b.classList.remove("on"));
+        btn.classList.add("on");
+        const which = btn.getAttribute("data-base");
+        map.setStyle(which === "sat" ? STYLE_SAT : which === "streets" ? STYLE_STREETS : STYLE_TOPO);
+        map.once("style.load", function () {
+          drawMarkers(lastQualify);
+        });
+      });
+    });
+  }
+
+  fillForm();
+  if (form) {
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+    });
+    const kindEl = form.querySelector('[name="kind"]');
+    if (kindEl) {
+      kindEl.addEventListener("change", function () {
+        const house = form.querySelector('input[name="must"][value="house"]');
+        if (!house) return;
+        if (kindEl.value === "land") house.checked = false;
+        if (kindEl.value === "house") house.checked = true;
+      });
+    }
+    form.addEventListener("change", apply);
+  }
+  initMap();
+  if (!mapEl) apply();
 })();
