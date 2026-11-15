@@ -17,7 +17,7 @@ This Dell session did **not** own the trading desk. No wake.py / TRADE_REQUEST f
 
 **Virtual Assistant** — service of Mountain Top Tech, subdivision of Something Ain't Right Farms (SAR Farms). Sagle / Less Traveled Road. After-hours (and missed) booking desk for local shops.
 
-Email: `MTTech_SARFarm@outlook.com` (alias on `moorebmoore@hotmail.com`). Mail 15-minute scheduler is **off**.
+Email: `MTTech_SARFarm@outlook.com` (separate Outlook.com mailbox). Hotmail `moorebmoore@hotmail.com` is Brian's notify inbox. Mail 15-minute scheduler is **off**.
 
 ---
 

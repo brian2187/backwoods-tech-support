@@ -8,7 +8,7 @@ You are picking up **Virtual Assistant** work for Brian Moore (Sagle, Less Trave
 
 Brian Moore. **Virtual Assistant** is the after-hours (and missed-call) booking desk — service of **Mountain Top Tech**, subdivision of **Something Ain't Right Farms** (SAR Farms). Rebranded from AIBizSupport.
 
-Email: `MTTech_SARFarm@outlook.com` (alias on `moorebmoore@hotmail.com`).
+Email: `MTTech_SARFarm@outlook.com` (separate Outlook.com mailbox). Hotmail `moorebmoore@hotmail.com` is Brian's notify inbox.
 
 Public site (raw.githack until Pages is enabled **by hand** in Settings):
 https://raw.githack.com/brian2187/backwoods-tech-support/main/index.html

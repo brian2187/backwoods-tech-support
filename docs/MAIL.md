@@ -34,6 +34,8 @@ Anything not addressed to/from the business alias is refused.
 - Auto-send outreach
 - Bind 8767–8770
 - Start wake.py from this folder
-- Turn the 15-minute Outlook check back on unless Brian asks
+- Change the public GitHub Pages site from this loop
 
-Hotmail is the connected mailbox. Alias `MTTech_SARFarm@outlook.com`.
+`MTTech_SARFarm@outlook.com` is a **separate** Outlook.com mailbox. Hotmail `moorebmoore@hotmail.com` is Brian's personal inbox (dual-notify). Add the MTTech account in desktop Outlook so the contact-desk watcher can see enroll and Less Traveled mail.
+
+Contact-desk watch is **on** (2026-11-15). `aibiz/watch_contact_mail.ps1` queues inbound desk mail. Grok may act on requests that do not change the public site. Review items dual-notify `706.315.3390` and `moorebmoore@hotmail.com` at the same time. Notification subjects use `[VA-DESK]` so the watcher ignores them. Dual-notify and replies to inbound desk mail are allowed; cold outreach is not.

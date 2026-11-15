@@ -6,7 +6,7 @@
 
 **Phone model (locked):** each shop gets a **dedicated line**. They set hours. During hours the line rings them first; no pickup → Virtual Assistant. After hours / vacation → Virtual Assistant. Unanswered **no matter when** goes to the desk. Existing 208 can stay published and point at the new line.
 
-**From-address:** `MTTech_SARFarm@outlook.com` (alias on Hotmail). Ready for drafts. Still do not send until Brian authorizes. Mail scheduler is off.
+**From-address:** `MTTech_SARFarm@outlook.com` (separate Outlook.com mailbox). Ready for drafts. Still do not send until Brian authorizes. Mail scheduler is off.
 
 ## Locked targets
 

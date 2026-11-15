@@ -43,9 +43,7 @@
       encodeURIComponent(body);
     if (status) {
       status.textContent =
-        "Opening your mail app to " +
-        to +
-        ". Send that message and we will set up the dedicated number and tell Brian.";
+        "Opening your mail app with the enrollment filled in. Send that message and we will set up the dedicated number and tell Brian.";
     }
     window.location.href = href;
   });
