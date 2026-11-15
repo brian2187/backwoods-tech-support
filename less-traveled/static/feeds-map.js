@@ -113,6 +113,9 @@
     n.className = "ico-cam" + (cam.kind === "youtube" ? " is-live" : "");
     n.setAttribute("aria-label", cam.name || "Camera");
     n.innerHTML = CAM_SVG + '<span class="cam-tag">' + (cam.kind === "youtube" ? "LIVE" : "511") + "</span>";
+    n.addEventListener("mousedown", function (ev) {
+      ev.preventDefault();
+    });
     n.addEventListener("click", function (ev) {
       ev.preventDefault();
       ev.stopPropagation();
@@ -175,17 +178,37 @@
     return "<ul>" + bits.join("") + "</ul>";
   }
 
-  function stopStill() {
+  function stopMedia() {
     if (stillTimer) {
       clearInterval(stillTimer);
       stillTimer = null;
     }
-    media.innerHTML = "";
+    const iframe = media.querySelector("iframe");
+    if (iframe) {
+      try {
+        iframe.contentWindow.postMessage(
+          JSON.stringify({ event: "command", func: "stopVideo", args: [] }),
+          "*"
+        );
+      } catch (e) {}
+      iframe.src = "about:blank";
+    }
+    const img = media.querySelector("img");
+    if (img) img.removeAttribute("src");
+    media.replaceChildren();
   }
 
   function showStill(url) {
     const img = document.createElement("img");
     img.alt = "Live camera still";
+    img.addEventListener("error", function () {
+      if (img.dataset.failed) return;
+      img.dataset.failed = "1";
+      const p = document.createElement("p");
+      p.className = "feed-fail";
+      p.textContent = "Still did not load. Open the source link below.";
+      media.replaceChildren(p);
+    });
     const bust = function () {
       img.src = url + (url.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now();
     };
@@ -196,12 +219,41 @@
 
   function showYouTube(id) {
     const iframe = document.createElement("iframe");
-    iframe.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(id) + "?autoplay=1&mute=1&rel=0";
+    const origin =
+      location.protocol === "http:" || location.protocol === "https:"
+        ? "&origin=" + encodeURIComponent(location.origin)
+        : "";
+    iframe.src =
+      "https://www.youtube.com/embed/" +
+      encodeURIComponent(id) +
+      "?autoplay=1&mute=1&rel=0&playsinline=1&enablejsapi=1" +
+      origin;
     iframe.title = "YouTube live camera";
-    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-    iframe.allowFullscreen = true;
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.setAttribute("allowfullscreen", "");
     iframe.referrerPolicy = "strict-origin-when-cross-origin";
     media.appendChild(iframe);
+  }
+
+  function revealWatch() {
+    const box = document.getElementById("feed-watch");
+    if (!box) return;
+    const rect = box.getBoundingClientRect();
+    const vh = window.innerHeight || 0;
+    if (rect.top >= 8 && rect.bottom <= vh && rect.height > 80) return;
+    const top = rect.top + (window.scrollY || 0) - 12;
+    window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+  }
+
+  function scrollListTo(id) {
+    const wrap = document.querySelector(".feed-list-wrap") || listEl;
+    const item = listEl.querySelector('.feed-item[data-id="' + id + '"]');
+    if (!wrap || !item) return;
+    const w = wrap.getBoundingClientRect();
+    const b = item.getBoundingClientRect();
+    if (b.top >= w.top && b.bottom <= w.bottom) return;
+    wrap.scrollTop += b.top - w.top - 8;
   }
 
   function selectCam(id, fly) {
@@ -231,15 +283,25 @@
       " · " +
       link(cam.source_url, cam.source === "YouTube" ? "Watch on YouTube" : "Open on Idaho 511") +
       "</p>";
-    stopStill();
-    if (cam.kind === "youtube" && cam.youtube) showYouTube(cam.youtube);
-    else if (cam.image) showStill(cam.image);
+    stopMedia();
+    if (cam.kind === "youtube" && cam.youtube) {
+      window.setTimeout(function () {
+        if (selected !== id) return;
+        showYouTube(cam.youtube);
+      }, 120);
+    } else if (cam.image) {
+      showStill(cam.image);
+    }
     if (fly && validLL(cam.lat, cam.lon)) {
-      map.easeTo({ center: [cam.lon, cam.lat], zoom: Math.max(map.getZoom(), 11), duration: 600 });
+      map.easeTo({
+        center: [cam.lon, cam.lat],
+        zoom: Math.min(Math.max(map.getZoom(), 9), 11),
+        duration: 500,
+      });
     }
     if (history.replaceState) history.replaceState(null, "", "#" + encodeURIComponent(id));
-    const item = document.querySelector('.feed-item[data-id="' + id + '"]');
-    if (item && item.scrollIntoView) item.scrollIntoView({ block: "nearest" });
+    scrollListTo(id);
+    revealWatch();
   }
 
   function renderList() {
@@ -263,6 +325,9 @@
       })
       .join("");
     listEl.querySelectorAll(".feed-item").forEach((btn) => {
+      btn.addEventListener("mousedown", function (ev) {
+        ev.preventDefault();
+      });
       btn.addEventListener("click", function () {
         selectCam(btn.getAttribute("data-id"), true);
       });
