@@ -1,0 +1,307 @@
+{
+  "updated": "2026-09-12",
+  "note": "Hand-curated from venue calendars. Daily ingest does not invent shows.",
+  "venues": [
+    {
+      "name": "Panida Theater",
+      "kind": "theater",
+      "address": "300 N First Ave, Sandpoint",
+      "lat": 48.2769,
+      "lon": -116.5484,
+      "url": "https://www.panida.org/",
+      "about": "1927 Panhandle of Idaho house. Film, touring acts, ballet, comedy."
+    },
+    {
+      "name": "War Memorial Field",
+      "kind": "festival",
+      "address": "801 Ontario St, Sandpoint",
+      "lat": 48.2734,
+      "lon": -116.5458,
+      "url": "https://www.festivalatsandpoint.com/",
+      "about": "Festival at Sandpoint summer series on the lake."
+    },
+    {
+      "name": "The Hive",
+      "kind": "club",
+      "address": "207 N First Ave, Sandpoint",
+      "lat": 48.2764,
+      "lon": -116.5486,
+      "url": "https://livefromthehive.com/",
+      "about": "Downtown room. Little Live Radio Hour with KRFY 88.5."
+    },
+    {
+      "name": "Pend d'Oreille Winery",
+      "kind": "winery",
+      "address": "301 Cedar St, Sandpoint",
+      "lat": 48.2762,
+      "lon": -116.5505,
+      "url": "https://powine.com/events/",
+      "about": "Cedar Street tasting room. Local players most weeks."
+    },
+    {
+      "name": "Farmin Park",
+      "kind": "market",
+      "address": "Downtown Sandpoint",
+      "lat": 48.2756,
+      "lon": -116.5532,
+      "url": "https://www.sandpointonline.com/current",
+      "about": "Farmers market Wed and Sat in season, through mid-October."
+    },
+    {
+      "name": "Connie's",
+      "kind": "restaurant",
+      "address": "323 Cedar St, Sandpoint",
+      "lat": 48.2760,
+      "lon": -116.5508,
+      "url": "https://www.sandpointonline.com/current",
+      "about": "Cedar Street live music."
+    },
+    {
+      "name": "Schweitzer Village",
+      "kind": "mountain",
+      "address": "Schweitzer Mountain Road",
+      "lat": 48.3675,
+      "lon": -116.6227,
+      "url": "https://www.schweitzer.com/",
+      "about": "Fall Fest, summer village, winter hill. 11 miles from town."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-09-12",
+      "time": "4:45 PM",
+      "title": "SASi Art Alive",
+      "kind": "art",
+      "venue": "Panida Theater",
+      "artists": ["Sandpoint Area Seniors"],
+      "url": "https://www.panida.org/event/sasi-art-alive",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-09-12",
+      "time": "7:00 PM",
+      "title": "Perfect Days",
+      "kind": "film",
+      "venue": "Panida Theater",
+      "artists": ["Wim Wenders"],
+      "url": "https://www.panida.org/event/perfect-days",
+      "artist_urls": {"Wim Wenders": "https://en.wikipedia.org/wiki/Perfect_Days"}
+    },
+    {
+      "date": "2026-09-12",
+      "time": "9:00 AM",
+      "title": "Farmers Market",
+      "kind": "market",
+      "venue": "Farmin Park",
+      "artists": [],
+      "url": "https://www.sandpointonline.com/current",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-09-12",
+      "time": "5:00 PM",
+      "title": "Live music: Chris Lynch",
+      "kind": "music",
+      "venue": "Pend d'Oreille Winery",
+      "artists": ["Chris Lynch"],
+      "url": "https://powine.com/events/",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-09-15",
+      "time": "7:00 PM",
+      "title": "Little Live Radio Hour",
+      "kind": "music",
+      "venue": "The Hive",
+      "artists": ["Ron Greene", "Arayah Glines"],
+      "url": "https://www.festivalatsandpoint.com/calendar",
+      "artist_urls": {"KRFY 88.5": "https://krfy.org/"}
+    },
+    {
+      "date": "2026-09-18",
+      "time": "7:00 PM",
+      "title": "The Majestic",
+      "kind": "film",
+      "venue": "Panida Theater",
+      "artists": [],
+      "url": "https://www.panida.org/event/the-majestic",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-09-18",
+      "time": "5:00 PM",
+      "title": "Mike Wagoner and Sadie Sicilia",
+      "kind": "music",
+      "venue": "Pend d'Oreille Winery",
+      "artists": ["Mike Wagoner", "Sadie Sicilia"],
+      "url": "https://powine.com/events/",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-09-19",
+      "time": "7:00 PM",
+      "title": "Alexa Wildish & Hannah Delynn",
+      "kind": "music",
+      "venue": "Panida Theater",
+      "artists": ["Alexa Wildish", "Hannah Delynn"],
+      "url": "https://www.panida.org/event/alexa-wildish-hannah-delynn",
+      "artist_urls": {
+        "Alexa Wildish": "https://www.alexawildish.com/",
+        "Hannah Delynn": "https://www.hannahdelynn.com/"
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "time": "4:00 PM",
+      "title": "Youth Strings Orchestra practice",
+      "kind": "community",
+      "venue": "Festival at Sandpoint office",
+      "artists": ["Karen Dignan"],
+      "url": "https://www.festivalatsandpoint.com/calendar",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-09-24",
+      "time": "7:00 PM",
+      "title": "End of the Line: Allman Brothers tribute",
+      "kind": "music",
+      "venue": "Panida Theater",
+      "artists": ["End of the Line"],
+      "url": "https://www.panida.org/event/end-of-the-line",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-09-25",
+      "time": "7:00 PM",
+      "title": "Jim-Isaac Chua in Concert",
+      "kind": "music",
+      "venue": "Panida Theater",
+      "artists": ["Jim-Isaac Chua"],
+      "url": "https://www.panida.org/event/jim-isaac-chua-in-concert",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-09-26",
+      "time": "7:00 PM",
+      "title": "Actually, It Is Rocket Science",
+      "kind": "film",
+      "venue": "Panida Theater",
+      "artists": ["Teton Gravity Research"],
+      "url": "https://www.panida.org/event/actually-it-is-rocket-science",
+      "artist_urls": {"Teton Gravity Research": "https://www.tetongravity.com/"}
+    },
+    {
+      "date": "2026-09-30",
+      "time": "7:00 PM",
+      "title": "SPEAK (documentary)",
+      "kind": "film",
+      "venue": "Panida Theater",
+      "artists": ["Bonner County Human Rights Task Force"],
+      "url": "https://www.panida.org/event/speak",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-10-04",
+      "time": "7:00 PM",
+      "title": "Samantha Fish with Zac Schulze Gang",
+      "kind": "music",
+      "venue": "Panida Theater",
+      "artists": ["Samantha Fish", "Zac Schulze Gang"],
+      "url": "https://www.panida.org/event/samantha-fish",
+      "artist_urls": {
+        "Samantha Fish": "https://www.samanthafish.com/",
+        "Zac Schulze Gang": "https://www.zacschulze.com/"
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "time": "7:30 PM",
+      "title": "Shovels & Rope",
+      "kind": "music",
+      "venue": "Panida Theater",
+      "artists": ["Shovels & Rope"],
+      "url": "https://www.panida.org/event/shovels-rope",
+      "artist_urls": {"Shovels & Rope": "https://www.shovelsandrope.com/"}
+    },
+    {
+      "date": "2026-10-18",
+      "time": "1:00 PM",
+      "title": "Local Idaho Filmmaker Showcase",
+      "kind": "film",
+      "venue": "Panida Theater",
+      "artists": ["Sandpoint Idaho Film Fest"],
+      "url": "https://www.panida.org/event/local-idaho-filmmaker-showcase",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-10-23",
+      "time": "7:00 PM",
+      "title": "Sandpoint Idaho Film Fest",
+      "kind": "film",
+      "venue": "Panida Theater",
+      "artists": ["Sandpoint Idaho Film Fest"],
+      "url": "https://www.panida.org/event/sandpoint-idaho-film-fest",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-10-30",
+      "time": "7:00 PM",
+      "title": "Grand Kyiv Ballet — Swan Lake Symphony of Lights",
+      "kind": "dance",
+      "venue": "Panida Theater",
+      "artists": ["Grand Kyiv Ballet"],
+      "url": "https://www.panida.org/event/grand-kyiv-ballet-the-swan-lake-symphony-of-lights",
+      "artist_urls": {"Grand Kyiv Ballet": "https://www.kyivballet.com/"}
+    },
+    {
+      "date": "2026-11-13",
+      "time": "7:00 PM",
+      "title": "Myq Kaplan",
+      "kind": "comedy",
+      "venue": "Panida Theater",
+      "artists": ["Myq Kaplan"],
+      "url": "https://www.panida.org/event/myq-kaplan",
+      "artist_urls": {"Myq Kaplan": "https://www.myqkaplan.com/"}
+    },
+    {
+      "date": "2026-11-27",
+      "time": "1:00 PM",
+      "title": "The Nutcracker (Cocolalla Conservatory)",
+      "kind": "dance",
+      "venue": "Panida Theater",
+      "artists": ["Cocolalla Conservatory School of Classical Ballet"],
+      "url": "https://www.panida.org/event/the-nutcracker",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-12-06",
+      "time": "7:00 PM",
+      "title": "A Celtic Christmas — Everdream",
+      "kind": "music",
+      "venue": "Panida Theater",
+      "artists": ["Everdream"],
+      "url": "https://www.panida.org/event/everdream-celtic-christmas",
+      "artist_urls": {}
+    },
+    {
+      "date": "2026-12-09",
+      "time": "7:00 PM",
+      "title": "The Nutcracker with Ballet Victoria",
+      "kind": "dance",
+      "venue": "Panida Theater",
+      "artists": ["Ballet Victoria", "Pend Oreille Arts Council"],
+      "url": "https://www.panida.org/event/the-nutcracker-with-ballet-victoria-2026",
+      "artist_urls": {"Pend Oreille Arts Council": "https://artinsandpoint.org/"}
+    },
+    {
+      "date": "2027-07-29",
+      "time": "6:00 PM",
+      "title": "Festival at Sandpoint 2027 Summer Series (save the date)",
+      "kind": "festival",
+      "venue": "War Memorial Field",
+      "artists": ["Festival at Sandpoint"],
+      "url": "https://www.festivalatsandpoint.com/calendar",
+      "artist_urls": {"Festival at Sandpoint": "https://www.festivalatsandpoint.com/"}
+    }
+  ]
+}

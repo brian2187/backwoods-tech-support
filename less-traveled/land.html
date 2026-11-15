@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homestead — Sagle · Sandpoint · Bonner County</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="static/theme.css?v=28">
+  
+<script src="static/path.js?v=3" defer></script>
+
+</head>
+<body class="path">
+
+  
+  <header class="bar">
+    <nav class="bar-nav" aria-label="Primary">
+  
+  <a class="brand" href="index.html">Less Traveled</a>
+  
+  <div class="bar-links">
+    <a href="land.html">Homestead</a>
+    <a href="situation.html">Regional</a>
+    <a href="living.html">Living</a>
+    <a href="entertainment.html">Calendar</a>
+    <a href="journal.html">Journal</a>
+    <a href="showup.html">Directory</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+  </header>
+  
+<section class="hero path-hero">
+  <img src="static/img/pend-oreille-dusk.jpg" alt="">
+  <div class="hero-copy">
+    <p class="kicker">Bonner / Boundary</p>
+    <h1>Homestead, ranch, farm</h1>
+    <p class="lede">Learn the country first. Match a property type later. Then we point you at who shows up.</p>
+  </div>
+</section>
+
+  <main class="wrap">
+    
+    
+<nav class="path-nav" aria-label="Homestead path">
+  <a href="land.html">Path</a>
+  <a href="land-needs.html">Your plan</a>
+  <a href="land-match.html">Property match</a>
+  <a href="land.html#notes">Field notes</a>
+</nav>
+<div class="path-flow">
+  <p class="path-flow-label">Your path · click any step to jump and rebuild from there</p>
+  <div class="path-track" id="quest-path">
+    
+    <a class="path-stop"
+       href="land-step-intent.html"
+       data-step="intent">
+      <span class="path-dot">1</span>
+      <span class="path-stop-title">Name the operation</span>
+      <span class="path-stop-kicker">Plan</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-water.html"
+       data-step="water">
+      <span class="path-dot">2</span>
+      <span class="path-stop-title">Water first</span>
+      <span class="path-stop-kicker">Well &amp; rights</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-septic.html"
+       data-step="septic">
+      <span class="path-dot">3</span>
+      <span class="path-stop-title">What the ground will take</span>
+      <span class="path-stop-kicker">Septic</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-access.html"
+       data-step="access">
+      <span class="path-dot">4</span>
+      <span class="path-stop-title">A road you can prove</span>
+      <span class="path-stop-kicker">Access</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-zoning.html"
+       data-step="zoning">
+      <span class="path-dot">5</span>
+      <span class="path-stop-title">What you may build</span>
+      <span class="path-stop-kicker">Zoning</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-power.html"
+       data-step="power">
+      <span class="path-dot">6</span>
+      <span class="path-stop-title">Power and heat</span>
+      <span class="path-stop-kicker">Utilities</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-soil.html"
+       data-step="soil">
+      <span class="path-dot">7</span>
+      <span class="path-stop-title">Growing season</span>
+      <span class="path-stop-kicker">Garden &amp; hay</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-livestock.html"
+       data-step="livestock">
+      <span class="path-dot">8</span>
+      <span class="path-stop-title">Stock and fence</span>
+      <span class="path-stop-kicker">Ranch</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-fire.html"
+       data-step="fire">
+      <span class="path-dot">9</span>
+      <span class="path-stop-title">Fire and timber</span>
+      <span class="path-stop-kicker">Wildfire</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-winter.html"
+       data-step="winter">
+      <span class="path-dot">10</span>
+      <span class="path-stop-title">First winter</span>
+      <span class="path-stop-kicker">Survive</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-country.html"
+       data-step="country">
+      <span class="path-dot">11</span>
+      <span class="path-stop-title">Pick the country</span>
+      <span class="path-stop-kicker">Map</span>
+    </a>
+    
+    <a class="path-stop"
+       href="land-step-permits.html"
+       data-step="permits">
+      <span class="path-dot">12</span>
+      <span class="path-stop-title">Who can help</span>
+      <span class="path-stop-kicker">Trades</span>
+    </a>
+    
+  </div>
+  <p class="path-plan-chip" id="plan-chip" hidden></p>
+</div>
+
+<section class="path-hero-row">
+  <article class="quest-sheet">
+    <p class="kicker">How this works</p>
+    <h2>Learn, then match</h2>
+    <p>Walk water, septic, access, and winter for this region. Property type and area come near the end, once you know what the ground has to do. Business matches come last, pointed at that type if you picked one.</p>
+    <ol class="how-list">
+      <li><a href="land-needs.html">Set uses and budget</a> — you can change this any time</li>
+      <li>Walk the offices and records (steps 2–10)</li>
+      <li><a href="land-match.html">Match a property type</a>, then who can help</li>
+    </ol>
+    <p class="path-cta">
+      <a class="path-btn" href="land-needs.html">Start with what you’ll do</a>
+      <a class="path-btn ghost" href="land-step-water.html">Skip to water</a>
+    </p>
+  </article>
+  <aside class="quest-sheet" id="loadout-preview">
+    <p class="kicker">Your plan</p>
+    <h2>Saved choices</h2>
+    <p class="meta" id="loadout-empty">Nothing saved yet. Check garden, cattle, shop, lake — whatever you actually mean to run.</p>
+    <ul id="loadout-list" hidden></ul>
+    <p><a href="land-needs.html">Edit plan</a></p>
+  </aside>
+</section>
+
+<section id="notes">
+  <h2 class="section-title">Field notes</h2>
+  <p class="meta">Public-record walkthroughs the path points to when you need them.</p>
+  <div class="list">
+    
+    <a href="g-septic-records-bonner.html"><strong>How to pull a Panhandle Health septic record in Bonner County</strong><span>Parcel number to Township/Range/Section to the PHD public search. Do this before you offer.</span></a>
+    
+    <a href="g-septic-costs-2026.html"><strong>Septic costs in Sagle and Sandpoint, 2026</strong><span>Gravity vs mound, PHD fees, and why creek lots get expensive.</span></a>
+    
+    <a href="g-idwr-well-log.html"><strong>How to pull an IDWR well log for a North Idaho parcel</strong><span>Tag number or Township/Range/Section. “Wells are good in the area” is not a log.</span></a>
+    
+  </div>
+</section>
+
+<p class="meta">Bonner and Boundary counties — Sandpoint, Sagle, Ponderay, Dover, Priest River, Clark Fork, Hope, Coolin, Bonners Ferry. Not legal advice, not a perc test, not a listing service. Confirm with PHD, IDWR, the county, and a licensed outfit before you write a check.</p>
+
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <span>Less Traveled · Sagle</span>
+      <a href="disclosure.html">Disclosure</a>
+      <a href="situation.html">Regional Info</a>
+    </div>
+  </footer>
+
+</body>
+</html>
