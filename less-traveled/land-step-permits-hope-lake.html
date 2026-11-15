@@ -6,9 +6,9 @@
   <title>Who can help — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=43">
+  <link rel="stylesheet" href="static/theme.css?v=44">
   
-<script src="static/path.js?v=5" defer></script>
+<script src="static/path.js?v=6" defer></script>
 
 </head>
 <body class="path">
@@ -39,19 +39,19 @@
     <div class="pagehead">
       <p class="kicker">Homestead path · Step 12 of 13 · Local trades</p>
       <h1>Who can help</h1>
-      <p class="lede">Match licensed local outfits to the work this place needs.</p>
+      <p class="lede">Licensed local outfits for the work this place needs.</p>
     </div>
     
     
 <nav class="path-nav" aria-label="Homestead pages">
   <a href="land.html" class="">Start<span class="path-nav-why">Living here</span></a>
-  <a href="land-needs.html" class="">Your plan<span class="path-nav-why">Uses, budget, acres</span></a>
+  <a href="land-needs.html" class="">Looking for<span class="path-nav-why">Uses and acres</span></a>
   <a href="land-match.html" class="">Listings<span class="path-nav-why">For sale now</span></a>
-  <a href="land-summary.html" class="">Worksheet<span class="path-nav-why">What you know</span></a>
-  <a href="contact.html#write" class="">Comment<span class="path-nav-why">Ask a question</span></a>
+  <a href="land-summary.html" class="">Notes<span class="path-nav-why">What you marked</span></a>
+  <a href="contact.html#write" class="">Comment<span class="path-nav-why">Write us</span></a>
 </nav>
 <div class="path-flow">
-  <p class="path-flow-label">Step 12 of 13 · Who can help — answers land on your worksheet.</p>
+  <p class="path-flow-label">Step 12 of 13 · Who can help — neighbor notes on living here.</p>
   <div class="path-track" id="quest-path">
     
     
@@ -191,32 +191,17 @@
 
 <div class="step-layout">
   <article class="quest-sheet">
-    <p>Property type first, then the directory. Septic, well, excavator, electrician — pointed at the country you picked, or the whole region if you skipped a type.</p>
+    <p>Septic, well, excavator, electrician — pointed at the country you picked, or the whole region.</p>
     
     
 
     
-    <h2>Answer these</h2>
-    <p class="meta">Yes, no, or not sure. Not sure is a fair answer — it shows up at the end as something still to figure out.</p>
-    <ul class="quest-tasks" data-step="permits">
+    <h2>What to know</h2>
+    <ul class="info-bullets">
       
-      <li>
-        <p class="task-ask">Have you asked Planning what this project needs before you pour a slab?</p>
-        <div class="task-choices">
-          <label><input type="radio" name="permits-permit" data-task="permit" value="yes"> Yes</label>
-          <label><input type="radio" name="permits-permit" data-task="permit" value="no"> No</label>
-          <label><input type="radio" name="permits-permit" data-task="permit" value="unsure"> Not sure yet</label>
-        </div>
-      </li>
+      <li>Bonner County Planning is the office before a slab.</li>
       
-      <li>
-        <p class="task-ask">Have you called a licensed local outfit yourself?</p>
-        <div class="task-choices">
-          <label><input type="radio" name="permits-crew" data-task="crew" value="yes"> Yes</label>
-          <label><input type="radio" name="permits-crew" data-task="crew" value="no"> No</label>
-          <label><input type="radio" name="permits-crew" data-task="crew" value="unsure"> Not sure yet</label>
-        </div>
-      </li>
+      <li>Call a licensed local outfit yourself. The directory is a starting list.</li>
       
     </ul>
     
@@ -236,19 +221,19 @@
       <a class="path-btn ghost" href="land-match.html">Back: Listings &amp; types</a>
       
       
-      <a class="path-btn" id="continue-step" href="land-summary.html" data-step="permits" data-next="summary">Save · next: Your worksheet</a>
+      <a class="path-btn" id="continue-step" href="land-summary.html" data-step="permits" data-next="summary">Next: Your notes</a>
       
     </div>
   </article>
 
   <aside>
     <div class="quest-sheet" id="loadout-preview">
-      <p class="kicker">Worksheet so far</p>
-      <h2>What you have said</h2>
-      <p class="meta" id="loadout-empty">Nothing saved yet.</p>
+      <p class="kicker">Listing notes</p>
+      <h2>What you marked</h2>
+      <p class="meta" id="loadout-empty">Nothing saved yet. Uses and acres are optional.</p>
       <ul id="loadout-list" hidden></ul>
       <p class="meta" id="sheet-progress" hidden></p>
-      <p><a href="land-summary.html">Full worksheet</a></p>
+      <p><a href="land-summary.html">Your notes</a></p>
     </div>
     <div class="quest-sheet">
       <p class="kicker">Who can help · this step</p>

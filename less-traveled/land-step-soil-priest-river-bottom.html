@@ -6,9 +6,9 @@
   <title>Growing season — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=43">
+  <link rel="stylesheet" href="static/theme.css?v=44">
   
-<script src="static/path.js?v=5" defer></script>
+<script src="static/path.js?v=6" defer></script>
 
 </head>
 <body class="path">
@@ -45,13 +45,13 @@
     
 <nav class="path-nav" aria-label="Homestead pages">
   <a href="land.html" class="">Start<span class="path-nav-why">Living here</span></a>
-  <a href="land-needs.html" class="">Your plan<span class="path-nav-why">Uses, budget, acres</span></a>
+  <a href="land-needs.html" class="">Looking for<span class="path-nav-why">Uses and acres</span></a>
   <a href="land-match.html" class="">Listings<span class="path-nav-why">For sale now</span></a>
-  <a href="land-summary.html" class="">Worksheet<span class="path-nav-why">What you know</span></a>
-  <a href="contact.html#write" class="">Comment<span class="path-nav-why">Ask a question</span></a>
+  <a href="land-summary.html" class="">Notes<span class="path-nav-why">What you marked</span></a>
+  <a href="contact.html#write" class="">Comment<span class="path-nav-why">Write us</span></a>
 </nav>
 <div class="path-flow">
-  <p class="path-flow-label">Step 7 of 13 · Growing season — answers land on your worksheet.</p>
+  <p class="path-flow-label">Step 7 of 13 · Growing season — neighbor notes on living here.</p>
   <div class="path-track" id="quest-path">
     
     
@@ -191,52 +191,23 @@
 
 <div class="step-layout">
   <article class="quest-sheet">
-    <p>Sandpoint’s season is short. Frost pockets in draws kill orchards. Hay wants open ground. A high tunnel is how a lot of kitchens make it.</p>
+    <p>Sandpoint’s season is short. Frost pockets in draws are hard on orchards. Hay wants open ground.</p>
     
     
-    <p class="meta">Skip this page if you are not running garden, orchard, greenhouse, hay, cattle. The worksheet will hide it once your plan says so.</p>
+    <p class="meta">Most useful if you care about garden, orchard, greenhouse, hay, cattle.</p>
     
 
     
-    <h2>Answer these</h2>
-    <p class="meta">Yes, no, or not sure. Not sure is a fair answer — it shows up at the end as something still to figure out.</p>
-    <ul class="quest-tasks" data-step="soil">
+    <h2>What to know</h2>
+    <ul class="info-bullets">
       
-      <li>
-        <p class="task-ask">Does the garden or hay site get winter sun, or is it a north timber wall?</p>
-        <div class="task-choices">
-          <label><input type="radio" name="soil-sun" data-task="sun" value="yes"> Yes</label>
-          <label><input type="radio" name="soil-sun" data-task="sun" value="no"> No</label>
-          <label><input type="radio" name="soil-sun" data-task="sun" value="unsure"> Not sure yet</label>
-        </div>
-      </li>
+      <li>Garden and hay want winter sun, not a north timber wall.</li>
       
-      <li>
-        <p class="task-ask">Are you planning for late spring and early fall frost?</p>
-        <div class="task-choices">
-          <label><input type="radio" name="soil-frost" data-task="frost" value="yes"> Yes</label>
-          <label><input type="radio" name="soil-frost" data-task="frost" value="no"> No</label>
-          <label><input type="radio" name="soil-frost" data-task="frost" value="unsure"> Not sure yet</label>
-        </div>
-      </li>
+      <li>Late spring and early fall frost are normal here.</li>
       
-      <li>
-        <p class="task-ask">If you want hay or cattle, do you know what actually came off the field?</p>
-        <div class="task-choices">
-          <label><input type="radio" name="soil-hay" data-task="hay" value="yes"> Yes</label>
-          <label><input type="radio" name="soil-hay" data-task="hay" value="no"> No</label>
-          <label><input type="radio" name="soil-hay" data-task="hay" value="unsure"> Not sure yet</label>
-        </div>
-      </li>
+      <li>If you want hay or cattle, ask what actually came off the field.</li>
       
-      <li>
-        <p class="task-ask">Garden water: does the well have the gallons, and a frost-free hydrant plan?</p>
-        <div class="task-choices">
-          <label><input type="radio" name="soil-water-grow" data-task="water-grow" value="yes"> Yes</label>
-          <label><input type="radio" name="soil-water-grow" data-task="water-grow" value="no"> No</label>
-          <label><input type="radio" name="soil-water-grow" data-task="water-grow" value="unsure"> Not sure yet</label>
-        </div>
-      </li>
+      <li>Garden water needs well gallons and a frost-free hydrant plan.</li>
       
     </ul>
     
@@ -254,19 +225,19 @@
       <a class="path-btn ghost" href="land-step-power-priest-river-bottom.html">Back: Power and heat</a>
       
       
-      <a class="path-btn" id="continue-step" href="land-step-livestock-priest-river-bottom.html" data-step="soil" data-next="livestock">Save · next: Stock and fence</a>
+      <a class="path-btn" id="continue-step" href="land-step-livestock-priest-river-bottom.html" data-step="soil" data-next="livestock">Next: Stock and fence</a>
       
     </div>
   </article>
 
   <aside>
     <div class="quest-sheet" id="loadout-preview">
-      <p class="kicker">Worksheet so far</p>
-      <h2>What you have said</h2>
-      <p class="meta" id="loadout-empty">Nothing saved yet.</p>
+      <p class="kicker">Listing notes</p>
+      <h2>What you marked</h2>
+      <p class="meta" id="loadout-empty">Nothing saved yet. Uses and acres are optional.</p>
       <ul id="loadout-list" hidden></ul>
       <p class="meta" id="sheet-progress" hidden></p>
-      <p><a href="land-summary.html">Full worksheet</a></p>
+      <p><a href="land-summary.html">Your notes</a></p>
     </div>
     <div class="quest-sheet">
       <p class="kicker">Who can help · this step</p>

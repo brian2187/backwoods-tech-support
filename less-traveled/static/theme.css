@@ -1596,6 +1596,14 @@ body.sit .map-pop a { color: var(--pine); }
   gap: 1rem;
 }
 @media (max-width: 800px) { .step-layout { grid-template-columns: 1fr; } }
+.info-bullets {
+  margin: .4rem 0 1rem;
+  padding-left: 1.15rem;
+}
+.info-bullets li {
+  margin: 0 0 .55rem;
+  line-height: 1.45;
+}
 .quest-tasks { list-style: none; margin: 0 0 1rem; padding: 0; }
 .quest-tasks li { margin: 0 0 1.1rem; padding-bottom: .85rem; border-bottom: 1px solid var(--line); }
 .quest-tasks li:last-child { border-bottom: 0; }

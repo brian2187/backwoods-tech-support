@@ -177,7 +177,7 @@
     const ans = read(KEY.answers, {});
     const bits = [];
     if (uses.length) bits.push("Uses: " + uses.join(", "));
-    if (budget) bits.push("Budget " + budget);
+    if (budget) bits.push("Listings around " + budget);
     if (acres) bits.push("Acres " + acres);
     if (place) bits.push("Type " + place);
     let yes = 0;
@@ -299,7 +299,7 @@
     if (musts.length) planBits.push("Must have: " + musts.map((m) => mustLabels[m] || m).join(", "));
     if (place) planBits.push("Type: " + place);
     if (planBits.length) {
-      parts.push("<h3>Your plan</h3><ul>" + planBits.map((t) => "<li>" + t + "</li>").join("") + "</ul>");
+      parts.push("<h3>Looking for</h3><ul>" + planBits.map((t) => "<li>" + t + "</li>").join("") + "</ul>");
     }
 
     const living = ans.living || {};
