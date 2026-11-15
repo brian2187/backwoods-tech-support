@@ -1730,6 +1730,35 @@ body.sit .map-pop a { color: var(--pine); }
   gap: .4rem;
   align-items: center;
 }
+.pay-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .45rem;
+  margin: .45rem 0 .35rem;
+}
+.pay-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  min-height: 44px;
+  padding: .45rem .6rem;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 700;
+  font-size: .92rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.pay-btn svg { flex: 0 0 auto; }
+.pay-btn.paypal { background: #ffc439; color: #003087; }
+.pay-btn.paypal:hover { background: #f5b82e; color: #003087; }
+.pay-btn.card { background: var(--pine); color: #fff; }
+.pay-btn.card:hover { background: var(--pine-hover); color: #fff; }
+.pay-btn.apple { background: #111; color: #fff; }
+.pay-btn.apple:hover { background: #000; color: #fff; }
+.pay-btn.google { background: #fff; color: #1f1f1f; border-color: #dadce0; }
+.pay-btn.google:hover { background: #f8f9fa; color: #1f1f1f; }
 .donate-custom {
   display: inline-flex;
   align-items: center;

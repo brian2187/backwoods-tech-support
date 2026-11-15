@@ -5,12 +5,23 @@
   const amts = document.getElementById("donate-amts");
   const custom = document.getElementById("donate-custom");
   const paypal = document.getElementById("donate-paypal");
+  const card = document.getElementById("donate-card");
+  const apple = document.getElementById("donate-apple");
+  const google = document.getElementById("donate-google");
   const btcLink = document.getElementById("donate-btc");
   const dogeLink = document.getElementById("donate-doge");
   const btcAddr = document.getElementById("btc-addr");
   const dogeAddr = document.getElementById("doge-addr");
   const basePaypal = panel.getAttribute("data-paypal") || "";
+  const baseCard = panel.getAttribute("data-card") || basePaypal;
   let amount = 25;
+
+  function withAmount(url, n) {
+    if (!url) return url;
+    const clean = url.replace(/([?&])amount=\d+/g, "$1").replace(/[?&]$/, "");
+    if (!n) return clean;
+    return clean + (clean.indexOf("?") >= 0 ? "&" : "?") + "amount=" + n;
+  }
 
   function setStatus(msg) {
     if (status) status.textContent = msg;
@@ -24,9 +35,12 @@
         b.classList.toggle("on", amount && Number(b.getAttribute("data-amt")) === amount);
       });
     }
-    if (paypal && basePaypal) {
-      paypal.href = amount ? basePaypal + (basePaypal.indexOf("?") >= 0 ? "&" : "?") + "amount=" + amount : basePaypal;
-    }
+    const wallet = withAmount(basePaypal, amount);
+    const billing = withAmount(baseCard, amount);
+    if (paypal) paypal.href = wallet;
+    if (apple) apple.href = wallet;
+    if (google) google.href = wallet;
+    if (card) card.href = billing;
     if (btcLink && btcAddr) {
       btcLink.href = "bitcoin:" + btcAddr.textContent.trim();
     }
@@ -35,7 +49,7 @@
     }
     const cash = document.getElementById("donate-cashapp");
     if (cash && amount) {
-      const base = cash.getAttribute("href").split("?")[0];
+      const base = cash.getAttribute("href").split("?")[0].replace(/\/\d+$/, "");
       cash.href = base + "/" + amount;
     }
   }

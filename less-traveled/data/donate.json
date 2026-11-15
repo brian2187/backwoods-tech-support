@@ -1,6 +1,7 @@
 {
   "email": "MTTech_SARFarm@outlook.com",
   "paypal_email": "MTTech_SARFarm@outlook.com",
+  "paypal_client_id": "",
   "zelle": "MTTech_SARFarm@outlook.com",
   "stripe_url": "",
   "venmo": "",
