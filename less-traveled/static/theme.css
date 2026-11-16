@@ -2003,7 +2003,8 @@ body.match-page .sit-frame {
   gap: .45rem;
   margin: .45rem 0 .35rem;
 }
-.donate-panel .pay-btn.paypal {
+.donate-panel .pay-btn.paypal,
+.donate-panel .pay-btn.card {
   width: 100%;
   max-width: 22rem;
 }
