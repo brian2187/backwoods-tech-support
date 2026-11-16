@@ -5,6 +5,7 @@
   const amts = document.getElementById("donate-amts");
   const custom = document.getElementById("donate-custom");
   const paypal = document.getElementById("donate-paypal");
+  const go = document.getElementById("donate-stripe-go");
   let amount = 20;
 
   function desk() {
@@ -53,21 +54,23 @@
       paypal.href = url || "https://www.paypal.com/donate";
     }
     const pay = stripeUrl();
-    panel.querySelectorAll("[data-stripe-go]").forEach((a) => {
-      if (pay) a.setAttribute("href", pay);
-    });
     const preset = amount && panel.getAttribute("data-stripe-" + amount);
-    if (status) {
-      if (amount && !preset) {
-        status.textContent =
-          "Stripe checkout is $1 each. Set Qty to " +
+    if (go) {
+      if (pay) go.setAttribute("href", pay);
+      go.textContent = amount ? "Donate $" + amount + " with Stripe" : "Donate with Stripe";
+    }
+    if (amount && pay && !preset) {
+      setStatus(
+        "Stripe checkout is $1 each. Set quantity to " +
           amount +
-          " on Stripe. PayPal uses $" +
+          " on Stripe, or use PayPal for $" +
           amount +
-          ".";
-      } else if (amount) {
-        status.textContent = "Tap a method to open Stripe checkout for $" + amount + ".";
-      }
+          "."
+      );
+    } else if (amount && pay) {
+      setStatus("Donate with Stripe opens checkout for $" + amount + ".");
+    } else if (amount) {
+      setStatus("Stripe checkout is not set for this amount. Use PayPal for $" + amount + ".");
     }
     const cash = document.getElementById("donate-cashapp");
     if (cash && amount) {
@@ -109,7 +112,12 @@
   }
   if (custom) {
     custom.addEventListener("input", () => {
-      applyAmount(custom.value);
+      const v = String(custom.value || "").trim();
+      if (!v) {
+        applyAmount(20);
+        return;
+      }
+      applyAmount(v);
     });
   }
 
@@ -125,17 +133,17 @@
     });
   }
 
-  panel.addEventListener("click", (e) => {
-    const a = e.target.closest("[data-stripe-go]");
-    if (!a) return;
-    const url = stripeUrl();
-    if (!url) {
-      e.preventDefault();
-      setStatus("Stripe checkout could not be prepared. Try again, or write us.");
-      return;
-    }
-    a.href = url;
-  });
+  if (go) {
+    go.addEventListener("click", (e) => {
+      const url = stripeUrl();
+      if (!url) {
+        e.preventDefault();
+        setStatus("Stripe checkout could not be prepared. Try again, or write us.");
+        return;
+      }
+      go.href = url;
+    });
+  }
 
   panel.addEventListener("click", async (e) => {
     const btn = e.target.closest("[data-copy]");

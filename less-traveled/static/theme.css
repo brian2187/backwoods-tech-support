@@ -1981,16 +1981,16 @@ body.match-page .sit-frame {
 }
 .contact-split {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(280px, .95fr);
+  grid-template-columns: minmax(0, .45fr) minmax(420px, 1.55fr);
   gap: 1.6rem 2rem;
   align-items: start;
 }
 .contact-main .feedback-form { max-width: none; }
 .donate-panel {
-  background: var(--paper);
+  background: #fff;
   border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 1.05rem 1.15rem 1.25rem;
+  border-radius: 12px;
+  padding: .85rem 1rem 1.1rem;
 }
 .donate-panel h2 {
   font-family: var(--serif);
@@ -2011,6 +2011,7 @@ body.match-page .sit-frame {
   flex-wrap: wrap;
   gap: .4rem;
   align-items: center;
+  margin: 0 0 .55rem;
 }
 .pay-grid {
   display: grid;
@@ -2087,50 +2088,7 @@ body.match-page .sit-frame {
   border-radius: 8px;
   padding: .45rem .55rem;
 }
-.pay-logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem;
-  margin: .45rem 0 .55rem;
-  padding: 0;
-}
-.pay-logos a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 42px;
-  min-width: 58px;
-  padding: 0 .7rem;
-  border-radius: 999px;
-  border: 1px solid #d6dce3;
-  background: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
-.pay-logos a:hover { filter: brightness(0.96); }
-.pay-logos a:focus-visible {
-  outline: 2px solid var(--pine);
-  outline-offset: 2px;
-}
-.pay-logos .vis {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-.pay-logos svg { display: block; }
-.pay-logos .apple { background: #000; border-color: #000; }
-.pay-logos .gpay { background: #fff; }
-.pay-logos .link { background: #00D66F; border-color: #00D66F; }
-.pay-logos .cashapp { background: #00D632; border-color: #00D632; }
-.pay-logos .klarna { background: #FFB3C7; border-color: #FFB3C7; }
-.pay-logos .amazon { background: #fff; }
-.pay-logos .bank { background: #fff; }
-.pay-logos .visa,
-.pay-logos .mc,
-.pay-logos .amex,
-.pay-logos .discover { background: #fff; }
+.donate-panel .path-cta { margin: .45rem 0 .2rem; }
 @media (max-width: 860px) {
   .contact-split { grid-template-columns: 1fr; }
   .donate-panel { order: 2; }

@@ -6,7 +6,7 @@
   <title>Donate — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=51">
+  <link rel="stylesheet" href="static/theme.css?v=55">
   
 </head>
 <body class="">
@@ -37,7 +37,7 @@
     <div class="pagehead">
       <p class="kicker">Less Traveled</p>
       <h1>Donate</h1>
-      <p class="lede">Pick an amount, then a pay method. That opens Stripe checkout — Apple Pay, Google Pay, Cash App, Klarna, Link, Amazon Pay, bank, and card. PayPal and Bitcoin are below.</p>
+      <p class="lede">Pick an amount, then donate with Stripe. That opens Stripe checkout for the gift. PayPal and Bitcoin are below.</p>
     </div>
     
     
@@ -56,7 +56,7 @@
   <p class="sum">Gifts keep Less Traveled on the air. Not a charity. No tax receipt.</p>
 
   <p class="donate-label">Amount</p>
-  <p class="meta">Pick a gift. Default is $20. Then tap a pay method — that opens Stripe checkout for this amount.</p>
+  <p class="meta">Pick a gift. Default is $20.</p>
   <div class="donate-amts" id="donate-amts">
     
     <button type="button" class="dir-chip" data-amt="1">$1</button>
@@ -72,92 +72,11 @@
     </label>
   </div>
 
-  <p class="donate-label">Pay with Stripe</p>
-  
-<p class="pay-logos" role="group" aria-label="Pay with Stripe">
-  <a class="apple" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="Apple Pay">
-    <svg viewBox="0 0 62 24" width="62" height="24" aria-hidden="true">
-      <path fill="#fff" d="M12.2 6.2c.8-1 2.2-1.7 3.4-1.8-.1 1.4-.6 2.7-1.5 3.7-.8.9-2.1 1.6-3.3 1.5.1-1.3.7-2.5 1.4-3.4zm.3 3.5c1.8 0 2.6 1 4.4 1 1.8 0 2.8-1 4.7-1 1.5 0 3.3.9 4.4 2.4-3.9 2.1-3.3 7.6.8 9.1-.9 2-2.1 4-3.6 4-1.5.1-2-.9-3.8-.9s-2.4 1-3.9.9c-1.5 0-2.7-1.7-3.6-3.6-2-3.5-2.2-7.6-.5-9.8 1.1-1.4 2.8-2.1 4.1-2.1z"/>
-      <text x="26" y="17.5" fill="#fff" font-size="13" font-family="SF Pro Text, Helvetica Neue, Arial, sans-serif" font-weight="500">Pay</text>
-    </svg>
-    <span class="vis">Apple Pay</span>
-  </a>
-  <a class="gpay" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="Google Pay">
-    <svg viewBox="0 0 72 24" width="72" height="24" aria-hidden="true">
-      <g transform="translate(2,3) scale(.85)">
-        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
-        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-      </g>
-      <text x="28" y="16.8" fill="#5F6368" font-size="12.5" font-family="Arial, sans-serif" font-weight="500">Pay</text>
-    </svg>
-    <span class="vis">Google Pay</span>
-  </a>
-  <a class="link" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="Link">
-    <svg viewBox="0 0 52 24" width="52" height="24" aria-hidden="true">
-      <text x="2" y="17" fill="#fff" font-size="14" font-family="Georgia, serif" font-style="italic" font-weight="700">Link</text>
-    </svg>
-    <span class="vis">Link</span>
-  </a>
-  <a class="cashapp" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="Cash App Pay">
-    <svg viewBox="0 0 108 24" width="108" height="24" aria-hidden="true">
-      <rect x="1" y="3" width="18" height="18" rx="4" fill="#fff"/>
-      <path fill="#00D632" d="M10 6.2c-2.3 0-3.7 1.1-3.7 2.7 0 1.7 1.3 2.4 3.4 2.8l.8.2c1.2.2 1.7.5 1.7 1.1 0 .7-.7 1.2-1.9 1.2-1.3 0-2.2-.5-2.5-1.4l-2.1.6c.5 1.8 2.2 2.9 4.5 3.1v1.7h2.1v-1.7c2.4-.3 3.9-1.5 3.9-3.3 0-1.8-1.3-2.6-3.5-3l-.8-.2c-1.1-.2-1.6-.5-1.6-1 0-.6.6-1.1 1.6-1.1 1.1 0 1.8.5 2 1.3l2-.6C14.3 7.1 12.8 6.2 10.6 6V4.4H8.5V6.2H10z"/>
-      <text x="24" y="17" fill="#fff" font-size="11.5" font-family="Arial, sans-serif" font-weight="700">Cash App Pay</text>
-    </svg>
-    <span class="vis">Cash App Pay</span>
-  </a>
-  <a class="klarna" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="Klarna">
-    <svg viewBox="0 0 72 24" width="72" height="24" aria-hidden="true">
-      <text x="2" y="17.5" fill="#0a0b09" font-size="13.5" font-family="Arial, sans-serif" font-weight="800" letter-spacing="-0.4">Klarna.</text>
-    </svg>
-    <span class="vis">Klarna</span>
-  </a>
-  <a class="amazon" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="Amazon Pay">
-    <svg viewBox="0 0 104 24" width="104" height="24" aria-hidden="true">
-      <text x="0" y="14" fill="#232F3E" font-size="12" font-family="Arial, sans-serif" font-weight="700">amazon</text>
-      <path d="M8 16.2c4.2 2.4 9.6 2.6 14.2.4" fill="none" stroke="#FF9900" stroke-width="1.6" stroke-linecap="round"/>
-      <text x="58" y="16" fill="#232F3E" font-size="12" font-family="Arial, sans-serif" font-weight="600">Pay</text>
-    </svg>
-    <span class="vis">Amazon Pay</span>
-  </a>
-  <a class="bank" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="US bank account">
-    <svg viewBox="0 0 86 24" width="86" height="24" aria-hidden="true">
-      <path fill="#414552" d="M8 5l7 3.2v1.1H1V8.2L8 5zm-6.2 5.2h2.2v6.2H1.8V10.2zm3.2 0h2.2v6.2H5V10.2zm3.2 0h2.2v6.2H8.2V10.2zm3.2 0h2.2v6.2H11.4V10.2zM1 17.4h14v1.3H1v-1.3z"/>
-      <text x="20" y="16.5" fill="#414552" font-size="11" font-family="Arial, sans-serif" font-weight="700">Bank</text>
-    </svg>
-    <span class="vis">US bank account</span>
-  </a>
-  <a class="visa" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="Visa">
-    <svg viewBox="0 0 44 24" width="44" height="24" aria-hidden="true">
-      <text x="2" y="17" fill="#1A1F71" font-size="14" font-family="Arial, sans-serif" font-weight="800" font-style="italic" letter-spacing="-0.5">VISA</text>
-    </svg>
-    <span class="vis">Visa</span>
-  </a>
-  <a class="mc" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="Mastercard">
-    <svg viewBox="0 0 42 24" width="42" height="24" aria-hidden="true">
-      <circle cx="16" cy="12" r="7.2" fill="#EB001B"/>
-      <circle cx="26" cy="12" r="7.2" fill="#F79E1B"/>
-      <path fill="#FF5F00" d="M21 6.6a7.2 7.2 0 0 1 0 10.8 7.2 7.2 0 0 1 0-10.8z"/>
-    </svg>
-    <span class="vis">Mastercard</span>
-  </a>
-  <a class="amex" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="American Express">
-    <svg viewBox="0 0 52 24" width="52" height="24" aria-hidden="true">
-      <rect x="1" y="3" width="50" height="18" rx="3" fill="#2E77BC"/>
-      <text x="6" y="16.5" fill="#fff" font-size="9.5" font-family="Arial, sans-serif" font-weight="800" letter-spacing="0.6">AMEX</text>
-    </svg>
-    <span class="vis">American Express</span>
-  </a>
-  <a class="discover" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" title="Discover">
-    <svg viewBox="0 0 72 24" width="72" height="24" aria-hidden="true">
-      <text x="2" y="16.5" fill="#111" font-size="10.5" font-family="Arial, sans-serif" font-weight="700" letter-spacing="0.4">DISCOVER</text>
-    </svg>
-    <span class="vis">Discover</span>
-  </a>
-</p>
-  <p class="meta">Apple Pay, Google Pay, Link, Cash App Pay, Klarna, Amazon Pay, bank, and card. One tap opens Stripe.</p>
+  <p class="donate-label">Stripe</p>
+  <p class="meta">Card, Apple Pay, Google Pay, Link, Cash App, Klarna, Amazon Pay, and bank. Opens Stripe checkout for this amount.</p>
+  <p class="path-cta">
+    <a class="pay-btn card" id="donate-stripe-go" data-stripe-go href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank">Donate $20 with Stripe</a>
+  </p>
 
   <p class="donate-label">PayPal</p>
   <p class="meta">Same amount. PayPal balance, card, Apple Pay, Google Pay, or Venmo when your phone supports them.</p>
@@ -199,9 +118,9 @@
   </div>
   
 
-  <p class="meta" id="donate-status">Tap a method to open Stripe checkout for $20.</p>
+  <p class="meta" id="donate-status">Stripe checkout is $20.</p>
 </aside>
-<script src="static/donate.js?v=11"></script>
+<script src="static/donate.js?v=15"></script>
 </div>
 
   </main>
