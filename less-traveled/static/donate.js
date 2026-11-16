@@ -32,6 +32,14 @@
     if (status) status.textContent = msg;
   }
 
+  function stripeUrl() {
+    if (amount) {
+      const preset = panel.getAttribute("data-stripe-" + amount);
+      if (preset) return preset;
+    }
+    return panel.getAttribute("data-stripe-custom") || "";
+  }
+
   function applyAmount(n) {
     const v = Number(n);
     amount = v > 0 ? Math.round(v) : 0;
@@ -44,19 +52,13 @@
       const url = paypalUrl(amount);
       paypal.href = url || "https://www.paypal.com/donate";
     }
-    const wraps = panel.querySelectorAll(".stripe-buy-wrap");
-    const presetWrap = amount
-      ? panel.querySelector('.stripe-buy-wrap[data-amt="' + amount + '"]')
-      : null;
-    wraps.forEach((w) => {
-      const show = presetWrap
-        ? w === presetWrap
-        : w.getAttribute("data-amt") === "custom";
-      w.classList.toggle("on", show);
-      w.hidden = !show;
+    const pay = stripeUrl();
+    panel.querySelectorAll("[data-stripe-go]").forEach((a) => {
+      if (pay) a.setAttribute("href", pay);
     });
+    const preset = amount && panel.getAttribute("data-stripe-" + amount);
     if (status) {
-      if (amount && !presetWrap) {
+      if (amount && !preset) {
         status.textContent =
           "Stripe checkout is $1 each. Set Qty to " +
           amount +
@@ -64,7 +66,7 @@
           amount +
           ".";
       } else if (amount) {
-        status.textContent = "Stripe checkout below is $" + amount + ".";
+        status.textContent = "Tap a method to open Stripe checkout for $" + amount + ".";
       }
     }
     const cash = document.getElementById("donate-cashapp");
@@ -122,6 +124,18 @@
       paypal.href = url;
     });
   }
+
+  panel.addEventListener("click", (e) => {
+    const a = e.target.closest("[data-stripe-go]");
+    if (!a) return;
+    const url = stripeUrl();
+    if (!url) {
+      e.preventDefault();
+      setStatus("Stripe checkout could not be prepared. Try again, or write us.");
+      return;
+    }
+    a.href = url;
+  });
 
   panel.addEventListener("click", async (e) => {
     const btn = e.target.closest("[data-copy]");

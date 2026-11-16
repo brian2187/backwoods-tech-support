@@ -2076,22 +2076,26 @@ body.match-page .sit-frame {
   display: flex;
   flex-wrap: wrap;
   gap: .4rem;
-  list-style: none;
   margin: .45rem 0 .55rem;
   padding: 0;
 }
-.pay-logos li {
+.pay-logos a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  height: 42px;
   min-width: 58px;
-  padding: 0 .55rem;
-  border-radius: 8px;
+  padding: 0 .7rem;
+  border-radius: 999px;
   border: 1px solid #d6dce3;
   background: #fff;
-  pointer-events: none;
-  user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pay-logos a:hover { filter: brightness(0.96); }
+.pay-logos a:focus-visible {
+  outline: 2px solid var(--pine);
+  outline-offset: 2px;
 }
 .pay-logos .vis {
   position: absolute;
@@ -2112,16 +2116,6 @@ body.match-page .sit-frame {
 .pay-logos .mc,
 .pay-logos .amex,
 .pay-logos .discover { background: #fff; }
-.stripe-embed {
-  margin: .7rem 0 1rem;
-  min-height: 220px;
-}
-.stripe-buy-wrap { display: none; }
-.stripe-buy-wrap.on { display: block; }
-.stripe-buy-wrap stripe-buy-button {
-  display: block;
-  width: 100%;
-}
 @media (max-width: 860px) {
   .contact-split { grid-template-columns: 1fr; }
   .donate-panel { order: 2; }
