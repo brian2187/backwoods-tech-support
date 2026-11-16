@@ -6,7 +6,8 @@
   const custom = document.getElementById("donate-custom");
   const paypal = document.getElementById("donate-paypal");
   const stripe = document.getElementById("donate-stripe");
-  let amount = 25;
+  const stripeAmt = document.getElementById("donate-stripe-amt");
+  let amount = 20;
 
   function stripeUrl(n) {
     const preset = panel.getAttribute("data-stripe-" + n);
@@ -51,21 +52,30 @@
       const url = paypalUrl(amount);
       paypal.href = url || "https://www.paypal.com/donate";
     }
+    const url = stripeUrl(amount);
+    panel.querySelectorAll(".donate-stripe-go").forEach((a) => {
+      if (url) a.href = url;
+    });
     if (stripe) {
-      const url = stripeUrl(amount);
-      if (url) stripe.href = url;
-      stripe.textContent = amount
-        ? "Give $" + amount + " with card"
-        : "Give with card";
+      stripe.textContent = amount ? "Pay $" + amount : "Pay";
+    }
+    if (stripeAmt) {
+      stripeAmt.textContent = amount ? "$" + amount + ".00" : "$0.00";
     }
     if (status) {
       const preset = amount && panel.getAttribute("data-stripe-" + amount);
-      if (amount && !preset && stripe) {
+      if (amount && !preset && url) {
         status.textContent =
-          "Card checkout is $1 each. Set Qty to " + amount + " on Stripe. PayPal uses $" + amount + ".";
+          "Stripe checkout is $1 each. Set Qty to " +
+          amount +
+          ". PayPal uses $" +
+          amount +
+          ".";
       } else if (amount) {
         status.textContent =
-          "Card and PayPal both open at $" + amount + ". Bitcoin: copy the address and send it from Coinbase.";
+          "Checkout is $" +
+          amount +
+          ". Apple Pay, Google Pay, Cash App, Klarna, Link, Amazon Pay, and card all work on Stripe.";
       }
     }
     const cash = document.getElementById("donate-cashapp");
