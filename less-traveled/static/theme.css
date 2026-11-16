@@ -1649,49 +1649,71 @@ body.match-page .sit-frame {
 }
 .criteria-use-grid .loadout-opt { padding: .4rem .5rem; }
 .match-results {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
   margin: 0 0 1.6rem;
 }
-.listing-mini {
-  display: block;
-  width: 100%;
-  text-align: left;
-  border: 1px solid var(--line);
-  border-radius: 14px;
+.listing-row {
   background: var(--paper);
-  padding: .75rem .85rem .85rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: .65rem .9rem .7rem;
   cursor: pointer;
-  color: inherit;
-  font: inherit;
 }
-.listing-mini.is-on {
+.listing-row.is-on {
   border-color: var(--pine);
   background: #eef5f0;
 }
-.listing-mini .src {
-  display: block;
-  font-size: .72rem;
-  color: var(--pine);
-  font-weight: 600;
-  letter-spacing: .02em;
+.listing-row-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem 1rem;
+  align-items: baseline;
 }
-.listing-mini strong {
-  display: block;
+.listing-addr {
   font-family: var(--serif);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 650;
-  margin: 1px 0 2px;
+  color: var(--pine);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
-.listing-mini span.bits {
-  display: block;
-  font-size: .8rem;
-  color: #4f5752;
+.listing-addr:hover { color: var(--pine-hover); }
+span.listing-addr { text-decoration: none; color: inherit; }
+.listing-src {
+  font-size: .78rem;
+  color: var(--mute);
 }
-.listing-mini .approx {
-  color: #8a5a32;
-  font-size: .74rem;
+.listing-row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .15rem 1rem;
+  margin: .2rem 0 .15rem;
+  font-size: .9rem;
+  color: #3d4540;
+}
+.listing-price { font-weight: 650; }
+.listing-status.is-contract { color: #8a5a32; font-weight: 650; }
+.listing-row .approx { color: #8a5a32; font-size: .8rem; }
+.listing-uses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .1rem .7rem;
+  margin-top: .3rem;
+}
+.listing-uses label {
+  display: inline-flex;
+  align-items: center;
+  gap: .28rem;
+  font-size: .78rem;
+  color: var(--mute);
+  cursor: default;
+}
+.listing-uses label.is-on { color: var(--ink); font-weight: 600; }
+.listing-uses input {
+  accent-color: var(--pine);
+  pointer-events: none;
 }
 .ico-listing {
   width: 28px;

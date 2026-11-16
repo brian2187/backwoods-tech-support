@@ -44,6 +44,22 @@
     lake: ["lake", "waterfront", "pend oreille", "shore", "beach"],
     offgrid: ["off-grid", "off grid", "solar", "generator"],
   };
+  const USE_SHORT = {
+    house: "House",
+    garden: "Garden",
+    orchard: "Orchard",
+    greenhouse: "Greenhouse",
+    chickens: "Chickens",
+    cattle: "Cattle",
+    horses: "Horses",
+    hay: "Hay",
+    timber: "Timber",
+    shop: "Shop",
+    lake: "Lake",
+    hunt: "Hunt",
+    offgrid: "Off-grid",
+    cabin: "Cabin",
+  };
   const USE_MIN_ACRES = {
     cattle: 5,
     horses: 3,
@@ -386,6 +402,7 @@
     if (p.price) bits.push(money(p.price));
     if (p.acres != null) bits.push(esc(p.acres) + " ac");
     if (p.beds) bits.push(esc(p.beds) + " bd" + (p.baths ? " / " + esc(p.baths) + " ba" : ""));
+    bits.push(esc(listingStatus(p)));
     const approx = p.geo === "city" || p.geo === "region" ? "<p class=\"approx\">Town location — confirm the pin on the listing.</p>" : "";
     const href = p.source_url
       ? '<p><a href="' + esc(p.source_url) + '" rel="noopener" target="_blank">Open on ' + esc(p.source || "listing") + "</a></p>"
@@ -455,44 +472,90 @@
     }
   }
 
+  function listingStatus(p) {
+    const given = String(p.status || "").trim();
+    if (given) return given;
+    const blob = blobOf(p);
+    if (/\b(under contract|in contract|pending)\b/.test(blob)) return "In contract";
+    if (/\bcontingent\b/.test(blob)) return "Contingent";
+    if (/\bcoming soon\b/.test(blob)) return "Coming soon";
+    if (/\bsold\b/.test(blob) && blob.indexOf("sold as") < 0) return "Sold";
+    return "Active";
+  }
+
+  function useBoxes(p) {
+    const blob = blobOf(p);
+    return (hs.uses || [])
+      .map((u) => {
+        const on = listingHitsUse(p, blob, u.id);
+        const short = USE_SHORT[u.id] || u.label || u.id;
+        return (
+          '<label class="' +
+          (on ? "is-on" : "") +
+          '"><input type="checkbox" tabindex="-1"' +
+          (on ? " checked" : "") +
+          ' onclick="return false"> ' +
+          esc(short) +
+          "</label>"
+        );
+      })
+      .join("");
+  }
+
   function renderList(rows) {
     if (!listGrid) return;
     if (!rows.length) {
       listGrid.innerHTML = '<p class="meta">Nothing in this pull matches. Loosen price, acres, or must-haves.</p>';
       return;
     }
-    listGrid.innerHTML = rows
-      .slice(0, 80)
-      .map((p) => {
-        const addr = esc(p.address || "") + (p.city ? ", " + esc(p.city) : "");
-        const bits = [];
-        if (p.price) bits.push(money(p.price));
-        if (p.acres != null) bits.push(esc(p.acres) + " ac");
-        if (p.beds) bits.push(esc(p.beds) + " bd");
-        const approx = p.geo === "city" || p.geo === "region" ? '<span class="approx">Town pin</span>' : "";
-        return (
-          '<button type="button" class="listing-mini" data-id="' +
-          esc(p.id) +
-          '"><span class="src">' +
-          esc(p.city || "North Idaho") +
-          " · " +
-          esc(p.source || "") +
-          (p.kind ? " · " + esc(p.kind) : "") +
-          "</span><strong>" +
-          addr +
-          "</strong><span class=\"bits\">" +
-          bits.join(" · ") +
-          "</span>" +
-          approx +
-          "</button>"
-        );
-      })
-      .join("");
-    listGrid.querySelectorAll(".listing-mini").forEach((btn) => {
-      btn.addEventListener("click", function () {
-        selectListing(btn.getAttribute("data-id"), true);
-      });
-    });
+    const MAX_ROWS = 250;
+    const shown = rows.slice(0, MAX_ROWS);
+    const extra =
+      rows.length > MAX_ROWS
+        ? '<p class="meta">Showing ' + MAX_ROWS + " of " + rows.length + ".</p>"
+        : "";
+    listGrid.innerHTML =
+      shown
+        .map((p) => {
+          const addr = esc(p.address || "") + (p.city ? ", " + esc(p.city) : "");
+          const href = p.source_url
+            ? '<a class="listing-addr" href="' +
+              esc(p.source_url) +
+              '" rel="noopener" target="_blank">' +
+              addr +
+              "</a>"
+            : '<span class="listing-addr">' + addr + "</span>";
+          const st = listingStatus(p);
+          const stClass =
+            /contract|pending|contingent|sold/i.test(st) ? " is-contract" : "";
+          const acres = p.acres != null ? esc(p.acres) + " ac" : "";
+          const beds = p.beds ? esc(p.beds) + " bd" : "";
+          const approx =
+            p.geo === "city" || p.geo === "region" ? '<span class="approx">Town pin</span>' : "";
+          return (
+            '<article class="listing-row" data-id="' +
+            esc(p.id) +
+            '"><div class="listing-row-top">' +
+            href +
+            '<span class="listing-src">' +
+            esc(p.source || "") +
+            (p.kind ? " · " + esc(p.kind) : "") +
+            "</span></div><div class=\"listing-row-meta\">" +
+            (p.price ? '<span class="listing-price">' + money(p.price) + "</span>" : "") +
+            (acres ? "<span>" + acres + "</span>" : "") +
+            (beds ? "<span>" + beds + "</span>" : "") +
+            '<span class="listing-status' +
+            stClass +
+            '">' +
+            esc(st) +
+            "</span>" +
+            approx +
+            '</div><div class="listing-uses">' +
+            useBoxes(p) +
+            "</div></article>"
+          );
+        })
+        .join("") + extra;
   }
 
   function selectListing(id, fly) {
@@ -502,7 +565,7 @@
       markers[k].getElement().classList.toggle("is-on", k === id);
     });
     listGrid &&
-      listGrid.querySelectorAll(".listing-mini").forEach((n) => {
+      listGrid.querySelectorAll(".listing-row").forEach((n) => {
         n.classList.toggle("is-on", n.getAttribute("data-id") === id);
       });
     const m = markers[id];
@@ -514,7 +577,7 @@
       }
     }
     if (listGrid) {
-      const item = listGrid.querySelector('.listing-mini[data-id="' + id + '"]');
+      const item = listGrid.querySelector('.listing-row[data-id="' + id + '"]');
       if (item) item.scrollIntoView({ block: "nearest", behavior: "smooth" });
     }
   }
@@ -527,7 +590,7 @@
     const heading = document.getElementById("qualify-heading");
     const line = metaLine(c, lastQualify.length);
     if (countEl) countEl.textContent = line;
-    if (heading) heading.textContent = "Qualifying listings";
+    if (heading) heading.textContent = "Properties by address";
     const meta = document.getElementById("match-meta");
     if (meta) {
       meta.textContent =
@@ -604,6 +667,15 @@
           drawMarkers(lastQualify);
         });
       });
+    });
+  }
+
+  if (listGrid) {
+    listGrid.addEventListener("click", function (ev) {
+      if (ev.target.closest("a")) return;
+      const row = ev.target.closest(".listing-row");
+      if (!row) return;
+      selectListing(row.getAttribute("data-id"), true);
     });
   }
 
