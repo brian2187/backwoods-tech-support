@@ -1,6 +1,13 @@
 {
   "stripe_url": "https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08",
   "stripe_custom_url": "https://buy.stripe.com/3cI14o2o8f7H8gAgFHfUQ03",
+  "stripe_pk": "pk_live_51U9xlNJKqVAEL1xBPMnIOkgie32yms1StbLUUJ5VjeCduL8AX9fF8akqcPl2BnlZa7anl8JBH3y7wvyVrleubaXt00NA1Tw8Ok",
+  "stripe_buy_buttons": {
+    "1": "buy_btn_1UcGrTJKqVAEL1xBriCl6uYI",
+    "5": "buy_btn_1UcGpGJKqVAEL1xBFZAsxFlj",
+    "10": "buy_btn_1UcGqWJKqVAEL1xBLBBpSiF9",
+    "20": "buy_btn_1UcGk0JKqVAEL1xB8qibpHAz"
+  },
   "stripe_urls": {
     "1": "https://buy.stripe.com/3cI14o2o8f7H8gAgFHfUQ03",
     "5": "https://buy.stripe.com/7sY28sbYI1gR1SccprfUQ07",

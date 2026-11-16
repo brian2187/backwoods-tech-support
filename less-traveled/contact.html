@@ -6,7 +6,7 @@
   <title>Contact — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=48">
+  <link rel="stylesheet" href="static/theme.css?v=49">
   
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
@@ -86,7 +86,7 @@
   <p class="sum">Gifts keep Less Traveled on the air. Not a charity. No tax receipt.</p>
 
   <p class="donate-label">Amount</p>
-  <p class="meta">Pick a gift. Checkout below is Stripe — Apple Pay, Google Pay, Cash App, Klarna, Link, Amazon Pay, and card.</p>
+  <p class="meta">Pick a gift. Stripe checkout loads below with every pay method Stripe has on for this gift.</p>
   <div class="donate-amts" id="donate-amts">
     
     <button type="button" class="dir-chip" data-amt="1">$1</button>
@@ -103,62 +103,58 @@
   </div>
 
   
-  
-  <div class="stripe-box" id="donate-stripe-box">
-    <div class="stripe-head">
-      <p class="stripe-kicker">Pay</p>
-      <p class="stripe-amt" id="donate-stripe-amt">$20.00</p>
-      <p class="stripe-item">Less Traveled donation</p>
-      <p class="stripe-fine">Gift. Not a charity. No tax receipt.</p>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+  <div class="stripe-embed" id="donate-stripe-box">
+    
+    
+    
+    <div class="stripe-buy-wrap" data-amt="1" hidden>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1UcGrTJKqVAEL1xBriCl6uYI"
+        publishable-key="pk_live_51U9xlNJKqVAEL1xBPMnIOkgie32yms1StbLUUJ5VjeCduL8AX9fF8akqcPl2BnlZa7anl8JBH3y7wvyVrleubaXt00NA1Tw8Ok">
+      </stripe-buy-button>
     </div>
-
-    <a class="sw sw-apple donate-stripe-go" href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank" aria-label="Apple Pay">
-      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M16.4 12.3c0-2.2 1.8-3.3 1.9-3.4-1-.1-2.2.6-2.8 1.4-.6.8-1.1 2-1 3.2 1.1.1 2.2-.5 2.9-1.2zm2.6 6.2c-.7 1-1.5 2-2.6 2-1.1 0-1.4-.6-2.7-.6s-1.6.6-2.7.6c-1.1 0-1.9-1.1-2.6-2.1-1.4-2-2.5-5.6-1-8.1.7-1.3 2-2.1 3.4-2.1 1.1 0 2 .7 2.7.7s1.8-.9 3-.9c.5 0 2 .2 3 1.6-2.6 1.4-2.2 5.1.5 6.1zM12.8 6.6c.6-.7 1-1.7.9-2.6-.9.1-1.9.6-2.5 1.3-.6.7-1 1.6-.9 2.5 1 0 1.9-.5 2.5-1.2z"/></svg>
-      Pay
-    </a>
-    <a class="sw sw-gpay donate-stripe-go" href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank" aria-label="Google Pay">
-      <span class="gpay-mark" aria-hidden="true"><i>G</i></span> Pay
-    </a>
-    <a class="sw sw-link donate-stripe-go" href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank" aria-label="Link">
-      <span class="link-mark" aria-hidden="true">●</span> Link
-    </a>
-
-    <p class="stripe-or"><span>or</span></p>
-
-    <div class="stripe-methods">
-      <a class="sm-row donate-stripe-go" href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank">
-        <span class="sm-radio" aria-hidden="true"></span>
-        <span class="sm-name">Card</span>
-        <span class="sm-brands" aria-hidden="true">
-          <i class="brand visa">VISA</i>
-          <i class="brand mc">MC</i>
-          <i class="brand amex">AMEX</i>
-          <i class="brand disc">DISC</i>
-        </span>
-      </a>
-      <a class="sm-row donate-stripe-go" href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank">
-        <span class="sm-radio" aria-hidden="true"></span>
-        <span class="sm-name">Klarna</span>
-        <span class="sm-klarna" aria-hidden="true">Klarna</span>
-      </a>
-      <a class="sm-row donate-stripe-go" href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank">
-        <span class="sm-radio" aria-hidden="true"></span>
-        <span class="sm-name">Cash App Pay</span>
-        <span class="sm-cash" aria-hidden="true">$</span>
-      </a>
-      <a class="sm-row donate-stripe-go" href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank">
-        <span class="sm-radio" aria-hidden="true"></span>
-        <span class="sm-name">Amazon Pay</span>
-        <span class="sm-amazon" aria-hidden="true">amazon</span>
-      </a>
-      <a class="sm-row donate-stripe-go" href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank">
-        <span class="sm-radio" aria-hidden="true"></span>
-        <span class="sm-name">Bank</span>
-      </a>
+    
+    
+    
+    
+    <div class="stripe-buy-wrap" data-amt="5" hidden>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1UcGpGJKqVAEL1xBFZAsxFlj"
+        publishable-key="pk_live_51U9xlNJKqVAEL1xBPMnIOkgie32yms1StbLUUJ5VjeCduL8AX9fF8akqcPl2BnlZa7anl8JBH3y7wvyVrleubaXt00NA1Tw8Ok">
+      </stripe-buy-button>
     </div>
-
-    <a class="stripe-pay donate-stripe-go" id="donate-stripe" href="https://buy.stripe.com/5kQ28sfaU3oZfJ2dtvfUQ08" rel="noopener" target="_blank">Pay $20</a>
-    <p class="stripe-powered">Powered by Stripe</p>
+    
+    
+    
+    
+    <div class="stripe-buy-wrap" data-amt="10" hidden>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1UcGqWJKqVAEL1xBLBBpSiF9"
+        publishable-key="pk_live_51U9xlNJKqVAEL1xBPMnIOkgie32yms1StbLUUJ5VjeCduL8AX9fF8akqcPl2BnlZa7anl8JBH3y7wvyVrleubaXt00NA1Tw8Ok">
+      </stripe-buy-button>
+    </div>
+    
+    
+    
+    
+    <div class="stripe-buy-wrap on" data-amt="20" >
+      <stripe-buy-button
+        buy-button-id="buy_btn_1UcGk0JKqVAEL1xB8qibpHAz"
+        publishable-key="pk_live_51U9xlNJKqVAEL1xBPMnIOkgie32yms1StbLUUJ5VjeCduL8AX9fF8akqcPl2BnlZa7anl8JBH3y7wvyVrleubaXt00NA1Tw8Ok">
+      </stripe-buy-button>
+    </div>
+    
+    
+    
+    
+    <div class="stripe-buy-wrap" data-amt="custom" hidden>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1UcGrTJKqVAEL1xBriCl6uYI"
+        publishable-key="pk_live_51U9xlNJKqVAEL1xBPMnIOkgie32yms1StbLUUJ5VjeCduL8AX9fF8akqcPl2BnlZa7anl8JBH3y7wvyVrleubaXt00NA1Tw8Ok">
+      </stripe-buy-button>
+    </div>
+    
   </div>
   
 
@@ -202,9 +198,9 @@
   </div>
   
 
-  <p class="meta" id="donate-status">Checkout is $20. Apple Pay, Google Pay, Cash App, Klarna, Link, Amazon Pay, and card all work on Stripe.</p>
+  <p class="meta" id="donate-status">Stripe checkout below is $20.</p>
 </aside>
-<script src="static/donate.js?v=8"></script>
+<script src="static/donate.js?v=9"></script>
 </div>
 
   </main>

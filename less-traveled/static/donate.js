@@ -5,15 +5,7 @@
   const amts = document.getElementById("donate-amts");
   const custom = document.getElementById("donate-custom");
   const paypal = document.getElementById("donate-paypal");
-  const stripe = document.getElementById("donate-stripe");
-  const stripeAmt = document.getElementById("donate-stripe-amt");
   let amount = 20;
-
-  function stripeUrl(n) {
-    const preset = panel.getAttribute("data-stripe-" + n);
-    if (preset) return preset;
-    return panel.getAttribute("data-stripe-custom") || (stripe && stripe.href) || "";
-  }
 
   function desk() {
     try {
@@ -52,30 +44,27 @@
       const url = paypalUrl(amount);
       paypal.href = url || "https://www.paypal.com/donate";
     }
-    const url = stripeUrl(amount);
-    panel.querySelectorAll(".donate-stripe-go").forEach((a) => {
-      if (url) a.href = url;
+    const wraps = panel.querySelectorAll(".stripe-buy-wrap");
+    const presetWrap = amount
+      ? panel.querySelector('.stripe-buy-wrap[data-amt="' + amount + '"]')
+      : null;
+    wraps.forEach((w) => {
+      const show = presetWrap
+        ? w === presetWrap
+        : w.getAttribute("data-amt") === "custom";
+      w.classList.toggle("on", show);
+      w.hidden = !show;
     });
-    if (stripe) {
-      stripe.textContent = amount ? "Pay $" + amount : "Pay";
-    }
-    if (stripeAmt) {
-      stripeAmt.textContent = amount ? "$" + amount + ".00" : "$0.00";
-    }
     if (status) {
-      const preset = amount && panel.getAttribute("data-stripe-" + amount);
-      if (amount && !preset && url) {
+      if (amount && !presetWrap) {
         status.textContent =
           "Stripe checkout is $1 each. Set Qty to " +
           amount +
-          ". PayPal uses $" +
+          " on Stripe. PayPal uses $" +
           amount +
           ".";
       } else if (amount) {
-        status.textContent =
-          "Checkout is $" +
-          amount +
-          ". Apple Pay, Google Pay, Cash App, Klarna, Link, Amazon Pay, and card all work on Stripe.";
+        status.textContent = "Stripe checkout below is $" + amount + ".";
       }
     }
     const cash = document.getElementById("donate-cashapp");
