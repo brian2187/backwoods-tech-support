@@ -5,7 +5,14 @@
   const amts = document.getElementById("donate-amts");
   const custom = document.getElementById("donate-custom");
   const paypal = document.getElementById("donate-paypal");
+  const stripe = document.getElementById("donate-stripe");
   let amount = 25;
+
+  function stripeUrl(n) {
+    const preset = panel.getAttribute("data-stripe-" + n);
+    if (preset) return preset;
+    return panel.getAttribute("data-stripe-custom") || (stripe && stripe.href) || "";
+  }
 
   function desk() {
     try {
@@ -43,6 +50,23 @@
     if (paypal) {
       const url = paypalUrl(amount);
       paypal.href = url || "https://www.paypal.com/donate";
+    }
+    if (stripe) {
+      const url = stripeUrl(amount);
+      if (url) stripe.href = url;
+      stripe.textContent = amount
+        ? "Give $" + amount + " with card"
+        : "Give with card";
+    }
+    if (status) {
+      const preset = amount && panel.getAttribute("data-stripe-" + amount);
+      if (amount && !preset && stripe) {
+        status.textContent =
+          "Card checkout is $1 each. Set Qty to " + amount + " on Stripe. PayPal uses $" + amount + ".";
+      } else if (amount) {
+        status.textContent =
+          "Card and PayPal both open at $" + amount + ". Bitcoin: copy the address and send it from Coinbase.";
+      }
     }
     const cash = document.getElementById("donate-cashapp");
     if (cash && amount) {

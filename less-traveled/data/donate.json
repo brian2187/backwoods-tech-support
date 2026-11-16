@@ -1,5 +1,12 @@
 {
-  "stripe_url": "https://buy.stripe.com/4gM6oI0g06BbdAUcprfUQ01",
+  "stripe_url": "https://buy.stripe.com/aFa6oIfaU5x7dAU613fUQ02",
+  "stripe_custom_url": "https://buy.stripe.com/3cI14o2o8f7H8gAgFHfUQ03",
+  "stripe_urls": {
+    "10": "https://buy.stripe.com/6oU7sMbYI6Bb7cw89bfUQ04",
+    "25": "https://buy.stripe.com/aFa6oIfaU5x7dAU613fUQ02",
+    "50": "https://buy.stripe.com/9B68wQ7Is3oZgN6gFHfUQ05",
+    "100": "https://buy.stripe.com/eVq00k7IsaRrgN63SVfUQ06"
+  },
   "venmo": "",
   "cashapp": "",
   "btc": "1FoKrp9PcdH2BHbLUqPfxeCDAUnDRt2tzM",

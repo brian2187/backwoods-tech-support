@@ -48,21 +48,15 @@
       <p>Not a 501(c)(3). No tax letter. Questions go to <a href="contact.html#write">Contact</a>.</p>
     </article>
   </section>
-  <aside class="donate-panel" id="donate">
+  <aside class="donate-panel" id="donate"
+  data-stripe-custom="https://buy.stripe.com/3cI14o2o8f7H8gAgFHfUQ03"
+  data-stripe-10="https://buy.stripe.com/6oU7sMbYI6Bb7cw89bfUQ04" data-stripe-25="https://buy.stripe.com/aFa6oIfaU5x7dAU613fUQ02" data-stripe-50="https://buy.stripe.com/9B68wQ7Is3oZgN6gFHfUQ05" data-stripe-100="https://buy.stripe.com/eVq00k7IsaRrgN63SVfUQ06" >
   <p class="kicker">Keep the lights on</p>
   <h2>Donate</h2>
   <p class="sum">Gifts keep Less Traveled on the air. Not a charity. No tax receipt.</p>
 
-  
-  <p class="donate-label">Card / Apple Pay</p>
-  <p class="meta">$25 gift on Stripe. Card, Apple Pay, Google Pay, or Cash App Pay. Gift. Not a charity. No tax receipt.</p>
-  <p class="path-cta">
-    <a class="pay-btn card" href="https://buy.stripe.com/4gM6oI0g06BbdAUcprfUQ01" rel="noopener" target="_blank">Give $25 with card</a>
-  </p>
-  
-
-  <p class="donate-label">PayPal</p>
-  <p class="meta">Pick an amount. PayPal checkout can take PayPal balance, card, Apple Pay, Google Pay, or Venmo when your phone supports them.</p>
+  <p class="donate-label">Amount</p>
+  <p class="meta">Pick a gift. Card and PayPal both use it.</p>
   <div class="donate-amts" id="donate-amts">
     
     <button type="button" class="dir-chip" data-amt="10">$10</button>
@@ -77,6 +71,17 @@
       <input type="number" id="donate-custom" min="1" step="1" inputmode="numeric" placeholder="Other">
     </label>
   </div>
+
+  
+  <p class="donate-label">Card / Apple Pay</p>
+  <p class="meta">Stripe checkout. Card, Apple Pay, Google Pay, or Cash App Pay. Gift. Not a charity. No tax receipt.</p>
+  <p class="path-cta">
+    <a class="pay-btn card" id="donate-stripe" href="https://buy.stripe.com/aFa6oIfaU5x7dAU613fUQ02" rel="noopener" target="_blank">Give $25 with card</a>
+  </p>
+  
+
+  <p class="donate-label">PayPal</p>
+  <p class="meta">PayPal checkout can take PayPal balance, card, Apple Pay, Google Pay, or Venmo when your phone supports them.</p>
   <p class="path-cta">
     <a class="pay-btn paypal" id="donate-paypal" href="https://www.paypal.com/donate" rel="noopener" target="_blank">
       <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M7.1 21.5H4.4c-.4 0-.7-.3-.6-.7L6.6 3.9c.1-.5.5-.9 1-.9h7.3c3.2 0 5.2 1.6 4.8 4.6-.5 3.6-2.8 5.5-6.4 5.5H10l-.7 4.6c0 .3-.3.5-.6.5H7.1zm6.4-12.3c1.7 0 2.6-.8 2.8-2.2.2-1.1-.4-1.7-1.8-1.7H11.4L10.8 9.2h2.7z"/></svg>
@@ -115,9 +120,9 @@
   </div>
   
 
-  <p class="meta" id="donate-status">PayPal uses the amount above. Bitcoin: copy the address and send it from Coinbase.</p>
+  <p class="meta" id="donate-status">Card and PayPal use the amount above. Bitcoin: copy the address and send it from Coinbase.</p>
 </aside>
-<script src="static/donate.js?v=5"></script>
+<script src="static/donate.js?v=6"></script>
 </div>
 
   </main>
