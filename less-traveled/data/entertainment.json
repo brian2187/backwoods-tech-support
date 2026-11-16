@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 13:50",
+  "updated": "2026-11-16 05:33",
   "note": "Venues from OpenStreetMap. Shows from Panida and the Greater Sandpoint Chamber. Daily ingest. We do not invent dates.",
   "catchment": "About an hour of Sandpoint, including Bonners Ferry, Priest Lake, Clark Fork, Newport, Athol/Silverwood, and Coeur d'Alene.",
   "venues": [
@@ -7819,5 +7819,8 @@
       "events": []
     }
   ],
-  "errors": []
+  "errors": [
+    "osm: The read operation timed out",
+    "osm: kept last good venue list"
+  ]
 }

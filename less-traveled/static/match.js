@@ -33,16 +33,25 @@
     garden: ["garden", "tillable", "soil", "south exposure", "southern exposure"],
     orchard: ["orchard", "fruit", "apple", "cherry"],
     greenhouse: ["greenhouse", "high tunnel", "hoop"],
-    chickens: ["chicken", "coop", "poultry", "homestead"],
+    chickens: ["chicken", "coop", "poultry"],
     cattle: ["cattle", "ranch", "grazing", "pasture", "livestock"],
     horses: ["horse", "arena", "barn", "pasture"],
     hay: ["hay", "meadow", "alfalfa", "pasture", "open field"],
-    timber: ["timber", "forest", "wooded", "treed", "trees"],
+    timber: ["timber", "forest", "wooded", "treed", "timbered"],
     shop: ["shop", "garage", "warehouse", "commercial", "pole barn"],
     cabin: ["cabin", "guest", "tiny"],
     hunt: ["hunt", "hunting", "elk", "deer", "wildlife"],
     lake: ["lake", "waterfront", "pend oreille", "shore", "beach"],
-    offgrid: ["off-grid", "off grid", "solar", "generator", "spring"],
+    offgrid: ["off-grid", "off grid", "solar", "generator"],
+  };
+  const USE_MIN_ACRES = {
+    cattle: 5,
+    horses: 3,
+    hay: 5,
+    timber: 5,
+    hunt: 5,
+    chickens: 1,
+    orchard: 1,
   };
   const MUST_TOKENS = {
     well: ["well"],
@@ -126,6 +135,19 @@
     return p.kind === "house" || !!p.beds;
   }
 
+  function listingHitsUse(p, blob, u) {
+    if (u === "house") return isHouse(p);
+    const minAc = USE_MIN_ACRES[u];
+    const acres = p.acres == null ? null : Number(p.acres);
+    if (minAc && (acres == null || acres < minAc)) return false;
+    const terms = USE_TERMS[u] || [u];
+    if (terms.some((t) => blob.indexOf(t) >= 0)) return true;
+    if (u === "cattle" && acres >= 10) return true;
+    if (u === "horses" && acres >= 5) return true;
+    if (u === "hay" && acres >= 10) return true;
+    return false;
+  }
+
   function qualifyListings(kind, uses, budgetId, acresId, musts) {
     const budget = budgetId ? band(hs.budgets, budgetId) : null;
     const acresB = acresId ? band(hs.acres, acresId) : null;
@@ -162,12 +184,11 @@
         });
         if (drop) return null;
         if (uses.length) {
-          const hit = uses.filter((u) => {
-            const terms = USE_TERMS[u] || [u];
-            return terms.some((t) => blob.indexOf(t) >= 0);
-          });
-          if (!hit.length) return null;
-          hit.forEach((u) => why.push(u));
+          for (let i = 0; i < uses.length; i++) {
+            const u = uses[i];
+            if (!listingHitsUse(p, blob, u)) return null;
+            why.push(u);
+          }
         }
         p.why = why;
         p.miss = miss;
@@ -217,6 +238,7 @@
   const urlBudget = params.get("budget") || "";
   const urlAcres = params.get("acres") || "";
   const urlKind = params.get("kind") || "";
+  const hasUrlFilter = ["use", "must", "budget", "acres", "kind"].some((k) => params.has(k));
 
   const CENTER = [-116.55, 48.27];
   const STYLE_STREETS = "https://tiles.openfreemap.org/styles/liberty";
@@ -296,16 +318,38 @@
     writeLS("lt-musts", c.musts);
     writeLS("lt-budget", c.budget);
     writeLS("lt-acres", c.acres);
+    const q = new URLSearchParams();
+    if (c.kind && c.kind !== "house") q.set("kind", c.kind);
+    if (c.budget) q.set("budget", c.budget);
+    if (c.acres) q.set("acres", c.acres);
+    (c.uses || []).forEach((u) => q.append("use", u));
+    (c.musts || []).forEach((m) => q.append("must", m));
+    const qs = q.toString();
+    const next = location.pathname + (qs ? "?" + qs : "") + location.hash;
+    const now = location.pathname + location.search + location.hash;
+    if (next !== now) {
+      try {
+        history.replaceState(null, "", next);
+      } catch (e) {}
+    }
   }
 
   function fillForm() {
     if (!form) return;
-    const kind = urlKind || readLS("lt-kind", "house") || "house";
-    const uses = urlUses.length ? urlUses : readLS("lt-uses", []);
+    const kind = urlKind || (hasUrlFilter ? "house" : readLS("lt-kind", "house") || "house");
+    const uses = hasUrlFilter ? urlUses : readLS("lt-uses", []);
     const savedMusts = readLS("lt-musts", null);
-    const musts = urlMusts.length ? urlMusts : savedMusts && savedMusts.length ? savedMusts : ["house"];
-    const budget = urlBudget || readLS("lt-budget", "") || "";
-    const acres = urlAcres || readLS("lt-acres", "") || "";
+    const musts = hasUrlFilter
+      ? urlMusts.length
+        ? urlMusts
+        : kind === "house"
+          ? ["house"]
+          : []
+      : savedMusts && savedMusts.length
+        ? savedMusts
+        : ["house"];
+    const budget = hasUrlFilter ? urlBudget : readLS("lt-budget", "") || "";
+    const acres = hasUrlFilter ? urlAcres : readLS("lt-acres", "") || "";
     const kindEl = form.querySelector('[name="kind"]');
     const budEl = form.querySelector('[name="budget"]');
     const acEl = form.querySelector('[name="acres"]');
