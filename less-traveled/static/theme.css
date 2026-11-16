@@ -2072,6 +2072,46 @@ body.match-page .sit-frame {
   border-radius: 8px;
   padding: .45rem .55rem;
 }
+.pay-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  list-style: none;
+  margin: .45rem 0 .55rem;
+  padding: 0;
+}
+.pay-logos li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  min-width: 58px;
+  padding: 0 .55rem;
+  border-radius: 8px;
+  border: 1px solid #d6dce3;
+  background: #fff;
+  pointer-events: none;
+  user-select: none;
+}
+.pay-logos .vis {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.pay-logos svg { display: block; }
+.pay-logos .apple { background: #000; border-color: #000; }
+.pay-logos .gpay { background: #fff; }
+.pay-logos .link { background: #00D66F; border-color: #00D66F; }
+.pay-logos .cashapp { background: #00D632; border-color: #00D632; }
+.pay-logos .klarna { background: #FFB3C7; border-color: #FFB3C7; }
+.pay-logos .amazon { background: #fff; }
+.pay-logos .bank { background: #fff; }
+.pay-logos .visa,
+.pay-logos .mc,
+.pay-logos .amex,
+.pay-logos .discover { background: #fff; }
 .stripe-embed {
   margin: .7rem 0 1rem;
   min-height: 220px;
