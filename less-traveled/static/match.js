@@ -308,11 +308,11 @@
   function currentCriteria() {
     if (!form) {
       return {
-        kind: urlKind || readLS("lt-kind", "house") || "house",
-        uses: urlUses.length ? urlUses : readLS("lt-uses", []),
-        musts: urlMusts.length ? urlMusts : readLS("lt-musts", ["house"]),
-        budget: urlBudget || readLS("lt-budget", "") || "",
-        acres: urlAcres || readLS("lt-acres", "") || "",
+        kind: urlKind || "all",
+        uses: urlUses,
+        musts: urlMusts,
+        budget: urlBudget,
+        acres: urlAcres,
       };
     }
     const uses = [];
@@ -320,7 +320,7 @@
     form.querySelectorAll('input[name="use"]:checked').forEach((el) => uses.push(el.value));
     form.querySelectorAll('input[name="must"]:checked').forEach((el) => musts.push(el.value));
     return {
-      kind: (form.querySelector('[name="kind"]') || {}).value || "house",
+      kind: (form.querySelector('[name="kind"]') || {}).value || "all",
       uses: uses,
       musts: musts,
       budget: (form.querySelector('[name="budget"]') || {}).value || "",
@@ -335,7 +335,7 @@
     writeLS("lt-budget", c.budget);
     writeLS("lt-acres", c.acres);
     const q = new URLSearchParams();
-    if (c.kind && c.kind !== "house") q.set("kind", c.kind);
+    if (c.kind && c.kind !== "all") q.set("kind", c.kind);
     if (c.budget) q.set("budget", c.budget);
     if (c.acres) q.set("acres", c.acres);
     (c.uses || []).forEach((u) => q.append("use", u));
@@ -352,20 +352,11 @@
 
   function fillForm() {
     if (!form) return;
-    const kind = urlKind || (hasUrlFilter ? "house" : readLS("lt-kind", "house") || "house");
-    const uses = hasUrlFilter ? urlUses : readLS("lt-uses", []);
-    const savedMusts = readLS("lt-musts", null);
-    const musts = hasUrlFilter
-      ? urlMusts.length
-        ? urlMusts
-        : kind === "house"
-          ? ["house"]
-          : []
-      : savedMusts && savedMusts.length
-        ? savedMusts
-        : ["house"];
-    const budget = hasUrlFilter ? urlBudget : readLS("lt-budget", "") || "";
-    const acres = hasUrlFilter ? urlAcres : readLS("lt-acres", "") || "";
+    const kind = urlKind || "all";
+    const uses = hasUrlFilter ? urlUses : [];
+    const musts = hasUrlFilter ? urlMusts : [];
+    const budget = hasUrlFilter ? urlBudget : "";
+    const acres = hasUrlFilter ? urlAcres : "";
     const kindEl = form.querySelector('[name="kind"]');
     const budEl = form.querySelector('[name="budget"]');
     const acEl = form.querySelector('[name="acres"]');
@@ -701,6 +692,6 @@
     }
     form.addEventListener("change", apply);
   }
+  apply();
   initMap();
-  if (!mapEl) apply();
 })();
