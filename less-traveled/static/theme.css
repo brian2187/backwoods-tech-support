@@ -1324,6 +1324,55 @@ body.sit .map-pop a { color: var(--pine); }
 .dir-note { display: block; margin-top: .2rem; font-size: .84rem; }
 .dir-foot { margin-top: 1.5rem; max-width: 42rem; }
 
+.look-where, .look-trades { margin: 0 0 1.8rem; }
+.look-channels {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: .85rem;
+}
+.look-channel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: .9rem 1rem 1rem;
+}
+.look-channel h3 { font-family: var(--serif); font-size: 1.05rem; margin: 0 0 .35rem; }
+.look-channel p { margin: 0; font-size: .9rem; color: #4f5752; line-height: 1.4; }
+.look-links { margin-top: .55rem !important; display: flex; flex-wrap: wrap; gap: .35rem .7rem; }
+.look-links a { color: var(--pine); font-size: .88rem; }
+.look-trade-table { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--paper); }
+.look-trade {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .35rem 1rem;
+  padding: .55rem .9rem;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+.look-trade:last-child { border-bottom: 0; }
+.look-trade strong { font-size: .95rem; }
+.look-trade span { display: flex; flex-wrap: wrap; gap: .35rem .75rem; font-size: .84rem; }
+.look-trade a { color: var(--pine); }
+.look-toolbar { margin-top: 1.4rem; }
+.look-day { margin: 0 0 1.4rem; }
+.look-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: .95rem 1.05rem 1.05rem;
+  margin: 0 0 .75rem;
+}
+.look-card h3 { font-family: var(--serif); font-size: 1.12rem; margin: .15rem 0 .4rem; font-weight: 650; }
+.look-meta { margin: 0; font-size: .78rem; color: var(--mute); display: flex; flex-wrap: wrap; gap: .2rem .65rem; }
+.look-ask { margin: 0 0 .7rem; font-size: .95rem; line-height: 1.45; color: #4f5752; }
+.look-fits-label { margin: 0 0 .3rem; font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--mute); }
+.look-fits { list-style: none; margin: 0 0 .65rem; padding: 0; }
+.look-fits li { padding: .28rem 0; font-size: .9rem; display: flex; flex-wrap: wrap; gap: .2rem .6rem; }
+.look-fits span { color: var(--mute); font-size: .82rem; }
+.look-card .orig { margin: 0; font-size: .82rem; }
+.look-card .orig a { color: var(--pine); }
+
 .path-nav {
   display: flex;
   flex-wrap: wrap;
@@ -2017,7 +2066,7 @@ span.listing-addr { text-decoration: none; color: inherit; }
   border: 1px solid var(--line);
 }
 .kind-news { color: var(--pine); border-color: var(--pine); }
-.kind-x, .kind-facebook, .kind-reddit { color: var(--ink); }
+.kind-x, .kind-facebook, .kind-reddit, .kind-craigslist, .kind-web { color: var(--ink); }
 .kind-journal { color: var(--gold); border-color: var(--gold); }
 
 .about-block { max-width: 42rem; margin: 0 0 1.8rem; }

@@ -1,0 +1,497 @@
+{
+  "updated": "2026-11-17T00:12:10Z",
+  "days": 90,
+  "note": "Public asks only. Facebook groups and Craigslist hold most of the traffic; we cannot read those privately. Date, trade, and local companies that could take the work. We do not sell your number.",
+  "items": [
+    {
+      "id": "93af1023e42a14c0",
+      "title": "Sandwich shop",
+      "ask": "I was told about the legendary sandwich shop in Sandpoint but can’t for the life of me remember which one it was! Hoping the community can help!",
+      "summary": "I was told about the legendary sandwich shop in Sandpoint but can’t for the life of me remember which one it was! Hoping the community can help!",
+      "link": "https://www.reddit.com/r/Sandpoint/comments/1xxe0qf/sandwich_shop/",
+      "source": "Reddit r/Sandpoint",
+      "kind": "reddit",
+      "kind_label": "Reddit",
+      "town": "Sandpoint",
+      "category": "Restaurants",
+      "group": "Restaurants",
+      "when": "2026-11-16T02:37:59Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794796679.0,
+      "fits": [
+        {
+          "name": "Arby's",
+          "town": "Sandpoint",
+          "phone": "+1 208-263-3104",
+          "site": "https://www.arbys.com/locations/us/id/sandpoint/420-5th-ave/store-6248/",
+          "category": "Restaurants"
+        },
+        {
+          "name": "Subway",
+          "town": "Ponderay",
+          "phone": "+1 208-255-7525",
+          "site": "https://restaurants.subway.com/united-states/id/ponderay/476534-hwy-95",
+          "category": "Restaurants"
+        },
+        {
+          "name": "The Peppered Mercantile",
+          "town": "Sandpoint",
+          "phone": "",
+          "site": "",
+          "category": "Restaurants"
+        },
+        {
+          "name": "Eichardt's Pub Grill & Coffee",
+          "town": "",
+          "phone": "+12082634005",
+          "site": "http://eichardtspub.com",
+          "category": "Bars & Nightlife"
+        }
+      ]
+    },
+    {
+      "id": "3e4253a150440be2",
+      "title": "Cheap haircut without politics?",
+      "ask": "need a haircut, I seriously look homeless. I'm on a tight budget, I usually go to B& D's and they do a great job but I can't bring myself to give them any more money because of…",
+      "summary": "I have a work thing coming up this week and I desperately need a haircut, I seriously look homeless. I'm on a tight budget, I usually go to B& D's and they do a great job but I can't bring myself to give them any more money because of their extreme right wing decor and beliefs. Suggestions?",
+      "link": "https://www.reddit.com/r/Sandpoint/comments/1xm4yqo/cheap_haircut_without_politics/",
+      "source": "Reddit r/Sandpoint",
+      "kind": "reddit",
+      "kind_label": "Reddit",
+      "town": "Sandpoint",
+      "category": "Wellness & Spa",
+      "group": "Health",
+      "when": "2026-11-02T18:19:39Z",
+      "when_short": "Nov 2, 2026",
+      "when_ts": 1793643579.0,
+      "fits": [
+        {
+          "name": "The Retreat Salon and Day Spa",
+          "town": "Sandpoint",
+          "phone": "(208) 826-1246",
+          "site": "http://theretreatsalonanddayspa.com",
+          "category": "Wellness & Spa"
+        },
+        {
+          "name": "Wildflower Spa at Seasons",
+          "town": "Sandpoint",
+          "phone": "(208) 263-1103",
+          "site": "http://www.thewildflowerdayspa.com",
+          "category": "Wellness & Spa"
+        },
+        {
+          "name": "Everything Beauty Salon",
+          "town": "Sandpoint",
+          "phone": "(986) 205-7208",
+          "site": "http://everythingbeautysandpoint@glossgenius.com",
+          "category": "Gas Stations"
+        },
+        {
+          "name": "Northpoint Spa, LLC",
+          "town": "Ponderay",
+          "phone": "(208) 263-3211",
+          "site": "http://www.northpointspa.com",
+          "category": "Wellness & Spa"
+        }
+      ]
+    },
+    {
+      "id": "02728d134f049b63",
+      "title": "Weed spray",
+      "ask": "looking for someone to spray some weeds in my beds, I'm getting tired of pulling them",
+      "summary": "I'm looking for someone to spray some weeds in my beds, I'm getting tired of pulling them",
+      "link": "https://www.reddit.com/r/Sandpoint/comments/1wwslpm/weed_spray/",
+      "source": "Reddit r/Sandpoint",
+      "kind": "reddit",
+      "kind_label": "Reddit",
+      "town": "Sandpoint",
+      "category": "Landscaping",
+      "group": "Home Services",
+      "when": "2026-10-03T17:18:45Z",
+      "when_short": "Oct 3, 2026",
+      "when_ts": 1791047925.0,
+      "fits": [
+        {
+          "name": "Northern States Pest and Weed Control",
+          "town": "Sandpoint",
+          "phone": "(877) 904-2847",
+          "site": "http://www.northernstatespestcontrol.com/",
+          "category": "Other"
+        },
+        {
+          "name": "Grindstone Property Professionals",
+          "town": "Laclede",
+          "phone": "(208) 679-6160",
+          "site": "https://grindstonepropertyprofessionals.com/",
+          "category": "Landscaping"
+        },
+        {
+          "name": "Northern Lawn Service, LLC",
+          "town": "Sagle",
+          "phone": "(208) 329-5582",
+          "site": "http://www.northernlawnservice.com",
+          "category": "Landscaping"
+        },
+        {
+          "name": "All Season Garden and Floral",
+          "town": "",
+          "phone": "",
+          "site": "",
+          "category": "Landscaping"
+        }
+      ]
+    },
+    {
+      "id": "7436dbbe5299c5fe",
+      "title": "Diner Recommendations",
+      "ask": "looking for a small town diner to hang out by myself, drink a cup of coffee, and do some laptop work.",
+      "summary": "I’m looking for a small town diner to hang out by myself, drink a cup of coffee, and do some laptop work. I’m looking for that twin peaks and twilight diner vibes, yk the wood paneling that still smells like cigarette smoke from the 80s and everyone in there is wearing camo post hunt.",
+      "link": "https://www.reddit.com/r/Sandpoint/comments/1wrsfdm/diner_recommendations/",
+      "source": "Reddit r/Sandpoint",
+      "kind": "reddit",
+      "kind_label": "Reddit",
+      "town": "Sandpoint",
+      "category": "Restaurants",
+      "group": "Restaurants",
+      "when": "2026-09-27T18:59:12Z",
+      "when_short": "Sep 27, 2026",
+      "when_ts": 1790535552.0,
+      "fits": [
+        {
+          "name": "The Peppered Mercantile",
+          "town": "Sandpoint",
+          "phone": "",
+          "site": "",
+          "category": "Restaurants"
+        },
+        {
+          "name": "Arby's",
+          "town": "Sandpoint",
+          "phone": "+1 208-263-3104",
+          "site": "https://www.arbys.com/locations/us/id/sandpoint/420-5th-ave/store-6248/",
+          "category": "Restaurants"
+        },
+        {
+          "name": "Crow's Bench",
+          "town": "Sandpoint",
+          "phone": "+1 208-255-3051",
+          "site": "https://www.schweitzer.com/to-do/crows-bench/",
+          "category": "Restaurants"
+        },
+        {
+          "name": "Domino's",
+          "town": "Sandpoint",
+          "phone": "+1 208-263-6600",
+          "site": "https://pizza.dominos.com/idaho/sandpoint/316-5th-ave",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    {
+      "id": "41128acfafe42f84",
+      "title": "Hi alll! What's your go to for lunch in Sandpoint? Thanks in advance for all the suggestions 😉",
+      "ask": "Hi alll! What's your go to for lunch in Sandpoint? Thanks in advance for all the suggestions 😉",
+      "summary": "Hi alll! What's your go to for lunch in Sandpoint? Thanks in advance for all the suggestions 😉",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE92ajdfblg5TE03ZnVhTkVNSlJXbEJ1eURLN2FyYW5NOVNUanp0eFVlaTVrckVfRVp5TUR3VTBBT2pWLXJ1YU95UE12RmNLdXoxOU5Ebnc4aE5jelVrT20tYmR2TFpGb3hqbFJtQ3paLUJtU1FvSVNTUFQzT0pTZw?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "kind_label": "Facebook",
+      "town": "Sandpoint",
+      "category": "Restaurants",
+      "group": "Restaurants",
+      "when": "2026-09-25T07:00:00Z",
+      "when_short": "Sep 25, 2026",
+      "when_ts": 1790319600.0,
+      "fits": [
+        {
+          "name": "Arby's",
+          "town": "Sandpoint",
+          "phone": "+1 208-263-3104",
+          "site": "https://www.arbys.com/locations/us/id/sandpoint/420-5th-ave/store-6248/",
+          "category": "Restaurants"
+        },
+        {
+          "name": "Crow's Bench",
+          "town": "Sandpoint",
+          "phone": "+1 208-255-3051",
+          "site": "https://www.schweitzer.com/to-do/crows-bench/",
+          "category": "Restaurants"
+        },
+        {
+          "name": "Domino's",
+          "town": "Sandpoint",
+          "phone": "+1 208-263-6600",
+          "site": "https://pizza.dominos.com/idaho/sandpoint/316-5th-ave",
+          "category": "Restaurants"
+        },
+        {
+          "name": "Jack in the Box",
+          "town": "Sandpoint",
+          "phone": "+1 208-946-4714",
+          "site": "https://locations.jackinthebox.com/us/id/sandpoint/717-n-5th-ave",
+          "category": "Restaurants"
+        }
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "name": "Landscaping",
+      "count": 1
+    },
+    {
+      "name": "Restaurants",
+      "count": 3
+    },
+    {
+      "name": "Wellness & Spa",
+      "count": 1
+    }
+  ],
+  "channels": [
+    {
+      "name": "Facebook groups",
+      "kind": "facebook",
+      "note": "Most “anyone know a plumber in Sandpoint” posts land in local groups. Groups do not offer a public feed, so we only catch a post when it is indexed on the open web.",
+      "links": [
+        {
+          "label": "Search Facebook for local asks",
+          "url": "https://www.facebook.com/search/posts/?q=looking%20for%20plumber%20sandpoint"
+        }
+      ]
+    },
+    {
+      "name": "Craigslist (Spokane board)",
+      "kind": "craigslist",
+      "note": "Spokane Craigslist covers Bonner and Boundary. Services, household, skilled trades, and wanted. Automated reads are blocked; the search links still work in a browser.",
+      "links": [
+        {
+          "label": "Services · Sandpoint",
+          "url": "https://spokane.craigslist.org/search/bbb?query=sandpoint"
+        },
+        {
+          "label": "Household services",
+          "url": "https://spokane.craigslist.org/search/hsw?query=sandpoint"
+        },
+        {
+          "label": "Skilled trades",
+          "url": "https://spokane.craigslist.org/search/sks?query=sandpoint"
+        },
+        {
+          "label": "Wanted ads",
+          "url": "https://spokane.craigslist.org/search/wan?query=sandpoint"
+        }
+      ]
+    },
+    {
+      "name": "Reddit r/Sandpoint",
+      "kind": "reddit",
+      "note": "Public. Haircuts, diners, weed spray, and the occasional trade ask show up here.",
+      "links": [
+        {
+          "label": "r/Sandpoint",
+          "url": "https://www.reddit.com/r/Sandpoint/"
+        },
+        {
+          "label": "Search the subreddit",
+          "url": "https://www.reddit.com/r/Sandpoint/search/?q=looking%20for&restrict_sr=1&sort=new"
+        }
+      ]
+    },
+    {
+      "name": "Nextdoor",
+      "kind": "web",
+      "note": "Neighbor asks, no public feed we can read.",
+      "links": [
+        {
+          "label": "Sandpoint on Nextdoor",
+          "url": "https://nextdoor.com/city/sandpoint--id/"
+        }
+      ]
+    },
+    {
+      "name": "Less Traveled directory",
+      "kind": "web",
+      "note": "The local roster, trades in search-volume order.",
+      "links": [
+        {
+          "label": "Who shows up",
+          "url": "/showup"
+        }
+      ]
+    }
+  ],
+  "trades": [
+    {
+      "name": "Well & Pump",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+well+pump+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+well+pump",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=well+pump&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Well+%26+Pump"
+    },
+    {
+      "name": "Excavation & Septic",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+excavation+septic+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+excavation+septic",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=excavation+septic&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Excavation+%26+Septic"
+    },
+    {
+      "name": "Plumbing",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+plumbing+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+plumbing",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=plumbing&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Plumbing"
+    },
+    {
+      "name": "Heating & A/C",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+heating+a+c+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+heating+a+c",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=heating+a+c&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Heating+%26+A%2FC"
+    },
+    {
+      "name": "Electrical",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+electrical+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+electrical",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=electrical&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Electrical"
+    },
+    {
+      "name": "Roofing",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+roofing+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+roofing",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=roofing&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Roofing"
+    },
+    {
+      "name": "General Contractors",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+general+contractors+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+general+contractors",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=general+contractors&restrict_sr=1&sort=new",
+      "directory": "/showup?s=General+Contractors"
+    },
+    {
+      "name": "Cleaning",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+cleaning+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+cleaning",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=cleaning&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Cleaning"
+    },
+    {
+      "name": "Tree Service",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+tree+service+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+tree+service",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=tree+service&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Tree+Service"
+    },
+    {
+      "name": "Landscaping",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+landscaping+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+landscaping",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=landscaping&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Landscaping"
+    },
+    {
+      "name": "Windows & Glass",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+windows+glass+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+windows+glass",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=windows+glass&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Windows+%26+Glass"
+    },
+    {
+      "name": "Garage Doors",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+garage+doors+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+garage+doors",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=garage+doors&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Garage+Doors"
+    },
+    {
+      "name": "Painting",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+painting+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+painting",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=painting&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Painting"
+    },
+    {
+      "name": "Flooring",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+flooring+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+flooring",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=flooring&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Flooring"
+    },
+    {
+      "name": "Pest Control",
+      "group": "Home Services",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+pest+control+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+pest+control",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=pest+control&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Pest+Control"
+    },
+    {
+      "name": "Restaurants",
+      "group": "",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+restaurants+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+restaurants",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=restaurants&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Restaurants"
+    },
+    {
+      "name": "Auto Repair",
+      "group": "",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+auto+repair+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+auto+repair",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=auto+repair&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Auto+Repair"
+    },
+    {
+      "name": "Dentists",
+      "group": "",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+dentists+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+dentists",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=dentists&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Dentists"
+    },
+    {
+      "name": "Wellness & Spa",
+      "group": "",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+wellness+spa+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+wellness+spa",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=wellness+spa&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Wellness+%26+Spa"
+    },
+    {
+      "name": "Real Estate",
+      "group": "",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+real+estate+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+real+estate",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=real+estate&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Real+Estate"
+    },
+    {
+      "name": "Hardware & Building Supply",
+      "group": "",
+      "facebook": "https://www.facebook.com/search/posts/?q=looking+for+hardware+building+supply+sandpoint",
+      "craigslist": "https://spokane.craigslist.org/search/bbb?query=sandpoint+hardware+building+supply",
+      "reddit": "https://www.reddit.com/r/Sandpoint/search/?q=hardware+building+supply&restrict_sr=1&sort=new",
+      "directory": "/showup?s=Hardware+%26+Building+Supply"
+    }
+  ],
+  "errors": [
+    "Web: HTTP 429"
+  ]
+}
