@@ -1,5 +1,7 @@
-# Dual-notify Brian: email moorebmoore@hotmail.com and SMS 706.315.3390 at the same time.
-# SMS path: T-Mobile (Powertel Atlanta / 706-315) via 7063153390@tmomail.net
+# Notify Brian at moorebmoore@hotmail.com.
+# Do not email-to-SMS. Verizon shut down vtext.com / vzwpix.com (NDR 550 5.1.1
+# decommission). tmomail.net is the wrong carrier and bounces. Real SMS needs
+# Twilio or Verizon EMAG — do not invent a key.
 param(
     [Parameter(Mandatory = $true)][string]$Subject,
     [Parameter(Mandatory = $true)][string]$Body,
@@ -8,7 +10,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 $EmailTo = "moorebmoore@hotmail.com"
-$SmsTo = "7063153390@tmomail.net"
+$SmsTo = ""
 $Tag = "[VA-DESK]"
 
 function Shorten([string]$text, [int]$max) {
@@ -28,7 +30,7 @@ $Body
 Virtual Assistant desk
 MTTech_SARFarm@outlook.com
 Kind: $Kind
-Sent to email and 706.315.3390 together.
+Sent to email. Phone text is off until an SMS API is wired (Verizon ended email-to-text).
 "@
 
 $outlook = New-Object -ComObject Outlook.Application
@@ -42,6 +44,8 @@ function Send-DeskMail([string]$to, [string]$subj, [string]$text) {
 }
 
 Send-DeskMail $EmailTo $mailSubj $mailBody
-Send-DeskMail $SmsTo $smsSubj $smsBody
+if ($SmsTo) {
+    Send-DeskMail $SmsTo $smsSubj $smsBody
+}
 
-Write-Output ("NOTIFIED email=" + $EmailTo + " sms=" + $SmsTo + " subject=" + $Subject)
+Write-Output ("NOTIFIED email=" + $EmailTo + " sms=" + $(if ($SmsTo) { $SmsTo } else { "off" }) + " subject=" + $Subject)

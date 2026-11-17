@@ -52,7 +52,7 @@ function Is-SkipMail($it) {
     try { $from = "" + $it.SenderEmailAddress } catch {}
     if ($subj -match '\[VA-DESK\]') { return $true }
     if ($subj -match '^(Undeliverable|Delivery Status Notification)') { return $true }
-    if ($from -match 'tmomail\.net|vtext\.com|txt\.att\.net') { return $true }
+    if ($from -match 'tmomail\.net|vtext\.com|vzwpix\.com|txt\.att\.net') { return $true }
     return $false
 }
 
@@ -203,6 +203,7 @@ $heart = @{
     open               = $open.Count
     escalated          = $escalated.Count
     queue_total        = $queue.Count
+    warn               = $(if ($mttechConnected) { "" } else { "mttech_store_missing" })
 }
 ($heart | ConvertTo-Json -Compress -Depth 4) | Set-Content -Path $HeartPath -Encoding UTF8
 

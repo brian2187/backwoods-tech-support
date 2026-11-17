@@ -4,9 +4,8 @@ Brian turned contact-mailbox monitoring back on 2026-11-15.
 
 Watch `MTTech_SARFarm@outlook.com` (separate Outlook.com mailbox, not a Hotmail alias). Hotmail `moorebmoore@hotmail.com` is Brian's notify inbox. Add the MTTech account in Outlook so the desk can see enroll/contact mail. Take actions that do **not** change the public site. Dual-notify Brian for anything that needs review:
 
-- Text `706.315.3390` (T-Mobile `7063153390@tmomail.net`)
-- Email `moorebmoore@hotmail.com`
-- Send both at the same time. Subject prefix `[VA-DESK]`.
+- Email `moorebmoore@hotmail.com`. Subject prefix `[VA-DESK]`.
+- Do not email-to-text `706.315.3390`. Verizon shut down vtext.com / vzwpix.com. `tmomail.net` is the wrong carrier and bounces. Real SMS needs Twilio or Verizon EMAG.
 
 Scripts: `aibiz/watch_contact_mail.ps1`, `aibiz/desk_notify.ps1`. Windows task `VAContactDesk` escalates unprocessed desk mail. Grok durable scheduler processes the queue.
 
