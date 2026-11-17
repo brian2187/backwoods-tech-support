@@ -1,8 +1,312 @@
 {
-  "updated": "2026-11-16T13:33:45Z",
+  "updated": "2026-11-17T14:32:00Z",
   "days": 90,
   "note": "Local goings-on as they are reported and discussed in the news, on Facebook, X, Reddit, and other public posts. Short notes only; the original stays with the publisher. Facebook groups do not offer a public feed, so those show up when the same talk is on the open web.",
   "items": [
+    {
+      "id": "db04e978bfbdac55",
+      "title": "PREP GIRLS BASKETBALL: Nov. 16, 2026",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TRjhQcG9RVUpuTGVESDZSY2ZJY1R5NXZJMmRsQzVUNlU0NFNCSW5LU01fdmVSa2ZfXzhMNzJ5Qk9IZXV0NzFrejIyY3RldHA2LWZKT2VyZndwc1djZUVJYTRKVU9NdUFfVk5qYw?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-17T09:29:04Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794907744.0
+    },
+    {
+      "id": "4b02824599e4c46c",
+      "title": "Post Falls Labor Dept. to host hiring event",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTlkyQTgtSW4wbkRqdV9hcVRYTTFLa3UxRWh5dmV5QXVkcEZobml6VzV1aW4zeDJzcDVUaHJCaGpvcGFibjlya0lUSi05T19jeGg3VU01cEtZMDU5Zl91UWpLRnpTMy1xZ2J5b1lRazdaSE9MVGNWT0RpVU03bFgzWEktaXdhN1No?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-17T09:07:10Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794906430.0
+    },
+    {
+      "id": "4d276fbbd37f938f",
+      "title": "Bonner County Calendar",
+      "summary": "Nov. 17, 2026 Bonner County Daily Bee",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRi1wdWg3OVhzU2JWWnVreUNwbFcxczNidFRRM3RCYVkzeGtyMHpSWUtyRC1NMldqTnktRm9uV3FyOVEzZkpfTEwzdVJhLTh2MHJnVVJDYVdLSnJvOXZfX2xlNUV0d2xwMWwxNlU1REE2Z1hxMTVTdjhkSGtUX1dGVTdVZXdhY1c3aVV3MlR3?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-17T09:04:11Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794906251.0
+    },
+    {
+      "id": "aa0fb9aa015442fb",
+      "title": "Kid Weather",
+      "summary": "November 17, 2026 Bonner County Daily Bee",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZ3NzVDdxbDVGMThXSHVUOU9ONGxSdXo3OUdMaFA3R3Q3aXN5eWt1TDlKWV9KZC1RcFZ4eTlIVHYwMGItSHg1ekZua1p3b2RhdTJqV19WTXFyWnlUcGNqT1BHVHQ2ZHotZ1hqMzdmcy1ZMzYwUlJBcGxRYkYtb0tzekdUaEJ3dw?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-17T09:04:11Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794906251.0
+    },
+    {
+      "id": "a2a72136e5653249",
+      "title": "208 Recovery North celebrates grand opening of local center",
+      "summary": "From Bonner County Daily Bee.",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOb2tJeTlNNE9UMnpDSUJTRDB1SWdNcU9jaFQ0dkxuSzVVS2pvcVNoSjRzR3FMeTRRSjJyQm5ZZlFsYjQ5R1oyNnJnUmc3RS10ZG44X1p0ZFQ0SUJXeGFiUmpfYWNjbmkwNE9lLW5DSGhSbzk0UnNBQmRTZklDYkxqbDVyV216WTNkSjk3T1FWRldsTHl5N3pqenVveVV2QlEzdk05WkVyLXlnb0ZzT2xZ?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-17T09:04:11Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794906251.0
+    },
+    {
+      "id": "65496b244a3f0379",
+      "title": "Idaho Hill site closure",
+      "summary": "From Bonner County Daily Bee.",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HVlJXUHJ0a2RWcngza3c0RUw3WUxlSk53OVNONHktcmhJdlZVV3QyYVhhalpFZmdGdDRaX0RHamtWcjE4MDR4U3dTOS1oTUNhbFVGb0NDTHBpYklSQU0yWHFJZFd6aVRVWFJVS3pMSVQ3Zk9SZUpwZVVlSDRLYWc?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-17T09:03:21Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794906201.0
+    },
+    {
+      "id": "3ba7a07b031e80b1",
+      "title": "Trout Unlimited meeting set",
+      "summary": "From Bonner County Daily Bee.",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVHlGZVlYWF9YY0lYckZZZjBJTHhDZklxSG4xRmtUMHZTUldBN0lncGRwcXF0cWg3ZEItVkl3RmhIV3ljUi02cGdiSC1id0V2d3JZblN6VkZlMno4b2Q1dVEtOUFYOFNyay0xUEZMSEtRaG5OaWxqWHBvZlpZaUpkN0t4emc?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-17T09:03:21Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794906201.0
+    },
+    {
+      "id": "261611b296804e8b",
+      "title": "'Tip-A-Badge Challenge' on Wednesday",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBxdHVZbWhORzY5NmxOOFV0M0ZxUVY2bkVnWnczc0gzR09tMkhYdm8zeTNMZi1VX1RBSDRUX2xTRkxkeE1qVU9fYzVVUVRsbXppMTI5VFluVXpmQllhaGZCRkxRenRRdHlCbEFIRjV2QlFrZmEwZlpRNmkwb2dGdw?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-17T09:03:19Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794906199.0
+    },
+    {
+      "id": "b03aa0fc0ecf0462",
+      "title": "Fashion meets compassion at CASA's Purse Party",
+      "summary": "From Bonner County Daily Bee.",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSjBQcjZoM3RhOGw2a25jMnVtLWg5TjVCZUNyQjhLUmR3T2JMMnY2RHUxWGtCMjRSV3FscVBXVDAzcjZxc0UzTkRtYlY3eHd6WC0wakxXVDYxMzZmdWgwX1I5TmNFUUE4V094Vmx3NVpVSGhaT2x4cFFwU0t1amdvNGVOQUtYal9PYlVXNWM1RXNlZ3hjaEhSZ3ZYZEk?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-17T08:00:00Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794902400.0
+    },
+    {
+      "id": "a905ffbb84ea66a4",
+      "title": "Lane signs to Spokane Falls Community College volleyball",
+      "summary": "From Bonner County Daily Bee.",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQazN1aFFMVXlMcFk5a01YQWFGUER0T2pUeURaZU9pRlBWWEwyYzlqdlBPX1pQWWs1MDJhTE9aUVdWV3JFSXFHZzlmXzhkRVEyNlRxSGVJWmRrOWZuSEtYZVJwQ1JhX25xMkc5TWFodGVEZVB2aFRIUHQ5MjMwWUQ5YmZVZTJJNFlOS0M3X05XdFp1bGdud2o1QUkwOXp6RGVtMmV6c2JXUEdZYlU?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-17T08:00:00Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794902400.0
+    },
+    {
+      "id": "70b7fd1467f77356",
+      "title": "Coeur d'Alene Police Department respond to report of possible explosive on Belmont Street",
+      "summary": "From NonStop Local KHQ.",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOWUJKUWY1M3NfWjFmR2lXaXp4SVM3eUVJV2FFdFNIRV9jOW41QnRrTWdqTEpmR2MycWhjVmR1WUFhSzZPTkRNbUZnT3lZRU1yT3hOajJzX0ZzQWZjS211QlJxQUNpREthd0NraDJHbWdSdVlDa2wyZG0xMDdoS0xGanFBTXN1RWszcDNuT1lTQ2o4bXV2V2VFU3JwSFI2LUZtUVdoRXJrWmZnTEJuY1UxRnhkVng4N3R3emdFMldETFNod0pIaGpaYTVMaGZTVV9VMVpnMk5Wck1vX3JLd2V3ZzB4TGFydllXWkRadzhDM2xwampySVE?oc=5",
+      "source": "NonStop Local KHQ",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-17T05:22:00Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794892920.0
+    },
+    {
+      "id": "e7011d1cbd874246",
+      "title": "Coeur d'Alene residents evacuated for explosive device investigation Monday evening",
+      "summary": "From KXLY.com.",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPaUJXYnh6eGl6WGFUZndWX3FJVlpDTklvV1NJeS12MDFhZVpQY1VQY0Z3aGJkUlc2aWRBbVhZUjN2Y2JRNzQ3SWRCY1VhcTRvSVFSbGRsYUNoRDZnZDItd0pjd1B1TmtWOEhMODNxbkhEQmVuWVJwajE4NklwV1czZTc0ZXNPZU9LWlpHUXVmTElzZVlmOGxJM1JWQ25XTVVxWmVxenlZSXRHcm9XbmFtM1JLMEdjSTVWbnlVR3lZQzhtWGtMQ08wZmFtVHFwM1RtOWoyUm1xbll0aXhyMlpVMUlBbUFtUVVqaGJpMGFuZw?oc=5",
+      "source": "KXLY.com",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-17T05:04:58Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794891898.0
+    },
+    {
+      "id": "6383a2c0ceefe3e2",
+      "title": "Mt. Hall Elementary School receives another national honor",
+      "summary": "From Bonners Ferry Herald.",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb2RqMzJYZXZwcS1ycFJLWXJVWHlVNWxTaEkyT0cwc1d1QUo2Y3phSkc0ZDFGNEV1M2NBT2FOczJHQktkajVvRFlER1pKUkwxeWdHMWRkbFg3NkZvZm9aa29iMlRIel9kZnlVcktRZWxQYVhpS1BUUjBNQUQxUFRSUlRTSktZYlJIcF9lYVVSNzdRMGpuQ3JjX3ZyYktOMmpIU0lsb0ZfVEU?oc=5",
+      "source": "Bonners Ferry Herald",
+      "kind": "news",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
+      ],
+      "author": "",
+      "when": "2026-11-17T04:02:43Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794888163.0
+    },
+    {
+      "id": "46fedcc5b8755d55",
+      "title": "Former employee reports mice, unsafe food in Coeur d'Alene schools",
+      "summary": "From NonStop Local KHQ.",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOSjRkQmIwSWdFZEx0bDRLbXBWcDFQV0w2cjBhTDl4YktveHotcmZlRy1pYWtoUG1NcC1RNUNaUFFwM3M4eENWX01NZmEwcE9EMXdXTm10YmxKc0cyaVllT3Vib29rUWE2WGFpZGwyWnNfNy1pTGk1YXpCcFZ6TFo1VC1KcGNNNzRhRktsSThEbjhHRmxFeG5YWnRXdEY3ejF4OWRTYzlFWnhZWVVPc3lHaHFLWWZlRlBXVzlXY2pkWGFaOWVqZjJqQ1k2dmg5X3FmdUJZVi1B?oc=5",
+      "source": "NonStop Local KHQ",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-17T03:40:10Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794886810.0
+    },
+    {
+      "id": "d58386990b28f274",
+      "title": "Kootenai County Sheriff's Office in Idaho says they found an unexploded bomb in the area of Belmont and Appaloosa. Coeur d'Alene Police are evacuating residents in the area.",
+      "summary": "reports CGTN",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBFczJRUWtIRU1FWWZZQW9LX2NGY081Z3ZCVVlSdkFGRDVsYThIc2U5UXY5X1hrVEJPVHluR29ya0ZKellTaktzUU1XT2JRclJweVZBVVRRYVh2WDBSVVNldjBqZU8waGlWdkczbXN3?oc=5",
+      "source": "CGTN",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-17T03:34:05Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794886445.0
+    },
+    {
+      "id": "8692d55060bf65e3",
+      "title": "Coeur d'Alene Police determined the \"unexploded device\" to be a commercial firework",
+      "summary": "From KREM.",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUE9nUGZzSjRiYmtZdk5BOFZ1ZW9GNFJsRVpNclhMM2JQMnFRNERfLV9kV3RzQW4wTmJYQmFRdlF5dEhHNFhMZVdiYTFHazhHRklDdUdlc0VOTVVkNW1HeklmWXdhUm4ydjVGUDVxbHVsZFhDOHBYUDBPMnJOU0FYVGFPQTRzb1RhTlhVVy14S1NBdGgyWGp0cGJ5UzFDcGZwWkl1R3hoRnZBTGFublo3ZlpaaVVveldDaWdTYVNFRV9mZEp6X0hzejJrNzlOeVg1OHNCbS0wVlNjdkU?oc=5",
+      "source": "KREM",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-17T02:54:00Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794884040.0
+    },
+    {
+      "id": "a0ce608afffe0fc2",
+      "title": "Handel’s Messiah in Sandpoint",
+      "summary": "From The Spokesman-Review.",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IZHJ3c2FnRU9kTFU0SUJzY3hnMmFVQmRJOE4wRHY0clRFU1dzR3g2SFdEbFFvUm9XeURSdktSZUthdVpURnQ2X2lGWWQyZC1rWGFiRkUzOXNFcWJxWXZMdFhBUFI5dVk?oc=5",
+      "source": "The Spokesman-Review",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-16T22:38:38Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794868718.0
+    },
+    {
+      "id": "510c56fd67aa353d",
+      "title": "The long paw of the law: Bonners Ferry introduces K-9 program",
+      "summary": "From KREM.",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPek8xb1dNRVNqQ1B5V0pQSVFzejFHMklwT2dOOUwtWmcwTHlJOFpDTU5oRk9MbVNETTRCb2hpNG1OS2p0SGJpdEdhWTRYaG9hUDhwODZtN05BenpwTjl6YlRXc0hrUXN1WHJzUTJkQkZISVlBMUhvRG5fQzlhLUwxN1dFdEFLb3U4MjZreWRpR094aFpvbnpVMmpuU0syUTJERld5bDNwc2RkSHVWNG9GakVnaUpObF9LZ0RWaXpLM04yVE1xZmwwWWI2Z24wZHh6T3lXT1p6NjBxR3JLTEtoeQ?oc=5",
+      "source": "KREM",
+      "kind": "news",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
+      ],
+      "author": "",
+      "when": "2026-11-16T21:22:00Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794864120.0
+    },
+    {
+      "id": "94ccebb871426ca9",
+      "title": "Bonners Ferry New K9 Program",
+      "summary": "From KREM.",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPU0o4a2dJOGRZYnFEcEhkVmVKQ1hINDBsS0ZweV9lMGhMbXU1ME1XX1ZHemJ2T25mNm1wckxQWUNKVGlrUGNCTWpfSElxTzRSNU82cGZWdjllV3VSbjAxeDJRLXFQbW4zTjFKcWpkU2FDcUNMT2lndTA0QW1VMTNrb1llS3k0ckIzWHRIZHpTbGdsN2l0LXQ2TW1fbEM1YVlQaW1OSm85NU1HSjJBMmZmT2QzOA?oc=5",
+      "source": "KREM",
+      "kind": "news",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
+      ],
+      "author": "",
+      "when": "2026-11-16T21:17:00Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794863820.0
+    },
     {
       "id": "8dee1c5462540f09",
       "title": "Looking for something to do this coming Friday and Saturday? I will be selling some of my rocks and artwork at a local Christmas Market in Bonners Ferry, ID. I’ve worked very hard ",
@@ -20,10 +324,58 @@
       "when_ts": 1794831439.0
     },
     {
+      "id": "8e2a14929824453f",
+      "title": "North Idaho 14-day weather forecast",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OVHo5cUYwOF9wV2VjakZpMlI1VmItT3J0Snc4ZjZIUldNY29tOXRjWElxcjZDWlhucnFTVmhreHVIa2J1NUpCT2FyYUlVTHJBMTYzalFDU3RaRFFaazRQZFpDUFV0ekpCU1ZpY3JMaHAzbHM3OVN1Y1BsWnNkeTg?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-16T09:21:43Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794820903.0
+    },
+    {
       "id": "e83616b1c99f8803",
       "title": "Faucher named development director at Museum of North Idaho",
       "summary": "From Coeur d'Alene Press.",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdlp2dTMzdDZTUk5qVFc3RW1aMS1DYWV6V1dQTXNKd1Y1ZC1fLTJRVUFzWkY1ZUw1V19aNW90NUo4MnVPQ2N5dnItUVRVRFRpVnR1TEtwd2E3UDNmNU9oT3d6QzFlVXJ1aHlaV3R5Sk05Xzh3N2lOaFF0TkFxSTJDTkYzYUpuUFREMXMyN0tMc05reG4wb3JOcDNrZVE4d3F6YlBJOHhUMA?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-16T09:12:11Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794820331.0
+    },
+    {
+      "id": "143e1aceae792c61",
+      "title": "Step into the world of knights, castles",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUjBkMWNNblRmTy0tRU9NTUk2WG5jdk5VZkJGU2NBZFlCSHl6Z1o0YlFILWE3QWppU2ZJZXFjUW94ZWlvb3hpQ09UbWtZVmRIQnRya2FvV1UyT1E4d2p2N05JZVRPR3k2N1BTZGdrTXlqM1YyaXlySFFoZ3gtZmtTZEZXRE5DS1dJVlN3SU9EZHpodk9VSzIxZXV0M0M4UW1xSUtB?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-16T09:12:11Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794820331.0
+    },
+    {
+      "id": "697f6a03795fbbf2",
+      "title": "Winton defends title, claims 'Brain Trophy'",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNDZZOWVEd0IxcWJTTUNzWDR5YWd4WlFMcTYweGRvelpQSUxadkZZLVB1RDJIVGFzWUc4N21xUVA4clZuTm0zZ3R3QmtXWnliVFNiSDh0cC1WUV9LWXhMa1d6TTlvZVJueW5WSjdHeElRaDJSWWxGYnhvajduZnRsQlVUOW1Fdw?oc=5",
       "source": "Coeur d'Alene Press",
       "kind": "news",
       "area": "Coeur d'Alene",
@@ -114,6 +466,22 @@
       "when": "2026-11-15T23:15:35Z",
       "when_short": "Nov 15, 2026",
       "when_ts": 1794784535.0
+    },
+    {
+      "id": "480fcd69afb60a3c",
+      "title": "Highland vs. Coeur d'Alene football state semifinal gallery",
+      "summary": "From Idaho State Journal.",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOSzBFS1ZmWFU1dUVpcWcxLUJveHZxOVlVY1MwMnViRXlSZ2pDeGx0ZVBKaXZLdnpLWWxFSENUT281NC1lendxd0FBenZZNl9yN09PTGNiSDBYdmJjNHBqOUZiNFNpMzM2eEdZX2h3RnEwWnB5ZHBiSE1waWVWc2t3SkIzb3FBQkVYOEVYclBPdHYxTHdUMlZwS0VmN2REOUVQRTNNWk1jMDdjMS1YTlhWWFlXRGk3UjdZU2NTd2xlVW56ZzlBQ2VhTU1RNkJxd0plOThHa2lwRGJiODhNRllZYUc2SXpDZw?oc=5",
+      "source": "Idaho State Journal",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-15T22:31:00Z",
+      "when_short": "Nov 15, 2026",
+      "when_ts": 1794781860.0
     },
     {
       "id": "f67b1815d6305ac9",
@@ -292,22 +660,6 @@
       "when_ts": 1794734397.0
     },
     {
-      "id": "4d276fbbd37f938f",
-      "title": "Bonner County Calendar",
-      "summary": "Nov. 15, 2026 Bonner County Daily Bee",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUHY2Mm9sRVlCdXhJa1NQdjNJcElLNVdQeTdrZWlkaUM2bnp5TzVnRmtGQlk5dUktdkR0Snpha18wbmJRWDA2V2ZKcTByZGxHXzhVSHVTSm1hLW1EYW5QUUdhdWFHb3REQkg3UDBjN05XeUl2UG9rQ003UDdUQjQ1cWloTkNNQ0stU1RKTFpB?oc=5",
-      "source": "Bonner County Daily Bee",
-      "kind": "news",
-      "area": "Sandpoint",
-      "areas": [
-        "Sandpoint"
-      ],
-      "author": "",
-      "when": "2026-11-15T09:07:57Z",
-      "when_short": "Nov 15, 2026",
-      "when_ts": 1794733677.0
-    },
-    {
       "id": "06c1956bccbca0bd",
       "title": "CO2 levels are warming our atmosphere",
       "summary": "From Bonner County Daily Bee.",
@@ -354,6 +706,22 @@
       "when": "2026-11-15T09:02:02Z",
       "when_short": "Nov 15, 2026",
       "when_ts": 1794733322.0
+    },
+    {
+      "id": "858e8917d0889334",
+      "title": "TRANSIT: Regarding ballot question",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA5Z2JLS0RXU0VpRElzTWlrY2ExRV9Sc2txbU5USU1HYVBXR19VUXRPZnQzSThjc0EyaS1RREFobWxKZUliMDZpVlJVc3NwMklDZ0c5Mm9yaTBtcjk3UjZJYUJodEY1MkgtY2FwT0JlSGFVa1IzUTVLSk5tZ20?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-15T09:01:39Z",
+      "when_short": "Nov 15, 2026",
+      "when_ts": 1794733299.0
     },
     {
       "id": "42a0754fc9f76fdd",
@@ -660,6 +1028,22 @@
       "when_ts": 1794648481.0
     },
     {
+      "id": "10cfef2ede709dd8",
+      "title": "Northwest Notes: Nov. 14, 2026",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1VWHAwcm1KdUZWbFlFZGtCZzZQZWNQeWNvaTFGaDhIMklyeEN3bFc4cFpDV3U1djdBclpjLV9mbXFnS3NzTW1NVEdhRmpwTXJkWWFIWkN3ZDl6QnZSalRIaVF2a0o1b3Zfd0tTY1c5Uy1Yb3Bk?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-14T09:17:07Z",
+      "when_short": "Nov 14, 2026",
+      "when_ts": 1794647827.0
+    },
+    {
       "id": "6196d654756f359f",
       "title": "NIC, Coeur d’Alene Tribe to celebrate student center opening Tuesday",
       "summary": "From Coeur d'Alene Press.",
@@ -676,10 +1060,26 @@
       "when_ts": 1794647534.0
     },
     {
+      "id": "d13ea6b6293a4cba",
+      "title": "Timberlake High School (Spirit Lake, ID) Softball",
+      "summary": "From MaxPreps.",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZdFZzMS13SUd6M1pZMDJYX0RBd0l5bWg1dEZwb01xYlBQcm5taVBiUnJ2TTNreWtSdnYyRlFuMkFvZG5TZ09RRFhFTWNabWVvSmxkcWZ3R1YxT0ZxN196Si1DeW1QT3VrVjd5VEFINm1jNkdLZmc?oc=5",
+      "source": "MaxPreps",
+      "kind": "news",
+      "area": "Spirit Lake",
+      "areas": [
+        "Spirit Lake"
+      ],
+      "author": "",
+      "when": "2026-11-14T09:04:51Z",
+      "when_short": "Nov 14, 2026",
+      "when_ts": 1794647091.0
+    },
+    {
       "id": "d7cc6a78479497a1",
       "title": "Bonner County News of Record",
       "summary": "Oct. 31, 2026 Bonner County Daily Bee",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQktNSUFrYi1mUlVCTXo2Sl9vMDdPSkpadkw4WGlqU0NVZmtLNUdxM0t4bnlhdTRET0xET0Y4QlExZXZBai1WalZhaDliamozcDlwNmZ5QTVySDdlQzF0cjlxcUZyRFhrVE4xOVdTYkdyQ2dhS3ZoaEtsVThYVG41ZDNtM29MUjBJMnluNml6eklfT0ty?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOcDN5bS1iRkhhZVBydEpodWtRMzBPX2xMSXc2NlB2czMzdTFGVnlVWlJqTk90c2FhS1pBRERwSHVra2xtcDhteXNoUzhheENsRTlvS3hyS3Y0VElkNXZsV01lY0pCcDVwUUNTRVhBb1BybmJ0SUs3YV9DTUNURFdJZEp6a2ZBbFFzYzQ1eHlHTGYzbkcxRVE?oc=5",
       "source": "Bonner County Daily Bee",
       "kind": "news",
       "area": "Sandpoint",
@@ -690,6 +1090,22 @@
       "when": "2026-11-14T09:03:42Z",
       "when_short": "Nov 14, 2026",
       "when_ts": 1794647022.0
+    },
+    {
+      "id": "47b7e2661693d3e8",
+      "title": "Coeur d'Alene Casino Resort Hotel hosts Native American Heritage events",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUzdRWV9McTN0SlhZQ19XWDRiZTJwV2V5YWdoQXkxVDJrbVdOT1ZaUkl2N2dSRHp3YVB4Q1BvaktlTjVqQVQ3blA4TGxDcVhOTGlrQVhaVllzRUZncktMOUlGcDl0ckppZnIwX2RqbkZTaXFZRklQNlJXT3pQZWV6djBaZ1hHQjFYakN4NENDeGExa2hVUURNNWg4VGQ3VUFtWVNvbF83R2Rxck1lbEE?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-14T09:02:10Z",
+      "when_short": "Nov 14, 2026",
+      "when_ts": 1794646930.0
     },
     {
       "id": "73d31b303c028631",
@@ -1238,6 +1654,22 @@
       "when_ts": 1794556800.0
     },
     {
+      "id": "069c7d3f9b8e8d41",
+      "title": "The Burger Dock offers a free Thanksgiving-themed meal",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNa2RwS3lNVkVtNVItcHJ2ZkxtSlhRcUxKMDZpeDVQQ3NJQlN2S1pzOUpCejdkX2xXeHhIVWVYZ0o5VnNCb3hyRlNnbEd5TGhfdDJDUVBEcVFKdnMzcVVWazVSQVlwVEFkZlp0S0tTY0JBa0R2SldGemVKNVAxWnR3WkhxaEdGZEpydWdyVjZDX1RZVF9aTklKbg?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-13T08:00:00Z",
+      "when_short": "Nov 13, 2026",
+      "when_ts": 1794556800.0
+    },
+    {
       "id": "0bf88bb3e6f7493b",
       "title": "Man arrested by Newport Beach police after hourslong standoff, alleged assault ID’d",
       "summary": "From Los Angeles Times.",
@@ -1541,22 +1973,6 @@
       "when": "2026-11-12T09:13:28Z",
       "when_short": "Nov 12, 2026",
       "when_ts": 1794474808.0
-    },
-    {
-      "id": "8e2a14929824453f",
-      "title": "North Idaho 14-day weather forecast",
-      "summary": "From Coeur d'Alene Press.",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MR1RkSDdvaW8wbG5lY0xFSFdpNXJvZU9qNXVXYXVEZkZOOGtZQWU0TDZsMlctV3I1SG9PUl9pa01EeDhTQm1USDUtVnMwQ3g0dVNDLW01RDF4cC11MVRBTjU2bngyMmNzSnJ2VzR2T1ltYi1ENUlBeXFDTGVPSU0?oc=5",
-      "source": "Coeur d'Alene Press",
-      "kind": "news",
-      "area": "Coeur d'Alene",
-      "areas": [
-        "Coeur d'Alene"
-      ],
-      "author": "",
-      "when": "2026-11-12T09:07:05Z",
-      "when_short": "Nov 12, 2026",
-      "when_ts": 1794474425.0
     },
     {
       "id": "cd6fa4c82f6f5c8e",
@@ -2039,6 +2455,22 @@
       "when_ts": 1794444003.0
     },
     {
+      "id": "ad547f47969a6802",
+      "title": "‘A little moment of shared silliness’",
+      "summary": "Point Break parody is a ‘love letter’ to the film and Sandpoint By Soncirey MitchellReader Staff It’s hard to top the ’90s cult classic Point Break — starring Keanu Reeves and Patrick Swayze as...",
+      "link": "https://sandpointreader.com/a-little-moment-of-shared-silliness/",
+      "source": "Reader",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "Ben Olson",
+      "when": "2026-11-12T00:25:49Z",
+      "when_short": "Nov 12, 2026",
+      "when_ts": 1794443149.0
+    },
+    {
       "id": "e0b0f917b0bb9ca6",
       "title": "Death mask",
       "summary": "From Sandpoint Reader.",
@@ -2197,6 +2629,22 @@
       "when": "2026-11-11T17:08:24Z",
       "when_short": "Nov 11, 2026",
       "when_ts": 1794416904.0
+    },
+    {
+      "id": "a28518cbf4117b3f",
+      "title": "Sandpoint Football Schedule",
+      "summary": "From MaxPreps.",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNb3NRd2ZSMUVEeWdSbW5yN1JKcTFITHRBR2hndVFqTW5VZWp1MEo1Zkh6U3R0bVU0ZVphUkZnV1NMRzRSOTlMZi1tZl9UZERrUnAyVFloelBvbHJOcUtVUDBTT0xhN054RzZYaGkzMWdJZWw2MlFRMFZadWNTSGJzbQ?oc=5",
+      "source": "MaxPreps",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-11T16:20:16Z",
+      "when_short": "Nov 11, 2026",
+      "when_ts": 1794414016.0
     },
     {
       "id": "fc198e20b2c481e0",
@@ -2424,6 +2872,38 @@
       "when": "2026-11-10T19:24:26Z",
       "when_short": "Nov 10, 2026",
       "when_ts": 1794338666.0
+    },
+    {
+      "id": "42b4ee734eaa5fe7",
+      "title": "Kootenai Health lays off 80 positions",
+      "summary": "From KREM.",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVnpLMkFXX3Z3Q0l0UkdsMGxuemtlUGlUZ1pDY1JuMS1Ha3ZPR1BZVjVKTVhzdjMtTThndFdSQ2VuYmlxXzlCSW9WcTBTS2RhbU9ObEx0OGRqQlp2Mzc5RUQzeGlqUU8tdEhheFNBM3RqaUZJWWhXQ0xocDMwVmVhSXQ2ZWFYOUl2VlBwdnNuN2Q0OHVhWWRMUDJVWDZYM3VWT1ZYTEpkaDlmZDRnaG1ueGdSRW5UWGxqckJmMUVXdGU?oc=5",
+      "source": "KREM",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-11-10T18:15:00Z",
+      "when_short": "Nov 10, 2026",
+      "when_ts": 1794334500.0
+    },
+    {
+      "id": "95913ba2d2263ec4",
+      "title": "A few thoughts about gas prices",
+      "summary": "From Bonner County Daily Bee.",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZWQwb2R6cTBmQ1R3UVB6LVNCM3d1dHZQZEh0NWZVWWo2b3BTRnBlSEw2eno1VnFxMWhKbVlKM29JQTFIWlZ6aG54eTJqWnVSa0VRcVhWaDZoTW9FS0RoR0lYa2R1S0V6U1N0cnl5Tl83V3NRX0N4WmIwSjNrRWMwQUNxTERSYklRX0E?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-10T09:01:35Z",
+      "when_short": "Nov 10, 2026",
+      "when_ts": 1794301295.0
     },
     {
       "id": "0a3f3a80c5ab329b",
@@ -2796,6 +3276,22 @@
       "when_ts": 1794125340.0
     },
     {
+      "id": "5b607ccab90da878",
+      "title": "Priest River Football Schedule",
+      "summary": "From MaxPreps.",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ1Jncm9ieTlMdld0ZTFMNXJ2S053VzlmbUQ3R0VFZVdWd1UybFBnc2RpU09TN2NPeHhDbnJSQVJTSm52VzdlMDZGTjhtckFFOU5Mem9LWjhxTFV4Tk5FUGdWb0RrbkF2RWNxY0w0Y3RITnNuQjgzV3BrLWJJQ2tjajlNLWFGWllM?oc=5",
+      "source": "MaxPreps",
+      "kind": "news",
+      "area": "Priest River",
+      "areas": [
+        "Priest River"
+      ],
+      "author": "",
+      "when": "2026-11-08T08:00:00Z",
+      "when_short": "Nov 8, 2026",
+      "when_ts": 1794124800.0
+    },
+    {
       "id": "4d56cad1a73b8860",
       "title": "A Celtic Christmas Everdream in Sandpoint, ID on Dec 6, 2026",
       "summary": "From Facebook.",
@@ -2892,6 +3388,22 @@
       "when_ts": 1794039305.0
     },
     {
+      "id": "d726f46d5a023d58",
+      "title": "2026 IDHSAA 3A Football Quarterfinal Priest River vs. Melba",
+      "summary": "11/07/2026 | Watch Live & On Demand NFHS Network",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9IdjRtd3ZHb3F2MU02RVNSTjR2OFhBLUlYSnhqVmJiUzlwWWk0TW1GMWtLQWt2emxjNjZBdDZWOXVlYWdfQm9YcnZOZnVHQ3ZMMXNjWnpIOF95UW85NDU1ZVl3Y2poUDZR?oc=5",
+      "source": "NFHS Network",
+      "kind": "news",
+      "area": "Priest River",
+      "areas": [
+        "Priest River"
+      ],
+      "author": "",
+      "when": "2026-11-07T08:00:00Z",
+      "when_short": "Nov 7, 2026",
+      "when_ts": 1794038400.0
+    },
+    {
       "id": "ccbfaba60a527899",
       "title": "Sandpoint fall to Columbia Wildcats 52-21",
       "summary": "From KXLY.com.",
@@ -2935,25 +3447,9 @@
         "Sandpoint"
       ],
       "author": "",
-      "when": "2026-11-06T18:35:00Z",
+      "when": "2026-11-06T08:00:00Z",
       "when_short": "Nov 6, 2026",
-      "when_ts": 1793990100.0
-    },
-    {
-      "id": "d13ea6b6293a4cba",
-      "title": "Timberlake High School (Spirit Lake, ID) Softball",
-      "summary": "From MaxPreps.",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZdFZzMS13SUd6M1pZMDJYX0RBd0l5bWg1dEZwb01xYlBQcm5taVBiUnJ2TTNreWtSdnYyRlFuMkFvZG5TZ09RRFhFTWNabWVvSmxkcWZ3R1YxT0ZxN196Si1DeW1QT3VrVjd5VEFINm1jNkdLZmc?oc=5",
-      "source": "MaxPreps",
-      "kind": "news",
-      "area": "Spirit Lake",
-      "areas": [
-        "Spirit Lake"
-      ],
-      "author": "",
-      "when": "2026-11-06T09:27:16Z",
-      "when_short": "Nov 6, 2026",
-      "when_ts": 1793957236.0
+      "when_ts": 1793952000.0
     },
     {
       "id": "f2e572412d9130fb",
@@ -3486,6 +3982,22 @@
       "when_ts": 1793779200.0
     },
     {
+      "id": "0adfacc129f5f99a",
+      "title": "1A ALL-LEAGUE VOLLEYBALL: Clark Fork's Anderson named North Star MVP",
+      "summary": "From Hagadone News Network.",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOandwSjJPbFRvVjUtQU9WRXBKNHJ0UU5OdWVtdlZQMnMtMFZuVUhzSEU5U2UxQ29EWmpqbXZ2SmZXcUVCQ1VOSlFSNjY5QzhuTjN3anhVTDkxdlNwRXFINE9tZ3NhUU1HX2Y5T2dlMGZ1LTJPS3JrOGdIX3BjMExxT0hDdS1ZZWdvdUtadzljdm52YWRRUkxKdUM5UGtTYm95QjNsS2Q0VEhubXNSYzN6emN1NW5FY3M?oc=5",
+      "source": "Hagadone News Network",
+      "kind": "news",
+      "area": "Clark Fork",
+      "areas": [
+        "Clark Fork"
+      ],
+      "author": "",
+      "when": "2026-11-04T08:00:00Z",
+      "when_short": "Nov 4, 2026",
+      "when_ts": 1793779200.0
+    },
+    {
       "id": "052b64deb1335a0f",
       "title": "North Idaho healthcare providers receive millions in rural health grants",
       "summary": "From KREM.",
@@ -3679,20 +4191,20 @@
       "when_ts": 1793430000.0
     },
     {
-      "id": "e8854eda9c0c048b",
-      "title": "#3 Priest River vs #6 New Plymouth | 3A Idaho State Football Playoffs Highlights 10/30/26",
-      "summary": "From SWX Local Sports.",
-      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPMlN6VVFBeTk4MEZnaV8wSzdXSUxpVmhsYWxsQXg0ZDFFYk9uTUctMXBsYVBtbXdKVldRWDVjTkZmQkR5WWg3dUVZeGJwVHJNX3J4cG1mX1puR1ZXR1lxT1I0SXhSdTJEQThHQmdnaEVPOWR4WnZhbWphWHRseWY1RXA4M0tKTFlia1l2eFhBd3BMdmFSNGlJWGQzYTNmU212andzZzdIa3pWak16cGhoWHUyTnQ0dXdRSUxaSUxXU0NydzFzNUJ6QnA2eHZFaUJwODVia1BhLUFGMDJzR0s4bHhLcTVnUWFnUUlGZGhRX2xlZnpkMUFoSHoxQ0w3LVVMN3lEVEVuQU5tX0xhRHBXaw?oc=5",
-      "source": "SWX Local Sports",
+      "id": "3e83dbf803f76e3e",
+      "title": "Local congregations invite all to worship in faith",
+      "summary": "From Bonner County Daily Bee.",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOd0tzU2FhOXl5LUs4OUJMcWN5X2tieWFOOHRSUE9OcHhLSkJDaHg2b1E0ZXlURllBcmxvSi1XWmVSbktuLXFPY1NqZm55eWkxWm9CSFAyM00yTHEwb1JBZ214VlJzamIwWGdLWlI4WTBHaTlNRDNiTzdYdFNwWV9xMDVWa2M5dFJFM2NWSm9aaVI1YWJ1SlNTZUtGVXU0RkFtZ0FZ?oc=5",
+      "source": "Bonner County Daily Bee",
       "kind": "news",
-      "area": "Priest River",
+      "area": "Sandpoint",
       "areas": [
-        "Priest River"
+        "Sandpoint"
       ],
       "author": "",
-      "when": "2026-10-31T06:31:28Z",
-      "when_short": "Oct 31, 2026",
-      "when_ts": 1793428288.0
+      "when": "2026-10-30T08:01:45Z",
+      "when_short": "Oct 30, 2026",
+      "when_ts": 1793347305.0
     },
     {
       "id": "c770f7d6c05b40ef",
@@ -3711,6 +4223,22 @@
       "when_ts": 1793347200.0
     },
     {
+      "id": "e8854eda9c0c048b",
+      "title": "#3 Priest River vs #6 New Plymouth | 3A Idaho State Football Playoffs Highlights 10/30/26",
+      "summary": "From SWX Local Sports.",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPMlN6VVFBeTk4MEZnaV8wSzdXSUxpVmhsYWxsQXg0ZDFFYk9uTUctMXBsYVBtbXdKVldRWDVjTkZmQkR5WWg3dUVZeGJwVHJNX3J4cG1mX1puR1ZXR1lxT1I0SXhSdTJEQThHQmdnaEVPOWR4WnZhbWphWHRseWY1RXA4M0tKTFlia1l2eFhBd3BMdmFSNGlJWGQzYTNmU212andzZzdIa3pWak16cGhoWHUyTnQ0dXdRSUxaSUxXU0NydzFzNUJ6QnA2eHZFaUJwODVia1BhLUFGMDJzR0s4bHhLcTVnUWFnUUlGZGhRX2xlZnpkMUFoSHoxQ0w3LVVMN3lEVEVuQU5tX0xhRHBXaw?oc=5",
+      "source": "SWX Local Sports",
+      "kind": "news",
+      "area": "Priest River",
+      "areas": [
+        "Priest River"
+      ],
+      "author": "",
+      "when": "2026-10-30T07:00:00Z",
+      "when_short": "Oct 30, 2026",
+      "when_ts": 1793343600.0
+    },
+    {
       "id": "5f97cda53afdb2ba",
       "title": "PREP VOLLEYBALL: Clark Fork falls to Mackay in 1A State Tournament opener",
       "summary": "From Bonner County Daily Bee.",
@@ -3722,9 +4250,9 @@
         "Clark Fork"
       ],
       "author": "",
-      "when": "2026-10-30T08:00:00Z",
+      "when": "2026-10-30T07:00:00Z",
       "when_short": "Oct 30, 2026",
-      "when_ts": 1793347200.0
+      "when_ts": 1793343600.0
     },
     {
       "id": "383d65ff8520934e",
@@ -3951,20 +4479,20 @@
       "when_ts": 1793257200.0
     },
     {
-      "id": "042e3e6327e522bd",
-      "title": "Hayden still without dedicated patrols as contract talks with Kootenai County continue",
-      "summary": "From KXLY.com.",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQSEJfenBnRWFKS1U3ZnZwQzNid055ZDFjRGl2bEdCNUx0b2dHaG1sdjl3bEhnZWVRdWE4cEJWaHlCWGUzSEFGRUtQSFhxY0RnQ21fX2NvbFRtWWFVd2Q3T2ZyY3llcjloM2sxM1RPNzNVMmx2U29qVlhtN3N5QVcyVmJMNFZhaW9BbnFlWkQtdjcwUFRKd1pueHBiV25pTFlGNW80b1phODN5RzItdGs0OWFFTmVqeW1QR2ExUnk5YUVkZXJJR1dpWGk1LTJJdWVxMjdPQ0lzVkhWd242d0NvdmNUZVN4d19rbUtidTFyWHFUSm1u?oc=5",
-      "source": "KXLY.com",
+      "id": "ac49dafe9bb0322b",
+      "title": "Prop. 1: Time for some facts",
+      "summary": "From Sandpoint Reader.",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9zYjYxbHZjTnItdkpOY2Y1Wjd5WnA4QW1lT0x0RlVkUkdSalF4eFoxem13TGNVRnBTY2FRYm9EZXVTWlFNeFpnZERVV1hHSVdWaU9XRXhHMERmRzdIZlJXM2tTamlCdw?oc=5",
+      "source": "Sandpoint Reader",
       "kind": "news",
-      "area": "Coeur d'Alene",
+      "area": "Sandpoint",
       "areas": [
-        "Coeur d'Alene"
+        "Sandpoint"
       ],
       "author": "",
-      "when": "2026-10-29T02:01:08Z",
+      "when": "2026-10-29T00:30:52Z",
       "when_short": "Oct 29, 2026",
-      "when_ts": 1793239268.0
+      "when_ts": 1793233852.0
     },
     {
       "id": "d106b7997170dab8",
@@ -3981,6 +4509,22 @@
       "when": "2026-10-28T08:22:36Z",
       "when_short": "Oct 28, 2026",
       "when_ts": 1793175756.0
+    },
+    {
+      "id": "042e3e6327e522bd",
+      "title": "Hayden still without dedicated patrols as contract talks with Kootenai County continue",
+      "summary": "From KXLY.com.",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQSEJfenBnRWFKS1U3ZnZwQzNid055ZDFjRGl2bEdCNUx0b2dHaG1sdjl3bEhnZWVRdWE4cEJWaHlCWGUzSEFGRUtQSFhxY0RnQ21fX2NvbFRtWWFVd2Q3T2ZyY3llcjloM2sxM1RPNzNVMmx2U29qVlhtN3N5QVcyVmJMNFZhaW9BbnFlWkQtdjcwUFRKd1pueHBiV25pTFlGNW80b1phODN5RzItdGs0OWFFTmVqeW1QR2ExUnk5YUVkZXJJR1dpWGk1LTJJdWVxMjdPQ0lzVkhWd242d0NvdmNUZVN4d19rbUtidTFyWHFUSm1u?oc=5",
+      "source": "KXLY.com",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-10-28T07:00:00Z",
+      "when_short": "Oct 28, 2026",
+      "when_ts": 1793170800.0
     },
     {
       "id": "dc0a4363e27a9ab3",
@@ -4562,6 +5106,23 @@
       "when_ts": 1792566000.0
     },
     {
+      "id": "a51c2e295c33e7f9",
+      "title": "Spirit Lake police seek help catching burglary suspects",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSUVoX1VEb0lQWTF1c1o2ZUREX3ZWbEFNbjBaOFRxWXRzaGFOdkl5QWVlWVotaFh4LU52RkprVmZYTUJoeEprNE03Q0x4YjAyLW11YjUtYmZYSWVOVEdrTThSMmZhdElCTzNWdTJkdDlvUTI4QTN3eUJtcFhmMXdHaTZfM1Z4eXlVS0o3UTlXNVIzbEZXeG52eG9R?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene",
+        "Spirit Lake"
+      ],
+      "author": "",
+      "when": "2026-10-21T07:00:00Z",
+      "when_short": "Oct 21, 2026",
+      "when_ts": 1792566000.0
+    },
+    {
       "id": "b1f2e8df226de661",
       "title": "Bayview residents worry over who will control public boat dock",
       "summary": "From NonStop Local KHQ.",
@@ -4754,6 +5315,22 @@
       "when_ts": 1792393200.0
     },
     {
+      "id": "84d10acd613c1010",
+      "title": "One year after Wilder raid, two Idaho wives reflect on separation, fear, and hope",
+      "summary": "From Idaho News 6.",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeWNva0NkbkhPSWEtNl9zeVc2NElJNGw3QkthTmY5QW5xTkYwWkppa3dyN0FzQVlCcHNsM05mUkNzVDgtRGFhYndjeHJESTJYbmxaSGhCVVBwMmM5ZkxzNUN4RE5QQVI3SDBZMExUQWJMU0wtcDN4VWlZNVNwcVFlVW9PUlItSGlPdUxpQkVtOTZZcmtJcFNVNUhfY055M2lVOHJFQnAtbjVWcVdGdDVZNTA4eFpCQQ?oc=5",
+      "source": "Idaho News 6",
+      "kind": "news",
+      "area": "Hope",
+      "areas": [
+        "Hope"
+      ],
+      "author": "",
+      "when": "2026-10-19T07:00:00Z",
+      "when_short": "Oct 19, 2026",
+      "when_ts": 1792393200.0
+    },
+    {
       "id": "a9b9e1fe6f14ec0f",
       "title": "PREP GIRLS SOCCER: Sandpoint wins in OT to clinch state bid on home turf",
       "summary": "From Coeur d'Alene Press.",
@@ -4814,6 +5391,22 @@
       "area": "Coeur d'Alene",
       "areas": [
         "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-10-18T07:00:00Z",
+      "when_short": "Oct 18, 2026",
+      "when_ts": 1792306800.0
+    },
+    {
+      "id": "9920ccd432eeac02",
+      "title": "Priest River Volleyball Roster (2026-27)",
+      "summary": "From MaxPreps.",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZnlncmZzUE05WlhVUW9aOENiSEZCQ25hSDdwRmoxakY0TkFMVzNkdHBJSDItM1V5M25jUThUaEVSMnlfc1pJeGdkQ2x4V0NKdHQyTllhemg2YkpGWDBqTHFwbEp6bkpqd0o5d1FwVHpxeUNMTjd1RVZRRHlYSEJ5TGgyWmZRTUFQ?oc=5",
+      "source": "MaxPreps",
+      "kind": "news",
+      "area": "Priest River",
+      "areas": [
+        "Priest River"
       ],
       "author": "",
       "when": "2026-10-18T07:00:00Z",
@@ -5098,22 +5691,6 @@
       "when_ts": 1792030070.0
     },
     {
-      "id": "b4c774e6b6b1601b",
-      "title": "Best Shot",
-      "summary": "September 29, 2026 Bonner County Daily Bee",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWW5qODNORndiN25Md2JsVTRSdXYwZE5yandLdmRwczNENE9lQUNLOGdjTEkyQzk5X1hfZkFQRDhTV1ZDbmZUeElvZnVmTlB2d2ppd0pxZU1BcWhxaERuOU9sSGd4NnZaTjY4RUFzUWxjYUlXOUxHRkVISFducGVPTjJn?oc=5",
-      "source": "Bonner County Daily Bee",
-      "kind": "news",
-      "area": "Sandpoint",
-      "areas": [
-        "Sandpoint"
-      ],
-      "author": "",
-      "when": "2026-10-14T08:05:42Z",
-      "when_short": "Oct 14, 2026",
-      "when_ts": 1791965142.0
-    },
-    {
       "id": "c5e859fba298caae",
       "title": "Inaugural Sandpoint Idaho Film Fest ready to roll out red carpet",
       "summary": "From krem.com.",
@@ -5160,6 +5737,22 @@
       "when": "2026-10-14T07:00:00Z",
       "when_short": "Oct 14, 2026",
       "when_ts": 1791961200.0
+    },
+    {
+      "id": "b4c774e6b6b1601b",
+      "title": "Best Shot",
+      "summary": "September 29, 2026 Bonner County Daily Bee",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbXkyMzFzTUg3RzY1UWRJYk5aVy1vdjJxNTVkMUwzbkxCLVMtbXUxLWQxcVA1N2JNSGV6SWdaYTJvMHF6Wmd2T0VXbXI3TlJXV2NPOW1EbFVlSDNEQ3pRMEtBcjBQbUpKZ0ZlYXl2TUVDYnM4MHBkQW94UmVZd19hVzJn?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-10-13T08:07:49Z",
+      "when_short": "Oct 13, 2026",
+      "when_ts": 1791878869.0
     },
     {
       "id": "5ddc13cc1e27ed45",
@@ -5251,6 +5844,38 @@
       "area": "Sandpoint",
       "areas": [
         "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-10-12T07:00:00Z",
+      "when_short": "Oct 12, 2026",
+      "when_ts": 1791788400.0
+    },
+    {
+      "id": "73812550c0995b68",
+      "title": "Bonners Ferry Soccer Roster (2026-27)",
+      "summary": "From MaxPreps.",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMHdBQUZBSWVWWWlnR0ZNQThKWEJ4ZzFjUVAzNXRSaW8tZDlydDI2ZmZvZlg3Z21rVDdLX09fZlk5YzdzMnZTTGV3czBIWVY3TThRdkcwanlaR1hRUkNkaFpkWGRkNm55c1kzTEVMNEdPOXhTaEFYemZWRWwxUUk0ajhXWHM?oc=5",
+      "source": "MaxPreps",
+      "kind": "news",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
+      ],
+      "author": "",
+      "when": "2026-10-12T07:00:00Z",
+      "when_short": "Oct 12, 2026",
+      "when_ts": 1791788400.0
+    },
+    {
+      "id": "c3a97baa4476bd38",
+      "title": "N Rimrock Rd, Hayden, ID 83835 [Updated 10/12]",
+      "summary": "From Realtor.com.",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQX2VsOGlHR0ZMekpzVkUxc29GTUotRHRET3NESk1BTHh0R3lqTnBMOEZhVWFYSlZvZ2Z5RWRyTkVNUG9mNzhBZjMyWmx5QXV3WktyZ2swTFFNeW1CUTd3RWJNUnpYd1lJaXhpcTNVQWVqV2Zqb09vV0dWNXhGc0hCdm1fTW1SX2lRSTFuZGNlWlFNNnZRdVE?oc=5",
+      "source": "Realtor.com",
+      "kind": "news",
+      "area": "Hayden",
+      "areas": [
+        "Hayden"
       ],
       "author": "",
       "when": "2026-10-12T07:00:00Z",
@@ -5387,6 +6012,22 @@
       "when_ts": 1791529200.0
     },
     {
+      "id": "5eba0d67ee24c744",
+      "title": "Moscow vs Bonners Ferry",
+      "summary": "Boys Junior Varsity Football 10/09/2026 | Watch Live & On Demand NFHS Network",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPcU5acC1UZHJfcVRkRkZqOE1fbC1Zd0EtbGpta05RckVQLS1BWjVaNndTaTlGaTFZbjBsX1VfamY5UWdxRUpOZ1JVX3U1cDdGYmJ5NmQteTRmTnh4N0IwamNfcTZVM3Y2R1NaQWVQUWRuR1ZUaHpkZ0JwOVBPa291UVcxTQ?oc=5",
+      "source": "NFHS Network",
+      "kind": "news",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
+      ],
+      "author": "",
+      "when": "2026-10-09T07:00:00Z",
+      "when_short": "Oct 9, 2026",
+      "when_ts": 1791529200.0
+    },
+    {
       "id": "341de8f00a3be2f1",
       "title": "Trio praised after fire rescue",
       "summary": "From Coeur d'Alene Press.",
@@ -5407,6 +6048,22 @@
       "title": "Prior sexual assault allegations against commissioner candidate made public",
       "summary": "From Sandpoint Reader.",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORzFhS1BPM3FrVVdkLVhrZndnaTZONmpFcGp2SEZfVS1nTjdGd2F5V2EtVy03TU95bC1OREpYbTR3OG5TSF9UVXltWWZxLTVVeWwzT0xZbXBsWVZ4cWwyblpZc2k3ZGlMMVJhNEpvaC1SMFZjb0tOVmxESzhmLXlUaVF3bHp4b3Vvc0lNQkFfS0c4ckRobm84VUtqTzRGb3hQMkZnVllhUQ?oc=5",
+      "source": "Sandpoint Reader",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-10-08T07:00:00Z",
+      "when_short": "Oct 8, 2026",
+      "when_ts": 1791442800.0
+    },
+    {
+      "id": "84d974d3f06d92b3",
+      "title": "Should Idaho’s attorney general be a competent lawyer or a politician?",
+      "summary": "From Sandpoint Reader.",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxObUN0cW1HZXY4ckd6TUI3WlJiZjlRcElyQ2ptbENIdVZqc3k5STNodjM4WnY2ODlRR0pSVVJzelE4ZVZFNlAtRFhaRWRTb3JKN3ltLWQzWm13NXN6NWdkS0JobkoybHJBa1pDZlVieUgxM0J4VzRzLUpCb2RqTWdfcUxqWFNKRU9kMFk5ZE92S1Q1NkpZYlVGSHY3Z0ZGdw?oc=5",
       "source": "Sandpoint Reader",
       "kind": "news",
       "area": "Sandpoint",
@@ -5531,6 +6188,22 @@
       "when_ts": 1791356400.0
     },
     {
+      "id": "e8606a3a0ba8454f",
+      "title": "Proposed sales tax in Sandpoint heads to November ballot",
+      "summary": "From KREM.",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcF9ET0tNR0VXZ0xaOTBnOEZpT3FjNXBYNTliYTA2end5V1RxZ0g5SkIwSFRKblh5TktfekZuNDVfWWxEVGNCeTE1UFJzVW1BWlpaUjlOUzU0MVcyUjdFR0EtSWgxcE5LODN1OGtlTTFwUldnUF9yeWR6MEs3VklkRE9MS1JzUExqcXF4eHFkaDFESTBSUzZKWlk5Q1p3aVF1bkNpQVl2LWFNdURBQjVQTjJlNDBVY1ByaTNncHI1WUtEUHZOTUFNelRrUWZKbE1Uc1pDZWZNLTlKRlE?oc=5",
+      "source": "KREM",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-10-07T07:00:00Z",
+      "when_short": "Oct 7, 2026",
+      "when_ts": 1791356400.0
+    },
+    {
       "id": "e0a573b6fdfedb83",
       "title": "New Sandpoint Parking Committee to discuss recommendations amid paid parking controversy",
       "summary": "From KREM.",
@@ -5540,6 +6213,22 @@
       "area": "Sandpoint",
       "areas": [
         "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-10-06T07:00:00Z",
+      "when_short": "Oct 6, 2026",
+      "when_ts": 1791270000.0
+    },
+    {
+      "id": "e1d0d1fda4dbff3e",
+      "title": "PREP GOLF: Another record for Viking girls",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11Yms3X3o1S01KaE81RUs4NHYxaGtOQnpNMWxmcHJDa1BIWFZySjBKQnJqenBpZnVUNkFZT3RReDczNEpSUmJhS0NwNmdKUGJwTUY1TVkxMFdsZjNzbXc?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
       ],
       "author": "",
       "when": "2026-10-06T07:00:00Z",
@@ -5611,6 +6300,22 @@
       "when_ts": 1791097200.0
     },
     {
+      "id": "8610fdf7fb9a64de",
+      "title": "A walk for hope, healing and mental health awareness",
+      "summary": "From Bonner County Daily Bee.",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMmlKcWpjVVJILUFnWjUxcFlTNHo2SkxWWHpJeUpZdk1CWGxUQlZqQ1FwdW1ndEVfcWxuZTdYS19vVDY1NDVYUldRMmczY2IxM0xOM3pVaVlzUmN6NHdSTDNrUFMyd2pFMENwV2J4SmM4MHBNVHZ0ZjZXdFFFaVJkNmxrTFkyeUVtQjdJdjNqbk52d3FneXZod3JNS0E3TEFaVUg0?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-10-04T07:00:00Z",
+      "when_short": "Oct 4, 2026",
+      "when_ts": 1791097200.0
+    },
+    {
       "id": "af128416d7a6f61b",
       "title": "Bonners Ferry High School (ID) Soccer",
       "summary": "From MaxPreps.",
@@ -5620,6 +6325,22 @@
       "area": "Bonners Ferry",
       "areas": [
         "Bonners Ferry"
+      ],
+      "author": "",
+      "when": "2026-10-03T07:00:00Z",
+      "when_short": "Oct 3, 2026",
+      "when_ts": 1791010800.0
+    },
+    {
+      "id": "7bf066c36dfa60f4",
+      "title": "The Patriot Bar holding Grand Opening",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGY201RndtZHp0MzhnNVplZjhrX2FYaWdrUFlBdUVTQ1dEclB4R1daSC1lejl0M293VFhoRTRvRTRrbDRCQ2o3SFZzdUNYaUJHRGNkSE9qanpvenVEMF9PSlVIMEw0UQ?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
       ],
       "author": "",
       "when": "2026-10-03T07:00:00Z",
@@ -6070,6 +6791,22 @@
       "area": "Coeur d'Alene",
       "areas": [
         "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-09-29T07:00:00Z",
+      "when_short": "Sep 29, 2026",
+      "when_ts": 1790665200.0
+    },
+    {
+      "id": "5b9b58f968dbbe42",
+      "title": "Sandpoint City Council OKs ‘essential’ RV park renovation",
+      "summary": "From Sandpoint Reader.",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOXJ0ODd6SS1fR2dZdUNBWFVlX09CSTVXQ3RwYXE2TV9FR0NyTW1Sdmk2T3pPeHJ6azIxS0p1UExGY3FrQU4xSjh4M1pJcmNUNGl2WTY4bWdwX2o0SzctdndVdzV6aWRJSDVlUlc0ZFNXWjIzX0k3dWhKUTF3TDc4dHJ6aXRFbnFOaGRpbg?oc=5",
+      "source": "Sandpoint Reader",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
       ],
       "author": "",
       "when": "2026-09-29T07:00:00Z",
@@ -6689,6 +7426,22 @@
       "when_ts": 1790146800.0
     },
     {
+      "id": "b21367ccb0415f62",
+      "title": "BOCC to review Long Bridge marina expansion proposal",
+      "summary": "From Sandpoint Reader.",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeWdxTmdWSVlqODA4STdtS3RvMGZJMFhqamFrcU8yOTB4cWJmaUkxbGxuYWU3ekx2WklINkVXOGttVUQ5aWJzcmRMYXFQUUU3ay0ydGhab0pmUXlxaHdZYmpwcVBZaVpPNXN2Njl0SklOb0ltZmxkel9IQnpHd2dNQ3IwbmFoRTBh?oc=5",
+      "source": "Sandpoint Reader",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-09-23T07:00:00Z",
+      "when_short": "Sep 23, 2026",
+      "when_ts": 1790146800.0
+    },
+    {
       "id": "bdd7efbe212e8bce",
       "title": "The Sandpoint Eater: Apples and autumn",
       "summary": "From Sandpoint Reader.",
@@ -6983,6 +7736,22 @@
       "title": "Sandpoint City Council approves data center ban",
       "summary": "From KREM.",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUnpya0Utb252NVpBZVpJOUVRbzAwenFsMUpqaENTX1NILUo3c0JzWXhMWVo1bEpCS0xmQ1dNLV9ackZDZnRtQ05QUFlHWGtHNTB5R3lNaGdnY1RLM2ItZWZYZjh5d2xHS203bGtUUGpsM0hWbVEzNk1iSm5Ycko0RmtHSlRGaEwxcTBoS1I3LUM4M3pzMUNwX1QxeDRDdkNUM2Z0Q3hoRmtQNzJrZGd0emdjRVBUZmRRRDFfVS1pRnU4X19FbmZoV0Y2MjA?oc=5",
+      "source": "KREM",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-09-18T07:00:00Z",
+      "when_short": "Sep 18, 2026",
+      "when_ts": 1789714800.0
+    },
+    {
+      "id": "91e58e8e25f93332",
+      "title": "Sandpoint Council approves data center ban",
+      "summary": "From KREM.",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWE5MMGt3UHNsZmhkVHhKWTdJOXBxaTVCZC1sY3ItQTh1WE11eDFOWkstUnhTWjdoV3E0YVl0OGxWMGRLbmxqYnp4MXlVYWNNakU0c2hrQlBkdUQtTzJoZ0hDcmNnMkdnNmpuTGEtZWlUWGROLXdYYzdWOEJaQVNkaUlPVGx5bnlYbHhfN0dTX0V0dHh2d3l2NnA0Znp5Sk5WNGpPTnZORFlQY3R0UEZJWjJ2M3FZRmctajh0ak14MkF0VU1UcEFBZw?oc=5",
       "source": "KREM",
       "kind": "news",
       "area": "Sandpoint",
@@ -7444,6 +8213,22 @@
       "when_ts": 1789110000.0
     },
     {
+      "id": "ce85873a13c442bb",
+      "title": "Priest River forestry teacher turns vision into new student shop",
+      "summary": "From Idaho Education News.",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNE1LdHR3VjNMV2tJQVV4VVM3VWptWnJxYm0zb0xpN1ZkcXZHeFVBcGtGQk5tYTFsU2RCY3pWdFJLdGlFWXBXb0tpeDNWMzBNSThaMlNRbTE4MHdYSVFYSjFNbFQzQjBKQll4aVA0X01FcUpVQjRSNXlqTWY4TDI1WnJpazJDc1VnTFpxYzZTNTJjaWhQVTI4UUh3YU9aVnc?oc=5",
+      "source": "Idaho Education News",
+      "kind": "news",
+      "area": "Priest River",
+      "areas": [
+        "Priest River"
+      ],
+      "author": "",
+      "when": "2026-09-11T07:00:00Z",
+      "when_short": "Sep 11, 2026",
+      "when_ts": 1789110000.0
+    },
+    {
       "id": "9ea0fa39633e7073",
       "title": "Comedian Jonathan van Halem (Fallon, Clickhole) headlines Sandpoint on Saturday, October 17th",
       "summary": "Hello! My name is Jonathan van Halem . I am a stand-up comedian based out of New York. I frequently open for popular comedians like Rory Scovel, Gianmarco Soresi, and David Cross. Next month I'll be in Sandpoint headlining a stand-up show at the Heartwood Center .",
@@ -7550,6 +8335,22 @@
       "area": "Priest Lake",
       "areas": [
         "Priest Lake"
+      ],
+      "author": "",
+      "when": "2026-09-10T07:00:00Z",
+      "when_short": "Sep 10, 2026",
+      "when_ts": 1789023600.0
+    },
+    {
+      "id": "a8d82a0cfb6c3d96",
+      "title": "Boundary County Court Records",
+      "summary": "Sept. 10, 2026 Bonners Ferry Herald",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPc3JKSVpKUmx6OXBWSEZYa2ZodGd5MUhqMmhzTi1HUlF3Rkl4X1JQMi1aRVZLM0ZUWWtzUTFRbWVCZVZEbTFBUV9CUHhfeGlINFpXb200RjRPWGt3VTd0bGtSTTltWkpxMVBqYXVrVTR1dUl4R2NXZzdidHpiNzRkd0hxWVNKSW83LUljYnJnSFRod21UUWc?oc=5",
+      "source": "Bonners Ferry Herald",
+      "kind": "news",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
       ],
       "author": "",
       "when": "2026-09-10T07:00:00Z",
@@ -7799,22 +8600,6 @@
       "when_ts": 1788591600.0
     },
     {
-      "id": "b3fa56c8d8cdd728",
-      "title": "Priest River Football Videos",
-      "summary": "From MaxPreps.",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMGE2cHBZSS1DWXA2V01zcklIaHVRQ00tYWdaZlB1VnNJMDlLSnhEVVJuaklTMEM0Y25JMkMzd0JRamZVRDRKUm52dVhxc2NxNnFLUDhpdnhvSkw5VG1SX0hiY1QxZ0MxbFVOaVpWWExRamhyaDUyTE5kaWt2eXIzVnlEWXYwX3kyNEtyNngwbENuMUwyRDJnYzVrOGRlVm1HZGtpM0FZOUNCVWI3NTBsc1kzQnhIRy1qU3Z1LVhfUnhHY18yVlR3SVBn?oc=5",
-      "source": "MaxPreps",
-      "kind": "news",
-      "area": "Priest River",
-      "areas": [
-        "Priest River"
-      ],
-      "author": "",
-      "when": "2026-09-05T07:00:00Z",
-      "when_short": "Sep 5, 2026",
-      "when_ts": 1788591600.0
-    },
-    {
       "id": "60322e8248831e73",
       "title": "Coeur d'Alene to host September 11th Memorial Ceremony at Silver Lake Mall",
       "summary": "From KXLY.com.",
@@ -7858,6 +8643,22 @@
       "area": "Coeur d'Alene",
       "areas": [
         "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-09-04T07:00:00Z",
+      "when_short": "Sep 4, 2026",
+      "when_ts": 1788505200.0
+    },
+    {
+      "id": "e1cd834b63f8feb4",
+      "title": "Early City Beach RV park design comes in $1M over budget",
+      "summary": "From Sandpoint Reader.",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaXVXWENiZ0IxREVJY0ctZjZCLVVtN2wxbkNQU2VwT0R2OHdZX3lvWDhhamU0N3ZwclNYVnV0VVIxYWZLcFltSTgxd3djWlREYjZSSF9SNDljS2gyYUJ4SnN3cHRVNG5jb1dEczY2aGJJUzR2djk4UFMxNjhLZTdHZ0dYakhaWDB0Q2dhdQ?oc=5",
+      "source": "Sandpoint Reader",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
       ],
       "author": "",
       "when": "2026-09-04T07:00:00Z",
@@ -8105,6 +8906,22 @@
       "when": "2026-08-29T11:47:01Z",
       "when_short": "Aug 29, 2026",
       "when_ts": 1788004021.0
+    },
+    {
+      "id": "b3fa56c8d8cdd728",
+      "title": "Priest River Football Videos",
+      "summary": "From MaxPreps.",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYkpMLUdVTDh2WmVpcE5CTlFfcGd6UHd2aV9NYzFORXdOajhXNjZfZjJYdzJkNFhRR1BhSDk4aGZfNFR1N0ZpelZldTF2andPdUV6cTV4SkNRTGJOM2xrTjhZMlBwZ1RVUllQZi0yU19tQTFkMFRLc0U3VkxVQjF1LW0zNGt5bGFINjQtckxSMzlhSVdZRl9GZXVJLTVsOE1Xb2NkWms5YUU1MEgwVVNGd1NybDlpd0dEUWlsWVJfREIzdERnc0VJTDN3?oc=5",
+      "source": "MaxPreps",
+      "kind": "news",
+      "area": "Priest River",
+      "areas": [
+        "Priest River"
+      ],
+      "author": "",
+      "when": "2026-08-29T07:00:00Z",
+      "when_short": "Aug 29, 2026",
+      "when_ts": 1787986800.0
     },
     {
       "id": "9bbe00a1400ad2b4",
@@ -8606,6 +9423,22 @@
       "when_ts": 1787641200.0
     },
     {
+      "id": "353832eb63b0c720",
+      "title": "Gordon K. Walker (Feb. 12, 1939-Aug. 25, 2026)",
+      "summary": "From Sandpoint Reader.",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10ZjdpMzIwMVY0NXBNeGMtbjh2dFI2QnJoT0ZULWJMNUN4am5LMm1YZUJrV0FFR0FQeDY1aF9rb0hjRDVoNjhvRWdlRzBaWms5ZkxHYWw5YXo5bDVDcEkyQXN2U0hRazk3RnhMMjhmTzRmdHN2dHF3?oc=5",
+      "source": "Sandpoint Reader",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-08-25T07:00:00Z",
+      "when_short": "Aug 25, 2026",
+      "when_ts": 1787641200.0
+    },
+    {
       "id": "48e1ddb70ee89acc",
       "title": "Sandpoint City Council adopts annual budget, discusses wastewater treatment plant construction",
       "summary": "Sandpoint City Council adopts annual budget, discusses wastewater treatment plant construction",
@@ -8647,6 +9480,22 @@
       "area": "Coeur d'Alene",
       "areas": [
         "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-08-24T07:00:00Z",
+      "when_short": "Aug 24, 2026",
+      "when_ts": 1787554800.0
+    },
+    {
+      "id": "d1b15b5f72388224",
+      "title": "ISP investigating fatal Sagle crash",
+      "summary": "From Bonner County Daily Bee.",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQM3l3MXhyajNfWEZEeEUwcFJmdEQ2WmgybnZOdjZVZzhxSG5PbDAzZklybzJnSEhWWVlYZDV6SEZiMHFId3g0WG1iSU9uUGNCTHgzRzJSTmVzLWRKTWFQRFVqcnl0dUNNTHdkZm5hdzFFLWR2TDdndUEwR1lrUUFkSUxldFRhTWZMZnRSb0FsVQ?oc=5",
+      "source": "Bonner County Daily Bee",
+      "kind": "news",
+      "area": "Sagle",
+      "areas": [
+        "Sagle"
       ],
       "author": "",
       "when": "2026-08-24T07:00:00Z",
@@ -8829,45 +9678,13 @@
       "when": "2026-08-20T02:43:15Z",
       "when_short": "Aug 20, 2026",
       "when_ts": 1787193795.0
-    },
-    {
-      "id": "41c500840f23b7cf",
-      "title": "Idaho high school football media poll Aug. 19, 2026",
-      "summary": "From Coeur d'Alene Press.",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSmxmNTVrTkh1WllEV2dZYzdMSVFRanAyZVYwQVdxUGhkV0xFWGxodlJhMnE0TTZadm9jS1pqaVVoQlpHM05TSk52dzdNRWlZLVh2WEZfc0p1ZXFPTDRWc21sdnZnZVN1c2YwUHd3emNaVUlvUHNUZXIyd0Z4YXFiX0pGTFN5MDlkNVVPVnJSMVhhZw?oc=5",
-      "source": "Coeur d'Alene Press",
-      "kind": "news",
-      "area": "Coeur d'Alene",
-      "areas": [
-        "Coeur d'Alene"
-      ],
-      "author": "",
-      "when": "2026-08-19T07:00:00Z",
-      "when_short": "Aug 19, 2026",
-      "when_ts": 1787122800.0
-    },
-    {
-      "id": "aca8ec2b27fd5da6",
-      "title": "Appeal submitted against major development",
-      "summary": "From Coeur d'Alene Press.",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSEtrbHFPSHVjZkVwZlhKZEUxeHh1VzBGa1BnbEoxMHJMbmNvWnk1bURwbVYtbHJScDFWUG96NDk4bldROEJmRGREN0c0Qmd1U1FoUTRUVVJFd0IzVUg3cmpJRDZsaTN1eGYxczJ1bEJvTVJ1dko5aEY1WjV6QVJmUTl3NlhBb0VsNDV5azNKZVc?oc=5",
-      "source": "Coeur d'Alene Press",
-      "kind": "news",
-      "area": "Coeur d'Alene",
-      "areas": [
-        "Coeur d'Alene"
-      ],
-      "author": "",
-      "when": "2026-08-19T07:00:00Z",
-      "when_short": "Aug 19, 2026",
-      "when_ts": 1787122800.0
     }
   ],
   "areas": [
     {
       "name": "Bonners Ferry",
       "drive_min": 42,
-      "n": 103
+      "n": 109
     },
     {
       "name": "Priest Lake",
@@ -8887,7 +9704,7 @@
     {
       "name": "Sandpoint",
       "drive_min": 0,
-      "n": 251
+      "n": 271
     },
     {
       "name": "Dover",
@@ -8897,22 +9714,22 @@
     {
       "name": "Sagle",
       "drive_min": 10,
-      "n": 9
+      "n": 10
     },
     {
       "name": "Hope",
       "drive_min": 22,
-      "n": 2
+      "n": 3
     },
     {
       "name": "Clark Fork",
       "drive_min": 32,
-      "n": 22
+      "n": 23
     },
     {
       "name": "Priest River",
       "drive_min": 25,
-      "n": 30
+      "n": 34
     },
     {
       "name": "Newport",
@@ -8937,18 +9754,21 @@
     {
       "name": "Spirit Lake",
       "drive_min": 50,
-      "n": 11
+      "n": 12
     },
     {
       "name": "Hayden",
       "drive_min": 52,
-      "n": 1
+      "n": 2
     },
     {
       "name": "Coeur d'Alene",
       "drive_min": 58,
-      "n": 131
+      "n": 148
     }
   ],
-  "errors": []
+  "errors": [
+    "Herald: HTTP 429",
+    "Facebook: HTTP 429"
+  ]
 }

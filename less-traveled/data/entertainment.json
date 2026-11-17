@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16 05:33",
+  "updated": "2026-11-17 06:31",
   "note": "Venues from OpenStreetMap. Shows from Panida and the Greater Sandpoint Chamber. Daily ingest. We do not invent dates.",
   "catchment": "About an hour of Sandpoint, including Bonners Ferry, Priest Lake, Clark Fork, Newport, Athol/Silverwood, and Coeur d'Alene.",
   "venues": [
@@ -3383,20 +3383,6 @@
       "drive_min": 20
     },
     {
-      "date": "2026-11-16",
-      "time": "",
-      "title": "Wine4U Monthly Wine Tasting Wine4u monthly wine tastings Monday Nov 16, 2026",
-      "kind": "community",
-      "venue": "Greater Sandpoint Chamber",
-      "area": "Sandpoint",
-      "artists": [],
-      "url": "https://members.sandpointchamber.org/events/details/wine4u-monthly-wine-tasting-11-16-2026-16289",
-      "source": "chamber",
-      "lat": 48.2766,
-      "lon": -116.5535,
-      "drive_min": 0
-    },
-    {
       "date": "2026-11-17",
       "time": "",
       "title": "Panida Community Board Meeting in the Panida Little Theater",
@@ -3806,6 +3792,20 @@
       "lat": 48.274933,
       "lon": -116.5473314,
       "venue_url": "https://www.panida.org/",
+      "drive_min": 0
+    },
+    {
+      "date": "2026-12-21",
+      "time": "",
+      "title": "Wine4U Monthly Wine Tasting Wine4u monthly wine tastings Monday Dec 21, 2026",
+      "kind": "community",
+      "venue": "Greater Sandpoint Chamber",
+      "area": "Sandpoint",
+      "artists": [],
+      "url": "https://members.sandpointchamber.org/events/details/wine4u-monthly-wine-tasting-12-21-2026-16290",
+      "source": "chamber",
+      "lat": 48.2766,
+      "lon": -116.5535,
       "drive_min": 0
     },
     {
@@ -4570,20 +4570,6 @@
       ],
       "events": [
         {
-          "date": "2026-11-16",
-          "time": "",
-          "title": "Wine4U Monthly Wine Tasting Wine4u monthly wine tastings Monday Nov 16, 2026",
-          "kind": "community",
-          "venue": "Greater Sandpoint Chamber",
-          "area": "Sandpoint",
-          "artists": [],
-          "url": "https://members.sandpointchamber.org/events/details/wine4u-monthly-wine-tasting-11-16-2026-16289",
-          "source": "chamber",
-          "lat": 48.2766,
-          "lon": -116.5535,
-          "drive_min": 0
-        },
-        {
           "date": "2026-11-17",
           "time": "",
           "title": "Panida Community Board Meeting in the Panida Little Theater",
@@ -4993,6 +4979,20 @@
           "lat": 48.274933,
           "lon": -116.5473314,
           "venue_url": "https://www.panida.org/",
+          "drive_min": 0
+        },
+        {
+          "date": "2026-12-21",
+          "time": "",
+          "title": "Wine4U Monthly Wine Tasting Wine4u monthly wine tastings Monday Dec 21, 2026",
+          "kind": "community",
+          "venue": "Greater Sandpoint Chamber",
+          "area": "Sandpoint",
+          "artists": [],
+          "url": "https://members.sandpointchamber.org/events/details/wine4u-monthly-wine-tasting-12-21-2026-16290",
+          "source": "chamber",
+          "lat": 48.2766,
+          "lon": -116.5535,
           "drive_min": 0
         },
         {
@@ -7819,8 +7819,5 @@
       "events": []
     }
   ],
-  "errors": [
-    "osm: The read operation timed out",
-    "osm: kept last good venue list"
-  ]
+  "errors": []
 }

@@ -1,71 +1,71 @@
 {
-  "updated": "2026-11-16T13:30:03Z",
+  "updated": "2026-11-17T14:30:03Z",
   "place": "Sandpoint / Bonner County, Idaho",
   "alerts": [],
   "forecast": [
     {
-      "name": "Overnight",
-      "temp": 39,
-      "unit": "F",
-      "wind": "2 mph SW",
-      "short": "Areas Of Fog",
-      "detail": "Areas of fog and a slight chance of rain. Cloudy. Low around 39, with temperatures rising to around 42 overnight. Southwest wind around 2 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
-    },
-    {
-      "name": "Monday",
-      "temp": 45,
-      "unit": "F",
-      "wind": "0 to 5 mph SW",
-      "short": "Areas Of Fog",
-      "detail": "Areas of fog and a slight chance of rain. Cloudy. High near 45, with temperatures falling to around 43 in the afternoon. Southwest wind 0 to 5 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible."
-    },
-    {
-      "name": "Monday Night",
-      "temp": 34,
-      "unit": "F",
-      "wind": "0 mph",
-      "short": "Areas Of Fog",
-      "detail": "Areas of fog. Mostly cloudy. Low around 34, with temperatures rising to around 36 overnight. Wind around 0 mph."
-    },
-    {
-      "name": "Tuesday",
+      "name": "Today",
       "temp": 43,
       "unit": "F",
-      "wind": "1 mph W",
+      "wind": "2 mph N",
       "short": "Areas Of Fog",
-      "detail": "Areas of fog. Partly sunny, with a high near 43. West wind around 1 mph."
+      "detail": "Areas of fog before 10am, then areas of fog and a chance of rain between 10am and 1pm, then a chance of rain and patchy fog between 1pm and 3pm, then areas of fog and a chance of rain between 3pm and 4pm, then rain likely and areas of fog. Mostly cloudy. High near 43, with temperatures falling to around 41 in the afternoon. North wind around 2 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
-      "name": "Tuesday Night",
+      "name": "Tonight",
       "temp": 32,
       "unit": "F",
-      "wind": "0 mph",
-      "short": "Areas Of Fog",
-      "detail": "Areas of fog. Mostly cloudy, with a low around 32. Wind around 0 mph."
+      "wind": "1 mph N",
+      "short": "Light Rain Likely then Areas Of Fog",
+      "detail": "Rain likely and areas of fog before 10pm, then areas of fog and a slight chance of rain. Mostly cloudy. Low around 32, with temperatures rising to around 34 overnight. North wind around 1 mph. Chance of precipitation is 60%. New rainfall amounts less than a tenth of an inch possible."
     },
     {
       "name": "Wednesday",
       "temp": 41,
       "unit": "F",
       "wind": "0 to 5 mph NE",
-      "short": "Areas Of Fog then Partly Sunny",
-      "detail": "Areas of fog before 10am. Partly sunny, with a high near 41."
+      "short": "Areas Of Fog then Slight Chance Light Rain",
+      "detail": "Areas of fog before 11am, then a slight chance of rain. Mostly sunny. High near 41, with temperatures falling to around 38 in the afternoon. Northeast wind 0 to 5 mph. Chance of precipitation is 20%."
     },
     {
       "name": "Wednesday Night",
-      "temp": 31,
+      "temp": 32,
       "unit": "F",
-      "wind": "3 to 7 mph NE",
-      "short": "Cloudy",
-      "detail": "Cloudy, with a low around 31."
+      "wind": "7 mph NE",
+      "short": "Slight Chance Light Rain then Slight Chance Light Snow",
+      "detail": "A slight chance of rain before 10pm, then a slight chance of snow. Cloudy, with a low around 32. Northeast wind around 7 mph. Chance of precipitation is 20%."
     },
     {
       "name": "Thursday",
-      "temp": 40,
+      "temp": 39,
       "unit": "F",
-      "wind": "1 to 6 mph N",
+      "wind": "1 to 7 mph N",
+      "short": "Slight Chance Light Snow then Mostly Cloudy",
+      "detail": "A slight chance of snow before 10am. Mostly cloudy, with a high near 39. North wind 1 to 7 mph. Chance of precipitation is 20%."
+    },
+    {
+      "name": "Thursday Night",
+      "temp": 29,
+      "unit": "F",
+      "wind": "1 mph N",
       "short": "Mostly Cloudy",
-      "detail": "Mostly cloudy, with a high near 40."
+      "detail": "Mostly cloudy, with a low around 29."
+    },
+    {
+      "name": "Friday",
+      "temp": 37,
+      "unit": "F",
+      "wind": "0 to 3 mph SW",
+      "short": "Partly Sunny then Slight Chance Rain And Snow",
+      "detail": "A slight chance of rain and snow after 4pm. Partly sunny, with a high near 37. Chance of precipitation is 20%."
+    },
+    {
+      "name": "Friday Night",
+      "temp": 30,
+      "unit": "F",
+      "wind": "2 mph SW",
+      "short": "Chance Rain And Snow",
+      "detail": "A chance of rain and snow before 4am. Mostly cloudy, with a low around 30. Chance of precipitation is 30%."
     }
   ],
   "rivers": [
@@ -73,8 +73,8 @@
       "name": "PEND OREILLE RIVER AT NEWPORT WA",
       "site": "12395500",
       "variable": "Streamflow, ft&#179;/s",
-      "value": "12700",
-      "when": "2026-11-14T01:30:00.000-08:00",
+      "value": "8350",
+      "when": "2026-11-17T05:30:00.000-08:00",
       "lat": 48.1822222,
       "lon": -117.0341667
     },
@@ -82,8 +82,8 @@
       "name": "PEND OREILLE RIVER AT NEWPORT WA",
       "site": "12395500",
       "variable": "Gage height, ft",
-      "value": "31.71",
-      "when": "2026-11-16T04:45:00.000-08:00",
+      "value": "31.60",
+      "when": "2026-11-17T05:45:00.000-08:00",
       "lat": 48.1822222,
       "lon": -117.0341667
     }
@@ -156,11 +156,6 @@
     "link": "https://waterdata.usgs.gov/monitoring-location/USGS-12392500/",
     "note": "Hope gage + 2000 ft NGVD. Full pool ~2062.5.",
     "history": [
-      {
-        "d": "2026-08-18",
-        "gage_ft": 62.31,
-        "pool_ft": 2062.31
-      },
       {
         "d": "2026-08-19",
         "gage_ft": 62.25,
@@ -463,11 +458,6 @@
       "note": "Hope gage + 2000 ft NGVD. Full pool ~2062.5.",
       "history": [
         {
-          "d": "2026-08-18",
-          "gage_ft": 62.31,
-          "pool_ft": 2062.31
-        },
-        {
           "d": "2026-08-19",
           "gage_ft": 62.25,
           "pool_ft": 2062.25
@@ -760,23 +750,13 @@
       "site": "12393000",
       "lat": 48.574,
       "lon": -116.898,
-      "gage_ft": 0.67,
-      "pool_ft": 2435.31,
+      "gage_ft": 0.68,
+      "pool_ft": 2435.32,
       "unit": "pool",
-      "when": "2026-11-14T01:30:00.000-08:00",
+      "when": "2026-11-17T05:30:00.000-08:00",
       "link": "https://waterdata.usgs.gov/monitoring-location/USGS-12393000/",
       "note": "Outlet gage + 2434.64 ft NGVD. Summer target 3.0\u20133.5 ft gage (~2438 pool).",
       "history": [
-        {
-          "d": "2026-08-18",
-          "gage_ft": 3.37,
-          "pool_ft": 2438.01
-        },
-        {
-          "d": "2026-08-19",
-          "gage_ft": 3.37,
-          "pool_ft": 2438.01
-        },
         {
           "d": "2026-08-20",
           "gage_ft": 3.36,
@@ -1209,8 +1189,23 @@
         },
         {
           "d": "2026-11-14",
-          "gage_ft": 0.67,
-          "pool_ft": 2435.31
+          "gage_ft": 0.69,
+          "pool_ft": 2435.33
+        },
+        {
+          "d": "2026-11-15",
+          "gage_ft": 0.7,
+          "pool_ft": 2435.34
+        },
+        {
+          "d": "2026-11-16",
+          "gage_ft": 0.7,
+          "pool_ft": 2435.34
+        },
+        {
+          "d": "2026-11-17",
+          "gage_ft": 0.68,
+          "pool_ft": 2435.32
         }
       ]
     },
@@ -1220,18 +1215,13 @@
       "site": "12415500",
       "lat": 47.52,
       "lon": -116.83,
-      "gage_ft": 24.67,
-      "pool_ft": 2124.67,
+      "gage_ft": 24.59,
+      "pool_ft": 2124.59,
       "unit": "pool",
-      "when": "2026-11-16T04:45:00.000-08:00",
+      "when": "2026-11-17T05:45:00.000-08:00",
       "link": "https://waterdata.usgs.gov/monitoring-location/USGS-12415500/",
       "note": "CDA gage + 2100 ft NGVD. Summer pool ~2128.",
       "history": [
-        {
-          "d": "2026-08-19",
-          "gage_ft": 27.57,
-          "pool_ft": 2127.57
-        },
         {
           "d": "2026-08-20",
           "gage_ft": 27.57,
@@ -1674,21 +1664,39 @@
         },
         {
           "d": "2026-11-16",
-          "gage_ft": 24.67,
-          "pool_ft": 2124.67
+          "gage_ft": 24.6,
+          "pool_ft": 2124.6
+        },
+        {
+          "d": "2026-11-17",
+          "gage_ft": 24.59,
+          "pool_ft": 2124.59
         }
       ]
     }
   ],
   "nixle": [
     {
+      "title": "Dispatch is aware of the fire burning, West of Hwy 95, South of Pend Oreille River, off of Lakeshore Drive, fire is a controlled burn",
+      "kind": "Advisory",
+      "origin": "Nixle",
+      "source": "BCSO",
+      "when": "14 hours, 16 minutes ago",
+      "when_short": "Nov 17",
+      "when_ts": 1794875436.299809,
+      "active": true,
+      "link": "https://nixle.us/HTNJT",
+      "lat": 48.22,
+      "lon": -116.548
+    },
+    {
       "title": "Missing Juvenile Jill Gooding Located",
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "1 day, 10 hours ago",
+      "when": "2 days, 11 hours ago",
       "when_short": "Nov 15",
-      "when_ts": 1794713412.778409,
+      "when_ts": 1794713436.299809,
       "active": true,
       "link": "https://nixle.us/HTJN5",
       "lat": null,
@@ -1699,9 +1707,9 @@
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "3 days, 22 hours ago",
+      "when": "4 days, 23 hours ago",
       "when_short": "Nov 12",
-      "when_ts": 1794497412.778409,
+      "when_ts": 1794497436.299809,
       "active": true,
       "link": "https://nixle.us/HTCQ9",
       "lat": null,
@@ -1712,9 +1720,9 @@
       "kind": "Community",
       "origin": "Nixle",
       "source": "Boundary SO",
-      "when": "4 days, 7 hours ago",
+      "when": "5 days, 8 hours ago",
       "when_short": "Nov 12",
-      "when_ts": 1794465013.113746,
+      "when_ts": 1794465036.61464,
       "active": true,
       "link": "https://nixle.us/HTBYH",
       "lat": null,
@@ -1725,9 +1733,9 @@
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "5 days, 18 hours ago",
+      "when": "6 days, 19 hours ago",
       "when_short": "Nov 10",
-      "when_ts": 1794339012.778409,
+      "when_ts": 1794339036.300834,
       "active": true,
       "link": "https://nixle.us/HT8W9",
       "lat": 48.1471,
@@ -1738,9 +1746,9 @@
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "5 days, 21 hours ago",
+      "when": "6 days, 22 hours ago",
       "when_short": "Nov 10",
-      "when_ts": 1794328212.778409,
+      "when_ts": 1794328236.300834,
       "active": true,
       "link": "https://nixle.us/HT8KP",
       "lat": 48.1471,
@@ -1751,9 +1759,9 @@
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "1 week ago",
+      "when": "1 week, 1 day ago",
       "when_short": "Nov 9",
-      "when_ts": 1794231012.778409,
+      "when_ts": 1794234636.300834,
       "active": false,
       "link": "https://nixle.us/HT4JR",
       "lat": null,
@@ -1764,9 +1772,9 @@
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "2 weeks, 2 days ago",
+      "when": "2 weeks, 3 days ago",
       "when_short": "Oct 31",
-      "when_ts": 1793453412.778409,
+      "when_ts": 1793457036.300834,
       "active": false,
       "link": "https://nixle.us/HSAKR",
       "lat": null,
@@ -1777,9 +1785,9 @@
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "2 weeks, 3 days ago",
+      "when": "2 weeks, 4 days ago",
       "when_short": "Oct 30",
-      "when_ts": 1793367012.778409,
+      "when_ts": 1793370636.300834,
       "active": false,
       "link": "https://nixle.us/HS86R",
       "lat": 48.352,
@@ -1790,9 +1798,9 @@
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "3 weeks, 2 days ago",
+      "when": "3 weeks, 3 days ago",
       "when_short": "Oct 24",
-      "when_ts": 1792848612.778409,
+      "when_ts": 1792852236.301834,
       "active": false,
       "link": "https://nixle.us/HRH5B",
       "lat": 48.1729,
@@ -1803,9 +1811,9 @@
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "3 weeks, 4 days ago",
+      "when": "3 weeks, 5 days ago",
       "when_short": "Oct 22",
-      "when_ts": 1792675812.778409,
+      "when_ts": 1792679436.301834,
       "active": false,
       "link": "https://nixle.us/HR9KX",
       "lat": 48.1729,
@@ -1817,38 +1825,12 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "1 month ago",
-      "when_short": "Oct 17",
-      "when_ts": 1792243812.778409,
+      "when_short": "Oct 18",
+      "when_ts": 1792333836.301834,
       "active": false,
       "link": "https://nixle.us/HQDT7",
       "lat": 48.148,
       "lon": -116.585
-    },
-    {
-      "title": "Highway 95 at Blacktail Rd in Cocolalla is back open",
-      "kind": "Advisory",
-      "origin": "Nixle",
-      "source": "BCSO",
-      "when": "1 month, 2 weeks ago",
-      "when_short": "Oct 3",
-      "when_ts": 1791034212.778409,
-      "active": false,
-      "link": "https://nixle.us/HNZZ5",
-      "lat": 48.108,
-      "lon": -116.593
-    },
-    {
-      "title": "Clark Fork Water Info:",
-      "kind": "Advisory",
-      "origin": "Nixle",
-      "source": "BCSO",
-      "when": "1 month, 2 weeks ago",
-      "when_short": "Oct 3",
-      "when_ts": 1791034212.778409,
-      "active": false,
-      "link": "https://nixle.us/HNYWM",
-      "lat": 48.1471,
-      "lon": -116.178
     },
     {
       "title": "Runaway out of Priest Lake Located",
@@ -1856,8 +1838,8 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "1 month, 2 weeks ago",
-      "when_short": "Oct 3",
-      "when_ts": 1791034212.778409,
+      "when_short": "Oct 4",
+      "when_ts": 1791124236.302834,
       "active": false,
       "link": "https://nixle.us/HNLRH",
       "lat": 48.574,
@@ -1869,8 +1851,8 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "1 month, 2 weeks ago",
-      "when_short": "Oct 3",
-      "when_ts": 1791034212.778409,
+      "when_short": "Oct 4",
+      "when_ts": 1791124236.302834,
       "active": false,
       "link": "https://nixle.us/HNL63",
       "lat": 48.1471,
@@ -1882,12 +1864,38 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "1 month, 2 weeks ago",
-      "when_short": "Oct 3",
-      "when_ts": 1791034212.778409,
+      "when_short": "Oct 4",
+      "when_ts": 1791124236.302834,
       "active": false,
       "link": "https://nixle.us/HNGG5",
       "lat": 48.31,
       "lon": -116.513
+    },
+    {
+      "title": "Highway 95 at Blacktail Rd in Cocolalla is back open",
+      "kind": "Advisory",
+      "origin": "Nixle",
+      "source": "BCSO",
+      "when": "1 month, 2 weeks ago",
+      "when_short": "Oct 4",
+      "when_ts": 1791124236.301834,
+      "active": false,
+      "link": "https://nixle.us/HNZZ5",
+      "lat": 48.108,
+      "lon": -116.593
+    },
+    {
+      "title": "Clark Fork Water Info:",
+      "kind": "Advisory",
+      "origin": "Nixle",
+      "source": "BCSO",
+      "when": "1 month, 2 weeks ago",
+      "when_short": "Oct 4",
+      "when_ts": 1791124236.301834,
+      "active": false,
+      "link": "https://nixle.us/HNYWM",
+      "lat": 48.1471,
+      "lon": -116.178
     },
     {
       "title": "Dover City Street Closure",
@@ -1895,8 +1903,8 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "1 month, 3 weeks ago",
-      "when_short": "Sep 26",
-      "when_ts": 1790429412.778409,
+      "when_short": "Sep 27",
+      "when_ts": 1790519436.302834,
       "active": false,
       "link": "https://nixle.us/HMQQ9",
       "lat": 48.253,
@@ -1908,25 +1916,12 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "1 month, 4 weeks ago",
-      "when_short": "Sep 19",
-      "when_ts": 1789824612.79019,
+      "when_short": "Sep 20",
+      "when_ts": 1789914636.303834,
       "active": false,
       "link": "https://nixle.us/HMFWR",
       "lat": 48.1471,
       "lon": -116.178
-    },
-    {
-      "title": "Highway 200 near Eagen Mountain Dr",
-      "kind": "Advisory",
-      "origin": "Nixle",
-      "source": "BCSO",
-      "when": "1 month, 4 weeks ago",
-      "when_short": "Sep 19",
-      "when_ts": 1789824612.778409,
-      "active": false,
-      "link": "https://nixle.us/HMGXH",
-      "lat": null,
-      "lon": null
     },
     {
       "title": "Peak sand and gravel in Dover will be blasting between 1pm - 2pm",
@@ -1934,49 +1929,23 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "2 months ago",
-      "when_short": "Sep 17",
-      "when_ts": 1789651812.79019,
+      "when_short": "Sep 18",
+      "when_ts": 1789741836.303834,
       "active": false,
       "link": "https://nixle.us/HLZ5M",
       "lat": 48.253,
       "lon": -116.6016
     },
     {
-      "title": "Highway 95 just south of W Elmira Rd, is back open, please use caution in the area for responders on scene.",
+      "title": "Highway 200 near Eagen Mountain Dr",
       "kind": "Advisory",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "2 months, 1 week ago",
-      "when_short": "Sep 10",
-      "when_ts": 1789047012.791512,
+      "when": "2 months ago",
+      "when_short": "Sep 18",
+      "when_ts": 1789741836.302834,
       "active": false,
-      "link": "https://nixle.us/HLT3D",
-      "lat": 48.497,
-      "lon": -116.521
-    },
-    {
-      "title": "Heat Advisory until 10:00PM Friday",
-      "kind": "Community",
-      "origin": "Nixle",
-      "source": "Boundary SO",
-      "when": "2 months, 3 weeks ago",
-      "when_short": "Aug 27",
-      "when_ts": 1787837413.114746,
-      "active": false,
-      "link": "https://nixle.us/HK7HX",
-      "lat": null,
-      "lon": null
-    },
-    {
-      "title": "Fire Weather Watch until 11:00AM Sunday",
-      "kind": "Community",
-      "origin": "Nixle",
-      "source": "Boundary SO",
-      "when": "2 months, 3 weeks ago",
-      "when_short": "Aug 27",
-      "when_ts": 1787837413.114746,
-      "active": false,
-      "link": "https://nixle.us/HK7EK",
+      "link": "https://nixle.us/HMGXH",
       "lat": null,
       "lon": null
     },
@@ -1986,10 +1955,36 @@
       "origin": "Nixle",
       "source": "Boundary SO",
       "when": "2 months, 3 weeks ago",
-      "when_short": "Aug 27",
-      "when_ts": 1787837413.113746,
+      "when_short": "Aug 28",
+      "when_ts": 1787927436.61464,
       "active": false,
       "link": "https://nixle.us/HKBNZ",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "title": "Fire Weather Watch until 11:00AM Sunday",
+      "kind": "Community",
+      "origin": "Nixle",
+      "source": "Boundary SO",
+      "when": "2 months, 4 weeks ago",
+      "when_short": "Aug 21",
+      "when_ts": 1787322636.615641,
+      "active": false,
+      "link": "https://nixle.us/HK7EK",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "title": "Heat Advisory until 10:00PM Friday",
+      "kind": "Community",
+      "origin": "Nixle",
+      "source": "Boundary SO",
+      "when": "2 months, 4 weeks ago",
+      "when_short": "Aug 21",
+      "when_ts": 1787322636.61464,
+      "active": false,
+      "link": "https://nixle.us/HK7HX",
       "lat": null,
       "lon": null
     },
@@ -1999,8 +1994,8 @@
       "origin": "Nixle",
       "source": "Boundary SO",
       "when": "3 months, 2 weeks ago",
-      "when_short": "Aug 4",
-      "when_ts": 1785850213.114746,
+      "when_short": "Aug 5",
+      "when_ts": 1785940236.615641,
       "active": false,
       "link": "https://nixle.us/HH9X9",
       "lat": null,
@@ -2012,23 +2007,10 @@
       "origin": "Nixle",
       "source": "Boundary SO",
       "when": "3 months, 3 weeks ago",
-      "when_short": "Jul 28",
-      "when_ts": 1785245413.114746,
+      "when_short": "Jul 29",
+      "when_ts": 1785335436.615641,
       "active": false,
       "link": "https://nixle.us/HGNGP",
-      "lat": null,
-      "lon": null
-    },
-    {
-      "title": "Heat Advisory until 09:00PM Wednesday",
-      "kind": "Community",
-      "origin": "Nixle",
-      "source": "Boundary SO",
-      "when": "3 months, 4 weeks ago",
-      "when_short": "Jul 21",
-      "when_ts": 1784640613.115755,
-      "active": false,
-      "link": "https://nixle.us/HGFX3",
       "lat": null,
       "lon": null
     },
@@ -2038,10 +2020,23 @@
       "origin": "Nixle",
       "source": "Boundary SO",
       "when": "3 months, 4 weeks ago",
-      "when_short": "Jul 21",
-      "when_ts": 1784640613.114746,
+      "when_short": "Jul 22",
+      "when_ts": 1784730636.615641,
       "active": false,
       "link": "https://nixle.us/HGGTK",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "title": "Heat Advisory until 09:00PM Wednesday",
+      "kind": "Community",
+      "origin": "Nixle",
+      "source": "Boundary SO",
+      "when": "3 months, 4 weeks ago",
+      "when_short": "Jul 22",
+      "when_ts": 1784730636.615641,
+      "active": false,
+      "link": "https://nixle.us/HGFX3",
       "lat": null,
       "lon": null
     },
@@ -2051,8 +2046,8 @@
       "origin": "Nixle",
       "source": "Boundary SO",
       "when": "5 months, 1 week ago",
-      "when_short": "Jun 12",
-      "when_ts": 1781271013.115755,
+      "when_short": "Jun 13",
+      "when_ts": 1781361036.616641,
       "active": false,
       "link": "https://nixle.us/HCXZ9",
       "lat": null,
@@ -2063,9 +2058,9 @@
       "kind": "Community",
       "origin": "Nixle",
       "source": "Boundary SO",
-      "when": "5 months, 1 week ago",
-      "when_short": "Jun 12",
-      "when_ts": 1781271013.115755,
+      "when": "5 months, 2 weeks ago",
+      "when_short": "Jun 6",
+      "when_ts": 1780756236.616641,
       "active": false,
       "link": "https://nixle.us/HCTBK",
       "lat": null,
@@ -2098,9 +2093,9 @@
       "county": "Bonner",
       "origin": "SNOTEL",
       "source": "NRCS",
-      "depth_in": 5,
+      "depth_in": 6,
       "swe_in": 2.0,
-      "when": "2026-11-15",
+      "when": "2026-11-16",
       "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=323"
     },
     {
@@ -2114,8 +2109,8 @@
       "origin": "SNOTEL",
       "source": "NRCS",
       "depth_in": 2,
-      "swe_in": 0.6,
-      "when": "2026-11-14",
+      "swe_in": 0.4,
+      "when": "2026-11-16",
       "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=988"
     },
     {
@@ -2547,12 +2542,25 @@
       "active": true
     },
     {
+      "title": "Dispatch is aware of the fire burning, West of Hwy 95, South of Pend Oreille River, off of Lakeshore Drive, fire is a controlled burn",
+      "road": "BCSO",
+      "kind": "closure",
+      "origin": "Nixle",
+      "source": "BCSO",
+      "when": "14 hours, 16 minutes ago",
+      "when_short": "Nov 17",
+      "lat": 48.22,
+      "lon": -116.548,
+      "link": "https://nixle.us/HTNJT",
+      "active": true
+    },
+    {
       "title": "Hwy 41 at mile 23.7 near Chocktaw Ln in Blanchard is back open. Please drive safely.",
       "road": "BCSO",
       "kind": "cleared",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "2 weeks, 2 days ago",
+      "when": "2 weeks, 3 days ago",
       "when_short": "Oct 31",
       "lat": null,
       "lon": null,
@@ -2565,7 +2573,7 @@
       "kind": "cleared",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "2 weeks, 3 days ago",
+      "when": "2 weeks, 4 days ago",
       "when_short": "Oct 30",
       "lat": 48.352,
       "lon": -116.398,
@@ -2578,7 +2586,7 @@
       "kind": "cleared",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "3 weeks, 4 days ago",
+      "when": "3 weeks, 5 days ago",
       "when_short": "Oct 22",
       "lat": 48.1729,
       "lon": -116.5521,
@@ -2592,7 +2600,7 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "1 month ago",
-      "when_short": "Oct 17",
+      "when_short": "Oct 18",
       "lat": 48.148,
       "lon": -116.585,
       "link": "https://nixle.us/HQDT7",
@@ -2605,7 +2613,7 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "1 month, 2 weeks ago",
-      "when_short": "Oct 3",
+      "when_short": "Oct 4",
       "lat": 48.108,
       "lon": -116.593,
       "link": "https://nixle.us/HNZZ5",
@@ -2618,7 +2626,7 @@
       "origin": "Nixle",
       "source": "BCSO",
       "when": "1 month, 3 weeks ago",
-      "when_short": "Sep 26",
+      "when_short": "Sep 27",
       "lat": 48.253,
       "lon": -116.6016,
       "link": "https://nixle.us/HMQQ9",
@@ -2630,24 +2638,11 @@
       "kind": "cleared",
       "origin": "Nixle",
       "source": "BCSO",
-      "when": "1 month, 4 weeks ago",
-      "when_short": "Sep 19",
+      "when": "2 months ago",
+      "when_short": "Sep 18",
       "lat": null,
       "lon": null,
       "link": "https://nixle.us/HMGXH",
-      "active": false
-    },
-    {
-      "title": "Highway 95 just south of W Elmira Rd, is back open, please use caution in the area for responders on scene.",
-      "road": "BCSO",
-      "kind": "cleared",
-      "origin": "Nixle",
-      "source": "BCSO",
-      "when": "2 months, 1 week ago",
-      "when_short": "Sep 10",
-      "lat": 48.497,
-      "lon": -116.521,
-      "link": "https://nixle.us/HLT3D",
       "active": false
     }
   ],
@@ -2655,16 +2650,16 @@
     "origin": "NWS",
     "source": "KSZT",
     "station": "KSZT",
-    "text": "Rain",
-    "temp_f": null,
-    "wind_mph": null,
-    "humidity": null,
-    "when": "2026-11-16T12:55:00+00:00",
+    "text": "Cloudy",
+    "temp_f": 37.0,
+    "wind_mph": 0.0,
+    "humidity": 93.1,
+    "when": "2026-11-17T13:35:00+00:00",
     "link": "https://www.weather.gov/kszt/"
   },
   "errors": [],
   "listings": {
-    "n": 532,
+    "n": 534,
     "errors": []
   },
   "cameras": {
@@ -2674,18 +2669,26 @@
   "entertainment": {
     "venues": 177,
     "events": 34,
-    "errors": [
-      "osm: The read operation timed out",
-      "osm: kept last good venue list"
-    ]
+    "errors": []
   },
   "journal": {
-    "n": 551,
-    "errors": []
+    "n": 602,
+    "errors": [
+      "Herald: HTTP 429",
+      "Facebook: HTTP 429"
+    ]
   },
   "business_counts": {
     "open": 726,
     "shutdown": 0,
-    "about_filled": 67
+    "about_filled": 83,
+    "contacts_filled": 83,
+    "own_website": 416,
+    "with_email": 17,
+    "chamber_new": 0
+  },
+  "demand": {
+    "n": 5,
+    "errors": []
   }
 }

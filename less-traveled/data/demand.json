@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T01:20:24Z",
+  "updated": "2026-11-17T14:33:08Z",
   "days": 90,
   "note": "Public asks only. Facebook groups and Craigslist hold most of the traffic; we cannot read those privately. Date, trade, and local companies that could take the work. We do not sell your number.",
   "items": [
@@ -211,6 +211,13 @@
           "category": "Restaurants"
         },
         {
+          "name": "Sandpoint Area Seniors, Inc.",
+          "town": "Sandpoint",
+          "phone": "(208) 263-6860",
+          "site": "http://www.sandpointareaseniors.org",
+          "category": "Other"
+        },
+        {
           "name": "Arlo's Ristorante",
           "town": "",
           "phone": "+12082554186",
@@ -223,13 +230,6 @@
           "phone": "(208) 255-2227",
           "site": "http://conniescafe.com",
           "category": "Cafes & Coffee"
-        },
-        {
-          "name": "The Peppered Mercantile",
-          "town": "Sandpoint",
-          "phone": "",
-          "site": "",
-          "category": "Restaurants"
         }
       ]
     }
