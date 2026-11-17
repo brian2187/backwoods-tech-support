@@ -1055,31 +1055,21 @@
     stamp(data.hs_biz_updated, false);
   }
 
-  function eventRow(e, today) {
-    const label = e.date_label || dateLabel(e.date, today);
+  function eventRow(e) {
+    const bits = [];
+    if (e.time) bits.push('<span class="ev-time">' + esc(e.time) + "</span>");
+    if (e.area) bits.push('<span class="area-tag">' + esc(e.area) + "</span>");
+    if (e.venue) bits.push(esc(e.venue));
     return (
-      '<div class="event-row" data-area="' +
+      '<article class="event-row" data-area="' +
       esc(e.area || "") +
-      '"><div class="when"><span class="ev-ico ev-' +
-      esc(e.kind || "") +
-      '" aria-hidden="true"></span>' +
-      esc(label) +
-      (e.time ? "<br>" + esc(e.time) : "") +
-      "</div><div><h3><a href=\"" +
+      '"><h3><a href="' +
       esc(e.url || "#") +
       '" rel="noopener" target="_blank">' +
       esc(e.title || "") +
-      '</a></h3><p><span class="area-tag">' +
-      esc(e.area || "") +
-      "</span> " +
-      esc(e.venue || "") +
-      " · " +
-      esc(e.kind || "") +
-      " · " +
-      esc(e.source || "") +
-      "</p>" +
-      (e.artists && e.artists.length ? '<p class="who">' + esc(e.artists.join(", ")) + "</p>" : "") +
-      "</div></div>"
+      "</a></h3>" +
+      (bits.length ? "<p>" + bits.join(" ") + "</p>" : "") +
+      "</article>"
     );
   }
 
@@ -1124,39 +1114,60 @@
         (data.catchment || "");
     }
     if (eventsEl) {
-      const todayEvents = data.today_events || [];
-      const areas = data.areas || [];
-      let html = "";
-      if (todayEvents.length) {
-        html +=
-          '<h2 class="section-title">Today</h2>' +
-          todayEvents.map((e) => eventRow(e, todayYmd)).join("");
+      const groups = [];
+      const buckets = {};
+      function timeKey(t) {
+        const s = String(t || "").replace(/\s/g, "").toUpperCase();
+        const m = s.match(/^(\d{1,2})(?::(\d{2}))?(AM|PM)?$/);
+        if (!m) return 24 * 60;
+        let h = parseInt(m[1], 10);
+        const min = parseInt(m[2] || "0", 10);
+        const ap = m[3] || "";
+        if (ap === "PM" && h < 12) h += 12;
+        if (ap === "AM" && h === 12) h = 0;
+        return h * 60 + min;
       }
-      areas.forEach((a) => {
-        const later = (a.events || []).filter((e) => (e.date || "") > todayYmd);
-        if (!later.length) return;
-        html +=
-          '<details class="area-block" data-area="' +
-          esc(a.name) +
-          '"' +
-          (a.name === "Sandpoint" ? " open" : "") +
-          '><summary class="section-title">' +
-          esc(a.name) +
-          ' <span class="n">' +
-          esc(a.drive_min) +
-          " min · " +
-          later.length +
-          "</span></summary>" +
-          later.map((e) => eventRow(e, todayYmd)).join("") +
-          "</details>";
-      });
+      future
+        .slice()
+        .sort((a, b) => {
+          const d = String(a.date || "").localeCompare(String(b.date || ""));
+          if (d) return d;
+          return timeKey(a.time) - timeKey(b.time);
+        })
+        .forEach((e) => {
+          const day = String(e.date || "").slice(0, 10);
+          if (!day) return;
+          if (!buckets[day]) {
+            buckets[day] = {
+              date: day,
+              label: dateLabel(day, todayYmd),
+              events: [],
+            };
+            groups.push(buckets[day]);
+          }
+          buckets[day].events.push(e);
+        });
+      let html = groups
+        .map((g) => {
+          return (
+            '<section class="date-block" data-date="' +
+            esc(g.date) +
+            '"><h2 class="date-head">' +
+            esc(g.label) +
+            "</h2>" +
+            g.events.map(eventRow).join("") +
+            "</section>"
+          );
+        })
+        .join("");
       if (!html) {
         html =
           '<p class="meta">No upcoming listings in the last pull. Next ingest will try Panida and the Chamber again.</p>';
       }
-      const keep = eventsEl.querySelectorAll("h2.section-title, .event-row, details.area-block, p.meta");
-      keep.forEach((n) => n.remove());
-      eventsEl.insertAdjacentHTML("afterbegin", html);
+      eventsEl.innerHTML = html;
+      const onChip = document.querySelector("#area-chips .dir-chip.on");
+      const area = onChip ? onChip.getAttribute("data-area") || "" : "";
+      if (typeof window.applyCalArea === "function") window.applyCalArea(area);
     }
     stamp(data.updated, false);
   }
