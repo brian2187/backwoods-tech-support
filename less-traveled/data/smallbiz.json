@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T17:54:47Z",
+  "updated": "2026-11-17T18:34:25Z",
   "days": 90,
   "note": "Kootenai County small-business feeds from Kcounty.Media. Weekly filings come from the Market Narc New Business List and county records; the list refreshes Mondays. Stories are drafted and published by a person. Originals stay on the publisher. Who shows up stays Bonner and Boundary.",
   "week": {
@@ -146,7 +146,8 @@
       "town": "Post Falls",
       "when": "2026-11-17T00:44:24Z",
       "when_short": "Nov 17, 2026",
-      "when_ts": 1794876264.0
+      "when_ts": 1794876264.0,
+      "image": "https://kcounty.media/assets/stories/post-falls-bridal-fair-vendors.jpg"
     },
     {
       "id": "94cadfba48dc3380",
@@ -158,7 +159,8 @@
       "town": "Coeur d'Alene",
       "when": "2026-11-12T07:25:32Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794468332.0
+      "when_ts": 1794468332.0,
+      "image": "https://kcounty.media/assets/stories/mountain-west-bank-headquarters.jpg"
     },
     {
       "id": "98c1be1c39e85544",
@@ -170,7 +172,8 @@
       "town": "Post Falls",
       "when": "2026-11-12T04:27:46Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794457666.0
+      "when_ts": 1794457666.0,
+      "image": "https://kcounty.media/assets/stories/post-falls-what-went-up.jpg"
     },
     {
       "id": "917b30db81c23d89",
@@ -182,7 +185,8 @@
       "town": "Coeur d'Alene",
       "when": "2026-11-10T23:07:02Z",
       "when_short": "Nov 10, 2026",
-      "when_ts": 1794352022.0
+      "when_ts": 1794352022.0,
+      "image": "https://kcounty.media/assets/stories/kootenai-health-layoffs-nov-2026.png"
     }
   ],
   "links": [

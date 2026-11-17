@@ -111,6 +111,22 @@
     journal: "Homestead",
   };
 
+  function cardPic(it, link) {
+    const src = String(it.image || "").trim();
+    if (!/^https?:\/\//i.test(src)) return "";
+    const hrefVal = link || href(it.link);
+    const blank = isHttp(hrefVal) ? ' target="_blank"' : "";
+    return (
+      '<a class="card-pic-link" href="' +
+      esc(hrefVal) +
+      '" rel="noopener"' +
+      blank +
+      '><img class="card-pic" src="' +
+      esc(src) +
+      '" alt="" loading="lazy" decoding="async" onerror="this.parentNode.remove()"></a>'
+    );
+  }
+
   function noteHtml(it) {
     const areas = areasOf(it).join(",");
     const link = href(it.link);
@@ -129,6 +145,7 @@
       esc(it.title) +
       "</a></h2>" +
       sum +
+      cardPic(it, link) +
       '<p class="orig"><a href="' +
       esc(link) +
       '" rel="noopener"' +
@@ -166,6 +183,7 @@
       esc(it.title) +
       "</a></h3>" +
       sum +
+      cardPic(it, link) +
       '<p class="orig"><a href="' +
       esc(link) +
       '" rel="noopener" target="_blank">Open on X</a></p></article>'
@@ -175,8 +193,9 @@
   function fromFile(data) {
     const all = data.items || [];
     function isX(it) {
+      if (it.kind === "x") return true;
       const link = String(it.link || "").toLowerCase();
-      return it.kind === "x" && (link.indexOf("x.com/") >= 0 || link.indexOf("twitter.com/") >= 0);
+      return link.indexOf("x.com/") >= 0 || link.indexOf("twitter.com/") >= 0;
     }
     const whispersItems = all.filter(isX).slice(0, 48);
     const items = all.filter((it) => !isX(it) && it.kind !== "x");

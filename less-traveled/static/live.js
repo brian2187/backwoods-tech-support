@@ -946,6 +946,13 @@
       } else {
         stBody.innerHTML = stories
           .map((it) => {
+            const pic = /^https?:\/\//i.test(String(it.image || ""))
+              ? '<a class="card-pic-link" href="' +
+                esc(it.link || "#") +
+                '" rel="noopener" target="_blank"><img class="card-pic" src="' +
+                esc(it.image) +
+                '" alt="" loading="lazy" decoding="async" onerror="this.parentNode.remove()"></a>'
+              : "";
             return (
               '<article class="look-card"><header><p class="look-meta"><span><time datetime="' +
               esc(it.when || "") +
@@ -961,6 +968,7 @@
               esc(it.title || "") +
               "</a></h3></header>" +
               (it.summary ? '<p class="look-ask">' + esc(it.summary) + "</p>" : "") +
+              pic +
               '<p class="orig"><a href="' +
               esc(it.link || "#") +
               '" rel="noopener" target="_blank">Original on ' +

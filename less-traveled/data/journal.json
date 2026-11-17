@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T18:21:50Z",
+  "updated": "2026-11-17T18:35:37Z",
   "days": 90,
   "note": "Local goings-on as they are reported and discussed in the news, on Facebook, X, Reddit, and other public posts. Short notes only; the original stays with the publisher. Facebook groups do not offer a public feed, so those show up when the same talk is on the open web.",
   "items": [
@@ -215,7 +215,7 @@
     {
       "id": "x-2122576012802248736",
       "title": "Multiple fires in Sagle",
-      "summary": ", ID tonight.",
+      "summary": "Multiple fires in Sagle, ID tonight.",
       "link": "https://x.com/WingoSmith84/status/2122576012802248736",
       "source": "X",
       "kind": "x",
@@ -226,7 +226,8 @@
       "author": "@WingoSmith84",
       "when": "2026-11-17T06:22:11Z",
       "when_short": "Nov 17, 2026",
-      "when_ts": 1794896531.0
+      "when_ts": 1794896531.0,
+      "image": "https://pbs.twimg.com/media/HXTngzWWUAE0tRw.jpg"
     },
     {
       "id": "x-2122573276610527468",
@@ -242,7 +243,8 @@
       "author": "@StorytellerGRL",
       "when": "2026-11-17T06:11:19Z",
       "when_short": "Nov 17, 2026",
-      "when_ts": 1794895879.0
+      "when_ts": 1794895879.0,
+      "image": "https://pbs.twimg.com/media/HXTlJDGaEAAxoDT.jpg"
     },
     {
       "id": "70b7fd1467f77356",
@@ -435,6 +437,22 @@
       "when": "2026-11-16T21:17:00Z",
       "when_short": "Nov 16, 2026",
       "when_ts": 1794863820.0
+    },
+    {
+      "id": "11428fc7f02939ba",
+      "title": "YUM! One favorite food spot in the Inland Northwest: Pie Hut in Sandpoint! 🥧 This time we tried the Jalapeño Popper sandwich (bottom left), Vietnamese Banh Mi, and obviously… PIE! ",
+      "summary": "YUM! One favorite food spot in the Inland Northwest: Pie Hut in Sandpoint! 🥧 This time we tried the Jalapeño Popper sandwich (bottom left), Vietnamese Banh Mi, and obviously… PIE!",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdlBnWVozVTc5RlltSFdLMmRBZThETXlDTl9VR0hwOGVlMVczczMxX0hmWXFKNGl3ck4xWXhBY3I5QlRnbmxLdWtqckJmamhQVGJXd280ZUQwS1NVWW9uOXJqMzBnN0hBenA2MG5mNmVtQ1Q0b2g4b2k0VFF5bl9HNVFXWUVnekk2TDFlZE42SnBRRFA0dm9HTjFOUmk5Um9EUUxJQ3o5S0RHaDU2ZnBKSHdCcDQtbjdpdUdkaWtrdXhwTHBwdWt1MHFWT1JKNzIwd2VkOGtoNFl1UQ?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-16T18:30:58Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794853858.0
     },
     {
       "id": "249864cf7b11338b",
@@ -727,7 +745,7 @@
     {
       "id": "x-2122026855767363983",
       "title": "Homes for sale in Spirit Lake",
-      "summary": ", Idaho — peaceful living and natural beauty.",
+      "summary": "Homes for sale in Spirit Lake, Idaho — peaceful living and natural beauty.",
       "link": "https://x.com/MWebler/status/2122026855767363983",
       "source": "X",
       "kind": "x",
@@ -738,7 +756,8 @@
       "author": "@MWebler",
       "when": "2026-11-15T18:00:02Z",
       "when_short": "Nov 15, 2026",
-      "when_ts": 1794765602.0
+      "when_ts": 1794765602.0,
+      "image": "https://pbs.twimg.com/media/HXL0LlCaEAAM3za.jpg"
     },
     {
       "id": "50e9e9a1c9b1c8cb",
@@ -760,7 +779,7 @@
       "id": "74f26749ef8a765f",
       "title": "There’s a beautiful place nestled in Bonners Ferry Idaho",
       "summary": "the North Haven campground. It was the perfect basecamp for all the adventures in the mountains and along the rivers nearby! #uniquestays #Idaho #BonnersFerryID #mountainlife Facebook",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNekcxeFVGR25UZzFvV2g0UGNCOFQ4M1lpOEZ1eTh1THpCUnF6VHY4TV9lbjdLZGg1eEV6SFNTS3pWZkRqdWFGYmFHX3BQYUdXYzNlTHlSdXFoOW8tZjY2bVNUNmprcE5feGhZOHdIMjdldE9Vd3R1bmdNbTRsTkdDd0wzaThRN05OQ2RrcUdsMnZxY0VKeG1keEJyRGlmMzVfMUpmdXFoTnJ1MnFycU1lRzlxbDVzSDRSbHQyM2NKbzZEc1BGQllSbi1tM3NwbXhURFZSNlJGSzRzcGhsT0NLWGRtejlIZw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPdF9qZFlSbXpvV1VHNFRfYlllT2pTNXpXaHE3YlF2Z3JIekxUSm55Y2ZLWl9Nd2FsdVhYVHlWQk1aOS03alBlbXktR1luS3IzVklQV1ZkdWZIVUZtcU45Z3JzdFZ5UlRpTEFtUURVNmlhZXdJY3RPN1pPQnppYWlGQVB2dGVCZXJmeGRPbFNZRXg3SU1US3p5dDVtODFBTHdhbVV5ajFLa05zQ1lvd0ViTklPVkVUQUJmLWhIOFdHb1ZVdkt4N3B5Qm5LQjhqY1V5YS0zMDM4NmhxbHhzcng5T25WQXQ?oc=5",
       "source": "Facebook",
       "kind": "facebook",
       "area": "Bonners Ferry",
@@ -768,9 +787,9 @@
         "Bonners Ferry"
       ],
       "author": "",
-      "when": "2026-11-15T16:39:30Z",
+      "when": "2026-11-15T16:42:55Z",
       "when_short": "Nov 15, 2026",
-      "when_ts": 1794760770.0
+      "when_ts": 1794760975.0
     },
     {
       "id": "0d99309a0eed5e78",
@@ -1170,7 +1189,8 @@
       "author": "@idahobeef",
       "when": "2026-11-14T22:25:37Z",
       "when_short": "Nov 14, 2026",
-      "when_ts": 1794695137.0
+      "when_ts": 1794695137.0,
+      "image": "https://pbs.twimg.com/media/HXHnWk9aoAAhjJY.jpg"
     },
     {
       "id": "0fe7a0bcc0fb45c3",
@@ -2134,7 +2154,8 @@
       "author": "Anthony V. Esposito",
       "when": "2026-11-12T16:22:25Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794500545.0
+      "when_ts": 1794500545.0,
+      "image": "https://kcounty.media/assets/stories/mayors-walking-challenge-2026.jpg"
     },
     {
       "id": "726bd0ffb70cf1e2",
@@ -2470,7 +2491,8 @@
       "author": "Ben Olson",
       "when": "2026-11-12T01:18:59Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794446339.0
+      "when_ts": 1794446339.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2026/11/EuclidPark-A-plaza-WEB.jpg"
     },
     {
       "id": "c1eaf7499f0bdcb8",
@@ -2486,7 +2508,8 @@
       "author": "Ben Olson",
       "when": "2026-11-12T01:09:28Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794445768.0
+      "when_ts": 1794445768.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2026/11/GreatNorthern-MtnView-WEB-1024x771.jpg"
     },
     {
       "id": "22975e8d81e2d557",
@@ -2502,7 +2525,8 @@
       "author": "Ben Olson",
       "when": "2026-11-12T01:04:11Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794445451.0
+      "when_ts": 1794445451.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2026/11/FallLeaves-WEB-1024x683.jpg"
     },
     {
       "id": "7068f56a1dc82222",
@@ -2518,7 +2542,8 @@
       "author": "Ben Olson",
       "when": "2026-11-12T01:01:47Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794445307.0
+      "when_ts": 1794445307.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2026/09/SagleMarina-bridgeview-WEB-1024x532.jpg"
     },
     {
       "id": "67a94245252f1cbf",
@@ -2534,7 +2559,8 @@
       "author": "Ben Olson",
       "when": "2026-11-12T00:58:03Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794445083.0
+      "when_ts": 1794445083.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2026/11/JackFrostFest-WEB-763x1024.jpg"
     },
     {
       "id": "b5059503f6c41044",
@@ -2582,7 +2608,8 @@
       "author": "Ben Olson",
       "when": "2026-11-12T00:55:11Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794444911.0
+      "when_ts": 1794444911.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2024/02/Necochea-2024-WEB.jpg"
     },
     {
       "id": "4b99056384377761",
@@ -2598,7 +2625,8 @@
       "author": "Ben Olson",
       "when": "2026-11-12T00:52:01Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794444721.0
+      "when_ts": 1794444721.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2026/11/Fever-WEB-1024x752.jpg"
     },
     {
       "id": "8c550bfd1303e595",
@@ -2694,7 +2722,8 @@
       "author": "Ben Olson",
       "when": "2026-11-12T00:25:49Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794443149.0
+      "when_ts": 1794443149.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2026/11/Sand-Point-Break-WEB-838x1024.jpg"
     },
     {
       "id": "e0b0f917b0bb9ca6",
@@ -2726,7 +2755,8 @@
       "author": "Ben Olson",
       "when": "2026-11-12T00:07:41Z",
       "when_short": "Nov 12, 2026",
-      "when_ts": 1794442061.0
+      "when_ts": 1794442061.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2026/11/Himmel-WEB-768x1024.jpg"
     },
     {
       "id": "871691a36825d61a",
@@ -2742,7 +2772,8 @@
       "author": "Ben Olson",
       "when": "2026-11-11T23:52:38Z",
       "when_short": "Nov 11, 2026",
-      "when_ts": 1794441158.0
+      "when_ts": 1794441158.0,
+      "image": "https://sandpointreader.com/wp-content/uploads/2026/11/WomenOfTheSeine-WEB-764x1024.jpg"
     },
     {
       "id": "574eefa45422ff5f",
@@ -2774,7 +2805,8 @@
       "author": "@idahobutcher",
       "when": "2026-11-11T21:27:02Z",
       "when_short": "Nov 11, 2026",
-      "when_ts": 1794432422.0
+      "when_ts": 1794432422.0,
+      "image": "https://pbs.twimg.com/media/HW39MlYWcAMPyjT.jpg"
     },
     {
       "id": "x-2120603986382188664",
@@ -2887,7 +2919,8 @@
       "author": "Kcounty.Media",
       "when": "2026-11-11T15:29:40Z",
       "when_short": "Nov 11, 2026",
-      "when_ts": 1794410980.0
+      "when_ts": 1794410980.0,
+      "image": "https://kcounty.media/assets/stories/wine-north-idaho.jpg"
     },
     {
       "id": "fc198e20b2c481e0",
@@ -3053,7 +3086,7 @@
     {
       "id": "x-2120283263512240345",
       "title": "Lake Pend Oreille, heading to Clark Fork",
-      "summary": ", on the border of Idaho and Montana.",
+      "summary": "Lake Pend Oreille, heading to Clark Fork, on the border of Idaho and Montana.",
       "link": "https://x.com/mikebeck/status/2120283263512240345",
       "source": "X",
       "kind": "x",
@@ -3082,7 +3115,8 @@
       "author": "@HouseTrackers",
       "when": "2026-11-10T21:01:59Z",
       "when_short": "Nov 10, 2026",
-      "when_ts": 1794344519.0
+      "when_ts": 1794344519.0,
+      "image": "https://pbs.twimg.com/media/HWytrjrW0AEETPw.jpg"
     },
     {
       "id": "98fd685be360a4c0",
@@ -3387,7 +3421,8 @@
       "author": "@OneKindesign",
       "when": "2026-11-09T11:30:38Z",
       "when_short": "Nov 9, 2026",
-      "when_ts": 1794223838.0
+      "when_ts": 1794223838.0,
+      "image": "https://pbs.twimg.com/media/HWrhg7vXQAAYTX3.jpg"
     },
     {
       "id": "191286fdd608dadb",
@@ -6688,6 +6723,22 @@
       "when_ts": 1790924400.0
     },
     {
+      "id": "d14bde2192bd54cd",
+      "title": "One killed in Ponderay house fire",
+      "summary": "From KREM.",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYmxsU3FKS21DSXZZUmJnSlpDWlI1akNZQzFMNE9KYVU1SGQxaXkyZ0Z6YlpqYzBCb0N0X0lyYVJaOE51cXdCNTYxQ0JyY0JxbERlSmZ2UHlNYmpQek04TVBpaXNJb3kwSEhPRW1iemFYZF9HQ1JuR1R3WGtVMEM3NUJ0eWI3Zkt6Ul93dllIZ25QbmxxbkJHXzljT3F4S29lbUJTWnYyektfd19RT1o0dnRB?oc=5",
+      "source": "KREM",
+      "kind": "news",
+      "area": "Ponderay",
+      "areas": [
+        "Ponderay"
+      ],
+      "author": "",
+      "when": "2026-10-02T07:00:00Z",
+      "when_short": "Oct 2, 2026",
+      "when_ts": 1790924400.0
+    },
+    {
       "id": "85886534f232f601",
       "title": "Boundary County Calendar",
       "summary": "Oct. 29-Nov. 8, 2026 Bonners Ferry Herald",
@@ -8393,6 +8444,22 @@
       "when_ts": 1789369200.0
     },
     {
+      "id": "0e399524fffd41c0",
+      "title": "The Pacific Northwest's Largest Amusement Park Is An Affordable Idaho Gem Just Outside Coeur d'Alene",
+      "summary": "The Pacific Northwest's Largest Amusement Park Is An Affordable Idaho Gem Just Outside Coeur d'Alene",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMjFQWUFuQ2cxQWQtLTY3Wi1pM0M0dXZvQzNweS1FWnAwNEZyOEt1X3dTQ1dyLVFINTF0dzBYcUxCd1lwTXg4NEFONXVjZ1ZwdndEelpfV2lPX0tWNU1ZUk15dThqUldGMURwQ0NDQlhqVGVQZWZ2cjQzWk4yMmkxTEh1MkVkMXZ6dk1aQTZHYXFlOEpTY0lhVEVwQzgzQXZHeXpYanRRQURpeEhlWi1KaDhWUlNzTllxb01rN2FBbnR4d2dlYW1mSnk3MA?oc=5",
+      "source": "https://www.islands.com/",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-09-14T07:00:00Z",
+      "when_short": "Sep 14, 2026",
+      "when_ts": 1789369200.0
+    },
+    {
       "id": "a23a789ede68abf0",
       "title": "PREP ROUNDUP: Eggleston, Coeur d'Alene teams win at Timberlake Farragut Invitational",
       "summary": "From Coeur d'Alene Press.",
@@ -8753,6 +8820,22 @@
       "summary": "From Sandpoint Reader.",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9felh5Z1ByS2R4cjg5dFFwNVJOWHZyVzR6RDJYdGhNOU43WUxkLUMzaWc5NjlZTXFjZ1NqSHU4cERjYmhWNUg0bFVwQ0pMTTM1ZkxXbUxkeFhrYWhyZHpPSm1GbGpoSms?oc=5",
       "source": "Sandpoint Reader",
+      "kind": "news",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-09-09T07:00:00Z",
+      "when_short": "Sep 9, 2026",
+      "when_ts": 1788937200.0
+    },
+    {
+      "id": "c770d1dec14a84c1",
+      "title": "Bonner County Justice Services to house youth at increased daily rate",
+      "summary": "From KREM.",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOR2hpQUJYczdFZUFsSDZlTkRiSHBOMkZhajJ1Uy04M2ttbVpqRkRDZ0FFMEQyT2x2VWFXaVd6OFNYV3NFODkyU0tURkpmTkpJejhDU3JNWW0yQWtOMkZPMDlIV25GYUx2ZE1OSUs5alU5Z1A2bW9TTVBZcjFvUl9MU3RsSWNfTWtKNzloYkVYa1lrTkIwR3YxQVp2dkIwZDA2c21UZ2NTUkttdWlYYVZHZXowLXdaMUVyV0IxcG1KTUczU2lVZkg0Zkk2cmRqbWlxZGE2Y2lfV2lHc3NyVVQ2X1FIRlVMSjZ3Y1BVWA?oc=5",
+      "source": "KREM",
       "kind": "news",
       "area": "Sandpoint",
       "areas": [
@@ -9764,6 +9847,22 @@
       "when_ts": 1787641200.0
     },
     {
+      "id": "5efdbc659e1e4c86",
+      "title": "Bonner County Daily Bee added a...",
+      "summary": "Bonner County Daily Bee Facebook",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5JY1RGd2lzY3ZtQW1haUZ5RWx3bFNYUzNPMngyeEFfS1NLci16YjNlRWMxYzF0cWp3UTVkSUZNWHJpaU02d3RoWGJFbHc0bU9aYlZ6RGFfRWFsOWI1X0lxVlh1MXZUdUFURUE?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-08-24T17:38:10Z",
+      "when_short": "Aug 24, 2026",
+      "when_ts": 1787593090.0
+    },
+    {
       "id": "48e1ddb70ee89acc",
       "title": "Sandpoint City Council adopts annual budget, discusses wastewater treatment plant construction",
       "summary": "Sandpoint City Council adopts annual budget, discusses wastewater treatment plant construction",
@@ -10024,12 +10123,12 @@
     {
       "name": "Ponderay",
       "drive_min": 8,
-      "n": 2
+      "n": 3
     },
     {
       "name": "Sandpoint",
       "drive_min": 0,
-      "n": 280
+      "n": 283
     },
     {
       "name": "Dover",
@@ -10089,7 +10188,7 @@
     {
       "name": "Coeur d'Alene",
       "drive_min": 58,
-      "n": 152
+      "n": 153
     }
   ],
   "errors": [
