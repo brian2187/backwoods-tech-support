@@ -77,4 +77,5 @@
   }
   if (q) q.addEventListener("input", show);
   show();
+  window.LT_lookingShow = show;
 })();

@@ -679,6 +679,12 @@
     });
   }
 
+  window.LT_setListings = function (rows) {
+    if (!Array.isArray(rows)) return;
+    listings = rows;
+    apply();
+  };
+
   fillForm();
   if (form) {
     form.addEventListener("submit", function (ev) {

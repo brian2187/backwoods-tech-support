@@ -6,12 +6,14 @@
   <title>Less Traveled — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=62">
+  <link rel="stylesheet" href="static/theme.css?v=63">
   
 </head>
 <body class="">
 
-  
+  <div class="alert-bar" id="alert-bar" hidden>
+    <a href="situation.html" id="alert-bar-link"></a>
+  </div>
   <header class="bar">
     <nav class="bar-nav" aria-label="Primary">
   
@@ -84,19 +86,21 @@
   </article>
 </section>
 
-
+<section id="home-journal-wrap">
 <h2 class="section-title">From the journal</h2>
-<div class="list">
+<div class="list" id="home-journal">
+  
+  
+  <a href="https://x.com/DavidLe1998381/status/2122727826889785376" rel="noopener" target="_blank"><strong>Sandpoint shoreline and old land claims</strong><span>Nov 17, 2026 · X · Relatives owned shoreline in Sandpoint, Idaho. Asking what the process would be for an old sale.</span></a>
+  
+  <a href="https://x.com/dan3196/status/2122703963816652951" rel="noopener" target="_blank"><strong>Sandpoint and Coeur d&#39;Alene versus Spokane</strong><span>Nov 17, 2026 · X · Downtown Coeur d&#39;Alene, Post Falls and Sandpoint compared with Spokane.</span></a>
   
   <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9TRjhQcG9RVUpuTGVESDZSY2ZJY1R5NXZJMmRsQzVUNlU0NFNCSW5LU01fdmVSa2ZfXzhMNzJ5Qk9IZXV0NzFrejIyY3RldHA2LWZKT2VyZndwc1djZUVJYTRKVU9NdUFfVk5qYw?oc=5" rel="noopener" target="_blank"><strong>PREP GIRLS BASKETBALL: Nov. 16, 2026</strong><span>Nov 17, 2026 · Coeur d&#39;Alene Press · From Coeur d&#39;Alene Press.</span></a>
   
-  <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTlkyQTgtSW4wbkRqdV9hcVRYTTFLa3UxRWh5dmV5QXVkcEZobml6VzV1aW4zeDJzcDVUaHJCaGpvcGFibjlya0lUSi05T19jeGg3VU01cEtZMDU5Zl91UWpLRnpTMy1xZ2J5b1lRazdaSE9MVGNWT0RpVU03bFgzWEktaXdhN1No?oc=5" rel="noopener" target="_blank"><strong>Post Falls Labor Dept. to host hiring event</strong><span>Nov 17, 2026 · Coeur d&#39;Alene Press · From Coeur d&#39;Alene Press.</span></a>
-  
-  <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQRi1wdWg3OVhzU2JWWnVreUNwbFcxczNidFRRM3RCYVkzeGtyMHpSWUtyRC1NMldqTnktRm9uV3FyOVEzZkpfTEwzdVJhLTh2MHJnVVJDYVdLSnJvOXZfX2xlNUV0d2xwMWwxNlU1REE2Z1hxMTVTdjhkSGtUX1dGVTdVZXdhY1c3aVV3MlR3?oc=5" rel="noopener" target="_blank"><strong>Bonner County Calendar</strong><span>Nov 17, 2026 · Bonner County Daily Bee · Nov. 17, 2026 Bonner County Daily Bee</span></a>
   
 </div>
 <p class="meta"><a href="journal.html">Last 90 days of local news and posts</a></p>
-
+</section>
 
   </main>
   <footer class="site">
@@ -110,8 +114,10 @@
       <a href="disclosure.html">Disclosure</a>
       <a href="situation.html">Regional Info</a>
       <a href="feeds.html">Live cameras</a>
+      <span class="live-stamp" id="live-stamp"></span>
     </div>
   </footer>
 
+<script src="static/live.js?v=1"></script>
 </body>
 </html>

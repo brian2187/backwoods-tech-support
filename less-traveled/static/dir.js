@@ -129,4 +129,5 @@
     });
   }
   show();
+  window.LT_dirShow = show;
 })();

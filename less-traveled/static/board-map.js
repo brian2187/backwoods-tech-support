@@ -16,7 +16,7 @@
     }
   }
 
-  const fires = readJson("fires-data") || [];
+  let fires = readJson("fires-data") || [];
   const lakes = readJson("lakes-data") || [];
   const nixle = readJson("nixle-data") || [];
   const snowpack = readJson("snowpack-data") || [];
@@ -110,6 +110,7 @@
   map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
 
   const fireMarkers = [];
+  let markersPlaced = false;
   const lakeMarkers = [];
   const nixleActiveMarkers = [];
   const nixleClosedMarkers = [];
@@ -157,9 +158,7 @@
     return n;
   }
 
-  function addMarkers() {
-    if (fireMarkers.length) return;
-    try {
+  function placeFires() {
     fires.forEach((f) => {
       if (!validLL(f.lat, f.lon) || f._error) return;
       const active = f.active !== false;
@@ -175,12 +174,20 @@
         .addTo(map);
       fireMarkers.push(m);
     });
+  }
+
+  function addMarkers() {
+    if (markersPlaced) return;
+    markersPlaced = true;
+    try {
+    if (!fireMarkers.length) placeFires();
     lakes.forEach((lake) => {
       if (!validLL(lake.lat, lake.lon)) return;
       const n = document.createElement("div");
       n.className = "ico-lake";
       const pool = lake.pool_ft != null ? lake.pool_ft + " ft" : lake.gage_ft != null ? lake.gage_ft + " ft" : "—";
       const gage = lake.gage_ft != null && lake.pool_ft != null ? "gage " + lake.gage_ft : "";
+      n.setAttribute("data-site", lake.site || "");
       n.innerHTML =
         LAKE_SVG +
         `<div class="lake-tag"><span>${(lake.short || lake.name || "").toUpperCase()}</span><b>${pool}</b><em>${gage}</em></div>`;
@@ -1533,4 +1540,27 @@
   setInterval(pollFlights, 10000);
   setInterval(loadQuakes, 5 * 60 * 1000);
   requestAnimationFrame(flyTick);
+
+  window.LT_replaceFires = function (rows) {
+    if (!Array.isArray(rows)) return;
+    fires = rows;
+    fireMarkers.forEach((m) => {
+      try {
+        m.remove();
+      } catch (e) {}
+    });
+    fireMarkers.length = 0;
+    placeFires();
+  };
+
+  window.LT_updateLakes = function (rows) {
+    (rows || []).forEach((lk) => {
+      const node = document.querySelector('.ico-lake[data-site="' + (lk.site || "") + '"]');
+      if (!node) return;
+      const b = node.querySelector(".lake-tag b");
+      const em = node.querySelector(".lake-tag em");
+      if (b) b.textContent = lk.pool_ft != null ? lk.pool_ft + " ft" : lk.gage_ft != null ? lk.gage_ft + " ft" : "—";
+      if (em) em.textContent = lk.gage_ft != null && lk.pool_ft != null ? "gage " + lk.gage_ft : "";
+    });
+  };
 })();

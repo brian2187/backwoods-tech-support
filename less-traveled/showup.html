@@ -6,12 +6,14 @@
   <title>Who shows up — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=62">
+  <link rel="stylesheet" href="static/theme.css?v=63">
   
 </head>
 <body class="dir">
 
-  
+  <div class="alert-bar" id="alert-bar" hidden>
+    <a href="situation.html" id="alert-bar-link"></a>
+  </div>
   <header class="bar">
     <nav class="bar-nav" aria-label="Primary">
   
@@ -43,7 +45,7 @@
     </div>
     
     
-<p class="meta">726 open · 0 shutdown · watched 2026-11-17. Chamber roster, OpenStreetMap, and local news. New members and contact details refresh each morning.</p>
+<p class="meta" id="dir-meta">726 open · 0 shutdown · watched 2026-11-17. Chamber roster, OpenStreetMap, and local news. New members and contact details refresh each morning.</p>
 
 <div class="dir-toolbar">
   <div class="dir-filter-frame">
@@ -248,6 +250,7 @@
   <p class="meta dir-count" id="dir-count"></p>
 </div>
 
+<div id="dir-body">
 
 
 <section class="dir-group" data-group="Home Services">
@@ -12976,6 +12979,7 @@
 </section>
 
 
+</div>
 
 <section class="dir-shutdown" id="shutdown">
   <h2 class="section-title">Shutdown</h2>
@@ -12985,9 +12989,9 @@
   
 </section>
 
-<p class="meta dir-foot">Chamber roster + OpenStreetMap, watched daily against local news. Closures are flagged, not guessed from a missing map pin. Company pages refresh each morning with contact and website when the listing publishes them. Ratings will sit on the card once we have enough neighbor confirmations. Licensed trades keep their license number when we have it.</p>
+<p class="meta dir-foot" id="dir-foot">Chamber roster + OpenStreetMap, watched daily against local news. Closures are flagged, not guessed from a missing map pin. Company pages refresh each morning with contact and website when the listing publishes them. Ratings will sit on the card once we have enough neighbor confirmations. Licensed trades keep their license number when we have it.</p>
 
-<script src="static/dir.js?v=1"></script>
+<script src="static/dir.js?v=2"></script>
 
   </main>
   <footer class="site">
@@ -13001,8 +13005,10 @@
       <a href="disclosure.html">Disclosure</a>
       <a href="situation.html">Regional Info</a>
       <a href="feeds.html">Live cameras</a>
+      <span class="live-stamp" id="live-stamp"></span>
     </div>
   </footer>
 
+<script src="static/live.js?v=1"></script>
 </body>
 </html>

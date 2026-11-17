@@ -1,0 +1,1251 @@
+{
+  "hs_stages": [
+    {
+      "n": 1,
+      "id": "buy",
+      "title": "Land acquisition",
+      "kicker": "Buy the parcel",
+      "lede": "The listing is the start, not the whole bill. Well, septic, power, and the first winter sit on top of the price.",
+      "info": [
+        "Live listings on this site are LandWatch and Redfin pins. Open the source listing before you offer.",
+        "July 2026 Selkirk Association snapshot: Bonner median sale around $650,000.",
+        "Title work, a recorded legal description, and a survey beat a two-track in the photos."
+      ],
+      "offices": [
+        {
+          "name": "Listings on this site",
+          "url": "/land/match"
+        },
+        {
+          "name": "Bonner County",
+          "url": "https://www.bonnercountyid.gov/"
+        },
+        {
+          "name": "Boundary County",
+          "url": "https://www.boundarycountyid.org/"
+        },
+        {
+          "name": "Selkirk Association of REALTORS",
+          "url": "https://www.selkirkaor.com/"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Agents and brokerages",
+          "companies": [
+            {
+              "name": "Brenda Fletcher, Realtor at Realty Plus inc",
+              "chamber_page": "https://members.sandpointchamber.org/list/member/brenda-fletcher-realtor-at-realty-plus-inc-877",
+              "town": "Sandpoint",
+              "phone": "(208) 255-8197",
+              "category": "Real Estate",
+              "summary": "Hello and Welcome to North Idaho, if you would like assistance finding your home here, please call or text me! Brenda 208.255.8197"
+            },
+            {
+              "name": "Century 21 Riverstone",
+              "site": "http://realestate.sandpoint.com",
+              "town": "Sandpoint",
+              "phone": "(208) 255-2244",
+              "category": "Real Estate",
+              "summary": "North Idaho Real Estate Sales Specializing in Waterfront Estates, Schweitzer Mountain Resort Properties, Rural & Suburban Acreage, In-Town Residential & Vacant…"
+            },
+            {
+              "name": "Chloe Stone Real Estate",
+              "site": "http://www.chloe-stone.com",
+              "town": "Sandpoint",
+              "phone": "(208) 819-5601",
+              "category": "Real Estate",
+              "summary": "Helping families buy & sell homes in Sandpoint, Idaho with integrity, expertise & ease."
+            },
+            {
+              "name": "Jennifer Schrader, Realtor PureWest Christies International Real Estate",
+              "site": "http://www.purewestid.com",
+              "town": "Sandpoint",
+              "phone": "(208) 946-9188",
+              "category": "Real Estate",
+              "summary": "We are a real estate duo based in Sandpoint, Idaho, helping people buy and sell homes with local know-how, down to earth service, and a love for the lifestyle…"
+            },
+            {
+              "name": "Jeremy Brown | REALTOR @ Northwest Realty Group",
+              "site": "http://northidaho-realestate.com",
+              "town": "Sandpoint",
+              "phone": "(208) 953-7653 (SOLD)",
+              "category": "Real Estate",
+              "summary": "Full-Time Real Estate Professional since 2014!Search North Idaho Homes and Land for Sale @ www.NorthIdaho-RealEstate.comAs a 4th generation local, born and…"
+            },
+            {
+              "name": "Jolena Overland REALTOR®",
+              "site": "https://overlandreizen.com/",
+              "town": "Sandpoint",
+              "phone": "(208) 255-8870",
+              "category": "Real Estate",
+              "summary": "Jolena is constantly asking herself ''How can I do a better job?'' I am dedicated to my profession and take my career as a Real Estate Advisor very seriously.…"
+            },
+            {
+              "name": "Lyle Hemingway realtor at Tomlinson Sotheby's Realty",
+              "chamber_page": "https://members.sandpointchamber.org/list/member/lyle-hemingway-realtor-at-tomlinson-sotheby-s-realty-3131",
+              "town": "Sandpoint",
+              "phone": "(509) 939-1340",
+              "category": "Real Estate",
+              "summary": "Real Estate Professional in North Idaho"
+            },
+            {
+              "name": "Northwest Realty Group Sandpoint",
+              "site": "https://www.northwestrealtygroup.com/",
+              "town": "Sandpoint",
+              "phone": "(208) 946-4221",
+              "category": "Real Estate",
+              "summary": "Northwest Realty Group continues to be the #1 Independently owned Real Estate Company in North Idaho serving both Bonner and Kootenai county. Our real estate…"
+            },
+            {
+              "name": "Patrick Green Realtor",
+              "site": "http://www.upstateidaho.com",
+              "town": "Sandpoint",
+              "phone": "(262) 374-3932",
+              "category": "Real Estate",
+              "summary": "Professional in Sandpoint."
+            },
+            {
+              "name": "Tomlinson Sotheby's International Realty | Sandpoint",
+              "site": "http://tomlinsonsir.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-5101",
+              "category": "Real Estate",
+              "summary": "Dedicated to the extraordinary. The exceptional. The unique.With over 60 years of experience in the North Idaho region and now serving two distinctive…"
+            }
+          ]
+        },
+        {
+          "label": "Title and escrow",
+          "companies": [
+            {
+              "name": "Alliance Title & Escrow Corp.",
+              "site": "http://www.alliancetitle.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-2125",
+              "category": "Real Estate",
+              "summary": "At Alliance Title & Escrow, we pride ourselves on being a resource different from our competition, one that combines knowledge, professionalism, and experience…"
+            },
+            {
+              "name": "Bonner Title",
+              "site": "http://kootenaititle.com",
+              "town": "Sandpoint",
+              "phone": "(208) 667-9431",
+              "category": "Real Estate",
+              "summary": "Title and escrow services"
+            },
+            {
+              "name": "Flying S Title and Escrow",
+              "site": "http://www.titlefc.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-6833",
+              "category": "Real Estate",
+              "summary": "First American Title is the premier Title and Escrow company providing outstanding local service with a national reach!"
+            },
+            {
+              "name": "North Idaho Title Insurance, Inc.",
+              "site": "http://www.northidahotitle.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-2400",
+              "category": "Insurance",
+              "summary": "For all your title and escrow needs. Serving Bonner and Kootenai Counties. Over 77 branches in 4 states including (Wyoming, Montana, Idaho and California)."
+            },
+            {
+              "name": "Pioneer Title of Bonner County",
+              "site": "http://www.pioneertitleco.com",
+              "town": "Sandpoint",
+              "phone": "(208) 208-5290",
+              "category": "Real Estate",
+              "summary": "Title and Escrow Services"
+            }
+          ]
+        },
+        {
+          "label": "Mortgage and banks",
+          "companies": [
+            {
+              "name": "Willamette Valley Bank CDA",
+              "site": "https://www.willamettevalleybank.com/branch-location/coeur-dalene-home-loan-center",
+              "town": "Coeur d'Alene",
+              "phone": "(208) 626-4404",
+              "category": "Real Estate",
+              "summary": "Your local lender for Home Loans. Voted Best Mortgage Company in North Idaho for the past 8 years."
+            },
+            {
+              "name": "STCU: Newport Branch",
+              "town": "Newport",
+              "category": "Banks & Credit Unions",
+              "summary": "Bank in Newport."
+            },
+            {
+              "name": "Columbia Bank",
+              "chamber_page": "https://members.sandpointchamber.org/list/member/columbia-bank-ponderay-2023",
+              "town": "Ponderay",
+              "phone": "(208) 263-3335",
+              "category": "Banks & Credit Unions",
+              "summary": "A Pacific Northwest Community Bank dedicated to exceeding the expectations of our customers, shareholders, and employees by building exceptional relationships."
+            },
+            {
+              "name": "Numerica Credit Union",
+              "site": "http://www.numericacu.com",
+              "town": "Ponderay",
+              "phone": "(509) 280-1800",
+              "category": "Banks & Credit Unions",
+              "summary": "Sandpoint Branch location coming in 2025! At Numerica, our purpose is clear: to enhance lives, fulfill dreams, and build communities. When you join us, that’s…"
+            },
+            {
+              "name": "Potlatch No1 Financial Credit Union",
+              "site": "http://www.p1fcu.org",
+              "town": "Ponderay",
+              "phone": "(208) 746-8900",
+              "category": "Banks & Credit Unions",
+              "summary": "In 1938, we put down roots to help our members succeed. Over 85 years later, we have stayed true to our ideals of working hard for our members. As a member…"
+            },
+            {
+              "name": "STCU",
+              "site": "http://www.stcu.org",
+              "town": "Ponderay",
+              "phone": "(208) 619-4000",
+              "category": "Banks & Credit Unions",
+              "summary": "The largest credit union in the Inland Northwest welcomes your membership! Our vision: ''To be the most loved and valued financial relationship on earth!''"
+            },
+            {
+              "name": "Umpqua Bank",
+              "site": "https://locations.umpquabank.com/id/ponderay/300-kootenai-cut-off-rd",
+              "town": "Ponderay",
+              "phone": "+1-208-263-2348",
+              "category": "Banks & Credit Unions",
+              "summary": "Bank in Ponderay."
+            },
+            {
+              "name": "Engle Home Loans - Blake Engle",
+              "site": "https://www.englehomeloans.com/",
+              "town": "Sandpoint",
+              "phone": "(208) 819-1809",
+              "category": "Real Estate",
+              "summary": "As your local trusted home loan experts, our goal is to provide value to you above and beyond obtaining a home loan. We work with our clients - first time…"
+            },
+            {
+              "name": "Horizon Credit Union",
+              "site": "http://www.hzcu.org",
+              "town": "Sandpoint",
+              "phone": "(800) 852-5316",
+              "category": "Banks & Credit Unions",
+              "summary": "Horizon Credit Union is a member owned financial cooperative with an extensive branch network spread throughout Northern Idaho and Eastern/Central Washington.…"
+            },
+            {
+              "name": "Mountain West Bank",
+              "site": "http://www.mountainwestbank.com",
+              "town": "Sandpoint",
+              "phone": "(208) 265-2232",
+              "category": "Banks & Credit Unions",
+              "summary": "With two convenient locations and longer hours to serve you. Sandpoint Financial Center1323 Hwy. 2, SandpointPhone: (208) 255-2046 Lobby hours: Mon-Friday…"
+            },
+            {
+              "name": "Ross Davis - mortgage broker- Barrett Financial",
+              "site": "https://www.barrettfinancial.com",
+              "town": "Sandpoint",
+              "phone": "(208) 290-2651",
+              "category": "Real Estate",
+              "summary": "Residential mortgage broker andCommercial loan consultant"
+            },
+            {
+              "name": "U.S. Bank",
+              "site": "http://www.usbank.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-6891",
+              "category": "Banks & Credit Unions",
+              "summary": "U.S. Bancorp (NYSE: USB), with $281 billion in assets, is the parent company of U.S. Bank, the 5th largest commercial bank in the United States. The company…"
+            },
+            {
+              "name": "Vantage Mortgage Brokers - Frank Ellerbroek",
+              "site": "http://www.frankellerbroek.com",
+              "town": "Sandpoint",
+              "phone": "(208) 469-3340",
+              "category": "Real Estate",
+              "summary": "Frank is a seasoned mortgage broker with over 28 years of experience in both wholesale and retail lending, now serving the Sandpoint area. Acting as a…"
+            },
+            {
+              "name": "WaFd Bank",
+              "site": "http://www.washingtonfederal.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-7591",
+              "category": "Banks & Credit Unions",
+              "summary": "Banks & Credit Unions in Sandpoint."
+            },
+            {
+              "name": "Banner Bank",
+              "category": "Banks & Credit Unions",
+              "summary": "Bank."
+            },
+            {
+              "name": "First Interstate Bank",
+              "category": "Banks & Credit Unions",
+              "summary": "Bank."
+            },
+            {
+              "name": "Panhandle State Bank",
+              "category": "Banks & Credit Unions",
+              "summary": "Bank."
+            },
+            {
+              "name": "Washington Trust",
+              "category": "Banks & Credit Unions",
+              "summary": "Bank."
+            },
+            {
+              "name": "Wells Fargo",
+              "category": "Banks & Credit Unions",
+              "summary": "Bank."
+            }
+          ]
+        },
+        {
+          "label": "Land use attorneys",
+          "companies": [
+            {
+              "name": "Cedar Summit Law PLLC",
+              "site": "http://www.cedarsummitlaw.com",
+              "town": "Coeur d'Alene",
+              "phone": "(208) 667-4957",
+              "category": "Legal",
+              "summary": "Law Firm specializing in estate planning and business law."
+            },
+            {
+              "name": "Dunbar Law PLLC",
+              "site": "http://adunbarlaw.com",
+              "town": "Sandpoint",
+              "phone": "(208) 449-1940",
+              "category": "Legal",
+              "summary": "Attorney Alison Dunbar serves clients in Idaho, Washington, and Montana, out of her hometown, Sandpoint, Idaho. Dunbar Law specializes in business and real…"
+            },
+            {
+              "name": "ELTC Law Group",
+              "site": "http://eltclawgroup.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-3585",
+              "category": "Legal",
+              "summary": "Denise Stewart is an Elder Law attorney, specializing in areas of Estate Planning, Wills, Asset Preservation Planning, Long Term Care, and Post Death Transfers."
+            },
+            {
+              "name": "Hepler Law & Consulting, PLLC",
+              "site": "http://hepler.legal",
+              "town": "Sandpoint",
+              "phone": "2083042353",
+              "category": "Legal",
+              "summary": "Law firm offering services in the areas of business and real estate law, trusts and estates, conservation law, business consulting, as well as other general…"
+            },
+            {
+              "name": "Hickey Law Firm, PLLC",
+              "site": "http://www.hickeylaw.law",
+              "town": "Sandpoint",
+              "phone": "(208) 810-4849",
+              "category": "Legal",
+              "summary": "Hickey Law Firm provides legal services to Greater Sandpoint and North Idaho."
+            },
+            {
+              "name": "Powell Law Firm, LLC",
+              "site": "https://sandpointlawoffice.com/",
+              "town": "Sandpoint",
+              "phone": "+1-208-263-3531",
+              "category": "Legal",
+              "summary": "Powell Law Firm, LLC is a well established and trusted law firm located in Sandpoint, Idaho since 2000."
+            },
+            {
+              "name": "Sandpoint Law, P.C",
+              "site": "http://www.sandpointlaw.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-4748",
+              "category": "Legal",
+              "summary": "Full Service Law FirmCivil Litigation, Debt Collection, Real Estate, Business Formation, Contracts, Estate Planning, Wills & Trusts, Probate, Criminal Defense…"
+            },
+            {
+              "name": "Todd M. Reed, Attorney",
+              "site": "https://www.toddreedlaw.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-3529",
+              "category": "Legal",
+              "summary": "Todd M. Reed, P.A., is a family law and civil litigation attorney in Sandpoint, Idaho. His practice includes divorce, custody, complex family law matters and…"
+            },
+            {
+              "name": "Wilson Law Firm",
+              "category": "Legal",
+              "summary": "Local business."
+            }
+          ]
+        }
+      ],
+      "n_companies": 43
+    },
+    {
+      "n": 2,
+      "id": "survey",
+      "title": "Site surveys",
+      "kicker": "Lines on paper",
+      "lede": "A pin in a listing photo is not a boundary. Survey, wetlands, and a site plan come before anyone digs.",
+      "info": [
+        "Ask for a recorded survey or budget a new one. Encroachments show up after closing.",
+        "Wetland delineation and floodplain overlays eat building envelope on the bottoms.",
+        "Civil outfits here also do perc holes, road layout, and septic design."
+      ],
+      "offices": [
+        {
+          "name": "Bonner County GIS / maps",
+          "url": "https://www.bonnercountyid.gov/"
+        },
+        {
+          "name": "NRCS Web Soil Survey",
+          "url": "https://websoilsurvey.nrcs.usda.gov/"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Survey and civil",
+          "companies": [
+            {
+              "name": "HMH Engineering",
+              "chamber_page": "https://members.sandpointchamber.org/list/member/hmh-engineering-ponderay-2047",
+              "town": "Ponderay",
+              "phone": "(208) 635-5825",
+              "category": "General Contractors",
+              "summary": "Civil engineering firm serving the Northwest with construction engineering and inspection, design, surveying, and materials testing services."
+            },
+            {
+              "name": "James A. Sewell & Associates, LLC",
+              "site": "http://www.jasewell.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-4160",
+              "category": "Surveying",
+              "summary": "Our firm provides professional services since 1919 with proven results, including: Consulting, Engineering, Land Surveying, Land Use Planning, Wetland…"
+            },
+            {
+              "name": "Ruen-Yeager & Assoc. Inc.",
+              "site": "http://www.ruenyeager.com",
+              "town": "Sandpoint",
+              "phone": "(208) 265-4629",
+              "category": "Restaurants",
+              "summary": "Ruen-Yeager & Assoc. offers Engineering, Planning, and Surveying services throughout the PNW. No matter what the project is, we offer experienced staff…"
+            }
+          ]
+        }
+      ],
+      "n_companies": 3
+    },
+    {
+      "n": 3,
+      "id": "permits",
+      "title": "Zoning and building permits",
+      "kicker": "What you may build",
+      "lede": "R and AF lots around Sandpoint are not the same. Extra dwellings, shops, and a tiny home each have a path — or they do not.",
+      "info": [
+        "Look up zoning on the county map, not the listing adjective.",
+        "A building permit is the county (or the city if you are inside one). Bring the parcel number to the counter.",
+        "Owner-builder has limits. Electrical, plumbing, septic, and well are licensed trades."
+      ],
+      "offices": [
+        {
+          "name": "Bonner County Planning",
+          "url": "https://www.bonnercountyid.gov/departments/Planning"
+        },
+        {
+          "name": "Boundary County",
+          "url": "https://www.boundarycountyid.org/"
+        },
+        {
+          "name": "North Idaho Building Contractors Association",
+          "url": "https://nibca.com/"
+        }
+      ],
+      "groups": [],
+      "n_companies": 0
+    },
+    {
+      "n": 4,
+      "id": "water",
+      "title": "Water and well permits",
+      "kicker": "How the parcel drinks",
+      "lede": "Rural Bonner is wells. The log and a pump test tell you whether a house makes it through August.",
+      "info": [
+        "Pull an IDWR well log for the parcel. A listing that says the area is good is not a log.",
+        "Four GPM can run a house; storage helps. Stock and irrigation want more, and irrigation is a water right.",
+        "A water test and a pump test during inspection are cheap compared to a dry well."
+      ],
+      "offices": [
+        {
+          "name": "IDWR well construction search",
+          "url": "https://idwr.idaho.gov/wells/research/"
+        },
+        {
+          "name": "How to pull a well log",
+          "url": "/g/idwr-well-log"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Well and pump",
+          "companies": [
+            {
+              "name": "American Water Locators",
+              "site": "http://www.americanwaterlocators.com",
+              "town": "Sandpoint",
+              "phone": "(360) 890-1599",
+              "category": "Well & Pump",
+              "summary": "Pre well drilling aquifer survey. We find water before you drill."
+            },
+            {
+              "name": "H20 Well Services",
+              "category": "Well & Pump",
+              "summary": "Local business."
+            }
+          ]
+        }
+      ],
+      "n_companies": 2
+    },
+    {
+      "n": 5,
+      "id": "septic",
+      "title": "Septic and perc",
+      "kicker": "What the ground will take",
+      "lede": "Off city sewer, you are buying a septic system. Creek lots and a high water table can turn a gravity field into a mound.",
+      "info": [
+        "Panhandle Health keeps septic records by section. Start with the parcel number from the assessor.",
+        "A finaled permit and room for a replacement field are the deal, not a tank lid in the grass.",
+        "Drainfields want about 100 feet from wells, and setback from creek or lake. New permit fee in the 2026 guidelines: $1,250."
+      ],
+      "offices": [
+        {
+          "name": "PHD septic permits & records",
+          "url": "https://panhandlehealthdistrict.org/licensing-and-permitting/septic-permits-and-records/"
+        },
+        {
+          "name": "How to pull a septic record",
+          "url": "/g/septic-records-bonner"
+        },
+        {
+          "name": "2026 septic cost bands",
+          "url": "/g/septic-costs-2026"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Excavation and septic",
+          "companies": [
+            {
+              "name": "Selle Valley Construction, Inc.",
+              "site": "http://www.sellevalley.com",
+              "town": "Ponderay",
+              "phone": "(208) 263-1808",
+              "category": "Excavation & Septic",
+              "summary": "Selle Valley Construction understands that the decision to build a custom home is a significant one - one that requires a builder dedicated to uncompromising…"
+            },
+            {
+              "name": "Inovate Septic",
+              "site": "https://inovateseptic.com/",
+              "town": "Priest River",
+              "phone": "(208) 597-3688",
+              "category": "Excavation & Septic",
+              "summary": "Inovate Septic is your trusted, certified contractor providing end-to-end septic service, custom septic system design, septic permitting services, and heavy…"
+            },
+            {
+              "name": "Apex Construction Services",
+              "site": "http://www.apexconstructionservices.com",
+              "town": "Sagle",
+              "phone": "(208) 946-7963",
+              "category": "Excavation & Septic",
+              "summary": "Heavy equipment excavation, Lake and River dock building, Lowboy hauling, Home site preparation, Septic system installations."
+            },
+            {
+              "name": "Dirt X",
+              "site": "https://dirtx.jobbersites.com/",
+              "town": "Sandpoint",
+              "phone": "(208) 920-1933",
+              "category": "Excavation & Septic",
+              "summary": "A local excavation and landscaping company."
+            },
+            {
+              "name": "KG&T Septic Service",
+              "site": "http://www.kgtseptic.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-5110",
+              "category": "Excavation & Septic",
+              "summary": "KG&T Septic Service Your Complete Septic and Excavation ONE STOP SERVICE : Excavation Hydro Jetting S.L.I.P. Camera Inspection Trenchless Pipe Repair Hydro…"
+            },
+            {
+              "name": "Sandpoint Excavation Inc",
+              "site": "http://www.sandpointexcavation.com",
+              "town": "Sandpoint",
+              "phone": "(208) 242-2345",
+              "category": "Excavation & Septic",
+              "summary": "SBA Woman Owned Family Excavation business. We offer building demolition, foundations, septic installation, utility line installations, Cisterns, retaining…"
+            },
+            {
+              "name": "Wilkinson Construction",
+              "site": "http://wilkinson7b.com",
+              "town": "Sandpoint",
+              "phone": "(208) 255-8958",
+              "category": "Excavation & Septic",
+              "summary": "Custom home builder & remodeler in Sandpoint, ID. Full service from excavation through framing, finish carpentry, custom millwork, and outdoor timber…"
+            }
+          ]
+        }
+      ],
+      "n_companies": 7
+    },
+    {
+      "n": 6,
+      "id": "power",
+      "title": "Power to the property",
+      "kicker": "Line, then wire",
+      "lede": "Confirm which utility serves the place before you close. No pole in the photos means a line-extension estimate in writing.",
+      "info": [
+        "This country is Avista, Northern Lights, Inland Power, or none.",
+        "The well pump rides the outage. A generator or battery plan is local common sense.",
+        "Electrical work is licensed. Off-grid still meets code if you pull a building permit."
+      ],
+      "offices": [
+        {
+          "name": "Avista",
+          "url": "https://www.myavista.com/"
+        },
+        {
+          "name": "Northern Lights Inc.",
+          "url": "https://www.nli.coop/"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Utilities",
+          "companies": [
+            {
+              "name": "Northern Lights, Inc",
+              "site": "http://www.nli.coop",
+              "town": "Sagle",
+              "phone": "(208) 263-5141",
+              "category": "Other",
+              "summary": "Services in Sagle."
+            },
+            {
+              "name": "Avista Utilities",
+              "site": "http://www.avistautilities.com",
+              "town": "Sandpoint",
+              "phone": "(208) 265-6956",
+              "category": "Other",
+              "summary": "As one of the lowest emitters of C02 among the nation's energy producers, Avista is among the greenest utilities in the country. But what exactly does being…"
+            }
+          ]
+        },
+        {
+          "label": "Electricians and solar",
+          "companies": [
+            {
+              "name": "North County Electric LLC",
+              "site": "http://www.nceidaho.com",
+              "town": "Sandpoint",
+              "phone": "(208) 255-7980",
+              "category": "Electrical",
+              "summary": "Electrical contracting business specializing in residential, commercial & industrial service & repair. We also sell and install Generac Generators for all your…"
+            },
+            {
+              "name": "Panhandle Electric LLC",
+              "site": "http://www.pnhdlelectric.com",
+              "town": "Sandpoint",
+              "phone": "(208) 627-6639",
+              "category": "Electrical",
+              "summary": "Family-operated electrical contractor based in Sandpoint, ID focused on new build and large remodel commercial and residential electrical projects."
+            },
+            {
+              "name": "Backwoods Solar",
+              "site": "https://backwoodssolar.com/",
+              "phone": "+12082634290",
+              "category": "Electrical",
+              "summary": "Electrical."
+            },
+            {
+              "name": "Clark Electric",
+              "category": "Electrical",
+              "summary": "Electrician."
+            }
+          ]
+        }
+      ],
+      "n_companies": 6
+    },
+    {
+      "n": 7,
+      "id": "site",
+      "title": "Site development",
+      "kicker": "Driveway, pad, rock",
+      "lede": "A two-track is not a driveway. Approach permit, gravel, and a pad you can get a truck onto in March.",
+      "info": [
+        "A new driveway often needs an approach permit from the highway district or ITD.",
+        "Who plows, with what, belongs in writing. The county will not adopt your spur because you asked.",
+        "Rock, crush, and haul are their own bill on timber lots."
+      ],
+      "offices": [
+        {
+          "name": "Idaho 511",
+          "url": "https://511.idaho.gov/"
+        },
+        {
+          "name": "Bonner County",
+          "url": "https://www.bonnercountyid.gov/"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Excavation, gravel, and paving",
+          "companies": [
+            {
+              "name": "Selle Valley Construction, Inc.",
+              "site": "http://www.sellevalley.com",
+              "town": "Ponderay",
+              "phone": "(208) 263-1808",
+              "category": "Excavation & Septic",
+              "summary": "Selle Valley Construction understands that the decision to build a custom home is a significant one - one that requires a builder dedicated to uncompromising…"
+            },
+            {
+              "name": "Apex Construction Services",
+              "site": "http://www.apexconstructionservices.com",
+              "town": "Sagle",
+              "phone": "(208) 946-7963",
+              "category": "Excavation & Septic",
+              "summary": "Heavy equipment excavation, Lake and River dock building, Lowboy hauling, Home site preparation, Septic system installations."
+            },
+            {
+              "name": "Dirt X",
+              "site": "https://dirtx.jobbersites.com/",
+              "town": "Sandpoint",
+              "phone": "(208) 920-1933",
+              "category": "Excavation & Septic",
+              "summary": "A local excavation and landscaping company."
+            },
+            {
+              "name": "Peak Sand & Gravel",
+              "chamber_page": "https://members.sandpointchamber.org/list/member/peak-sand-gravel-915",
+              "town": "Sandpoint",
+              "phone": "(208) 255-2611",
+              "category": "Other",
+              "summary": "Services in Sandpoint."
+            },
+            {
+              "name": "Sandpoint Excavation Inc",
+              "site": "http://www.sandpointexcavation.com",
+              "town": "Sandpoint",
+              "phone": "(208) 242-2345",
+              "category": "Excavation & Septic",
+              "summary": "SBA Woman Owned Family Excavation business. We offer building demolition, foundations, septic installation, utility line installations, Cisterns, retaining…"
+            },
+            {
+              "name": "Wilkinson Construction",
+              "site": "http://wilkinson7b.com",
+              "town": "Sandpoint",
+              "phone": "(208) 255-8958",
+              "category": "Excavation & Septic",
+              "summary": "Custom home builder & remodeler in Sandpoint, ID. Full service from excavation through framing, finish carpentry, custom millwork, and outdoor timber…"
+            },
+            {
+              "name": "Wood's Crushing & Hauling, Inc.",
+              "chamber_page": "https://members.sandpointchamber.org/list/member/wood-s-crushing-hauling-inc-296",
+              "town": "Sandpoint",
+              "phone": "(208) 263-4800",
+              "category": "Concrete & Masonry",
+              "summary": "We have been in business since 1975. We are the only locally owned asphalt paving business in the area. We work in Northern Idaho, Eastern Washington and…"
+            }
+          ]
+        }
+      ],
+      "n_companies": 7
+    },
+    {
+      "n": 8,
+      "id": "house",
+      "title": "House type",
+      "kicker": "New build, prefab, tiny, shop",
+      "lede": "Stick-built, a manufactured or cabin package, a tiny home, or a post-frame shop with living space. Zoning decides which of those you can actually set.",
+      "info": [
+        "New construction is a licensed general contractor and a building permit. Williams Homes has a community off Boyer; others build on your parcel.",
+        "Prefab, portable cedar cabins, and tiny homes still need a legal dwelling path, septic, and power. Ask Planning before you order the unit.",
+        "Post-frame and steel shops are common here. A 40x60 is a permit and a neighbor issue."
+      ],
+      "offices": [
+        {
+          "name": "Bonner County Planning",
+          "url": "https://www.bonnercountyid.gov/departments/Planning"
+        },
+        {
+          "name": "NIBCA",
+          "url": "https://nibca.com/"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Builders",
+          "companies": [
+            {
+              "name": "StanCraft Construction Group",
+              "site": "https://www.stancraftcg.com/",
+              "town": "Ponderay",
+              "phone": "(208) 920-7400",
+              "category": "General Contractors",
+              "summary": "General Contractors in Ponderay."
+            },
+            {
+              "name": "Mountain View Construction",
+              "site": "http://www.mvcsandpoint.com",
+              "town": "Sagle",
+              "phone": "(208) 263-1058",
+              "category": "General Contractors",
+              "summary": "Mountain View Construction has been building homes and friendships in our community for over 30 years. We also specialize in Kitchen and Bath Design, Additions…"
+            },
+            {
+              "name": "Christenson Construction LLC",
+              "site": "http://www.christenson-construction.com",
+              "town": "Sandpoint",
+              "phone": "(208) 255-0985",
+              "category": "General Contractors",
+              "summary": "Christenson Construction is a licensed and insured general contractor serving greater Sandpoint, Idaho. We specialize in building custom homes and major…"
+            },
+            {
+              "name": "Timberstone Woodworks",
+              "site": "http://www.timberstoneww.com",
+              "town": "Sandpoint",
+              "phone": "(208) 946-0602",
+              "category": "General Contractors",
+              "summary": "We’re an experienced and trusted general contractor and custom cabinet shop serving northern Idaho, located in Sandpoint. We’ve been crafting whole home…"
+            },
+            {
+              "name": "Williams Homes",
+              "site": "https://www.williamshomes.com/new-home-communities/sandpoint/base-camp-at-sand-creek",
+              "town": "Sandpoint",
+              "phone": "(208) 494-2266",
+              "category": "General Contractors",
+              "summary": "Home builder with a community in Sandpoint called Base Camp located off of Boyer Rd."
+            },
+            {
+              "name": "Hemlock Home Builders",
+              "site": "https://hemlockhomebuilders.com/",
+              "phone": "+1 208 231 84 66",
+              "category": "General Contractors",
+              "summary": "Local business."
+            }
+          ]
+        },
+        {
+          "label": "Prefab, cabins, and shops",
+          "companies": [
+            {
+              "name": "Steel Structures America, Inc",
+              "site": "http://www,steelstructuresamerica.com",
+              "town": "Sagle",
+              "phone": "208-777-7290",
+              "category": "Other",
+              "summary": "Post frame steel buildings"
+            },
+            {
+              "name": "Portable Cedar Cabins",
+              "category": "Other",
+              "summary": "Local business."
+            }
+          ]
+        },
+        {
+          "label": "Lumber and building supply",
+          "companies": [
+            {
+              "name": "Koverage Building Supply",
+              "site": "https://koveragebuildingsupply.com",
+              "town": "Bonners Ferry",
+              "phone": "+12082673706",
+              "category": "Hardware & Building Supply",
+              "summary": "Building materials in Bonners Ferry."
+            },
+            {
+              "name": "Idaho Forest Group",
+              "site": "http://www.idahoforestgroup.com",
+              "town": "Laclede",
+              "phone": "(208) 263-7574",
+              "category": "Hardware & Building Supply",
+              "summary": "Idaho Forest Group is firmly rooted in the traditions of the Idaho lumber industry, when businesses gave their word and stood behind every product We continue…"
+            },
+            {
+              "name": "Selkirk Ace Hardware",
+              "town": "Oldtown",
+              "phone": "+1 208-437-5669",
+              "category": "Hardware & Building Supply",
+              "summary": "Doityourself in Oldtown."
+            },
+            {
+              "name": "Tamrak Hardware Store",
+              "town": "Priest Lake",
+              "phone": "+1-208-443-6575",
+              "category": "Hardware & Building Supply",
+              "summary": "Hardware in Priest Lake."
+            },
+            {
+              "name": "Priest River Ace Hardware",
+              "site": "https://www.acehardware.com/store-details/12208",
+              "town": "Priest River",
+              "phone": "+1-208-448-1621",
+              "category": "Hardware & Building Supply",
+              "summary": "Doityourself in Priest River."
+            },
+            {
+              "name": "Badger Building Center",
+              "site": "http://www.badgerbuilding.com/sagle-idaho/",
+              "town": "Sagle",
+              "phone": "+1-208-263-0253",
+              "category": "Hardware & Building Supply",
+              "summary": "Trade in Sagle."
+            },
+            {
+              "name": "Sandpoint Super Drug / Hardware",
+              "site": "http://www.sandpointsuperdrug.com",
+              "town": "Sandpoint",
+              "phone": "(208) 818-1332",
+              "category": "Hardware & Building Supply",
+              "summary": "Hardware & Building Supply in Sandpoint."
+            },
+            {
+              "name": "Old West Hardware",
+              "category": "Hardware & Building Supply",
+              "summary": "Hardware."
+            },
+            {
+              "name": "Stimson Lumber Newport Office",
+              "category": "Hardware & Building Supply",
+              "summary": "Local business."
+            }
+          ]
+        }
+      ],
+      "n_companies": 17
+    },
+    {
+      "n": 9,
+      "id": "plumb",
+      "title": "Plumbing",
+      "kicker": "House to septic, house to well",
+      "lede": "The well and the tank are useless until someone runs the pipe and sets the pressure tank inside the frost line.",
+      "info": [
+        "Licensed plumbing. Owner-builder has limits.",
+        "Heat on the well house or a pit-less adapter plan, or you will learn that in February."
+      ],
+      "offices": [],
+      "groups": [
+        {
+          "label": "Plumbers",
+          "companies": [
+            {
+              "name": "A Plumber",
+              "site": "http://theplumberid.com",
+              "town": "Sandpoint",
+              "phone": "(208) 946-6387",
+              "category": "Plumbing",
+              "summary": "We are service, repair, and remodel plumbers with many years of experience"
+            },
+            {
+              "name": "Aqua Plumbing",
+              "site": "http://aquaplumbingid.com",
+              "town": "Sandpoint",
+              "phone": "(208) 265-2782",
+              "category": "Plumbing",
+              "summary": "Plumbing Service, repairs, maintenance - residential & business."
+            },
+            {
+              "name": "Believe Plumbing",
+              "site": "https://callbelieveplumbing.com",
+              "town": "Sandpoint",
+              "phone": "(208) 690-4948",
+              "category": "Plumbing",
+              "summary": "We are a local, family-owned plumbing company serving our North Idaho neighbors with professionalism, upfront pricing, and same-day service. Unbelievably great…"
+            },
+            {
+              "name": "Northstar Plumbing",
+              "category": "Plumbing",
+              "summary": "Plumber."
+            }
+          ]
+        }
+      ],
+      "n_companies": 4
+    },
+    {
+      "n": 10,
+      "id": "heat",
+      "title": "Heat, wood, and propane",
+      "kicker": "When the line dies",
+      "lede": "Heat here is wood, propane, electric, or a mix. The well pump and a freezer need a plan for the outage.",
+      "info": [
+        "A propane tank set needs setbacks from the house and the property line. The fire district cares.",
+        "We do not have a dedicated propane dealer in the directory. Ask who delivers on your road, then confirm the tank set yourself.",
+        "Dry wood, or a delivery account. Town is often 60–70 inches. Schweitzer is another climate."
+      ],
+      "offices": [],
+      "groups": [
+        {
+          "label": "Heating and cooling",
+          "companies": [
+            {
+              "name": "AGE Heating and Cooling",
+              "chamber_page": "https://members.sandpointchamber.org/list/member/age-heating-and-cooling-3073",
+              "town": "Sandpoint",
+              "phone": "(208) 603-2210",
+              "category": "Heating & A/C",
+              "summary": "Heating & A/C in Sandpoint."
+            },
+            {
+              "name": "All About Chimneys",
+              "category": "Chimney",
+              "summary": "Chimney sweeper."
+            },
+            {
+              "name": "Rob´s Heating & Cooling",
+              "category": "Heating & A/C",
+              "summary": "Hvac."
+            }
+          ]
+        }
+      ],
+      "n_companies": 3
+    },
+    {
+      "n": 11,
+      "id": "shell",
+      "title": "Roof, windows, insulation",
+      "kicker": "Close it in",
+      "lede": "Snow load is real. A cabin package still needs a roof that will hold it and insulation that matches the winter you actually get.",
+      "info": [
+        "Ask for snow-load numbers, not a coastal spec.",
+        "Spray foam and cellulose show up on timber builds. Condensation in a tight house is a local conversation."
+      ],
+      "offices": [],
+      "groups": [
+        {
+          "label": "Roofing, glass, insulation",
+          "companies": [
+            {
+              "name": "Dryvest, Inc.",
+              "site": "http://www.dryvest.com",
+              "town": "Ponderay",
+              "phone": "(208) 758-5221",
+              "category": "Roofing",
+              "summary": "Dryvest, Inc. offers custom roofing, siding, and general contracting services. A Dryvest is an efficient building envelope. Dryvest, Inc. advocates a company…"
+            },
+            {
+              "name": "AirSeal Insulation",
+              "chamber_page": "https://members.sandpointchamber.org/list/member/airseal-insulation-3197",
+              "town": "Sandpoint",
+              "phone": "(208) 263-4421",
+              "category": "Insulation",
+              "summary": "Providing high-quality spray foam insulation since 2002, we specialize in long-lasting, energy-efficient solutions. Our expert team ensures top-tier customer…"
+            },
+            {
+              "name": "SkyRight Roofing and Gutters",
+              "site": "https://skyright.com",
+              "town": "Sandpoint",
+              "phone": "1-208-597-0101",
+              "category": "Roofing",
+              "summary": "SkyRight Roofing and Gutters provides residential and commercial roofing, roof repair, replacement, gutters, and inspections in Sandpoint, Coeur d’Alene, Post…"
+            },
+            {
+              "name": "Apex Roofing",
+              "site": "https://www.apex-roofing.com/spokane",
+              "town": "Spokane Valley",
+              "phone": "(509) 779-6774",
+              "category": "Roofing",
+              "summary": "Apex Roofing serves the Inland Northwest (Spokane, WA, and surrounding areas) with residential and commercial roofing, gutter installation, and storm damage…"
+            },
+            {
+              "name": "Rival Roofing",
+              "phone": "+1 208 6106653",
+              "category": "Roofing",
+              "summary": "Roofer."
+            }
+          ]
+        }
+      ],
+      "n_companies": 5
+    },
+    {
+      "n": 12,
+      "id": "mail",
+      "title": "Mailbox and address",
+      "kicker": "How mail finds you",
+      "lede": "A rural parcel does not automatically get a mailbox. You need an address from the county, then a box the carrier will actually stop at.",
+      "info": [
+        "Bonner County Planning assigns addresses. USPS decides the box style and location.",
+        "Cluster boxes are common on private spurs. A roadside box needs a pull-out the plow will not bury.",
+        "The UPS Store in Sandpoint rents boxes if the carrier will not come up your road yet."
+      ],
+      "offices": [
+        {
+          "name": "Find a USPS location",
+          "url": "https://tools.usps.com/find-location.htm"
+        },
+        {
+          "name": "Bonner County Planning (addressing)",
+          "url": "https://www.bonnercountyid.gov/departments/Planning"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Mailbox rental and shipping",
+          "companies": [
+            {
+              "name": "The UPS Store",
+              "site": "https://locations.theupsstore.com/id/sandpoint/217-cedar-st",
+              "town": "Sandpoint",
+              "phone": "(208) 263-0261",
+              "category": "Marketing & Design",
+              "summary": "Shipping and packaging, retail packaging supplies, mailbox rentals, printing and copy services, graphic design services, notary, fax"
+            }
+          ]
+        }
+      ],
+      "n_companies": 1
+    },
+    {
+      "n": 13,
+      "id": "grounds",
+      "title": "Landscaping and trees",
+      "kicker": "After the mud",
+      "lede": "Defensible space is insurance, not aesthetics. Lawn, beds, and a timber thin are separate jobs.",
+      "info": [
+        "This region burns. A timber lot without a break is winter wood and a July problem.",
+        "Burn restrictions change with the season. IDL and the fire district set those, not the landscaper."
+      ],
+      "offices": [
+        {
+          "name": "IDL fire information",
+          "url": "https://www.idl.idaho.gov/fire-management/"
+        },
+        {
+          "name": "Regional fire map",
+          "url": "/situation"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Landscape, lawn, and trees",
+          "companies": [
+            {
+              "name": "Grindstone Property Professionals",
+              "site": "https://grindstonepropertyprofessionals.com/",
+              "town": "Laclede",
+              "phone": "(208) 679-6160",
+              "category": "Landscaping",
+              "summary": "we do landscape and hardscape"
+            },
+            {
+              "name": "Northern Lawn Service, LLC",
+              "site": "http://www.northernlawnservice.com",
+              "town": "Sagle",
+              "phone": "(208) 329-5582",
+              "category": "Landscaping",
+              "summary": "Northern Lawn Service, LLC is a family-owned business, specializing in lawn mowing, lawn maintenance, property cleanups, edging, trimming, and reliable…"
+            },
+            {
+              "name": "Peck Landscape Supplies and Farm Store",
+              "category": "Landscaping",
+              "summary": "Hardware."
+            }
+          ]
+        }
+      ],
+      "n_companies": 3
+    },
+    {
+      "n": 14,
+      "id": "winter",
+      "title": "Insurance and the first winter",
+      "kicker": "Stay in the house",
+      "lede": "Ask a local agent if the address is insurable before you waive inspection. January is the test, not the showing.",
+      "info": [
+        "Real winter tires. A plow plan in writing. Heat on the well pump.",
+        "A week of food and a way to cook it if the power dies.",
+        "Healthcare, including labor and delivery, is thinner than a metro. Bonner General first; Spokane or Coeur d’Alene for a lot of specialty care."
+      ],
+      "offices": [
+        {
+          "name": "Regional info (outages, lake, fire)",
+          "url": "/situation"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Insurance",
+          "companies": [
+            {
+              "name": "Alliant Insurance Services",
+              "site": "http://www.alliant.com",
+              "town": "Ponderay",
+              "phone": "(208) 263-2169",
+              "category": "Insurance",
+              "summary": "With a history dating back to 1925, Alliant Insurance Services is one of the nation’s leading distributors of diversified insurance products and services."
+            },
+            {
+              "name": "Farmers insurance Tristan Neitzke Agency",
+              "site": "https://agents.farmers.com/id/ponderay/tristan-neitzke/",
+              "town": "Ponderay",
+              "phone": "(208) 265-4562",
+              "category": "Insurance",
+              "summary": "We are a Farmers insurance Agency who has been serving the greater sandpoint area for over 30 years. We specailize in personal lines such as Home, Auto, life…"
+            },
+            {
+              "name": "Speakman Insurance Agency - Farm Bureau Insurance",
+              "site": "https://speakmaninsuranceagency.com/",
+              "town": "Ponderay",
+              "phone": "(208) 627-7799",
+              "category": "Insurance",
+              "summary": "Insuring the North Idaho Way of Life with Idaho Specific Insurance. Providing access to Idaho Farm Bureau Insurance for Idaho businesses and residents."
+            },
+            {
+              "name": "Kendon Perry Farm Bureau Insurance & Financial Services",
+              "site": "http://  www.idfbins",
+              "town": "Sandpoint",
+              "phone": "(208) 265-5895",
+              "category": "Insurance",
+              "summary": "Personal & Business Insurance, Life, Health, Long-Term Care and Disability, Income Insurance as well as Financial Planning."
+            },
+            {
+              "name": "Taylor Insurance, Inc.",
+              "site": "http://www.taylorinsurancesandpoint.com",
+              "town": "Sandpoint",
+              "phone": "(208) 263-2708",
+              "category": "Insurance",
+              "summary": "A family owned and operated company since the mid-80s, we are small enough to know you by name and give the superior customer service you want, and large…"
+            }
+          ]
+        },
+        {
+          "label": "Tires and snow",
+          "companies": [
+            {
+              "name": "Gene's O K Tire Store",
+              "town": "Bonners Ferry",
+              "category": "Tires",
+              "summary": "Tyres in Bonners Ferry."
+            },
+            {
+              "name": "JB's Tire and Automotive",
+              "phone": "+1-208-267-2411",
+              "category": "Tires",
+              "summary": "Tyres."
+            },
+            {
+              "name": "Perfection Tire Company",
+              "category": "Tires",
+              "summary": "Car repair."
+            }
+          ]
+        }
+      ],
+      "n_companies": 8
+    }
+  ],
+  "hs_n_companies": 104,
+  "hs_biz_updated": "2026-11-17",
+  "hs_region": "Bonner and Boundary counties — Sandpoint, Sagle, Ponderay, Dover, Priest River, Clark Fork, Hope, Coolin, Bonners Ferry.",
+  "hs_disclaimer": "Not legal advice, not a perc test, not a listing service. Public records and local trades. Confirm with PHD, IDWR, the county, and a licensed outfit before you write a check."
+}

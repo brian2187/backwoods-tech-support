@@ -6,12 +6,14 @@
   <title>Who's looking — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=62">
+  <link rel="stylesheet" href="static/theme.css?v=63">
   
 </head>
 <body class="look">
 
-  
+  <div class="alert-bar" id="alert-bar" hidden>
+    <a href="situation.html" id="alert-bar-link"></a>
+  </div>
   <header class="bar">
     <nav class="bar-nav" aria-label="Primary">
   
@@ -43,7 +45,7 @@
     </div>
     
     
-<p class="meta">5 public asks in 90 days · pulled 2026-11-17T14:33:08Z. Public asks only. Facebook groups and Craigslist hold most of the traffic; we cannot read those privately. Date, trade, and local companies that could take the work. We do not sell your number.</p>
+<p class="meta" id="look-meta">5 public asks in 90 days · pulled 2026-11-17T14:33:08Z. Public asks only. Facebook groups and Craigslist hold most of the traffic; we cannot read those privately. Date, trade, and local companies that could take the work. We do not sell your number.</p>
 
 <section class="look-where">
   <h2 class="section-title">Where people look</h2>
@@ -359,6 +361,7 @@
   <p class="meta dir-count" id="look-count"></p>
 </div>
 
+<div id="look-days">
 
 
 <section class="look-day" data-day="2026-11-16">
@@ -592,9 +595,10 @@
 </section>
 
 
+</div>
 
 <p class="meta dir-foot">Pointers only. The original stays with the publisher. We do not invent a post, a website, or a phone number.</p>
-<script src="static/looking.js?v=1"></script>
+<script src="static/looking.js?v=2"></script>
 
   </main>
   <footer class="site">
@@ -608,8 +612,10 @@
       <a href="disclosure.html">Disclosure</a>
       <a href="situation.html">Regional Info</a>
       <a href="feeds.html">Live cameras</a>
+      <span class="live-stamp" id="live-stamp"></span>
     </div>
   </footer>
 
+<script src="static/live.js?v=1"></script>
 </body>
 </html>

@@ -6,12 +6,14 @@
   <title>Small biz — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=62">
+  <link rel="stylesheet" href="static/theme.css?v=63">
   
 </head>
 <body class="sbiz">
 
-  
+  <div class="alert-bar" id="alert-bar" hidden>
+    <a href="situation.html" id="alert-bar-link"></a>
+  </div>
   <header class="bar">
     <nav class="bar-nav" aria-label="Primary">
   
@@ -43,7 +45,7 @@
     </div>
     
     
-<p class="meta">4 filings this week · 4 stories · 7 upcoming · pulled 2026-11-17T17:54:47Z. Kootenai County small-business feeds from Kcounty.Media. Weekly filings come from the Market Narc New Business List and county records; the list refreshes Mondays. Stories are drafted and published by a person. Originals stay on the publisher. Who shows up stays Bonner and Boundary.</p>
+<p class="meta" id="sb-meta">4 filings this week · 4 stories · 7 upcoming · pulled 2026-11-17T17:54:47Z. Kootenai County small-business feeds from Kcounty.Media. Weekly filings come from the Market Narc New Business List and county records; the list refreshes Mondays. Stories are drafted and published by a person. Originals stay on the publisher. Who shows up stays Bonner and Boundary.</p>
 
 <section class="look-where">
   <h2 class="section-title">Where this comes from</h2>
@@ -109,7 +111,8 @@
 
 <section class="sb-block">
   <h2 class="section-title">New this week</h2>
-  <p class="hint">Nov 10 to 16. Public licenses and filings. The list refreshes Mondays. A filing under a person's own name is not shown.</p>
+  <p class="hint" id="sb-openings-hint">Nov 10 to 16. Public licenses and filings. The list refreshes Mondays. A filing under a person's own name is not shown.</p>
+  <div id="sb-openings-body">
   
   <div class="sb-table">
     
@@ -152,11 +155,13 @@
   </div>
   <p class="meta"><a href="https://kcounty.media/business/new-this-week/" rel="noopener" target="_blank">Full list on Kcounty.Media</a></p>
   
+  </div>
 </section>
 
 <section class="sb-block">
   <h2 class="section-title">Business calendar</h2>
   <p class="hint">Hiring, job-search workshops, food and drink, and other business-tagged events from the Kcounty.Media calendar. Shows and concerts stay on Calendar.</p>
+  <div id="sb-events-body">
   
   <div class="sb-table">
     
@@ -239,11 +244,13 @@
     
   </div>
   
+  </div>
 </section>
 
 <section class="sb-block">
   <h2 class="section-title">Business stories</h2>
   <p class="hint">Kcounty.Media RSS, business section only. Sports, crime blotter, and empty widgets stay off this page.</p>
+  <div id="sb-stories-body">
   
   
   <article class="look-card">
@@ -299,6 +306,7 @@
   </article>
   
   
+  </div>
 </section>
 
 <p class="meta dir-foot">Kcounty.Media Real estate, People on the move, and By the numbers widgets are empty, so those stay off this page. Land listings are on Homestead. We do not clone their event-submit form.</p>
@@ -315,8 +323,10 @@
       <a href="disclosure.html">Disclosure</a>
       <a href="situation.html">Regional Info</a>
       <a href="feeds.html">Live cameras</a>
+      <span class="live-stamp" id="live-stamp"></span>
     </div>
   </footer>
 
+<script src="static/live.js?v=1"></script>
 </body>
 </html>

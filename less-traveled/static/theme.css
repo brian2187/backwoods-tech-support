@@ -175,6 +175,8 @@ footer.site {
 footer.site .wrap { padding-top: 0; padding-bottom: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; }
 footer.site a { color: var(--mute); text-decoration: none; }
 footer.site a:hover { color: var(--pine); }
+.live-stamp { color: var(--mute); }
+.live-stamp.is-live { color: var(--pine); }
 
 .alert-bar {
   background: var(--pine);

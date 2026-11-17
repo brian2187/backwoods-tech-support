@@ -359,4 +359,18 @@
 
   const hash = (location.hash || "").replace(/^#/, "");
   if (hash) selectCam(decodeURIComponent(hash), true);
+
+  window.LT_setCameras = function (rows) {
+    if (!Array.isArray(rows) || !rows.length) return;
+    cameras.splice(0, cameras.length);
+    rows.forEach((c) => cameras.push(c));
+    renderList();
+    if (selected) {
+      const cam = cameras.find((c) => c.id === selected);
+      if (cam) {
+        if (condEl) condEl.innerHTML = wxLine(cam);
+        if (cam.image && cam.kind !== "youtube") showStill(cam.image);
+      }
+    }
+  };
 })();

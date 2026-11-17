@@ -1,8 +1,41 @@
 {
-  "updated": "2026-11-17T14:32:00Z",
+  "updated": "2026-11-17T18:21:50Z",
   "days": 90,
   "note": "Local goings-on as they are reported and discussed in the news, on Facebook, X, Reddit, and other public posts. Short notes only; the original stays with the publisher. Facebook groups do not offer a public feed, so those show up when the same talk is on the open web.",
   "items": [
+    {
+      "id": "x-2122727826889785376",
+      "title": "Sandpoint shoreline and old land claims",
+      "summary": "Relatives owned shoreline in Sandpoint, Idaho. Asking what the process would be for an old sale.",
+      "link": "https://x.com/DavidLe1998381/status/2122727826889785376",
+      "source": "X",
+      "kind": "x",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "@DavidLe1998381",
+      "when": "2026-11-17T16:25:26Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794932726.0
+    },
+    {
+      "id": "x-2122703963816652951",
+      "title": "Sandpoint and Coeur d'Alene versus Spokane",
+      "summary": "Downtown Coeur d'Alene, Post Falls and Sandpoint compared with Spokane.",
+      "link": "https://x.com/dan3196/status/2122703963816652951",
+      "source": "X",
+      "kind": "x",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint",
+        "Coeur d'Alene"
+      ],
+      "author": "@dan3196",
+      "when": "2026-11-17T14:50:37Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794927037.0
+    },
     {
       "id": "db04e978bfbdac55",
       "title": "PREP GIRLS BASKETBALL: Nov. 16, 2026",
@@ -164,6 +197,54 @@
       "when_ts": 1794902400.0
     },
     {
+      "id": "1675dab936f1724c",
+      "title": "Boundary County gets passing grade on annual audit",
+      "summary": "From Bonners Ferry Herald.",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSl9ZQ1d4UDhIZUJmbHZUNHJjTmtHRWVueGZFNVVWSC1lT19fVFUxRUpGbkRTeHhiQVRJZXRpV1Z5eUJiOXhBdDduU2xYLXhaUFVPWjA1eERYNmY3SHllaUh3aUdxTER3UUJ0UFo4ZHh6ckJ1VmJXeVFDNEZLNmEwZy1NTWlqUWpnQlhKRXQ0YXlHaHczeXNFTVRnWjluMjNu?oc=5",
+      "source": "Bonners Ferry Herald",
+      "kind": "news",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
+      ],
+      "author": "",
+      "when": "2026-11-17T07:11:35Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794899495.0
+    },
+    {
+      "id": "x-2122576012802248736",
+      "title": "Multiple fires in Sagle",
+      "summary": ", ID tonight.",
+      "link": "https://x.com/WingoSmith84/status/2122576012802248736",
+      "source": "X",
+      "kind": "x",
+      "area": "Sagle",
+      "areas": [
+        "Sagle"
+      ],
+      "author": "@WingoSmith84",
+      "when": "2026-11-17T06:22:11Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794896531.0
+    },
+    {
+      "id": "x-2122573276610527468",
+      "title": "Christmas craft show this weekend in Sandpoint",
+      "summary": "Books at a Christmas craft show this weekend. Stop by if you are near Sandpoint, ID this Sat and Sun.",
+      "link": "https://x.com/StorytellerGRL/status/2122573276610527468",
+      "source": "X",
+      "kind": "x",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "@StorytellerGRL",
+      "when": "2026-11-17T06:11:19Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794895879.0
+    },
+    {
       "id": "70b7fd1467f77356",
       "title": "Coeur d'Alene Police Department respond to report of possible explosive on Belmont Street",
       "summary": "From NonStop Local KHQ.",
@@ -260,6 +341,22 @@
       "when_ts": 1794884040.0
     },
     {
+      "id": "x-2122509790945456399",
+      "title": "Bonners Ferry police K-9 program",
+      "summary": "Ava Wion dreamed of becoming a police K-9 handler. The Bonners Ferry officer is on the cusp of making that a reality.",
+      "link": "https://x.com/KREM2/status/2122509790945456399",
+      "source": "X",
+      "kind": "x",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
+      ],
+      "author": "@KREM2",
+      "when": "2026-11-17T01:59:03Z",
+      "when_short": "Nov 17, 2026",
+      "when_ts": 1794880743.0
+    },
+    {
       "id": "a0ce608afffe0fc2",
       "title": "Handel’s Messiah in Sandpoint",
       "summary": "From The Spokesman-Review.",
@@ -274,6 +371,38 @@
       "when": "2026-11-16T22:38:38Z",
       "when_short": "Nov 16, 2026",
       "when_ts": 1794868718.0
+    },
+    {
+      "id": "6b60b98f132a8eeb",
+      "title": "Bonner County Road & Bridge along with Bonner County Sheriff's Office are requesting assistance seeking any information on these two individuals in the Blanchard area. If you have ",
+      "summary": "Bonner County Road & Bridge along with Bonner County Sheriff's Office are requesting assistance seeking any information on these two individuals in the Blanchard area. If you have",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRWNFRTFRWGJWd0dtTlNoLW5VUmozeE9tSU55WG43VlZ4d2R5R1lxLXNxNUVFTnNkZHBVN0FBMllwSDY0ZGZiY1NJUm1jOVlMaG5ibGlOOWdDa3NqTUZSaS0zQjcxdWN1WUJYZEtuejl6OVNEdjZoVkgtMVFnYlVCd0lLWHJUblR0SUpWX3pzNFBCUldZdklSb0JiNHdNX2hsS3phNzV0cHcwaTZJZTBmdnA0WVptRlVZczF6c21HdmxCTlluWGFtdnhzUkZTS1RCeEw5NzY3MnJVUnFzQ2c?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "area": "Spirit Lake",
+      "areas": [
+        "Spirit Lake"
+      ],
+      "author": "",
+      "when": "2026-11-16T22:09:32Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794866972.0
+    },
+    {
+      "id": "x-2122451574324863428",
+      "title": "Wells Fargo in Sandpoint and Pend Oreille data centers",
+      "summary": "Data centers in Pend Oreille County, Wash. Wells Fargo in Sandpoint had not heard of an outage.",
+      "link": "https://x.com/IdahoRockyMtns/status/2122451574324863428",
+      "source": "X",
+      "kind": "x",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "@IdahoRockyMtns",
+      "when": "2026-11-16T22:07:43Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794866863.0
     },
     {
       "id": "510c56fd67aa353d",
@@ -306,6 +435,54 @@
       "when": "2026-11-16T21:17:00Z",
       "when_short": "Nov 16, 2026",
       "when_ts": 1794863820.0
+    },
+    {
+      "id": "249864cf7b11338b",
+      "title": "Schweitzer. . Schweitzer 🫶 Sandpoint Did someone say free stuff? That's right, Schweitzer is hosting a Scavenger Hunt in Sandpoint on Saturday, November 21, where you can win some ",
+      "summary": "Schweitzer. . Schweitzer 🫶 Sandpoint Did someone say free stuff? That's right, Schweitzer is hosting a Scavenger Hunt in Sandpoint on Saturday, November 21, where you can win some",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSVR5NnBUdU1IbkJVRjFJbzFzd3hYLWlEV011LUtRTHkwekdsVlpkSUE5VzRmQTlxZTdOYnNrTFMzUS1LNFI0SkxPQ1NtVHJvY0RYSFZtdF92Z0hQSHBzcV9vOF9wZWdLWXRIc1BIaUNzOG5hSk1jdmEzTTBFRzVCUkVNak1EQVJScjhXYjVB?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-16T15:00:32Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794841232.0
+    },
+    {
+      "id": "x-2122330255591674259",
+      "title": "Garage floor in Sagle",
+      "summary": "Concrete coating job in Sagle, Idaho.",
+      "link": "https://x.com/CrocCoatings/status/2122330255591674259",
+      "source": "X",
+      "kind": "x",
+      "area": "Sagle",
+      "areas": [
+        "Sagle"
+      ],
+      "author": "@CrocCoatings",
+      "when": "2026-11-16T14:05:38Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794837938.0
+    },
+    {
+      "id": "x-2122306535145496859",
+      "title": "Inland Forest Management of Sandpoint on a Forest Service fire contract",
+      "summary": "Inland Forest Management of Sandpoint billed fire suppression work on the Bear Trap Fire in Minnesota.",
+      "link": "https://x.com/qaggnews/status/2122306535145496859",
+      "source": "X",
+      "kind": "x",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "@qaggnews",
+      "when": "2026-11-16T12:31:23Z",
+      "when_short": "Nov 16, 2026",
+      "when_ts": 1794832283.0
     },
     {
       "id": "8dee1c5462540f09",
@@ -468,6 +645,22 @@
       "when_ts": 1794784535.0
     },
     {
+      "id": "b3015711f0a05226",
+      "title": "Bonners Ferry Chamber of Commerce updated their status.",
+      "summary": "From Facebook.",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9fNk9GUUMxOWdGTUZfSkJwX0doUjBpQnNnZGRMTnFnVHFJamhrMG5yVDdrbEJfZnRpNVZxekx6aUxkSHdTZ01mVWlKZW0zRGltSUIzUFY5bnN5YUpMd2FsMlhSdmFKcU56RlE?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
+      ],
+      "author": "",
+      "when": "2026-11-15T23:15:12Z",
+      "when_short": "Nov 15, 2026",
+      "when_ts": 1794784512.0
+    },
+    {
       "id": "480fcd69afb60a3c",
       "title": "Highland vs. Coeur d'Alene football state semifinal gallery",
       "summary": "From Idaho State Journal.",
@@ -567,7 +760,7 @@
       "id": "74f26749ef8a765f",
       "title": "There’s a beautiful place nestled in Bonners Ferry Idaho",
       "summary": "the North Haven campground. It was the perfect basecamp for all the adventures in the mountains and along the rivers nearby! #uniquestays #Idaho #BonnersFerryID #mountainlife Facebook",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPdF9qZFlSbXpvV1VHNFRfYlllT2pTNXpXaHE3YlF2Z3JIekxUSm55Y2ZLWl9Nd2FsdVhYVHlWQk1aOS03alBlbXktR1luS3IzVklQV1ZkdWZIVUZtcU45Z3JzdFZ5UlRpTEFtUURVNmlhZXdJY3RPN1pPQnppYWlGQVB2dGVCZXJmeGRPbFNZRXg3SU1US3p5dDVtODFBTHdhbVV5ajFLa05zQ1lvd0ViTklPVkVUQUJmLWhIOFdHb1ZVdkt4N3B5Qm5LQjhqY1V5YS0zMDM4NmhxbHhzcng5T25WQXQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNekcxeFVGR25UZzFvV2g0UGNCOFQ4M1lpOEZ1eTh1THpCUnF6VHY4TV9lbjdLZGg1eEV6SFNTS3pWZkRqdWFGYmFHX3BQYUdXYzNlTHlSdXFoOW8tZjY2bVNUNmprcE5feGhZOHdIMjdldE9Vd3R1bmdNbTRsTkdDd0wzaThRN05OQ2RrcUdsMnZxY0VKeG1keEJyRGlmMzVfMUpmdXFoTnJ1MnFycU1lRzlxbDVzSDRSbHQyM2NKbzZEc1BGQllSbi1tM3NwbXhURFZSNlJGSzRzcGhsT0NLWGRtejlIZw?oc=5",
       "source": "Facebook",
       "kind": "facebook",
       "area": "Bonners Ferry",
@@ -575,9 +768,9 @@
         "Bonners Ferry"
       ],
       "author": "",
-      "when": "2026-11-15T16:42:55Z",
+      "when": "2026-11-15T16:39:30Z",
       "when_short": "Nov 15, 2026",
-      "when_ts": 1794760975.0
+      "when_ts": 1794760770.0
     },
     {
       "id": "0d99309a0eed5e78",
@@ -1927,6 +2120,23 @@
       "when_ts": 1794500546.0
     },
     {
+      "id": "8421d09772388fd8",
+      "title": "Five Kootenai County mayors walked for grant money in October",
+      "summary": "The mayors of Dalton Gardens, Fernan Lake Village, Hayden, Rathdrum and Spirit Lake took part in a statewide step challenge that pays cities $500 or $1,000.",
+      "link": "https://kcounty.media/story/five-kootenai-county-mayors-walked-for-grant-money-in-october-daeab9d1/",
+      "source": "Kcounty.Media",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene",
+        "Spirit Lake"
+      ],
+      "author": "Anthony V. Esposito",
+      "when": "2026-11-12T16:22:25Z",
+      "when_short": "Nov 12, 2026",
+      "when_ts": 1794500545.0
+    },
+    {
       "id": "726bd0ffb70cf1e2",
       "title": "Bonners Ferry vs St. Maries",
       "summary": "Boys Junior Varsity Basketball 01/19/2027 | Live & On Demand NFHS Network",
@@ -2423,6 +2633,22 @@
       "when_ts": 1794444544.0
     },
     {
+      "id": "0a02f1be3bb14a9f",
+      "title": "Every hometown holiday has a story. Ours has an entire village. 🎄 Somewhere in Sandpoint, a tree is being dreamed up, a classroom is planning a gingerbread masterpiece, and downtow",
+      "summary": "Every hometown holiday has a story. Ours has an entire village. 🎄 Somewhere in Sandpoint, a tree is being dreamed up, a classroom is planning a gingerbread masterpiece, and downtow",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOU3lLa3c1Z3hxM1Nnb2xoRXllczhWR09Sd2dxUGRDR1NLa1cxTFBlczJxMzBDT1VVOEdjSXNfY2dEanpCd2dmYnlST05yTlM5SzRjNkNkZVU3eVBYVXNjYjFKeE9sMHB6R3M1NFJIZDNmZHlyemRUWVBKd045TmxJSjVJOHZyZXdHVjByUnFQTGxEMUp2dEY1SGZfZnA4cmtzR0ZMa2dMdDJPR082UERwVDE1RU9peXNSZWNETXp0N1hRcFpVX2libDZsRmoxVWdvOEppWTI1VzBra3I1aU5NQ2VrYllhN01pZUxqeA?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-12T00:48:23Z",
+      "when_short": "Nov 12, 2026",
+      "when_ts": 1794444503.0
+    },
+    {
       "id": "18ea76b0543b8c06",
       "title": "Flying high in North Idaho",
       "summary": "From Sandpoint Reader.",
@@ -2645,6 +2871,23 @@
       "when": "2026-11-11T16:20:16Z",
       "when_short": "Nov 11, 2026",
       "when_ts": 1794414016.0
+    },
+    {
+      "id": "42706982c5d9b3ab",
+      "title": "Wine at home: North Idaho’s own tasting rooms",
+      "summary": "You don’t have to leave Kootenai County to taste local wine. Four places to start, from Sherman Avenue to Sandpoint.",
+      "link": "https://kcounty.media/story/wine-at-home-north-idahos-own-tasting-rooms-d24e25ef/",
+      "source": "Kcounty.Media",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene",
+        "Sandpoint"
+      ],
+      "author": "Kcounty.Media",
+      "when": "2026-11-11T15:29:40Z",
+      "when_short": "Nov 11, 2026",
+      "when_ts": 1794410980.0
     },
     {
       "id": "fc198e20b2c481e0",
@@ -3195,6 +3438,23 @@
       "when_ts": 1794211200.0
     },
     {
+      "id": "e7ddb54dcc82b2f5",
+      "title": "Now Hiring in Bonners Ferry & Sandpoint 💛 Some of the most meaningful work happens quietly, at the bedside and behind the scenes. Auburn Crest Hospice is growing our North Idaho te",
+      "summary": "Now Hiring in Bonners Ferry & Sandpoint 💛 Some of the most meaningful work happens quietly, at the bedside and behind the scenes. Auburn Crest Hospice is growing our North Idaho te",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQekdpclE4Y3dxMFM5MDZhVXp4aGZqWjgtSUFDM3p6ZmZGTEJCZVRoVUlieGRoakk2MzEyZ2Z1UGdLTzFQS0FSWHZ2R0JpTlp6YWFRSzBueUV0ZV80ZDE4WGVoRFFFYTAtc3NIRHZEbkY0cllIaEozUWZQZG9HVElsWTJldXRqcG9Hc1RtTWg0d0ZWbUd6a3BFNmh2Vl93TGFqbjMxb3dweEFwZnAtcGJNdHpaN0hwX1c2MHh5WWM4cXQ2WjNQY2ZvalpyWkh4YnhhT21WUUFxc3Q4WXc2WXZvdGdtaE1HSVBJNmd1UXlOZw?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry",
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-09T04:00:05Z",
+      "when_short": "Nov 9, 2026",
+      "when_ts": 1794196805.0
+    },
+    {
       "id": "a940c99336efd4d7",
       "title": "Clark Fork vs Troy",
       "summary": "Girls Varsity Basketball 12/05/2026 | Watch Live & On Demand NFHS Network",
@@ -3469,22 +3729,6 @@
       "when_ts": 1793952000.0
     },
     {
-      "id": "36c4690a8b35b74f",
-      "title": "Have you gotten your tickets yet to our 14th annual Giving Thanks Show at the Panida Theater in Sandpoint, ID!? November 28th at 7:30pm. Each year this show is new and special and ",
-      "summary": "Have you gotten your tickets yet to our 14th annual Giving Thanks Show at the Panida Theater in Sandpoint, ID!? November 28th at 7:30pm. Each year this show is new and special and",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQ2RUTWhpR3VTY2lYNmNsQ0tRc2I4WEViREdYeUN2ZUZOUFk0Q3ZrMVRlMkRsekdmY1ZmWl9kckE5TmRnMUZ2VF8xYUVFWjJkeGxYYk9mXzBMbVpNQzRVamo3aXRENFdiZU9IbWJfWWRUZDRSNGt1alVfdGhGRTVfaEhLV0JpM1Jvdzh4UFNrMFdUMGloY0lTTjI5QldTS1QtdExCXy1ZZ0wtWkdhZW9tUFBJTU5PeExhUmhhU2NZMEdoTmlNdjdkNWxoYWhKdy13SVBLajdnbw?oc=5",
-      "source": "Facebook",
-      "kind": "facebook",
-      "area": "Sandpoint",
-      "areas": [
-        "Sandpoint"
-      ],
-      "author": "",
-      "when": "2026-11-06T00:59:00Z",
-      "when_short": "Nov 6, 2026",
-      "when_ts": 1793926740.0
-    },
-    {
       "id": "8c981bd856dc9ec8",
       "title": "Team Highlights: 2026 IDHSAA 1A Football Playoffs Clark Fork vs. Salmon River",
       "summary": "Clark Fork NFHS Network",
@@ -3531,6 +3775,22 @@
       "when": "2026-11-05T09:21:21Z",
       "when_short": "Nov 5, 2026",
       "when_ts": 1793870481.0
+    },
+    {
+      "id": "36c4690a8b35b74f",
+      "title": "Have you gotten your tickets yet to our 14th annual Giving Thanks Show at the Panida Theater in Sandpoint, ID!? November 28th at 7:30pm. Each year this show is new and special and ",
+      "summary": "Have you gotten your tickets yet to our 14th annual Giving Thanks Show at the Panida Theater in Sandpoint, ID!? November 28th at 7:30pm. Each year this show is new and special and",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQ2RUTWhpR3VTY2lYNmNsQ0tRc2I4WEViREdYeUN2ZUZOUFk0Q3ZrMVRlMkRsekdmY1ZmWl9kckE5TmRnMUZ2VF8xYUVFWjJkeGxYYk9mXzBMbVpNQzRVamo3aXRENFdiZU9IbWJfWWRUZDRSNGt1alVfdGhGRTVfaEhLV0JpM1Jvdzh4UFNrMFdUMGloY0lTTjI5QldTS1QtdExCXy1ZZ0wtWkdhZW9tUFBJTU5PeExhUmhhU2NZMEdoTmlNdjdkNWxoYWhKdy13SVBLajdnbw?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "area": "Sandpoint",
+      "areas": [
+        "Sandpoint"
+      ],
+      "author": "",
+      "when": "2026-11-05T08:00:00Z",
+      "when_short": "Nov 5, 2026",
+      "when_ts": 1793865600.0
     },
     {
       "id": "93c8dfb7dcd8722e",
@@ -3847,6 +4107,22 @@
       "areas": [
         "Bonners Ferry",
         "Priest River"
+      ],
+      "author": "",
+      "when": "2026-11-05T08:00:00Z",
+      "when_short": "Nov 5, 2026",
+      "when_ts": 1793865600.0
+    },
+    {
+      "id": "df78159135bdcb7a",
+      "title": "CAFE standards reset is an affordability win",
+      "summary": "From Bonners Ferry Herald.",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcExsMHlkNEdWc3RQVC13Z25ueW9ydVFaV3BVZ0I3eXplcHZtVWpyRExvNWhkYzNIY0VnbzRvc0REMEIzeW16RHFFaTNSVXMzZkIxX0J5WjRlVkVyMjJRR1RYY3hmcTdUalcyNDBHaHNwS3FwSl9zbG4tRGdIcnFRQUlmRUNhdElMakQyUk52UmJVUm5aa2ZuVg?oc=5",
+      "source": "Bonners Ferry Herald",
+      "kind": "news",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
       ],
       "author": "",
       "when": "2026-11-05T08:00:00Z",
@@ -4479,6 +4755,22 @@
       "when_ts": 1793257200.0
     },
     {
+      "id": "31388f6006e527ca",
+      "title": "2026 IDHSAA 1A Volleyball Championship Match #3 Mackay vs. Clark Fork",
+      "summary": "10/29/2026 | Live & On Demand NFHS Network",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tYW00eUdELWszME1heU11M0dncFQyR1R2N192MnVYR0hFc1gwemtOLVVIQ294cUt6MGlndXRzQkhrQ3pLY1U0MFAwN3gzR05jb210STBKZ2xneUsxdWpHX3h6UUZOeHZL?oc=5",
+      "source": "NFHS Network",
+      "kind": "news",
+      "area": "Clark Fork",
+      "areas": [
+        "Clark Fork"
+      ],
+      "author": "",
+      "when": "2026-10-29T07:00:00Z",
+      "when_short": "Oct 29, 2026",
+      "when_ts": 1793257200.0
+    },
+    {
       "id": "ac49dafe9bb0322b",
       "title": "Prop. 1: Time for some facts",
       "summary": "From Sandpoint Reader.",
@@ -4506,9 +4798,9 @@
         "Coeur d'Alene"
       ],
       "author": "",
-      "when": "2026-10-28T08:22:36Z",
+      "when": "2026-10-28T07:00:00Z",
       "when_short": "Oct 28, 2026",
-      "when_ts": 1793175756.0
+      "when_ts": 1793170800.0
     },
     {
       "id": "042e3e6327e522bd",
@@ -5308,22 +5600,6 @@
       "area": "Athol",
       "areas": [
         "Athol"
-      ],
-      "author": "",
-      "when": "2026-10-19T07:00:00Z",
-      "when_short": "Oct 19, 2026",
-      "when_ts": 1792393200.0
-    },
-    {
-      "id": "84d10acd613c1010",
-      "title": "One year after Wilder raid, two Idaho wives reflect on separation, fear, and hope",
-      "summary": "From Idaho News 6.",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeWNva0NkbkhPSWEtNl9zeVc2NElJNGw3QkthTmY5QW5xTkYwWkppa3dyN0FzQVlCcHNsM05mUkNzVDgtRGFhYndjeHJESTJYbmxaSGhCVVBwMmM5ZkxzNUN4RE5QQVI3SDBZMExUQWJMU0wtcDN4VWlZNVNwcVFlVW9PUlItSGlPdUxpQkVtOTZZcmtJcFNVNUhfY055M2lVOHJFQnAtbjVWcVdGdDVZNTA4eFpCQQ?oc=5",
-      "source": "Idaho News 6",
-      "kind": "news",
-      "area": "Hope",
-      "areas": [
-        "Hope"
       ],
       "author": "",
       "when": "2026-10-19T07:00:00Z",
@@ -6881,6 +7157,22 @@
       "when_ts": 1790492400.0
     },
     {
+      "id": "ad5188bb9cad9fca",
+      "title": "Taken in Priest River. It's supposed to be pretty scarce for Blue Jays to be west of the Rocky Mountains. First time I've ever seen one in my life. Amazing.",
+      "summary": "Taken in Priest River. It's supposed to be pretty scarce for Blue Jays to be west of the Rocky Mountains. First time I've ever seen one in my life. Amazing.",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE50cW5Tb1pjaVNxRTFqZGpzSUk5SEI4WWJiM1ozWTdpRnlYdWIyWVBZM0tYX3A3N0dWMUhmNXd5OWxicTVUVFFjaVptRlBRN1NoXzVfRXZ2UmhabWlKamt4OUIzS3NTbnBOcUNhT24xel9TLXV0VkU2YW53?oc=5",
+      "source": "Facebook",
+      "kind": "facebook",
+      "area": "Priest River",
+      "areas": [
+        "Priest River"
+      ],
+      "author": "",
+      "when": "2026-09-27T07:00:00Z",
+      "when_short": "Sep 27, 2026",
+      "when_ts": 1790492400.0
+    },
+    {
       "id": "abb12b3aa3326907",
       "title": "Pearson's 'coming-out party'",
       "summary": "sophomore QB wins first varsity start, Van Leuven runs for four TDs for Timberwolves Coeur d'Alene Press",
@@ -7163,6 +7455,22 @@
       "area": "Coeur d'Alene",
       "areas": [
         "Coeur d'Alene"
+      ],
+      "author": "",
+      "when": "2026-09-24T07:00:00Z",
+      "when_short": "Sep 24, 2026",
+      "when_ts": 1790233200.0
+    },
+    {
+      "id": "36f24710eb58e67a",
+      "title": "Kootenai River Days returns Sept. 26 after wildfire cancellation",
+      "summary": "From Bonners Ferry Herald.",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMU5SN0JuRElWREdXeHhXRWxFMlNPY3daRzFENE5JNm9mRklNbVpKRU01dWdWZVN0ZUlwVkk1MWNpTnhuQWk0VTRBRjRlMmc3QkJrc0pCNVVJQlBFZHVUNjRnNktoY0F1ZFJzdmRzYVk3RE1sTXExeUN4VEN3ZGZTNENwVy1PbkhRc2xZSXFwbENickdpNndpeEZTX09qRnh1ektqajc1V0xHaldVZnNWdFNn?oc=5",
+      "source": "Bonners Ferry Herald",
+      "kind": "news",
+      "area": "Bonners Ferry",
+      "areas": [
+        "Bonners Ferry"
       ],
       "author": "",
       "when": "2026-09-24T07:00:00Z",
@@ -7965,6 +8273,23 @@
       "area": "Bonners Ferry",
       "areas": [
         "Bonners Ferry"
+      ],
+      "author": "",
+      "when": "2026-09-16T07:00:00Z",
+      "when_short": "Sep 16, 2026",
+      "when_ts": 1789542000.0
+    },
+    {
+      "id": "ea60a99095cdb003",
+      "title": "Forestry program proves an early hit at Priest River Lamanna High School",
+      "summary": "From Coeur d'Alene Press.",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQmxrM1RBSXZnMHl1VjA3dURPRVVLM1Z6SkYzaXhOOXlwdTNiaWNNYTEzb04wMEpoWWloc3dIN3dmZGJoTU9ISUo4NEZZUHZ6am5adnFnQ2V6SjRaTEpHTHZ5b2lpamU4N1hZSGJWbEk1YVpEU19VM1RoMloxR0QtX2FPcUZCV3M5YnExazJUQnV1b1k?oc=5",
+      "source": "Coeur d'Alene Press",
+      "kind": "news",
+      "area": "Coeur d'Alene",
+      "areas": [
+        "Coeur d'Alene",
+        "Priest River"
       ],
       "author": "",
       "when": "2026-09-16T07:00:00Z",
@@ -9684,7 +10009,7 @@
     {
       "name": "Bonners Ferry",
       "drive_min": 42,
-      "n": 109
+      "n": 115
     },
     {
       "name": "Priest Lake",
@@ -9704,7 +10029,7 @@
     {
       "name": "Sandpoint",
       "drive_min": 0,
-      "n": 271
+      "n": 280
     },
     {
       "name": "Dover",
@@ -9714,22 +10039,22 @@
     {
       "name": "Sagle",
       "drive_min": 10,
-      "n": 10
+      "n": 12
     },
     {
       "name": "Hope",
       "drive_min": 22,
-      "n": 3
+      "n": 2
     },
     {
       "name": "Clark Fork",
       "drive_min": 32,
-      "n": 23
+      "n": 24
     },
     {
       "name": "Priest River",
       "drive_min": 25,
-      "n": 34
+      "n": 36
     },
     {
       "name": "Newport",
@@ -9754,7 +10079,7 @@
     {
       "name": "Spirit Lake",
       "drive_min": 50,
-      "n": 12
+      "n": 14
     },
     {
       "name": "Hayden",
@@ -9764,11 +10089,10 @@
     {
       "name": "Coeur d'Alene",
       "drive_min": 58,
-      "n": 148
+      "n": 152
     }
   ],
   "errors": [
-    "Herald: HTTP 429",
-    "Facebook: HTTP 429"
+    "Reddit: HTTP 404"
   ]
 }

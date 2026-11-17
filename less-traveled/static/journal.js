@@ -236,9 +236,8 @@
   }
 
   async function pullLive() {
-    const urls = frozen
-      ? ["/journal/refresh", "journal/refresh"]
-      : ["/journal/refresh"];
+    const urls = frozen ? [] : ["/journal/refresh"];
+    if (!urls.length) throw new Error("static");
     let lastErr = "refresh";
     for (const url of urls) {
       try {
@@ -276,35 +275,44 @@
     qEl.addEventListener("search", apply);
   }
 
-  if (refreshBtn) {
-    refreshBtn.addEventListener("click", async () => {
+  async function refresh(fromUser) {
+    if (refreshBtn) {
       refreshBtn.disabled = true;
       refreshBtn.textContent = "Updating…";
+    }
+    if (status && fromUser) {
+      status.hidden = false;
+      status.textContent = "Pulling news, public posts, and whispers.";
+    }
+    try {
+      let payload;
+      try {
+        payload = await pullLive();
+      } catch (_) {
+        payload = await pullFile();
+      }
+      paint(payload);
       if (status) {
         status.hidden = false;
-        status.textContent = "Pulling news, public posts, and whispers.";
+        status.textContent = fromUser ? "Journal updated." : "Journal loaded.";
       }
-      try {
-        let payload;
-        try {
-          payload = await pullLive();
-        } catch (_) {
-          payload = await pullFile();
-        }
-        paint(payload);
-        if (status) {
-          status.hidden = false;
-          status.textContent = "Journal updated.";
-        }
-      } catch (_) {
-        if (status) {
-          status.hidden = false;
-          status.textContent = "Could not pull a fresh journal. Try again in a minute.";
-        }
-      } finally {
+    } catch (_) {
+      if (status && fromUser) {
+        status.hidden = false;
+        status.textContent = "Could not pull a fresh journal. Try again in a minute.";
+      }
+    } finally {
+      if (refreshBtn) {
         refreshBtn.disabled = false;
         refreshBtn.textContent = "Update";
       }
+    }
+  }
+
+  if (refreshBtn) {
+    refreshBtn.addEventListener("click", () => {
+      refresh(true);
     });
   }
+  refresh(false);
 })();
