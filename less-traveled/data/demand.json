@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T00:12:10Z",
+  "updated": "2026-11-17T01:20:24Z",
   "days": 90,
   "note": "Public asks only. Facebook groups and Craigslist hold most of the traffic; we cannot read those privately. Date, trade, and local companies that could take the work. We do not sell your number.",
   "items": [
@@ -20,20 +20,6 @@
       "when_ts": 1794796679.0,
       "fits": [
         {
-          "name": "Arby's",
-          "town": "Sandpoint",
-          "phone": "+1 208-263-3104",
-          "site": "https://www.arbys.com/locations/us/id/sandpoint/420-5th-ave/store-6248/",
-          "category": "Restaurants"
-        },
-        {
-          "name": "Subway",
-          "town": "Ponderay",
-          "phone": "+1 208-255-7525",
-          "site": "https://restaurants.subway.com/united-states/id/ponderay/476534-hwy-95",
-          "category": "Restaurants"
-        },
-        {
           "name": "The Peppered Mercantile",
           "town": "Sandpoint",
           "phone": "",
@@ -46,6 +32,20 @@
           "phone": "+12082634005",
           "site": "http://eichardtspub.com",
           "category": "Bars & Nightlife"
+        },
+        {
+          "name": "The Hoot Owl",
+          "town": "",
+          "phone": "",
+          "site": "",
+          "category": "Cafes & Coffee"
+        },
+        {
+          "name": "Blanchard Mercantile",
+          "town": "",
+          "phone": "",
+          "site": "",
+          "category": "Restaurants"
         }
       ]
     },
@@ -83,8 +83,8 @@
           "name": "Everything Beauty Salon",
           "town": "Sandpoint",
           "phone": "(986) 205-7208",
-          "site": "http://everythingbeautysandpoint@glossgenius.com",
-          "category": "Gas Stations"
+          "site": "",
+          "category": "Wellness & Spa"
         },
         {
           "name": "Northpoint Spa, LLC",
@@ -165,32 +165,32 @@
           "category": "Restaurants"
         },
         {
-          "name": "Arby's",
+          "name": "Connies Cafe and Lounge",
           "town": "Sandpoint",
-          "phone": "+1 208-263-3104",
-          "site": "https://www.arbys.com/locations/us/id/sandpoint/420-5th-ave/store-6248/",
+          "phone": "(208) 255-2227",
+          "site": "http://conniescafe.com",
+          "category": "Cafes & Coffee"
+        },
+        {
+          "name": "Blanchard Mercantile",
+          "town": "",
+          "phone": "",
+          "site": "",
           "category": "Restaurants"
         },
         {
-          "name": "Crow's Bench",
-          "town": "Sandpoint",
-          "phone": "+1 208-255-3051",
-          "site": "https://www.schweitzer.com/to-do/crows-bench/",
-          "category": "Restaurants"
-        },
-        {
-          "name": "Domino's",
-          "town": "Sandpoint",
-          "phone": "+1 208-263-6600",
-          "site": "https://pizza.dominos.com/idaho/sandpoint/316-5th-ave",
-          "category": "Restaurants"
+          "name": "Eichardt's Pub Grill & Coffee",
+          "town": "",
+          "phone": "+12082634005",
+          "site": "http://eichardtspub.com",
+          "category": "Bars & Nightlife"
         }
       ]
     },
     {
       "id": "41128acfafe42f84",
       "title": "Hi alll! What's your go to for lunch in Sandpoint? Thanks in advance for all the suggestions 😉",
-      "ask": "Hi alll! What's your go to for lunch in Sandpoint? Thanks in advance for all the suggestions 😉",
+      "ask": "What's your go to for lunch in Sandpoint? Thanks in advance for all the suggestions 😉",
       "summary": "Hi alll! What's your go to for lunch in Sandpoint? Thanks in advance for all the suggestions 😉",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE92ajdfblg5TE03ZnVhTkVNSlJXbEJ1eURLN2FyYW5NOVNUanp0eFVlaTVrckVfRVp5TUR3VTBBT2pWLXJ1YU95UE12RmNLdXoxOU5Ebnc4aE5jelVrT20tYmR2TFpGb3hqbFJtQ3paLUJtU1FvSVNTUFQzT0pTZw?oc=5",
       "source": "Facebook",
@@ -204,31 +204,31 @@
       "when_ts": 1790319600.0,
       "fits": [
         {
-          "name": "Arby's",
+          "name": "Spuds Waterfront Grill",
           "town": "Sandpoint",
-          "phone": "+1 208-263-3104",
-          "site": "https://www.arbys.com/locations/us/id/sandpoint/420-5th-ave/store-6248/",
+          "phone": "+1-208-265-4311",
+          "site": "https://www.spudsonline.com/",
           "category": "Restaurants"
         },
         {
-          "name": "Crow's Bench",
-          "town": "Sandpoint",
-          "phone": "+1 208-255-3051",
-          "site": "https://www.schweitzer.com/to-do/crows-bench/",
+          "name": "Arlo's Ristorante",
+          "town": "",
+          "phone": "+12082554186",
+          "site": "https://www.arlos-restaurant.com/",
           "category": "Restaurants"
         },
         {
-          "name": "Domino's",
+          "name": "Connies Cafe and Lounge",
           "town": "Sandpoint",
-          "phone": "+1 208-263-6600",
-          "site": "https://pizza.dominos.com/idaho/sandpoint/316-5th-ave",
-          "category": "Restaurants"
+          "phone": "(208) 255-2227",
+          "site": "http://conniescafe.com",
+          "category": "Cafes & Coffee"
         },
         {
-          "name": "Jack in the Box",
+          "name": "The Peppered Mercantile",
           "town": "Sandpoint",
-          "phone": "+1 208-946-4714",
-          "site": "https://locations.jackinthebox.com/us/id/sandpoint/717-n-5th-ave",
+          "phone": "",
+          "site": "",
           "category": "Restaurants"
         }
       ]
@@ -257,6 +257,10 @@
         {
           "label": "Search Facebook for local asks",
           "url": "https://www.facebook.com/search/posts/?q=looking%20for%20plumber%20sandpoint"
+        },
+        {
+          "label": "Local Facebook groups",
+          "url": "https://www.facebook.com/search/groups/?q=sandpoint%20idaho"
         }
       ]
     },
@@ -306,6 +310,17 @@
         {
           "label": "Sandpoint on Nextdoor",
           "url": "https://nextdoor.com/city/sandpoint--id/"
+        }
+      ]
+    },
+    {
+      "name": "X",
+      "kind": "x",
+      "note": "Public posts. Local trade asks almost never show up here; neighbor talk is in Facebook groups and on Craigslist.",
+      "links": [
+        {
+          "label": "Search X for Sandpoint asks",
+          "url": "https://x.com/search?q=looking%20for%20(plumber%20OR%20septic%20OR%20electrician)%20(Sandpoint%20OR%20Sagle)&src=typed_query&f=live"
         }
       ]
     },
@@ -491,7 +506,5 @@
       "directory": "/showup?s=Hardware+%26+Building+Supply"
     }
   ],
-  "errors": [
-    "Web: HTTP 429"
-  ]
+  "errors": []
 }

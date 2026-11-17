@@ -1366,6 +1366,7 @@ body.sit .map-pop a { color: var(--pine); }
 .look-card h3 { font-family: var(--serif); font-size: 1.12rem; margin: .15rem 0 .4rem; font-weight: 650; }
 .look-meta { margin: 0; font-size: .78rem; color: var(--mute); display: flex; flex-wrap: wrap; gap: .2rem .65rem; }
 .look-ask { margin: 0 0 .7rem; font-size: .95rem; line-height: 1.45; color: #4f5752; }
+.look-card .look-fits-label + .look-ask { margin-top: .1rem; }
 .look-fits-label { margin: 0 0 .3rem; font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--mute); }
 .look-fits { list-style: none; margin: 0 0 .65rem; padding: 0; }
 .look-fits li { padding: .28rem 0; font-size: .9rem; display: flex; flex-wrap: wrap; gap: .2rem .6rem; }
