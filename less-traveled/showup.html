@@ -6,7 +6,7 @@
   <title>Who shows up — Sagle · Sandpoint · Bonner County</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="static/theme.css?v=59">
+  <link rel="stylesheet" href="static/theme.css?v=60">
   
 </head>
 <body class="dir">
@@ -45,99 +45,101 @@
 <p class="meta">726 open · 0 shutdown · watched 2026-11-16. Chamber roster, OpenStreetMap, and local news. New members and contact details refresh each morning.</p>
 
 <div class="dir-toolbar">
-  <div class="dir-search-row">
-    <input type="search" id="dir-q" placeholder="Search name, town, phone, trade, or website" aria-label="Search directory">
-    <select id="dir-town" aria-label="Town">
-      <option value="">All towns</option>
+  <div class="dir-filter-frame">
+    <div class="dir-search-row">
+      <input type="search" id="dir-q" placeholder="Search name, town, phone, trade, or website" aria-label="Search directory">
+      <select id="dir-town" aria-label="Town">
+        <option value="">All towns</option>
+        
+        <option value="Sandpoint">Sandpoint (253)</option>
+        
+        <option value="Ponderay">Ponderay (74)</option>
+        
+        <option value="Bonners Ferry">Bonners Ferry (24)</option>
+        
+        <option value="Sagle">Sagle (23)</option>
+        
+        <option value="Coeur d&#39;Alene">Coeur d&#39;Alene (12)</option>
+        
+        <option value="Priest Lake">Priest Lake (7)</option>
+        
+        <option value="Priest River">Priest River (7)</option>
+        
+        <option value="Newport">Newport (6)</option>
+        
+        <option value="Spokane">Spokane (5)</option>
+        
+        <option value="Boise">Boise (3)</option>
+        
+        <option value="Hope">Hope (3)</option>
+        
+        <option value="Kootenai">Kootenai (3)</option>
+        
+        <option value="Naples">Naples (3)</option>
+        
+        <option value="Oldtown">Oldtown (3)</option>
+        
+        <option value="Spirit Lake">Spirit Lake (3)</option>
+        
+        <option value="Athol">Athol (2)</option>
+        
+        <option value="Bayview">Bayview (2)</option>
+        
+        <option value="Coolin">Coolin (2)</option>
+        
+        <option value="Laclede">Laclede (2)</option>
+        
+        <option value="Post Falls">Post Falls (2)</option>
+        
+        <option value="Austin">Austin (1)</option>
+        
+        <option value="Hayden">Hayden (1)</option>
+        
+        <option value="Kirkland">Kirkland (1)</option>
+        
+        <option value="Lake Zurich">Lake Zurich (1)</option>
+        
+        <option value="Moscow">Moscow (1)</option>
+        
+        <option value="Nordman">Nordman (1)</option>
+        
+        <option value="Oakhurst">Oakhurst (1)</option>
+        
+        <option value="Portland">Portland (1)</option>
+        
+        <option value="San Jose">San Jose (1)</option>
+        
+        <option value="Spokane Valley">Spokane Valley (1)</option>
+        
+        <option value="Tualatin">Tualatin (1)</option>
+        
+        <option value="Wallace">Wallace (1)</option>
+        
+        <option value="Whitefish">Whitefish (1)</option>
+        
+      </select>
+    </div>
+    <p class="dir-label">Category</p>
+    <div class="dir-chips" id="dir-groups">
+      <button type="button" class="dir-chip on" data-group="">All</button>
       
-      <option value="Sandpoint">Sandpoint (253)</option>
+      <button type="button" class="dir-chip" data-group="Home Services">Home Services <span class="n">78</span></button>
       
-      <option value="Ponderay">Ponderay (74)</option>
+      <button type="button" class="dir-chip" data-group="Restaurants">Restaurants <span class="n">151</span></button>
       
-      <option value="Bonners Ferry">Bonners Ferry (24)</option>
+      <button type="button" class="dir-chip" data-group="Auto">Auto <span class="n">49</span></button>
       
-      <option value="Sagle">Sagle (23)</option>
+      <button type="button" class="dir-chip" data-group="Health">Health <span class="n">44</span></button>
       
-      <option value="Coeur d&#39;Alene">Coeur d&#39;Alene (12)</option>
+      <button type="button" class="dir-chip" data-group="Professional Services">Professional Services <span class="n">73</span></button>
       
-      <option value="Priest Lake">Priest Lake (7)</option>
+      <button type="button" class="dir-chip" data-group="Shopping">Shopping <span class="n">31</span></button>
       
-      <option value="Priest River">Priest River (7)</option>
+      <button type="button" class="dir-chip" data-group="Lodging">Lodging <span class="n">36</span></button>
       
-      <option value="Newport">Newport (6)</option>
+      <button type="button" class="dir-chip" data-group="Other">Other <span class="n">264</span></button>
       
-      <option value="Spokane">Spokane (5)</option>
-      
-      <option value="Boise">Boise (3)</option>
-      
-      <option value="Hope">Hope (3)</option>
-      
-      <option value="Kootenai">Kootenai (3)</option>
-      
-      <option value="Naples">Naples (3)</option>
-      
-      <option value="Oldtown">Oldtown (3)</option>
-      
-      <option value="Spirit Lake">Spirit Lake (3)</option>
-      
-      <option value="Athol">Athol (2)</option>
-      
-      <option value="Bayview">Bayview (2)</option>
-      
-      <option value="Coolin">Coolin (2)</option>
-      
-      <option value="Laclede">Laclede (2)</option>
-      
-      <option value="Post Falls">Post Falls (2)</option>
-      
-      <option value="Austin">Austin (1)</option>
-      
-      <option value="Hayden">Hayden (1)</option>
-      
-      <option value="Kirkland">Kirkland (1)</option>
-      
-      <option value="Lake Zurich">Lake Zurich (1)</option>
-      
-      <option value="Moscow">Moscow (1)</option>
-      
-      <option value="Nordman">Nordman (1)</option>
-      
-      <option value="Oakhurst">Oakhurst (1)</option>
-      
-      <option value="Portland">Portland (1)</option>
-      
-      <option value="San Jose">San Jose (1)</option>
-      
-      <option value="Spokane Valley">Spokane Valley (1)</option>
-      
-      <option value="Tualatin">Tualatin (1)</option>
-      
-      <option value="Wallace">Wallace (1)</option>
-      
-      <option value="Whitefish">Whitefish (1)</option>
-      
-    </select>
-  </div>
-  <p class="dir-label">Category</p>
-  <div class="dir-chips" id="dir-groups">
-    <button type="button" class="dir-chip on" data-group="">All</button>
-    
-    <button type="button" class="dir-chip" data-group="Home Services">Home Services <span class="n">78</span></button>
-    
-    <button type="button" class="dir-chip" data-group="Restaurants">Restaurants <span class="n">151</span></button>
-    
-    <button type="button" class="dir-chip" data-group="Auto">Auto <span class="n">49</span></button>
-    
-    <button type="button" class="dir-chip" data-group="Health">Health <span class="n">44</span></button>
-    
-    <button type="button" class="dir-chip" data-group="Professional Services">Professional Services <span class="n">73</span></button>
-    
-    <button type="button" class="dir-chip" data-group="Shopping">Shopping <span class="n">31</span></button>
-    
-    <button type="button" class="dir-chip" data-group="Lodging">Lodging <span class="n">36</span></button>
-    
-    <button type="button" class="dir-chip" data-group="Other">Other <span class="n">264</span></button>
-    
+    </div>
   </div>
   <p class="dir-label">Most searched trades</p>
   <div class="dir-chips spec-chips" id="dir-specs">
